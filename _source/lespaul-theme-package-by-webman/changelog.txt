@@ -1,0 +1,168 @@
+************************
+ !LesPaul Version 1.3
+************************
+
+	Added: Countdown timer shortcode
+	Added: Compatibility with Advanced Page Manager plugin
+	Added: Option to choose stack or one-by-one scrolling in Posts, Projects and Logos shortcodes
+	Added: Centered logo and navigation header layout
+	Added: Option to display Posts, Projects, Staff and Logos shortcodes in 1 column layout
+	Added: Option to display posts from author in author bio on single post pages (set up in "Blog" section of theme admin panel)
+	Added: Option to change padding on menu items for better header area styling flexibility
+	Updated: WooCommerce 2.0 support
+	Updated: Some front end CSS
+	Updated: PrettyPhoto works wit "rel" attribute
+	Updated: Admin area texts and functionality
+	Fixed: Fixed website header area issues
+
+	CHANGED FILES:
+	**************
+	All translation files
+	All skins CSS files
+	WooCommerce template files
+	header.php
+	footer.php
+	assets/css/borders.css
+	assets/css/columns-content.css
+	assets/css/content.css
+	assets/css/core.css
+	assets/css/icons-basic.css
+	assets/css/header.css
+	assets/css/responsive.css
+	assets/css/shortcodes.css
+	assets/css/style.css.php
+	assets/css/typography.css
+	assets/css/woocommerce.css
+	assets/js/scripts.js
+	library/core.php
+	library/form-generator.php
+	library/setup.php
+	library/help/a-help.php
+	library/options/a-blog.php
+	library/options/a-header.php
+	library/options/a-security.php
+	library/shortcodes/shortcodes.php
+	library/shortcodes/shortcodes-generator.php
+	page-template/construction.php
+
+
+
+
+
+************************
+ !LesPaul Version 1.2
+************************
+
+	Added: Full WooCommerce support/integration
+	Added: Navigation accent (hover) color
+	Added: Global (optional) active color for tabs, accordions and toggles (defaults to global accent color)
+	Added: Main heading area padding adjustable per page/post basis
+	Added: Automatic theme actualizations (via Envato WordPress Toolkit plugin)
+	Added: Option for bouncing map markers animation
+	Added: Support to display gallery in slider area
+	Updated: Minor CSS fixes
+	Updated: Style.css (also a child theme one) inserted at the end of the main dynamic stylesheet file
+	Updated: Revolution Slider updated to version 2.3.3
+	Updated: JavaScript plugins updated (bxSlider, jQuery.masonry, html5shiv)
+	Updated: Scrolling posts/projects/logos by one (instead of full stack)
+	Updated: Some patterns images optimization
+	Fixed: [devider] shortcode renamed to [divider] (backward compatibility preserved)
+	Fixed: Social icons styling issues
+	Fixed: Styling blog posts list when using WordPress "More" tag
+	Fixed: Pagination color change
+	Fixed: Sticky header issue
+	Fixed: Workaround for main menu flickering issues caused by CSS3 animation bug in FireFox browsers (mainly on unix systems like Mac OS and Linux)
+	Fixed: Batch installation of premium slider plugins
+	Fixed: LayerSlider issue when button used in slide on Internet Explorer browsers
+
+	CHANGED FILES:
+	**************
+	All localization files
+	WooCommerce template files
+	footer.php
+	assets/css/borders.css
+	assets/css/content.css
+	assets/css/core.css
+	assets/css/forms.css
+	assets/css/header.css
+	assets/css/shortcodes.css
+	assets/css/slider.css
+	assets/css/style.css.php
+	assets/css/typography.css
+	assets/css/woocommerce.css
+	assets/css/skin/clean.css
+	assets/css/skin/default.css
+	assets/js/maps.js
+	assets/js/scripts.js
+	library/core.php
+	library/setup.php
+	library/meta/a-meta-page.php
+	library/meta/a-meta-post.php
+	library/meta/m-cp-projects.php
+	library/meta/m-cp-staff.php
+	library/options/a-design.php
+	library/widgets/a-areas.php
+
+
+
+
+
+************************
+ !LesPaul Version 1.1
+************************
+
+	Added: new devider style
+	Added: "id" attribute for Separator Heading shortcode
+	Added: optional custom CSS textarea in theme admin panel (still recommended to use child themes, though)
+	Added: Gravity forms styling
+	Added: more options for Screen shortcode (to display content on and above specific screen size)
+	Added: "style" attribute for Icon shortcode
+	Updated: more speed optimization applied
+	Updated: website description into meta title on front page
+	Updated: minor updates in styles
+	Updated: additional de-branding of admin area
+	Fixed: print.css was added into child theme
+	Fixed: "flickering" submenu issue
+	Fixed: responsive styles of Logos shortcode
+	Fixed: portfolio filter word wrapping
+	Fixed: zigzag, media left and media right responsive styling
+
+	CHANGED FILES:
+	**************
+	langs/admin/lespaul_domain_adm.po
+	langs/help/lespaul_domain_help.po
+	langs/wm-admin-panel/lespaul_domain_panel.po
+	assets/css/forms.css
+	assets/css/forms-gravity.css
+	assets/css/forms-wpcf.css
+	assets/css/print.css
+	assets/css/responsive.css
+	assets/css/shortcodes.css
+	assets/css/style.css.php
+	assets/js/scripts.js
+	library/core.php
+	library/wm-options-panel.php
+	library/help/a-help.php
+	library/options/a-design.php
+	library/shortcodes/shortcodes.php
+	library/shortcodes/shortcodes-generator.php
+	library/widgets/w-contact.php
+	library/widgets/w-cpmodules.php
+	library/widgets/w-cpprojects.php
+	library/widgets/w-postslist.php
+	library/widgets/w-subpages.php
+	library/widgets/w-twitter.php
+
+
+
+
+
+************************
+ !LesPaul Version 1.0
+************************
+
+	Initial release
+
+
+
+(C) 2013 WebMan, www.webmandesign.eu

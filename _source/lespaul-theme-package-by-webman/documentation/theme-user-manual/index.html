@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>!LesPaul User Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="WebMan">
+
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, max-age=0, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+
+	<!-- styles -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/js/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet">
+	<link href="bootstrap/css/custom.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+	<!-- HTML5 shim -->
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<body data-spy="scroll">
+
+	<!-- Navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" href="#top"><img src="bootstrap/img/logo-lespaul-manual.png" alt="!LesPaul" title="!LesPaul - back to begining of this User Manual" /></a>
+			<div class="nav-collapse">
+				<ul class="nav">
+					<li class="dropdown"><a href="#install-wp">Install</a>
+						<ul class="dropdown-menu">
+							<li><a href="#install-wp">Install, secure WordPress</a></li>
+							<li><a href="#install-theme">Install, update !LesPaul</a></li>
+							<li><a href="#envato-toolkit">Automatic theme updates</a></li>
+							<li><a href="#install-plugins">Install plugins</a></li>
+							<li><a href="#woocommerce">WooCommerce</a></li>
+							<li><a href="#install-demo">Install demo content</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#pages-home">Pages</a>
+						<ul class="dropdown-menu">
+							<li><a href="#pages-home">Home and Blog page</a></li>
+							<li><a href="#pages-templates">Using page templates</a></li>
+							<li><a href="#tpl-default">Default template</a></li>
+							<li><a href="#tpl-blog">Blog template</a></li>
+							<li><a href="#tpl-landing">Landing page template</a></li>
+							<li><a href="#tpl-map">Map template</a></li>
+							<li><a href="#tpl-portfolio">Portfolio template</a></li>
+							<li><a href="#tpl-redirect">Redirect template</a></li>
+							<li><a href="#tpl-sections">Sections template</a></li>
+							<li><a href="#tpl-sitemap">Sitemap template</a></li>
+							<li><a href="#tpl-construction">Under construction template</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#posts">Posts</a>
+						<ul class="dropdown-menu">
+							<li><a href="#posts">Setting up post format</a></li>
+							<li><a href="#posts-settings">Posts settings</a></li>
+							<li><a href="#posts-standard">Standard posts</a></li>
+							<li><a href="#posts-audio">Audio posts</a></li>
+							<li><a href="#posts-gallery">Gallery posts</a></li>
+							<li><a href="#posts-link">Link posts</a></li>
+							<li><a href="#posts-quote">Quote posts</a></li>
+							<li><a href="#posts-status">Status posts</a></li>
+							<li><a href="#posts-video">Video posts</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#contents">Other content</a>
+						<ul class="dropdown-menu">
+							<li><a href="#contents">Additional content</a></li>
+							<li><a href="#contents-modules">Content Modules</a></li>
+							<li><a href="#contents-faq">FAQ</a></li>
+							<li><a href="#contents-logos">Logos</a></li>
+							<li><a href="#contents-prices">Prices</a></li>
+							<li><a href="#contents-projects">Projects</a></li>
+							<li><a href="#contents-staff">Staff</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#menus">Menus</a>
+						<ul class="dropdown-menu">
+							<li><a href="#menus">Menu locations</a></li>
+							<li><a href="#menus-menu">Create a menu</a></li>
+							<li><a href="#menus-buttons">Menu buttons</a></li>
+							<li><a href="#menus-icons">Menu icons</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#widgets">Widgets</a>
+						<ul class="dropdown-menu">
+							<li><a href="#widgets">Widget areas</a></li>
+							<li><a href="#widgets-custom">Custom widgets</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#shortcodes">Shortcodes</a>
+						<ul class="dropdown-menu">
+							<li><a href="#shortcodes">Shortcodes generator</a></li>
+							<li><a href="#shortcodes-styles">Styles</a></li>
+						</ul>
+					</li>
+					<li class="dropdown"><a href="#options">Options</a></li>
+					<li><a href="#seo" title="Search Engine Optimization">SEO</a></li>
+					<li><a href="#localization">Localization</a></li>
+					<li><a href="#help">Help</a></li>
+					<li><a href="#credits">Credits</a></li>
+					<li class="dropdown"><a href="#tips" title="Please choose from dropdown">Tips</a>
+						<ul class="dropdown-menu">
+							<li><a href="#tips">Additional plugins</a></li>
+							<li><a href="#envato-toolkit">Automatic theme updates</a></li>
+							<li><a href="#tips-child-theme">Child theme</a></li>
+							<li><a href="#tips-icons">Changing icons</a></li>
+							<li><a href="#contents-modules">Creating icon boxes</a></li>
+							<li><a href="#contents-projects">Creating portfolio</a></li>
+							<li><a href="#tips-imagefield">Custom image setup field</a></li>
+							<li><a href="#tips-map">Custom map styling</a></li>
+							<li><a href="#seo">Google Analytics tracking</a></li>
+							<li><a href="#tips-images">Minimal image sizes</a></li>
+							<li><a href="#tips">Sharing buttons</a></li>
+							<li><a href="#woocommerce">WooCommerce</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div> <!-- /Navbar -->
+
+
+
+	<!-- Main Header -->
+	<header class="main-header" id="top">
+	<div class="container">
+		<div class="main-title">
+			<h1><img src="bootstrap/img/logo-lespaul-manual-large.png" alt="!LesPaul - Retina Responsive WordPress Theme by WebMan" title="!LesPaul - Retina Responsive WordPress Theme by WebMan" /> <small class="font-alt">Retina Responsive <a href="http://www.wordpress.org/" target="_blank">WordPress</a> Theme <br /><em>by <a href="http://www.webmandesign.eu" target="_blank">WebMan</a></em></small></h1>
+			<h2><span>User Manual</span></h2>
+		</div>
+
+		<p class="lead">
+			<strong>Thank you for purchasing the !LesPaul theme!</strong>
+		</p>
+
+		<p>This file will teach you how to set up and use the <strong>!LesPaul</strong> WordPress theme. In case you get stuck somewhere using the theme, <strong>!LesPaul</strong> extends<br /> WordPress contextual help with useful information and link to online version of theme's User Manual. Feel free to check it any time.<br />If you have any questions that are beyond the scope of this user manual, please join <a href="http://support.webmandesign.eu" target="_blank"><strong>WebMan Support Forums</strong></a>.</p>
+		<p>Enjoy your <strong>!LesPaul</strong> theme!</p>
+		<p>
+			<br />
+			<a href="http://support.webmandesign.eu/" class="btn btn-large btn-danger" target="_blank">Support forum</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="http://www.webmandesign.eu" class="btn btn-large btn-info" target="_blank">Other themes</a>
+		</p>
+	</div>
+	</header> <!-- Main Header -->
+
+
+
+	<!-- Main Container -->
+	<section class="main-content">
+	<div class="container">
+
+
+
+		<h2 id="install-wp">Installing, Securing WordPress and First Steps</h2>
+			<div class="row">
+				<div class="span1"></div>
+				<div class="span11">
+					<div class="row-fluid">
+						<div class="span8">
+							<h3>Installing WordPress</h3>
+							<p><a href="http://codex.wordpress.org/Installing_WordPress" target="_blank" class="alignleft"><img src="bootstrap/img/wordpress.png" alt="" /></a> If you need help installing WordPress, follow the instructions in <a href="http://codex.wordpress.org/Installing_WordPress" target="_blank">WordPress Codex</a> or you can <a href="https://vimeo.com/17147778" target="_blank">watch the instructional video</a> (thanks to WooThemes).</p>
+
+							<h3 class="pt40">Securing WordPress</h3>
+							<p>You can improve your WordPress installation security taking these steps:</p>
+							<ul>
+								<li>Set the <span class="label label-info">Authentication Unique Keys and Salts</span> in <code>wp-config.php</code> file.</li>
+								<li>Set the <span class="label label-info">$table_prefix</span> variable in <code>wp-config.php</code> file (do not use the default value of "wp_").</li>
+								<li>Do not use "admin" as user name and set strong passwords.</li>
+								<li>After installation is done, remove <code>wp-admin/install.php</code> file.</li>
+								<li>Keep backups of the database and WordPress installation.</li>
+								<li>Keep your WordPress installation up to date.</li>
+							</ul>
+							<p>For additional security steps, tips and settings check <strong>Security</strong> section of theme's admin panel.</p>
+						</div>
+						<div class="span4">
+							<h3>Starting with WordPress</h3>
+							<p>Additional resources for WordPress beginners:</p>
+							<ul>
+								<li><a title="First Steps With WordPress" href="http://codex.wordpress.org/First_Steps_With_WordPress" target="_blank">First Steps With WordPress</a></li>
+								<li><a title="FAQ New To WordPress" href="http://codex.wordpress.org/FAQ_New_To_WordPress" target="_blank">FAQ New To WordPress</a></li>
+								<li><a title="WP101 Basix Training" href="http://wp.tutsplus.com/sessions/wp101-basix-training/" target="_blank">WP101 Basix Training</a> videos</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="install-theme">Installing, Updating !LesPaul Theme</h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<h3>Installing !LesPaul theme</h3>
+					<p>To install <strong>!LesPaul</strong> WordPress theme please follow these steps:</p>
+					<ol>
+						<li>Download a theme package file from <a href="http://www.themeforest.net/?ref=webmandesign" target="_blank">ThemeForest</a>. Unzipp the package file on your computer - theme package folder will be created.</li>
+						<li>In WordPress admin navigate to <strong><em>Appearance &raquo; Themes &raquo; Install Themes &raquo; Upload</em></strong> and select the zipped theme file inside <code>install</code> subfolder of the previously unzipped theme package folder.</li>
+						<li>Now press <strong>[Install Now]</strong> button and wait until theme is uploaded and installed.</li>
+						<li>Once installation is done, activate the theme in <strong><em>Appearance &raquo; Themes</em></strong>.</li>
+						<li><a href="#options"><strong>Quickstart guide</strong></a> will appear to guide you through basic theme settings.</li>
+					</ol>
+						<div class="alert alert-info video-instructions">
+							<span class="badge badge-warning">&nbsp;<i class="icon-facetime-video icon-white"></i>&nbsp;</span>&nbsp; <strong>Video instruction: "Installing !LesPaul"</strong>
+						</div>
+						<div class="video-container">
+							<iframe src="http://player.vimeo.com/video/59817334" width="1280" height="720" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						</div>
+
+					<h3 class="pt40" id="envato-toolkit">Envato WordPress Toolkit - automatic theme update</h3>
+					<div class="row">
+						<div class="span7">
+							<p>The theme supports automatic updates via <strong>Envato WordPress Toolkit</strong> plugin and offers the plugin for installation immediately after the theme is activated. To use the plugin you will need a ThemeForest API key. The plugin will then check for all your purchased WordPress items updates and offer you an automatic update installation (it is possible to backup your old theme version too, so you won't loose your custom changes of theme source files).</p>
+						</div>
+						<div class="span4">
+							<div class="alert alert-info">
+								Please read more on how to use the plugin in <a href="http://wpmu.org/envato-wordpress-toolkit-a-themeforest-auto-updater/" target="_blank"><strong>Envato WordPress Toolkit – A ThemeForest Auto-Updater</strong></a>.
+							</div>
+							<div class="alert alert-alert">
+								Please note that for WordPress network installation (multisite), the plugin admin menu can be found on network admin screen.
+							</div>
+						</div>
+					</div>
+
+					<h3 class="pt40">Updating !LesPaul theme</h3>
+					<p>To update the theme, login to <a href="http://www.themeforest.net/?ref=webmandesign" target="_blank">ThemeForest</a>, head over to your <strong>downloads section</strong> and re-download the theme like you did when you bought it.</p>
+					<p>To install the new updated theme unzipp the downloaded zipped theme package file on your computer. Open the theme package folder and head over to <code>install</code> subfolder where you will find a theme installation ZIP file.</p>
+					<p>Now use one of these options to update the theme:</p>
+					<ul>
+						<li>
+							<p><strong>Easier, but might take longer time:</strong><br />Unzip the theme installation ZIP file on your computer. Upload the unzipped theme folder using FTP client to your server (into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code>) overwriting all the current theme files.</p>
+							<div class="alert alert-error"><strong>Note:</strong> <em>If you didn't make any changes to the theme files, you are free to overwrite files with the new ones without the risk of loosing theme settings, pages, posts, etc, and backwards compatibility is guaranteed. In case you have made changes to the theme files, make sure you have a backup copy of your changes before you overwrite theme files.</em></div>
+						</li>
+						<li>
+							<strong>More advanced, but quicker and safer solution:</strong><br />Upload the theme installation ZIP file using FTP client to your server (into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code>). Using your FTP client, rename the old theme folder (for example from <code>lespaul</code> to <code>lespaul-old</code>). When the old theme folder is renamed, unzip the theme installation zip file on the server (you will probably have to do this via web based FTP client of your host provider). After checking if the theme works fine, delete the renamed old theme folder from server (or keep it as a backup, but it will unnecessarily take space on your server...).
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+
+		<h2 id="install-plugins">Installing Plugins</h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span4">
+							<p>At this stage you have probably noticed <strong>a warning, asking you to install recommended plugins</strong>.</p>
+							<p>These are needed to get the included premium sliders, contact forms, excelent SEO results, better pagination and make your website fully high DPI (or Retina) screens compatible. Installing the plugins is very simple, you just need to click "<strong>Begin installing plugins</strong>" and you will be redirected to the plugin installation page where you can install and activate any plugin you need.</p>
+						</div>
+						<div class="span7">
+							<div class="alert alert-info">
+								<p>Please note that <em>these plugins are totaly optional</em> and the theme will work perfectly also without them.</p>
+								<p>You should, however, install and activate included <strong>premium slider plugins</strong> as those offer great animated sliders (banners) features.</p>
+								<p>The theme is high DPI (Retina) screen ready, however, to make your content images also high DPI screen ready, it is recommended to use <strong>WP Retina 2x</strong> plugin (you can read the <a href="http://www.totorotimes.com/news/retina-display-wordpress-plugin/" target="_blank">tutorial on this plugin written by its author</a>).</p>
+								<p><strong>Contact Form 7</strong> plugin will create forms for you and is totally optional, so feel free to use your preffered solution. However, the theme demo content includes predefined form example for Contact Form 7 plugin. Very easy to use form creator is also included with <a href="http://wordpress.org/extend/plugins/jetpack/" target="_blank"><strong>JetPack</strong></a> plugin by WordPress.</p>
+								<p><strong>WordPress SEO by Yoast</strong> is great WordPress SEO plugin and theme provides full integration with this plugin (including its SEO breadcrumbs and Google Authorship support).</p>
+								<p><strong>WP-PageNavi</strong> is yet another optional plugin which just provides advanced pagination for your blog pages.</p>
+							</div>
+						</div>
+					</div>
+					<div class="alert alert-info video-instructions">
+						<span class="badge badge-warning">&nbsp;<i class="icon-facetime-video icon-white"></i>&nbsp;</span>&nbsp; <strong>Video instruction: "Installing plugins"</strong>
+					</div>
+					<div class="video-container">
+						<iframe src="http://player.vimeo.com/video/59817337" width="1280" height="720" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+					</div>
+
+					<h3 class="pt40" id="woocommerce">WooCommerce</h3>
+					<div class="row">
+						<div class="span5">
+							<p>You can turn your website to an e-shop. The theme offers full integration for <a href="http://wordpress.org/extend/plugins/woocommerce/" target="_blank"><strong>WooCommerce - excelling eCommerce</strong></a> plugin and offers you its installation after theme activation. To test the plugin you can install a dummy plugin demo content (the <code>dummy_data.xml</code> file) that can be found inside the plugin installation folder (so inside <code>YOUR_WORDPRESS_INSTALLATION/wp-content/plugins/woocommerce/</code> folder). Just upload the demo XML file via <strong><em>Tools &raquo; Import</em></strong>.</p>
+							<div class="alert alert-warning">
+								Please note that the theme applies its custom CSS styles for the plugin and disables its native styling options. Also the default theme image lightbox (image zooming) is used.
+							</div>
+						</div>
+						<div class="span6">
+							<div class="alert alert-error">
+								<strong>IMPORTANT:</strong> please note that I don't provide support for WooCommerce plugin issues as this is third party software. Please read the <a href="http://wcdocs.woothemes.com/" target="_blank">WooCommerce documentation</a> or direct all your issues with the plugin to <a href="http://wordpress.org/support/plugin/woocommerce" target="_blank">WooCommerce support</a>.
+							</div>
+							<div class="alert alert-info">
+								<strong>Note:</strong> when WooCommerce plugin is enabled, the theme creates 2 new widget areas. Please use these widget areas to create sidebars on products lists pages (<em>"WooCommerce General"</em>) and on single product page (<em>"WooCommerce Product"</em>).<br />If no widgets will be inserted into these widget areas, the fullwidth (no sidebar) layout will be applied on these pages.<br /><br />Other WooCommerce pages are standard WordPress pages, so please go to the page edit screen to set the page sidebar layout there.</a>.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="install-demo">Installing Theme Demo Content</h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<ol>
+								<li>
+									Once the theme has been installed, open the <code>demo-content</code> folder inside the theme package folder downloaded from <a href="http://www.themeforest.net/?ref=webmandesign" target="_blank">ThemeForest</a> and unzipped in your computer.
+								</li>
+								<li>
+									In WordPress admin navigate to <strong><em>Appearance &raquo; Options Export/Import</em></strong>. Open and copy the content of <code>1-webman-admin-panel.txt</code> file and paste it into <em>"Import"</em> field. Save the settings.
+									<div class="alert alert-error">
+										<strong>Note:</strong> if the admin panel is not de-branded (should become gray, not black), press the <strong>[Save changes]</strong> button in theme admin panel once again. This is due to setting up the local URLs to design images.
+									</div>
+								</li>
+								<li>
+									Make sure the permalinks structure is set to "Post name" (in <strong>Settings &raquo; Permalinks</strong>) - this is required for the right content displaying in some shortcodes and is recommended option for better <abbr title="Search Engine Optimization">SEO</abbr>.
+								</li>
+								<li>
+									Make sure the <strong>Soliloquy</strong> slider and <strong>Contact Form 7</strong> plugin is <a href="#install-plugins">installed and activated</a>.
+								</li>
+								<li>
+									Navigate to <strong>Plugins &raquo; Add new</strong> and click the <strong>Upload</strong> link below the title. For file upload field set the <code>2-lespaul-importer-plugin.zip</code> file inside <code>demo-content</code> folder. Click <strong>[Install Now]</strong> button and activate the plugin.
+									<div class="alert alert-error">
+										<strong>Important:</strong> first you have to disable the <strong>WordPress Importer</strong> plugin if you have it installed and activated.
+									</div>
+									<div class="alert alert-info">
+										This custom plugin is just a slight variation on <strong>WordPress Importer</strong> plugin. It makes sure all the demo images are imported to your website (if there is no connection problem of course).
+									</div>
+								</li>
+								<li>
+									Then navigate to <strong><em>Tools &raquo; Import</em></strong> and choose the "WordPress" option.
+								</li>
+								<li>
+									For <em>"Choose a file from your computer:"</em> upload field select the <code>3-democontent-lespaul.xml</code> file and press <strong>[Upload file and import]</strong> button to start the import procedure.
+								</li>
+								<li>
+									For import settings choose the author, under whom the content is imported and check to download attachments (images in this case). Press <strong>[Submit]</strong> button.
+								</li>
+								<li>
+									<strong>Setting up sliders demo content:</strong>
+									<ul>
+										<li><strong>Soliloquy</strong> - this plugin should already be ready and contain "Content width" and "Fullwidth" sliders.</li>
+										<li><strong>LayerSlider WP</strong> - navigate to <strong>LayerSlider WP</strong> and click the "Import sample sliders" link right from "LayerSlider sliders" title.</li>
+										<li><strong>Revolution Slider</strong> - navigate to <strong>Revolution Slider</strong> and click <strong>[Create New Slider]</strong> button. Set the slider title to "Home" and slider alias to "home" (both without quotation marks) and press the <strong>[Create Slider]</strong> button. Reopen the slider for editing and at the bottom of the screen click the "Show Export / Import" link and set the <code>4-revolution-slider-home.txt</code> file for "Choose the import file:" option. Press <strong>[Import Slider]</strong> button to install Revolution Slider plugin demo slider.</li>
+									</ul>
+								</li>
+								<li>
+									Now we need to set up homepage and blog page. Navigate to <strong>Settings &raquo; Reading</strong> and set "A static page (select below)" in "Front page displays" section. Select <em>"Welcome to !LesPaul"</em> page as your website's front page and <em>"Blog"</em> as posts page.
+								</li>
+								<li>
+									To set the menu, navigate to <strong><em>Appearance &raquo; Menus</em></strong> and select:
+									<ul>
+										<li><em>"Navigation"</em> for <strong>Main navigation</strong>, <strong>Footer menu</strong> and <strong>Sitemap links</strong> select fields</li>
+										<li><em>"Top bar links"</em> for <strong>"Landing page" page navigation</strong> select field</li>
+									</ul>
+									in <strong>Theme Locations</strong> section on the left. Press <strong>[Save]</strong> button.</li>
+								<li>
+									Finaly we need to set widget areas and widgets. Navigate to <strong>Appearance > Widgets</strong> and set the widgets according to <code>5-widgets-and-widget-areas.png</code> widget area preview image.
+								</li>
+							</ol>
+							<p>Your demo website should be set now.</p>
+						</div>
+						<div class="span4">
+							<div class="alert alert-alert">
+								<strong>Note</strong> that this might be quite long instruction, but it is thorough one and will guide you step-by-step on how to make the demo website fully functional including contact forms, homepage, blog page, menus and sliders.
+							</div>
+						</div>
+						<div class="span4">
+							<div class="alert alert-info">
+								<strong>Note</strong> that demo content contains sample images only and they will be downloaded from theme demo server during the installation process. This might take a while...
+							</div>
+						</div>
+					</div>
+						<div class="alert alert-info video-instructions">
+							<span class="badge badge-warning">&nbsp;<i class="icon-facetime-video icon-white"></i>&nbsp;</span>&nbsp; <strong>Video instruction: "Installing theme demo content"</strong>
+						</div>
+						<div class="video-container">
+							<iframe src="http://player.vimeo.com/video/59817338" width="1280" height="720" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="pages-home">Setting Up Home and Blog Page</h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<h4>Set up a WordPress Front Page (Homepage)</h4>
+							<img src="bootstrap/img/homepage.png" alt="" title="Setting a homepage" />
+							<ol>
+								<li>
+									In WordPress admin navigate to <strong><em>Settings &raquo; Reading</em></strong>.
+								</li>
+								<li>
+									For <em>"Front page displays"</em> option set <em>"A static page (select below)"</em>.
+								</li>
+								<li>
+									Select the front page from dropdown list. This page will become your home page.<br />
+									Select the posts page from dropdown list. This page will become your blog page.
+								</li>
+							</ol>
+						</div>
+						<div class="span4">
+							<p>The theme doesn't contain any special "Homepage" <a href="#pages-templates">page template</a>. You can set any page as a homepage, however, probably the most suitable ones are those with these page templates assigned: <a href="#tpl-default"><span class="label label-inverse">Default Template</span></a>, <a href="#tpl-blog"><span class="label label-inverse">Blog</span></a>, <a href="#tpl-portfolio"><span class="label label-inverse">Portfolio</span></a>, <a href="#tpl-sections"><span class="label label-inverse">Sections</span></a> and during the website building process also <a href="#tpl-construction"><span class="label label-inverse">Under construction</span></a>.</p>
+						</div>
+					</div>
+						<div class="alert alert-info video-instructions">
+							<span class="badge badge-warning">&nbsp;<i class="icon-facetime-video icon-white"></i>&nbsp;</span>&nbsp; <strong>Video instruction: "Setting up home and blog page"</strong>
+						</div>
+						<div class="video-container">
+							<iframe src="http://player.vimeo.com/video/59817339" width="1280" height="720" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="pages-templates">Page Templates</h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<h4>Assigning a Page Template</h4>
+							<img src="bootstrap/img/page-templates.png" alt="" title="Setting a page template" />
+							<ol>
+								<li>
+									On page edit screen choose one of predefined page templates in <strong>Page attributes</strong> metabox on the right.
+								</li>
+								<li>
+									Once you set the page template, notice how <strong>page settings tabs</strong> changed to offer you only the options related to specific page template.
+								</li>
+							</ol>
+						</div>
+						<div class="span4">
+							<p>You can set several different page options for each page template. Options in <strong>Page settings</strong> metabox will be displayed specificaly for selected page template.</p>
+							<div class="alert alert-info">You can also enable additional content area called <strong>Page Excerpt <span class="badge badge-warning"><i class="icon-asterisk icon-white"></i></span></strong> and set its position in <strong>Apperance &raquo; Theme Options &raquo; Content &raquo;</strong> <em>"Page excerpt"</em>.</div>
+							<div class="alert alert-success">
+								<h5>Disable page templates</h5>
+								You can disable unnecessary page templates in theme admin panel. Just navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Content &raquo; Page templates</em></strong> and set appropriate options.
+							</div>
+							<h5>Available page templates:</h5>
+							<ul>
+								<li><a href="#tpl-default"><span class="label label-inverse">Default template</span></a></li>
+								<li><a href="#tpl-blog"><span class="label label-inverse">Blog template</span></a></li>
+								<li><a href="#tpl-landing"><span class="label label-inverse">Landing page template</span></a></li>
+								<li><a href="#tpl-map"><span class="label label-inverse">Map template</span></a></li>
+								<li><a href="#tpl-portfolio"><span class="label label-inverse">Portfolio template</span></a></li>
+								<li><a href="#tpl-redirect"><span class="label label-inverse">Redirect template</span></a></li>
+								<li><a href="#tpl-sections"><span class="label label-inverse">Sections template</span></a></li>
+								<li><a href="#tpl-sitemap"><span class="label label-inverse">Sitemap template</span></a></li>
+								<li><a href="#tpl-construction"><span class="label label-inverse">Under construction template</span></a></li>
+							</ul>
+						</div>
+					</div>
+
+					<h3 id="tpl-default" class="pt60">Default page template <small>Page layout and how the template can be used</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<img src="bootstrap/img/page-default.png" alt="" title="Default page template layout" />
+								</div>
+								<div class="span4">
+									<p class="uppercase">As you can see in the scheme left, even a default WordPress page template can display a lot of information in <strong>!LesPaul</strong> theme.</p>
+									<p>In <strong>page settings tabs</strong> you can set these options:</p>
+									<ul>
+										<li>
+											<strong>General</strong> tab<br />
+											You can preview a page layout here, tweak the main page heading area (the main title), disable several website elements, choose to display page attachments in a downloadable list (will not display attached images), set website header position, set layout and set a restricted access (<span class="label label-success">Client Area</span> functionality must be enabled).
+										</li>
+										<li>
+											<strong>Slider</strong> tab<br />
+											You can enable (choose) and set a slider that will be displayed on the page. Slider area can display:
+											<ul>
+												<li><strong>Single static image</strong> (page featured image)</li>
+												<li><strong>Single video</strong> (if featured image set for the page, it will be used as video cover image - video will play back after clicking the image)</li>
+												<li><strong>Animated banner/slideshow</strong> using included premium slider plugins (or use your own preferred one)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>Sidebar</strong> tab<br />
+											You can set whether there will be a sidebar displayed on the page, which widget area will be used as sidebar and where the sidebar will be displayed.
+											<div class="alert alert-info">
+												You can create as many widget areas as you want in theme admin panel. Just navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Widget Areas</em></strong> and add some widget areas.
+											</div>
+										</li>
+										<li>
+											<strong>Background</strong> tab<br />
+											You can set main heading area and actual page background color and image here.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tpl-blog" class="pt60">Blog page template <small>Page layout and how the template can be used</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<img src="bootstrap/img/page-blog.png" alt="" title="Blog page template layout" />
+								</div>
+								<div class="span4">
+									<p class="uppercase">Blog page template displays blog posts. You can also set slider and even page content that will be displayed above posts list.</p>
+									<p>In <strong>page settings tabs</strong> you can set these options:</p>
+									<ul>
+										<li>
+											<strong>Blog</strong> tab<br />
+											You can preview a page layout here, set the number of posts displayed on the page (pagination will be displayed automatically) and select posts categories - you can either hide posts from selected categories or display posts from those selected categories only. You can also choose one of several blog layouts here.
+										</li>
+										<li>
+											<strong>General</strong> tab<br />
+											You can tweak the main page heading area (the main title), disable several website elements, choose to display page attachments in a downloadable list (will not display attached images), set website header position and set page layout.
+										</li>
+										<li>
+											<strong>Slider</strong> tab<br />
+											You can enable (choose) and set a slider that will be displayed on the page. Slider area can display:
+											<ul>
+												<li><strong>Single static image</strong> (page featured image)</li>
+												<li><strong>Single video</strong> (if featured image set for the page, it will be used as video cover image - video will play back after clicking the image)</li>
+												<li><strong>Animated banner/slideshow</strong> using included premium slider plugins (or use your own preferred one)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>Sidebar</strong> tab<br />
+											You can set whether there will be a sidebar displayed on the page, which widget area will be used as sidebar and where the sidebar will be displayed.
+											<div class="alert alert-info">
+												You can create as many widget areas as you want in theme admin panel. Just navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Widget Areas</em></strong> and add some widget areas.
+											</div>
+										</li>
+										<li>
+											<strong>Background</strong> tab<br />
+											You can set main heading area and actual page background color and image here.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tpl-landing" class="pt60">Landing page template <small>Page layout and how the template can be used</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<img src="bootstrap/img/page-landing.png" alt="" title="Landing page template layout" />
+									<h4 class="mt20">Setting up a Custom Landing Page Menu:</h4>
+									<img src="bootstrap/img/landing-menu.png" alt="" title="Landing page custom menu location" />
+								</div>
+								<div class="span4">
+									<div class="alert alert-error">
+										Please note that "Landing page" page template <strong>is not suitable</strong> to use as your website's <strong>homepage</strong>. It is more a marketing tool to promote your product or service. Read <a href="http://en.wikipedia.org/wiki/Landing_page" target="_blank">more info about landing pages</a> on Wikipedia.
+									</div>
+									<p class="uppercase">Landing page template is usually used to display direct sales action and is a great marketing tool. You can achieve a lot with great design and layout of landing page and <strong>!LesPaul</strong> offers a great flexibility in this matter.</p>
+									<p>As you can see from the scheme left, Landing page template doesn't display top bar and breadcrumbs and all other website elements can be customized.</p>
+									<p>For each Landing page template there will be a new menu location created in <strong><em>Appearance &raquo; Menus</em></strong> <span class="badge badge-warning"><i class="icon-asterisk icon-white"></i></span>. This will allow you to set a custom menu for each Landing page individually or disable the menu on such page altogether.</p>
+									<p>In <strong>page settings tabs</strong> you can set these options:</p>
+									<ul>
+										<li>
+											<strong>Landing page</strong> tab<br />
+											You can preview a page layout here, set a different website header text (if right navigation is not in use), choose or disable widget areas for Above Footer Widgets and Footer Widgets area. If required, credits text in the website footer can be changed too and <strong>you can even set a custom tracking code (like Google Analytics)</strong> specially for this page template.
+										</li>
+										<li>
+											<strong>General</strong> tab<br />
+											You can tweak the main page heading area (the main title), set website header position and set page layout.
+										</li>
+										<li>
+											<strong>Slider</strong> tab<br />
+											You can enable (choose) and set a slider that will be displayed on the page. Slider area can display:
+											<ul>
+												<li><strong>Single static image</strong> (page featured image)</li>
+												<li><strong>Single video</strong> (if featured image set for the page, it will be used as video cover image - video will play back after clicking the image)</li>
+												<li><strong>Animated banner/slideshow</strong> using included premium slider plugins (or use your own preferred one)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>Sidebar</strong> tab<br />
+											You can set whether there will be a sidebar displayed on the page, which widget area will be used as sidebar and where the sidebar will be displayed.
+											<div class="alert alert-info">
+												You can create as many widget areas as you want in theme admin panel. Just navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Widget Areas</em></strong> and add some widget areas.
+											</div>
+										</li>
+										<li>
+											<strong>Background</strong> tab<br />
+											You can set main heading area and actual page background color and image here.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tpl-map" class="pt60">Map page template <small>Page layout and how the template can be used</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<img src="bootstrap/img/page-map.png" alt="" title="Map page template layout" />
+								</div>
+								<div class="span4">
+									<p class="uppercase">Map page template is suited best for contact pages where you need to display big map. Map will be displayed in slider area.</p>
+									<p>The actual page content will be displayed below the map. If you need to display a contact form on your newly created contact page with Map page template, use a plugin such as <a href="http://wordpress.org/extend/plugins/contact-form-7/" target="_blank">Contact Form 7</a> or form builder in <a href="http://wordpress.org/extend/plugins/jetpack/" target="_blank">JetPack</a> plugin, for example.</p>
+									<p>In <strong>page settings tabs</strong> you can set these options:</p>
+									<ul>
+										<li>
+											<strong>Map</strong> tab<br />
+											You can preview a page layout here, set height of the map (the width can not be set as the map will stretch the whole website box width), zoom, map styling, centering and actual map location.<br />It is possible to set several map locations if you want and display a different info bubble for each. Map will be centered to the first map location set. If you do want to set a specific map center location, but don't want to display a map marker on it, set "-" in <em>"Location info text"</em> field.<br />Also, you can easily find out the GPS coordinates of desired map locations by clicking the <em>"You can use external app to find geographic coordinates"</em> link.
+										</li>
+										<li>
+											<strong>General</strong> tab<br />
+											You can tweak the main page heading area (the main title), disable several website elements, choose to display page attachments in a downloadable list (will not display attached images), set website header position, set layout and set a restricted access (<span class="label label-success">Client Area</span> functionality must be enabled).
+										</li>
+										<li>
+											<strong>Sidebar</strong> tab<br />
+											You can set whether there will be a sidebar displayed on the page, which widget area will be used as sidebar and where the sidebar will be displayed.
+											<div class="alert alert-info">
+												You can create as many widget areas as you want in theme admin panel. Just navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Widget Areas</em></strong> and add some widget areas.
+											</div>
+										</li>
+										<li>
+											<strong>Background</strong> tab<br />
+											You can set main heading area and actual page background color and image here.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tpl-portfolio" class="pt60">Portfolio page template <small>Page layout and how the template can be used</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<img src="bootstrap/img/page-portfolio.png" alt="" title="Portfolio page template layout" />
+								</div>
+								<div class="span4">
+									<p class="uppercase">Portfolio page template displays a list of Projects custom posts. You can choose from 5 different projects list layouts (1 - 5 columns) and set several projects list options.</p>
+									<p>The actual page content will be displayed above projects list.</p>
+									<p>In <strong>page settings tabs</strong> you can set these options:</p>
+									<ul>
+										<li>
+											<strong>Portfolio</strong> tab<br />
+											You can preview a page layout here, tweak portfolio projects list settings here. If you set a projects main category and enable filter, the filter will be created from the specific main category sub-categories. Otherwise, when all projects (regardless project category) are displayed and filter is enabled, filter will be created from all projects categories (main and sub-categories).
+										</li>
+										<li>
+											<strong>General</strong> tab<br />
+											You can tweak the main page heading area (the main title), disable several website elements, choose to display page attachments in a downloadable list (will not display attached images), set website header position, set layout and set a restricted access (<span class="label label-success">Client Area</span> functionality must be enabled).
+										</li>
+										<li>
+											<strong>Slider</strong> tab<br />
+											You can enable (choose) and set a slider that will be displayed on the page. Slider area can display:
+											<ul>
+												<li><strong>Single static image</strong> (page featured image)</li>
+												<li><strong>Single video</strong> (if featured image set for the page, it will be used as video cover image - video will play back after clicking the image)</li>
+												<li><strong>Animated banner/slideshow</strong> using included premium slider plugins (or use your own preferred one)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>Sidebar</strong> tab<br />
+											You can set whether there will be a sidebar displayed on the page, which widget area will be used as sidebar and where the sidebar will be displayed.
+											<div class="alert alert-info">
+												You can create as many widget areas as you want in theme admin panel. Just navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Widget Areas</em></strong> and add some widget areas.
+											</div>
+										</li>
+										<li>
+											<strong>Background</strong> tab<br />
+											You can set main heading area and actual page background color and image here.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tpl-redirect" class="pt60">Redirect page template <small>How can the template be used</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<img src="bootstrap/img/page-redirect.png" alt="" title="Redirect page template" />
+								</div>
+								<div class="span4">
+									<p class="uppercase">Redirect page template will only redirect to specific URL. You can either set custom URL or redirect to another page of your website. Redirect page template can be used for example on a parent page without any content, which you need to redirect to its first child page.</p>
+									<p>In <strong>page settings tabs</strong> you can set these options:</p>
+									<ul>
+										<li>
+											<strong>Redirect</strong> tab<br />
+											There are not much settings for Redirect page template. Just set the custom URL link, or choose a page of your WordPress website and set a redirect status (temporary or permanent redirect).
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tpl-sections" class="pt60">Sections page template <small>Page layout and how the template can be used</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<img src="bootstrap/img/page-sections.png" alt="" title="Sections page template layout" />
+								</div>
+								<div class="span4">
+									<p class="uppercase">Sections page template is one of the perfect candidates for complex home page layout. The content of this page can be split into vertical sections that can be styled afterwards using custom CSS in a child theme (that's the right way of doing that ;)).</p>
+									<div class="alert alert-success">
+										You need to wrap each section content in <code>[section class="CUSTOM_CSS_CLASS"]CONTENT[/section]</code> shortcode. The "class" parameter of the shortcode is optional, but helps when applying custom CSS styles on the section. Also section ID will be determined from this class attribute (first class will be taken and prepended with "section-").<br />You can already use predefined (and pre-styled) "alt" class if you want (the shortcode would look like <code>[section class="alt"]CONTENT[/section]</code> in that case).
+									</div>
+									<div class="alert alert-error">
+										The page is fullwidth with no sidebar and the <code>[section]</code> shortcode can be used <strong>on this page template only</strong> as otherwise it will break the website layout and design.
+									</div>
+									<p>In <strong>page settings tabs</strong> you can set these options:</p>
+									<ul>
+										<li>
+											<strong>General</strong> tab<br />
+											You can preview a page layout here, tweak the main page heading area (the main title), disable several website elements, choose to display page attachments in a downloadable list (will not display attached images), set website header position, set layout and set a restricted access (<span class="label label-success">Client Area</span> functionality must be enabled).
+										</li>
+										<li>
+											<strong>Slider</strong> tab<br />
+											You can enable (choose) and set a slider that will be displayed on the page. Slider area can display:
+											<ul>
+												<li><strong>Single static image</strong> (page featured image)</li>
+												<li><strong>Single video</strong> (if featured image set for the page, it will be used as video cover image - video will play back after clicking the image)</li>
+												<li><strong>Animated banner/slideshow</strong> using included premium slider plugins (or use your own preferred one)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>Background</strong> tab<br />
+											You can set main heading area and actual page background color and image here.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tpl-sitemap" class="pt60">Sitemap page template <small>Page layout and how the template can be used</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<img src="bootstrap/img/page-sitemap.png" alt="" title="Sitemap page template layout" />
+								</div>
+								<div class="span4">
+									<p class="uppercase">Sitemap page can be used either as a website sitemap or as archives page (or both in one page actually ;)). Sitemap page template is fullwidth so you can not set a sidebar here. It will display most recent posts, most recent projects, custom menu, list of blog categories and monthly archives.</p>
+									<p>Notice, there is no all pages list. This is replaced with custom menu (you can set it in <strong><em>Appearance &raquo; Menus</em></strong>) as you will have much greater control over such list of links.</p>
+									<p>The actual page content will be displayed above all sitemap links lists.</p>
+									<p>In <strong>page settings tabs</strong> you can set these options:</p>
+									<ul>
+										<li>
+											<strong>General</strong> tab<br />
+											You can preview a page layout here, tweak the main page heading area (the main title), disable several website elements, choose to display page attachments in a downloadable list (will not display attached images), set website header position, set layout and set a restricted access (<span class="label label-success">Client Area</span> functionality must be enabled).
+										</li>
+										<li>
+											<strong>Slider</strong> tab<br />
+											You can enable (choose) and set a slider that will be displayed on the page. Slider area can display:
+											<ul>
+												<li><strong>Single static image</strong> (page featured image)</li>
+												<li><strong>Single video</strong> (if featured image set for the page, it will be used as video cover image - video will play back after clicking the image)</li>
+												<li><strong>Animated banner/slideshow</strong> using included premium slider plugins (or use your own preferred one)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>Background</strong> tab<br />
+											You can set main heading area and actual page background color and image here.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tpl-construction" class="pt60">Under Construction page template <small>Page layout and how the template can be used</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<img src="bootstrap/img/page-under-construction.png" alt="" title="Under Construction page template layout" />
+								</div>
+								<div class="span4">
+									<p class="uppercase">Under Construction page can be <a href="#pages-home">set as homepage</a> while you are creating your website content. Your visitors will see only this page template while you can still check your pages and posts online <small>(as only you will know the URL to those pages - there is no menu in Under Construction page template)</small>.</p>
+									<p>You can not set a sidebar for this page as its layout spreads full width of the website container. However, it is possible to use boxed or fullwidth layout for this page specificaly.</p>
+									<p>In <strong>page settings tabs</strong> you can set these options:</p>
+									<ul>
+										<li>
+											<strong>Under construction</strong> tab<br />
+											You can preview a page layout here, set date and time when your website is due to go live. This setting will be used to display countdown timer on Under Construction page template. You can set a custom website header text for this template which will be displayed right from logo, set custom credits text and even choose a widget area that will be displayed below countdown timer (you can, for example, place a newsletter signup form widget into such widget area).
+										</li>
+										<li>
+											<strong>Slider</strong> tab<br />
+											You can enable (choose) and set a slider that will be displayed on the page. Slider area can display:
+											<ul>
+												<li><strong>Single static image</strong> (page featured image)</li>
+												<li><strong>Single video</strong> (if featured image set for the page, it will be used as video cover image - video will play back after clicking the image)</li>
+												<li><strong>Animated banner/slideshow</strong> using included premium slider plugins (or use your own preferred one)</li>
+											</ul>
+										</li>
+										<li>
+											<strong>Background</strong> tab<br />
+											You can set page background color and image here.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="posts">Posts</h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<h4>Setting up a Post Format</h4>
+							<img src="bootstrap/img/posts.png" alt="" title="Setting up a post format" />
+							<ol>
+								<li>
+									On post edit screen choose one of predefined post formats in <strong>Format</strong> metabox on the right.
+								</li>
+								<li>
+									Once you change the post format, notice an information area <span class="badge badge-warning"><i class="icon-asterisk icon-white"></i></span> displayed beneath the post visual content editor. The area contains info about how to use the chosen post format.
+								</li>
+							</ol>
+						</div>
+						<div class="span4">
+							<div class="alert alert-info">
+								<p>Post excerpt will be displayed in posts list (does not apply for <a href="#posts-link"><span class="label label-inverse">Link</span></a>, <a href="#posts-quote"><span class="label label-inverse">Quote</span></a> and <a href="#posts-status"><span class="label label-inverse">Status</span></a> post formats). If no excerpt set, a portion of post content will take its place in posts list. Post excerpt will also be displayed at the top of the post content on single post page. Please note that you will probably have to enable post excerpt field in <strong>"Screen Options"</strong> first.</p>
+								<p>If you set the "Read more" inside a post content and you also set a post excerpt, first the post excerpt followed with post content (until "Read More" tag) will be displayed in posts list.</p>
+							</div>
+							<p>The theme supports several post formats. Please read the information <span class="badge badge-warning"><i class="icon-asterisk icon-white"></i></span> on post edit screen on how to set up each supported post format.</p>
+							<div class="alert alert-success">
+								<h5>Disable post formats</h5>
+								You can disable unnecessary post formats in theme admin panel. Just navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Blog &raquo; Post formats</em></strong> and set appropriate options.
+							</div>
+							<h5>Supported post formats:</h5>
+							<ul>
+								<li><a href="#posts-standard"><span class="label label-inverse">Standard post</span></a></li>
+								<li><a href="#posts-audio"><span class="label label-inverse">Audio post</span></a></li>
+								<li><a href="#posts-gallery"><span class="label label-inverse">Gallery post</span></a></li>
+								<li><a href="#posts-link"><span class="label label-inverse">Link post</span></a></li>
+								<li><a href="#posts-quote"><span class="label label-inverse">Quote post</span></a></li>
+								<li><a href="#posts-status"><span class="label label-inverse">Status post</span></a></li>
+								<li><a href="#posts-video"><span class="label label-inverse">Video post</span></a></li>
+							</ul>
+						</div>
+					</div>
+						<div class="alert alert-info video-instructions">
+							<span class="badge badge-warning">&nbsp;<i class="icon-facetime-video icon-white"></i>&nbsp;</span>&nbsp; <strong>Video instruction: "Post formats"</strong>
+						</div>
+						<div class="video-container">
+							<iframe src="http://player.vimeo.com/video/59852061" width="1280" height="720" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						</div>
+
+					<h3 class="pt60" id="posts-settings">Posts Settings metabox</h3>
+						<h4>General <small>tab</small></h4>
+						<p>You can tweak the post main heading area (the main title, subtitle), disable several website and post content elements and choose to display post attachments in a downloadable list (will not display attached images).</p>
+						<hr />
+						<h4>Sidebar <small>tab</small></h4>
+						<p>You can set whether there will be a sidebar displayed on the post, which widget area will be used as sidebar and where the sidebar will be displayed.</p>
+						<div class="alert alert-info">You can create as many widget areas as you want in theme admin panel. Just navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Widget Areas</em></strong> and add some widget areas.</div>
+						<hr />
+						<h4>Background <small>tab</small></h4>
+						<p>You can set main heading area and, if boxed website layout set, the actual post background color and image here.</p>
+
+
+					<h3 id="posts-standard" class="pt60">Standard post <small>What is it?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<p>This is basic standard blog post layout. It is recommended to set a featured image for this post format as it will be displayed in posts list alongside with post excerpt (and in <code>[posts]</code> shortcode).</p>
+						</div>
+					</div>
+
+					<h3 id="posts-audio" class="pt60">Audio post <small>What is it?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<p>Displays audio player to play <a href="http://www.soundcloud.com" target="_blank">SoundCloud</a> audio file. Could be used for Podcasting. Audio player will be displayed in posts list alongside with post excerpt. It is good to set a featured image for this post format. It will be displayed in <code>[posts]</code> shortcode and also on single post page above the audio player.</p>
+						</div>
+					</div>
+
+					<h3 id="posts-gallery" class="pt60">Gallery post <small>What is it?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<p>A gallery of images will be displayed in slideshow on blog pages for this post formats. Slideshow will be generated from first gallery found in post content. It is recommended to set a featured image for this post format (to be displayed in <code>[posts]</code> shortcode).</p>
+						</div>
+					</div>
+
+					<h3 id="posts-link" class="pt60">Link post <small>What is it?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<p>Displays useful URL link. Insert a link directly anywhere into post content. The link will be emphasized on blog pages. Please note that you should keep the link description short - the best advice here is to try it (or see the video above).</p>
+						</div>
+					</div>
+
+					<h3 id="posts-quote" class="pt60">Quote post <small>What is it?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<p>A quotation. Please place the actual quote directly into post content and format it as blockquote. You can use a <a href="#shortcodes-styles"><strong>[Styles]</strong></a> button to insert a <code>cite</code> HTML tag to format quote source.</p>
+							<div class="alert alert-info">
+								<strong>Note</strong> that this post format will populate the <code>[testimonials /]</code> shortcode - check the <a href="#help">WordPress contextual help</a> for more info on shortcode. If the post is used for testimonials, you can set a featured image and it will be used as a photo of quoted person.<br /><br />
+								You should also assign all the quote posts used as testimonials to a special category and if you need to hide them on your website's blog page, just exclude the category from displaying on a blog page.<br /><br />
+								Or, additionally you can make all these posts "private" (in "Publish" metabox on post edit screen). Such posts should be normally displayed <strong>to post author only</strong>, but <code>[testimonials /]</code> shortcode is able to display them also for other website visitors while still keeping these posts hidden on blog page to anybody else but post author. You will need to set up a <code>private</code> parameter for the shortcode to <code>1</code> like so: <code>[testimonials private="1" /]</code>.
+							</div>
+						</div>
+					</div>
+
+					<h3 id="posts-status" class="pt60">Status post <small>What is it?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<p>A short status update, similar to a Twitter status update. Place the actual status text directly into post content. Post author avatar will be displayed on this post format.</p>
+						</div>
+					</div>
+
+					<h3 id="posts-video" class="pt60">Video post <small>What is it?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<p>Displays video player to play the predefined video file. You can place video description into post content. It is recommended to set a featured image for this post format (to be displayed in <code>[posts]</code> shortcode).</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="contents">Additional Content Types</h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<p><strong>!LesPaul</strong> theme comes packed with useful custom content types (custom post types). You can use default predefined <a href="#contents-modules"><span class="label label-inverse">Content Modules</span></a> custom posts alongside optional <a href="#contents-faq"><span class="label label-inverse">FAQ</span></a>, <a href="#contents-logos"><span class="label label-inverse">Logos</span></a>, <a href="#contents-prices"><span class="label label-inverse">Prices</span></a>, <a href="#contents-projects"><span class="label label-inverse">Projects</span></a> and <a href="#contents-staff"><span class="label label-inverse">Staff</span></a> custom posts.</p>
+						</div>
+						<div class="span4">
+							<div class="alert alert-info">
+								<h5>Note</h5>
+								You can disable/enable or change privilegues for custom post types in theme admin panel in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts</em></strong>.<br /><br />
+								It is possible to set the same privilegues as WordPress Pages have or as Posts have (check the <a href="http://codex.wordpress.org/Roles_and_Capabilities#Capability_vs._Role_Table" target="_blank">WordPress codex</a> on how this privilegues/capabilities affect each user group).
+							</div>
+						</div>
+					</div>
+
+					<h3 id="contents-modules" class="pt60">Content Modules <small>What are they and how to use them?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<h4>Creating an Icon Module</h4>
+									<img src="bootstrap/img/modules1.png" alt="" title="Setting up an icon module" />
+									<img src="bootstrap/img/modules2.png" alt="" title="Setting up an icon module" />
+									<ol>
+										<li>
+											Navigate to <strong><em>Content Modules &raquo; Add new module</em></strong> to create a new Content Module.
+										</li>
+										<li>
+											Set the module title and content. Additionally, you can assign a tag for the Content Module <span class="badge badge-warning"><i class="icon-asterisk icon-white"></i></span>. Tags can be used in <code>[content_module /]</code> shortcode to randomly display a module from certain tag group - check the <a href="#help">WordPress contextual help</a> for more info on shotcodes or navigate to <strong><em>Content Modules &raquo; Tags</em></strong> for basic shortcode tag.
+										</li>
+										<li>
+											Switch over to <strong>Icon</strong> tab and set <em>"Icon box"</em> checkbox. Read the information on how to set up icons to make them high DPI (Retina) screens ready and tweak additional icon settings. (If required, you can also set a custom module link <span class="badge badge-info"><i class="icon-asterisk icon-white"></i></span>.)
+										</li>
+										<li>
+											Set your custom icon as a featured image (or use predefined icons that are all high DPI screen ready - you can easily upload your own icons).
+										</li>
+										<li>
+											Publish the Content Module. Now you can use <code>[content_module /]</code> shortcode to place the module anywhere on the website (or use dedicated <strong>!LesPaul Content Module</strong> widget in widget areas).
+										</li>
+									</ol>
+								</div>
+								<div class="span4">
+									<p class="uppercase">Content Modules can be used as a content injection to various website areas. You can display it in a page or post content or in any widget area (custom widget included). Content Modules can be styled as icon boxes, so they are perfect for your services presentation (for example). You can even conveniently group them using tags and then have a module generated randomly just by choosing the Content Module tag group <small>(there will never be displayed 2 identical modules from same tag group when randomized)</small>.</p>
+
+									<h5 class="mt20">Display it on website:</h5>
+									<p>Use <code>[content_module /]</code> shortcode to display specific Content Module (or to randomize it from specific tag group) on the page/post. Please check the <a href="#help">WordPress contextual help</a> for more info on shortcode.</p>
+									<p>Or use <strong>!LesPaul Content Module</strong> widget to display any module in any widget area.</p>
+
+									<h5 class="mt20">Content Module types:</h5>
+									<p>
+										<strong>"Content module"</strong><br />
+										This is the default layout of Content Modules (used when "Icon box" isn't set). When featured image set for the module, it is displayed first, then the module title and then the content. You can surely hide the image and the title easily in the shortcode or in widget.
+									</p>
+									<p>
+										<strong>"Icon box"</strong><br />
+										If <em>Icon box</em> option is selected, you can upload your own icon as a module featured image (several icon packs are packed with the theme). Icon boxes can be displayed in 2 layouts: <strong>normal</strong> one will display a small icon on the left and title and content on the right, while <strong>centered</strong> layout displays large icon on the top and title and content below, all text and icon centered. Displayed icon size also depends on whether an icon background color is set for the module.
+									</p>
+
+									<div class="alert alert-success mt20">
+										<h5>Change privilegues</h5>
+										You can change privilegues for this custom post type in theme admin panel in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts</em></strong>.<br /><br />
+										It is possible to set the same privilegues as WordPress Pages have or as Posts have (check the <a href="http://codex.wordpress.org/Roles_and_Capabilities#Capability_vs._Role_Table" target="_blank">WordPress codex</a> on how this privilegues/capabilities affect each user group).
+									</div>
+									<div class="alert alert-error">This custom post can not be disabled.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="contents-faq" class="pt60">FAQ - Frequently Asked Questions <small>What are they and how to use them?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<h4>Adding a New FAQ (Question + Answer)</h4>
+									<img src="bootstrap/img/faq.png" alt="" title="Adding a new FAQ" />
+									<ol>
+										<li>
+											Navigate to <strong><em>FAQ &raquo; Add new answer</em></strong> to create a new FAQ.
+										</li>
+										<li>
+											Type the question inside the post title area and the answer inside post content.
+										</li>
+										<li>
+											Choose existing or assign a new FAQ category.
+										</li>
+										<li>
+											Publish the FAQ. You can then use <code>[faq /]</code> shortcode to display FAQ list on the page/post - please check the <a href="#help">WordPress contextual help</a> for more info on shortcode. Or go directly to <strong><em>FAQ &raquo; FAQ categories</em></strong> and grab a shortcode to display FAQ from specific category.
+										</li>
+									</ol>
+								</div>
+								<div class="span4">
+									<p class="uppercase">The theme offers a handy FAQ (Frequently Asked Questions) management where you can easily add and edit questions (answers, actually ;)) just like posts. FAQ can be grouped into categories that will be used to organize them on display.</p>
+
+									<h5 class="mt20">Display it on website:</h5>
+									<p>Use <code>[faq /]</code> shortcode to display FAQ list on the page/post. Please check the <a href="#help">WordPress contextual help</a> for more info on shortcode.</p>
+
+									<div class="alert alert-success mt20">
+										<h5>Disable this custom post type</h5>
+										You can disable or change privilegues for this custom post type in theme admin panel in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts</em></strong>.<br /><br />
+										It is possible to set the same privilegues as WordPress Pages have or as Posts have (check the <a href="http://codex.wordpress.org/Roles_and_Capabilities#Capability_vs._Role_Table" target="_blank">WordPress codex</a> on how this privilegues/capabilities affect each user group).
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="contents-logos" class="pt60">Logos <small>What are they and how to use them?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<h4>Adding a New Client/Partner Logo</h4>
+									<img src="bootstrap/img/logos.png" alt="" title="Adding a new logo" />
+									<ol>
+										<li>
+											Navigate to <strong><em>Logos &raquo; Add new</em></strong> to create a new logo.
+										</li>
+										<li>
+											Type the client/partner/company name into the title area.
+										</li>
+										<li>
+											Upload a logo image (make sure all the logo images - at least in the same category - are the same dimensions as this will make sure they will be displayed nicely in logo list) and set a custom URL link if required.
+										</li>
+										<li>
+											Set the optional logo category.
+										</li>
+										<li>
+											Publish the logo. You can then use <code>[logos /]</code> shortcode to display logos list on the page/post - please check the <a href="#help">WordPress contextual help</a> for more info on shortcode. Or go directly to <strong><em>Logos &raquo; Categories</em></strong> and grab a shortcode to display logos from specific category.
+										</li>
+									</ol>
+								</div>
+								<div class="span4">
+									<p class="uppercase">Logos custom post can be used to easily manage your clients and parthers logos.</p>
+									<p>They can be grouped into categories, so you can create a separate category for clients and separate category for partners (and for others, of course) and then display them on the website individually.</p>
+
+									<h5 class="mt20">Display it on website:</h5>
+									<p>Use <code>[logos /]</code> shortcode to display logos list on the page/post. You can display even a short description left or right from logos list. Please check the <a href="#help">WordPress contextual help</a> for more info on shortcode.</p>
+
+									<div class="alert alert-success mt20">
+										<h5>Disable this custom post type</h5>
+										You can disable or change privilegues for this custom post type in theme admin panel in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts</em></strong>.<br /><br />
+										It is possible to set the same privilegues as WordPress Pages have or as Posts have (check the <a href="http://codex.wordpress.org/Roles_and_Capabilities#Capability_vs._Role_Table" target="_blank">WordPress codex</a> on how this privilegues/capabilities affect each user group).
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="contents-prices" class="pt60">Prices <small>What are they and how to use them?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<h4>Adding a New Price Column/Package</h4>
+									<img src="bootstrap/img/prices.png" alt="" title="Creating a pricing table" />
+									<ol>
+										<li>
+											Navigate to <strong><em>Prices &raquo; Add new price</em></strong> to create a new price column.
+										</li>
+										<li>
+											Type the price column (package) title into the title area. Add a price package features into unordered list in the post content.
+										</li>
+										<li>
+											Check out the <strong>price settings tabs</strong> and set appropriate options:
+											<ul>
+												<li>
+													<strong>Price set up</strong> tab<br />
+													Here you can set the price cost (including the currency sign) and a note or description text displayed below the price cost. It is also possible to set up a price column position (order) in similar way like it is with WordPress Pages.
+												</li>
+												<li>
+													<strong>Button set up</strong> tab<br />
+													You can set a button text, link and color here.
+												</li>
+												<li>
+													<strong>Styling</strong> tab<br />
+													You can choose the styling of this price column in the pricing table - whether it is a standard price column, featured price column or pricing table legend. Additionally you can set a custom column background color here.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Assign a price to a price table.
+										</li>
+										<li>
+											Publish the price. You can then use <code>[prices /]</code> shortcode to display pricing table on the page/post - please check the <a href="#help">WordPress contextual help</a> for more info on shortcode. Or go directly to <strong><em>Prices &raquo; Tables</em></strong> and grab a shortcode there.
+										</li>
+									</ol>
+								</div>
+								<div class="span4">
+									<p class="uppercase">Prices are used to create a pricing tables. Each price post is basically a price package - a&nbsp;column - in a pricing table.</p>
+
+									<h5 class="mt20">Display it on website:</h5>
+									<p>Use <code>[prices /]</code> shortcode to display pricing table on the page/post. Please check the <a href="#help">WordPress contextual help</a> for more info on shortcode.</p>
+
+									<div class="alert alert-success mt20">
+										<h5>Disable this custom post type</h5>
+										You can disable or change privilegues for this custom post type in theme admin panel in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts</em></strong>.<br /><br />
+										It is possible to set the same privilegues as WordPress Pages have or as Posts have (check the <a href="http://codex.wordpress.org/Roles_and_Capabilities#Capability_vs._Role_Table" target="_blank">WordPress codex</a> on how this privilegues/capabilities affect each user group).
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="contents-projects" class="pt60">Projects <small>What are they and how to use them?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<h4>Adding a New Project</h4>
+									<img src="bootstrap/img/projects.png" alt="" title="Adding a new project" />
+									<ol>
+										<li>
+											Navigate to <strong><em>Projects &raquo; Add new project</em></strong> to create a new project.
+										</li>
+										<li>
+											Type in the project title and set the excerpt text. Optionally you can set the post content <span class="badge badge-warning"><i class="icon-asterisk icon-white"></i></span> (check the "Layout" tab for info about project layout).
+										</li>
+										<li>
+											Set the featured image. The image is required as it will be used as project preview image in projects list on portfolio pages.
+										</li>
+										<li>
+											On <strong>project settings tabs</strong> set the appropriate options:
+											<ul>
+												<li>
+													<strong>Media</strong> tab<br />
+													Here you can set a project type and project main media, like images, video and audio. First set preffered <em>Project media type</em> option as other settings will be revealed according to this selection.
+												</li>
+												<li>
+													<strong>Attributes</strong> tab<br />
+													You can set a project attributes here (any number of attributes, you can even create a predefined group of attribute names in theme admin panel in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts</em></strong>) and custom project URL link (and the link action). You can display project attributes with <code>[project_attributes /]</code> shortcode (check the <a href="#help">WordPress contextual help</a> for more info on shortcode) anywhere in project excerpt or content - by default they are displayed on top of project excerpt.
+												</li>
+												<li>
+													<strong>Heading</strong> tab<br />
+													Tweak the main project heading (or title) display here.
+												</li>
+												<li>
+													<strong>Layout</strong> tab<br />
+													Choose a project layout here, disable several different website areas, set a sidebar (if required - by default it is disabled on projects).
+												</li>
+												<li>
+													<strong>Background</strong> tab<br />
+													You can set main heading area and, if boxed website layout set, the actual project background color and image here.
+												</li>
+											</ul>
+										</li>
+										<li>
+											Optionally assign a project to a project category. Project categories will be used to filter through the projects or to display multiple portfolios.
+										</li>
+										<li>
+											Publish the project. Set up a <a href="#tpl-portfolio"><span class="label label-inverse">Portfolio</span></a> <a href="#pages-templates">page template</a> to display a list of projects on the page or use a <code>[projects /]</code> shortcode to display the projects list anywhere on the website - please check the <a href="#help">WordPress contextual help</a> for more info on shortcode.
+										</li>
+									</ol>
+								</div>
+								<div class="span4">
+									<p class="uppercase">Projects custom post can be used to showcase your work. You can add single image, image slideshow, audio or video projects.</p>
+									<p>Each project type has it's own dedicated icon. You can create your own project types with custom icons by navigating to <strong><em>Projects &raquo; Projcet types</em></strong>. Just set a new project type name, icon and behaviour (if it displays static image, image slideshow, video or audio).</p>
+									<div class="alert alert-error mt20">
+										Please note that once you set your own project types, the default theme predefined ones will not be used and you will have to reset project types for each existing project individually.
+									</div>
+
+									<h5 class="mt20">Display it on website:</h5>
+									<p>Use <a href="#tpl-portfolio"><span class="label label-inverse">Portfolio</span></a> <a href="#pages-templates">page template</a> to display a list of projects on the page.</p>
+									<p>Or use <code>[projects /]</code> shortcode to display projects list anywhere on the website (even with filter and short description left or right from the projects list). Please check the <a href="#help">WordPress contextual help</a> for more info on shortcode.</p>
+									<p>There is also dedicated custom <strong>!LesPaul Projects</strong> widget to display projects list easily in widget areas.</p>
+
+									<div class="alert alert-success mt20">
+										<h5>Disable and tweak this custom post type</h5>
+										You can set predefined project attribute names, project layout, disable or change project privilegues in theme admin panel in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts</em></strong>.<br /><br />
+										It is possible to set the same privilegues as WordPress Pages have or as Posts have (check the <a href="http://codex.wordpress.org/Roles_and_Capabilities#Capability_vs._Role_Table" target="_blank">WordPress codex</a> on how this privilegues/capabilities affect each user group).
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="contents-staff" class="pt60">Staff <small>What is it and how to use it?</small></h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span7">
+									<h4>Adding Staff Members</h4>
+									<img src="bootstrap/img/staff.png" alt="" title="Adding new staff" />
+									<ol>
+										<li>
+											Navigate to <strong><em>Staff &raquo; Add new member</em></strong> to add a new staff.
+										</li>
+										<li>
+											Type in person's name in title area and add some description text into content.
+										</li>
+										<li>
+											Set the featured image - staff profile photo.
+										</li>
+										<li>
+											If rich staff member profiles are enabled in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts &raquo; "Staff"</em></strong> each staff will have own staff info page and additional <strong>excerpt</strong> area will be displayed in staff list as a short staff description (you can omit this) - it will not be displayed on actual staff page.
+										</li>
+										<li>
+											Check out options in <strong>staff info tabs</strong> and set appropriate ones:
+											<ul>
+												<li>
+													<strong>Position</strong> tab<br />
+													You can set a staff member position here.
+												</li>
+												<li>
+													<strong>Contact</strong> tab<br />
+													These contact information will be displayed also in staff list. You can set a phone, e-mail, LinkedIn and Skype contact here. Please place the social network connections (icons) directly into content and/or excerpt area - use a <code>[social /]</code> shortcode.
+												</li>
+												<li>
+													<strong>Sidebar</strong> tab<br />
+													This tab will be available only when rich staff member profiles enabled. You can set a staff profile page sidebar widget area and its position here.
+												</li>
+												<li>
+													<strong>Background</strong> tab<br />
+													You can set main heading area and, if boxed website layout set, the actual staff page background color and image here.
+												</li>
+											</ul>
+										</li>
+										<li>
+											You can group staff members in departments and then display specific department staff with description on the page or post.
+										</li>
+										<li>
+											Hit the <strong>[Publish]</strong> button. You can then use <code>[staff /]</code> shortcode to display staff list on the page/post - please check the <a href="#help">WordPress contextual help</a> for more info on shortcode.
+										</li>
+									</ol>
+								</div>
+								<div class="span4">
+									<p class="uppercase">With staff custom post you can easily manage your company's staff info. By default only basic information about staff memebers is displayed (and all of this information is displayed in staff list) but you can enable rich staff members profiles in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts &raquo; "Staff"</em></strong> and create a custom staff profile pages.</p>
+
+									<h5 class="mt20">Display it on website:</h5>
+									<p>Use <code>[staff /]</code> shortcode to display staff members list anywhere on the website (even with short description left or right from the staff list). Please check the <a href="#help">WordPress contextual help</a> for more info on shortcode.</p>
+
+									<div class="alert alert-success mt20">
+										<h5>Disable and tweak this custom post type</h5>
+										You can set whether to use rich staff profiles, disable or change privilegues for this custom post type in theme admin panel in <strong><em>Appearance &raquo; Theme Options &raquo; Custom posts</em></strong>.<br /><br />
+										It is possible to set the same privilegues as WordPress Pages have or as Posts have (check the <a href="http://codex.wordpress.org/Roles_and_Capabilities#Capability_vs._Role_Table" target="_blank">WordPress codex</a> on how this privilegues/capabilities affect each user group).
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="menus">Menu <small>Creating and Using Navigational Menus</small></h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<p><strong>!LesPaul</strong> supports WordPress Menus, so you can easily create custom navigational menus directly in <strong><em>Appearance &raquo; Menus</em></strong>.</p>
+							<p>Custom menus may contain links to pages, categories, custom links or other content types (use the <strong>[Screen Options]</strong> button in upper right corner of the screen to decide which ones to show on the menu edit screen). You can specify a different navigation label for a menu item as well as other attributes. You can create multiple menus. To display menus on website you need to assign them to menu locations or use them in conjunction with the Custom Menus widget.</p>
+							<p>The theme allows you to create as many menus as you want. However these menus can be placed only into predefined locations (see the illustration image for how the location metabox looks like). The main predefined menu locations are:</p>
+							<ul>
+								<li>
+									<strong>Main navigation</strong><br />
+									This is main navigation area in the header of the website. The menu can be nested and hierarchically organised. Subtle animation is applied when revealing submenu items, but the menu will work even with JavaScript disabled.
+								</li>
+								<li>
+									<strong>Footer menu</strong><br />
+									This menu will be displayed in website footer. It will be displayed as one level menu (without sub-menus). You would most likely want to display the same menu as assigned to main navigation location here.
+								</li>
+								<li>
+									<strong>Sitemap links</strong><br />
+									Instead of placing a list of pages into sitemap page, this offers a greater control over links. Most of the time you would display a main navigation menu here.
+									<div class="alert alert-warning">
+										Please note that menu title will be used as section title on sitemap page.
+									</div>
+								</li>
+							</ul>
+							<p>Besides these predefined menu locations there will be new ones created for each landing page. This will allow you to completly disable menu on specific landing pages (simply by not assigning any menu to the location) or to use different menu on such pages.</p>
+						</div>
+						<div class="span4">
+							<img src="bootstrap/img/menu-locations.png" alt="" class="img-polaroid" title="Menu locations illustration image" />
+						</div>
+					</div>
+
+					<h3 id="menus-menu" class="pt60">Creating a Menu</h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span4">
+									<ol>
+										<li>
+											To create a new custom menu, click on the <strong>[+]</strong> tab, give the menu a name, and click Create Menu.
+										</li>
+										<li>
+											Next, add menu items from the boxes on the left. You’ll be able to edit the information for each menu item, and can drag and drop to put them in order. You can also drag a menu item a little to the right to make it a submenu - to create menus with hierarchy. Drop the item into its new nested placement when the dotted rectangle target shifts over, also a little to the right.
+										</li>
+										<li>
+											When the menu item is on place, you can edit its label and properties. Just click the down arrow in right corner of the menu item to reveal available menu item properties.
+											<div class="alert alert-info">
+												<p>For better SEO it is recommended to set up a menu item <em>Title Attribute</em> which will be displayed when mouse hovers the item in menu. Also, <strong>!LesPaul</strong> theme supports menu item description.</p>
+												<p>If the <em>Description</em> menu item attribute is not displayed, click the <strong>[Screen Options]</strong> tab at the upper right corner of the screen and check the attribute in <strong>Show advanced menu properties</strong> section.</p>
+											</div>
+										</li>
+										<li>
+											Don’t forget to click <strong>[Save Menu]</strong> when you’re finished.
+										</li>
+									</ol>
+								</div>
+								<div class="span7">
+									<img src="bootstrap/img/menus.png" alt="" class="img-polaroid" title="Creating menus" />
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="alert alert-info video-instructions">
+							<span class="badge badge-warning">&nbsp;<i class="icon-facetime-video icon-white"></i>&nbsp;</span>&nbsp; <strong>Video instruction: "Advanced menus"</strong>
+						</div>
+						<div class="video-container">
+							<iframe src="http://player.vimeo.com/video/59817341" width="1280" height="720" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						</div>
+
+					<h3 id="menus-buttons" class="pt60">Adding Buttons to a Menu</h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span4">
+									<div class="alert alert-info">
+										For this functionality you will need to set the menu item <em>CSS Classes</em> attributes. To enable this attribute, check it in <strong>[Screen Options]</strong> tab at the upper right corner of the screen, in <strong>Show advanced menu properties</strong> section.
+									</div>
+									<ol>
+										<li>
+											To convert a menu item into a button you need to assign one of the button classes to it. Please check the contextual help (click the <strong>[Help]</strong> tab in the upper right corner of the screen) for all available CSS classes you can assign to a menu.
+										</li>
+										<li>
+											Once the help is revealed, click the "Advanced Menus" tab on the left and read the instructions in <strong>How to make the menu item a button?</strong> section.
+										</li>
+									</ol>
+								</div>
+								<div class="span7">
+									<img src="bootstrap/img/menu-help.png" alt="" title="Contextual help on menu edit page" />
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 id="menus-icons" class="pt60">Assigning Icons to Menu Items</h3>
+					<div class="row">
+						<div class="span1">
+						</div>
+						<div class="span11">
+							<div class="row">
+								<div class="span4">
+									<div class="alert alert-info">
+										For this functionality you will need to set the menu item <em>CSS Classes</em> attributes. To enable this attribute, check it in <strong>[Screen Options]</strong> tab at the upper right corner of the screen, in <strong>Show advanced menu properties</strong> section.
+									</div>
+									<ol>
+										<li>
+											To add an icon to menu item you need to assign one of the icon classes to it. Please check the contextual help (click the <strong>[Help]</strong> tab in the upper right corner of the screen) for all available CSS classes you can assign to a menu.
+										</li>
+										<li>
+											Once the help is revealed, click the "Advanced Menus" tab on the left and read the instructions in <strong>How to insert an icon into menu item?</strong> section.
+											<div class="alert alert-info mt20">
+												<h5>TIP</h5>
+												<p>All the icon classes are listed in a table in contextual help. If you are editing a long menu it could be quite time consuming and awkward to go to the top of the screen to copy the icon class from table and then scroll down to menu item to insert it.</p>
+												<p>That's why the table can be pinned to the right edge of the browser window and it will slide out when you hover over it. Just click the <span class="label label-success">Stick table right</span> link - see the image. Note, that you will still need to leave contextual help open.</p>
+											</div>
+										</li>
+									</ol>
+								</div>
+								<div class="span7">
+									<img src="bootstrap/img/menu-icons.png" alt="" class="img-polaroid" title="Menu icons table" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="widgets">Widgets and Widget Areas</h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<h3 id="widgets-areas">Widget Areas</h3>
+							<p>Widget areas can be used as sidebars, displayed using <code>[widgets /]</code> shortcode (check the <a href="#help">WordPress contextual help</a> for more info on shortcode) or displayed in predefined website areas, such as footer.</p>
+							<p>You can open the widget area just by clicking the arrow right from its title. Assign widgets to the area just by dragging them into open widget area below its description text. When no widget is assigned to the widget area, it will not be displayed.</p>
+							<p><strong>!LesPaul</strong> creates 5 predefined widget areas <span class="badge badge-success"><i class="icon-asterisk icon-white"></i></span>:</p>
+							<ul>
+								<li>
+									<strong>Default Sidebar</strong><br />
+									This area is displayed as default sidebar.
+								</li>
+								<li>
+									<strong>Top Bar Widgets</strong><br />
+									Area will be displayed horizontally and can take maximum of 2 widgets (most suitable are Custom Menu, Text or Search widget).
+								</li>
+								<li>
+									<strong>Above Footer Widgets</strong><br />
+									Will display up to 5 widgets horizontally above the website footer. This area can be disabled per page basis.
+								</li>
+								<li>
+									<strong>Footer Widgets</strong><br />
+									Website footer widget area takes up to 5 widgets and lets you create amazing website footers.
+								</li>
+								<li>
+									<strong>Clients Area Access Denied</strong><br />
+									This widget area will be available only if <strong>Client Area</strong> functionality is enabled and will be displayed on "Access denied" pages.
+								</li>
+							</ul>
+							<div class="alert alert-info">If the widget area is displayed horizontally, it will take up to 5 widgets that will be automatically layed out into columns.</div>
+							<p>In addition to predefined widget areas you can create as many custom widget areas <span class="badge badge-info"><i class="icon-asterisk icon-white"></i></span> as you need. Just navigate to theme admin panel - <strong><em>Appearance &raquo; Theme Options &raquo; Widget Areas</em></strong>.</p>
+
+							<h3 id="widgets-custom" class="pt60">Custom Widgets</h3>
+							<p>The theme also comes with these custom widgets included <span class="badge badge-warning"><i class="icon-asterisk icon-white"></i></span>:</p>
+							<ul>
+								<li>
+									<strong>!LesPaul Contact</strong><br />
+									Displays custom specially styled contact information (including opening hours and spam protected email).
+								</li>
+								<li>
+									<strong>!LesPaul Content Module</strong><br />
+									Displays specific Content Module custom post (in normal or centered layout).
+								</li>
+								<li>
+									<strong>!LesPaul Posts</strong><br />
+									Advanced posts list. Can display recent, random, popular or upcoming posts from selected categories or from all posts. Displays also post featured image (post type icon if no featured image set).
+								</li>
+								<li>
+									<strong>!LesPaul Projects</strong><br />
+									Displays a list of random or recent projects (their featured images only).
+								</li>
+								<li>
+									<strong>!LesPaul Submenu</strong><br />
+									Displays submenu of subpages (of the current page). Can display also page parents or just children pages. You can select how to order the pages.
+								</li>
+								<li>
+									<strong>!LesPaul Twitter</strong><br />
+									Displays tweets and description from specific Twitter account.
+								</li>
+							</ul>
+						</div>
+						<div class="span4">
+							<h4>Widgets and Widget Areas:</h4>
+							<img src="bootstrap/img/widgets.png" alt="" title="Widgets and widget areas" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="shortcodes">Styles and Shortcodes</h2>
+			<div class="row">
+				<div class="span1"></div>
+				<div class="span11">
+					<h3 id="shortcodes-generator">Shortcodes and Shortcode Generator <small>How to use it?</small></h3>
+					<div class="row">
+						<div class="span7">
+							<h4>Shortcodes</h4>
+							<p><strong>Shortcodes</strong> are basically commands you place into page/post/text widget content that will create content elements that are not possible to create or would be otherwise complicated to create. Some shortcodes can be replaced with <a href="#shortcodes-styles">Styles</a> in this theme, but with shortcode you have greater flexibility as you can edit them easily any time in the future (although they might not look good in content editor unlike Styles).</p>
+							<p>WordPress offers couple of shortcodes natively and one of them is <code>[gallery /]</code> shortcode. This theme even enhaces this shortcode's functionality, but as WordPress styles it in visual editor, you will have to switch to "Text" editor to edit it.</p>
+
+							<h4>Shortcode Generator</h4>
+							<p>With integrated <strong>Shortcode Generator</strong> it is very easy to choose, tweak and insert any shortcode into the post or page content. Simply click the <strong>[S]</strong> button in visual editor, select a shortcode from dropdown on top, tweak its settings and press the <strong>[Insert into editor]</strong> button to insert the shortcode at the current position of the cursor in content area.</p>
+							<p>As you can't use <strong>Shortcode Generator</strong> everywhere (visual editor has to be present on the page) there is a complete shortcodes documentation in <a href="#help">WordPress contextual help</a> - feel free to check it out.</p>
+
+							<div class="alert alert-error mt20">Please note that <strong>Shortcode Generator</strong> doesn't support Internet Explorer browsers.</div>
+						</div>
+						<div class="span4">
+							<img src="bootstrap/img/shortcodes-generator.png" alt="" title="Shortcodes Generator" />
+						</div>
+					</div>
+
+					<h3 id="shortcodes-styles" class="pt60">[Styles] button <small>How to use it?</small></h3>
+					<div class="row">
+						<div class="span7">
+							<p><strong>[Styles]</strong> button can be found (the same like Shortcode Generator button) in second row of buttons in WordPress visual editor (please note that you might need to click the <strong>[Show/Hide Kitchen Sink]</strong> button at the end of the first button row to display the second row of buttons). It is basically a dropdown button with several styles groups and actual styles.</p>
+							<p>When you click the style it will be applied on selected text in content area. Actually, you should check the little question mark icon (<i class="icon-question-sign"></i>) right from style name (or style group name) for information on how to apply the specific style on content element.</p>
+							<img src="bootstrap/img/visual-editor.png" alt="" title="Applying styles" class="img-polaroid img-clear" />
+							<p>The biggest advantage styles have over shortcodes is that they create instant visual feedback and degrades gracefully when you change the theme and use some other that doesn't support the styles. This is caused by creating direct HTML elements in WordPress visual editor.</p>
+							<p>However, this might not be desirable for non-HTML savvy person as to edit a style in the future you would have to switch to HTML editor or you would have to remove all styles from the selected content element (click the <strong>[Remove formatting]</strong> button - the rubber button -  right from <strong>[Styles]</strong> button) and apply different styles afterwards. This could be more time-consuming solution in comparison to shortcodes where you just edit parameters.</p>
+							<p>Another drawback for styles might be inability to replace all shortcodes, so for some functionality you will have to use a shortcode anyway.</p>
+
+							<div class="alert alert-success mt20">
+								<p>As you can see, <strong>!LesPaul</strong> gives you these two powerful but different approaches to create a content.<br />To choose the right approach is up to you, but as usually, probably the best result is achieved by fusion of both techniques.</p>
+								<p>Just for inspiration, I use Styles (and actual HTML elements) whereever possible. Use shortcodes just when there is no other way to dislay what you want.</p>
+							</div>
+						</div>
+						<div class="span4">
+							<img src="bootstrap/img/styles-button.png" alt="" title="[Styles] button" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="options">Theme Options <small>How to use theme admin panel?</small></h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<h4>Using Theme Admin Panel</h4>
+							<img src="bootstrap/img/admin-panel.png" alt="" title="Illustrational image of theme admin panel" />
+							<ol>
+								<li>
+									<p>All the theme options can be set in theme admin panel. To display it navigate to <strong><em>Appearance &raquo; Theme Options</em></strong> in WordPress admin menu.</p>
+								</li>
+								<li>
+									<p>After admin panel is displayed, choose the main options category from the admin panel left pane and click the tab at the top to display subcategory options group (the first subcategory tab is selected by default).</p>
+									<p>Panel contains many different but intuitive input fields. Please, read the option description for more information on each option and how to set it up <span class="badge badge-info"><i class="icon-asterisk icon-white"></i></span>.</p>
+									<p>Some options have preset values. To recall a preset value for an option click the option reset button far right from the option name <span class="badge badge-warning"><i class="icon-asterisk icon-white"></i></span>.
+								</li>
+								<li>
+									After you set all the required options, don't forget to save your changes by clicking the <strong>[Save changes]</strong> button.
+								</li>
+							</ol>
+						</div>
+						<div class="span4">
+							<p class="uppercase">This theme comes with beautiful <strong>WebMan Admin Panel</strong> where you can find all the theme settings. It is as easy to use as it gets and offers several different intuitive options fields and input types which help to set the right option value.</p>
+							<p>When you install the theme, you will be presented with <strong>Quickstart Guide</strong>. Please read through the steps in this guide carefully and set what is required for your website. The guide is branded by WebMan, but don't worry, as soon as you hit the <strong>[Save changes]</strong> button for the first time, the admin panel will be debranded. You can actually set your branding to it and brand the WordPress administration and login screen (the actual website frontend branding is sure thing ;)).</p>
+							<a href="bootstrap/img/quickstart.png" target="_blank"><img src="bootstrap/img/quickstart-small.png" alt="" title="QuickStart Guide displayed after theme installation" class="img-polaroid img-clear" /></a>
+							<p>All, theme options are self-explanatory or are described well directly in admi panel.</p>
+
+							<div class="alert alert-info mt20">
+								<h5>Exporting / importing the theme settings</h5>
+								You can export and save your theme settings and later import them back in <strong><em>Appearance &raquo; Options Export/Import</em></strong> section. Please read the available options description for more info on how to export or import theme settings.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="seo">Search Engine Optimization and Traffic Tracking</h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<h4>Search Engine Optimization</h4>
+							<p>The theme is coded with best <abbr title="Search Engine Optimization">SEO</abbr> practices in mind, meaning it is ready to be displayed on top of search results in search engines such as Google.</p>
+							<p>Please note though, that this is just basic optimization and you will have to push it further to make the real deal with SEO. For such cases I recommend incredible <a href="http://wordpress.org/extend/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast</a> plugin. The theme integrates with this plugin seamlesly and you can even use its SEO optimized breadcrumbs (once you activate those in plugin, the theme breadcrumbs will be replaced with plugin ones - the styling will be preserved).</p>
+							<p>You can also read articles about <a href="http://yoast.com/articles/wordpress-seo/" target="_blank">how to make your WordPress site SEO optimized</a>.</p>
+
+							<div class="alert alert-success">
+								The theme is also <a href="http://yoast.com/push-rel-author-head/" target="_blank"><strong>Google Authorship</strong> ready</a> (contains all the required <code>rel</code> attributes - you can even use them in <code>[social /]</code> shortcode), you just need to <a href="http://www.youtube.com/watch?v=SYTWxWImC8Y" target="_blank">activate it in the plugin</a>!
+							</div>
+						</div>
+						<div class="span4">
+							<h4>Traffic Tracking</h4>
+							<p>The theme lets you insert a custom (<strong>Google Analytics</strong> recommended) tracking scripts. Just insert your script (including <code>&lt;script>&lt;/script></code> HTML tags) into <strong>Apperance &raquo; Theme Options &raquo; Tracking</strong>.</p>
+							<p>Note that you can also set <strong>not to track the logged in users</strong> (and even specify the minimal user account group for this). It means whenever a user with specific user group is logged in to your website, none of the tracking scripts inserted into <em>"Scripts"</em> textarea will be outputed and used.</p>
+							<p>As a bonus, you can add custom tracking scripts for each <a href="#tpl-landing"><span class="label label-inverse">Landing page template</span></a> individually!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="localization">Localization <small>How to translate the theme?</small></h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row-fluid">
+						<div class="span6">
+							<h4>Translating the Theme</h4>
+							<ol>
+								<li>Make a copy of the original .PO file in <code>lespaul/langs/</code> folder.</li>
+								<li>You need to rename the coppied file. The naming convention is based on the language code (e.g. "pt" for Portuguese) followed with underscore and the country code (e.g. "BR" for Brazil). So, the Brazilian Portuguese file would be named as <code>pt_BR.po</code>.</li>
+								<li>Use <a href="http://www.poedit.net/" target="_blank"><strong>Poedit</strong></a> to translate the file and export (save) it as MO translation file.</li>
+								<li>Upload translated <code>pt_BR.mo</code> file into the folder of original PO file.</li>
+							</ol>
+							<div class="alert alert-info mt20">
+								The theme is compatible with great <a href="http://wpml.org/" target="_blank"><strong>WPML</strong> - The WordPress Multilingual Plugin</a>.
+							</div>
+						</div>
+						<div class="span6">
+							<p><strong>!LesPaul</strong> theme is completely translation ready. You can translate the theme using a tool like <a href="http://www.poedit.net/" target="_blank"><strong>Poedit</strong></a>. All the required PO translation files can be found in the theme's <code>lespaul/langs/</code> folder and subsequent subfolders.</p>
+							<p>For easier translation the theme localization files are split into these sections:</p>
+							<ul>
+								<li>Website frontend (<code>lespaul/langs/lespaul_domain.po</code> file) - this is the bare minimum to translate</li>
+								<li>Necessary WordPress admin options (<code>/langs/admin/lespaul_domain_adm.po</code> file) - recommended to translate for multilingual WordPress administration</li>
+								<li>Contextual help files (<code>/langs/help/lespaul_domain_help.po</code> file)</li>
+								<li>Theme admin panel translation (<code>/langs/wm-admin-panel/lespaul_domain_panel.po</code> file) - translate this only for administrators (if required)</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="help">Contextual Help <small>Documentation integrated into WordPress contextual help</small></h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<div class="row">
+						<div class="span7">
+							<img src="bootstrap/img/help.png" alt="" title="WordPress contextual help" />
+						</div>
+						<div class="span4">
+							<p>This theme extends WordPress contextual help with many useful topics. You will also find a complete shortcodes documentation here. If you get stuck using the theme, please check this source first. If the topic is not displayed in contextual help, you will find a link to online version of this <strong>User Manual</strong> there.</p>
+							<p>To access contextual help simply click the <strong>[Help]</strong> button in the upper right corner of WordPress admin screens.</p>
+							<p>You can see the sample instructions on how to use contextual help in the image.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="tips">Tips and Tricks <small>Additional tips for the theme</small></h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<h3 id="tips-plugins">Additional Plugins</h3>
+					<div class="row">
+						<div class="span7">
+							<p>Here is the list of additional useful recommended plugins:</p>
+							<ul>
+								<li>
+									<a href="http://wpml.org/" target="_blank"><strong>WPML - The WordPress Multilingual Plugin</strong></a><br />
+									This is a perfect solution for making your website multilingual.
+								</li>
+								<li>
+									<a href="http://jetpack.me/" target="_blank"><strong>Jetpack by WordPress.com</strong></a><br />
+									The Jetpack plugin was created directly by WordPress and offers so much features. The most useful ones are <strong>social networks sharing buttons</strong> (fully styled with this theme) or easy to use <strong>form generator</strong>. (Please note that the theme doesn't support plugin's Infinite Scroll feature.)
+								</li>
+								<li>
+									<a href="http://wordpress.org/extend/plugins/post-types-order/" target="_blank"><strong>Post Types Order</strong></a><br />
+									This plugin lets you reorganize posts, projects, pricing table columns and other contents of this theme with ease of drag and drop functionality.
+								</li>
+							</ul>
+						</div>
+						<div class="span4">
+							<div class="alert alert-info">
+								You can read more about <a href="http://codex.wordpress.org/Managing_Plugins" target="_blank">WordPress plugins management</a> on codex pages.
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tips-child-theme" class="pt60">Child Themes</h3>
+					<div class="row">
+						<div class="span7">
+							<ol>
+								<li>
+									There is a sample child theme included with the theme. To install and activate it just navigate to <strong><em>Appearance &raquo; Themes &raquo; Install Themes &raquo; Upload</em></strong> and select the zipped child theme file (the <code>lespaul-child-theme.zip</code> file) inside <code>install/child-theme</code> subfolder of the previously downloaded and unzipped theme package folder on your computer.
+								</li>
+								<li>
+									Once the child theme is installed, activate it.
+								</li>
+								<li>
+									<p>Now you can put all your custom CSS styles into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/lespaul-child-theme/style.css</code> file.</p>
+									<div class="alert alert-success">
+										Please note that with <strong>!LesPaul</strong> you don't have to include <code>@import url("../PARENT_THEME/style.css");</code> stylesheet. Not only that it won't work ;) but also this method is a bit slow, so <strong>!LesPaul</strong> inserts your child theme stylesheet into a main generated stylesheet automatically.
+									</div>
+									<p class="mt20">If you also want to change functionality of the original <strong>!LesPaul</strong> theme, copy the function you want to change from the original (parent) <strong>!LesPaul</strong> theme and place the function into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/lespaul-child-theme/functions.php</code>. You can freely modify any theme's function here.</p>
+									<p>This way you can update the parent (original) <strong>!LesPaul</strong> theme without any worry as all your custom styles and functionality are kept in a child theme.</p>
+								</li>
+							</ol>
+							<div class="alert alert-error">
+								Please note I <strong>do not provide support on any custom CSS or custom PHP functions you create/change</strong>. However, I will do my best to offer you some useful tips on <a href="http://support.webmandesign.eu" target="_blank">WebMan Support Forums</a>.
+							</div>
+						</div>
+						<div class="span4">
+							<p class="uppercase">If you need to make styling or functional changes to the theme, please use the WordPress native <strong>child theme</strong> functionality. You can read more about <a href="http://codex.wordpress.org/Child_Themes" target="_blank">child themes on WordPress codex pages</a>. A sample child theme (ready to work with) is packed with the theme, just intall and tweak it to your needs.</p>
+						</div>
+					</div>
+
+					<h3 id="tips-icons" class="pt60">Changing Icon Font</h3>
+					<div class="row">
+						<div class="span7">
+							<ol>
+								<li>
+									Go to <a href="http://fontello.com/" target="_blank"><strong>Fontello - icon fonts generator</strong></a> website.
+								</li>
+								<li>
+									Select the icons you want to use on your website by clicking on them (or click and drag for multiple selection). Deselect the icon by clicking the highlighted ones.
+									<div class="alert alert-error">
+										Please don't forget to check the information about the specific icon font group licencing.
+									</div>
+									<div class="alert alert-info">
+										Once you choose your icons, you can optionally tweak their class names and codes on "Edit Names" and "Edit Codes" tab.
+									</div>
+								</li>
+								<li>
+									Once you choose your icons click the red <strong>Download webfont (##)</strong> button in the upper right corner.
+								</li>
+								<li>
+									Save and unpack the ZIP file on your computer (the name of the folder should look something like <code>fontello-46ca5140</code> for example).
+								</li>
+								<li>
+									Use an FTP client (such as <a href="http://filezilla-project.org/" target="_blank"><strong>FileZilla</strong></a>) to upload all the content of your unpacked Fontello folder into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/lespaul/assets/font/custom/</code> folder.
+									<div class="alert alert-alert">
+										Please don't copy the actual <code>fontello-46ca5140</code> (for example) folder. Copy <strong>its content</strong>.
+									</div>
+								</li>
+								<li>
+									Navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Design &raquo; Fonts</em></strong>.
+								</li>
+								<li>
+									Scroll down and empty the content of <em>"Fontello font CSS classes"</em> textarea and press <strong>[Save Changes]</strong> button.
+								</li>
+								<li>
+									A warning message appears asking you to resave the settings to save changes to database. Just press <strong>[Save Changes]</strong> button again.
+									<div class="alert alert-success">
+										<h5>Why need to resave the settings?</h5>
+										The theme will regenerate all the icon classes automatically after first pressing of <strong>[Save Changes]</strong> button. After checking that icon-classes have been regenerated successfully (the content of <em>"Fontello font CSS classes"</em> textarea changes) you need to re-save the settings again to record the classes in the WordPress database.
+									</div>
+								</li>
+								<li>
+									Now you can use your custom icons. You can check if they have been applied in <a href="#shortcodes">Shortcode Generator</a> when inserting <code>[icon /]</code> shortcode for example. Or during creation of <a href="#contents-projects">new project type</a>.
+								</li>
+							</ol>
+						</div>
+						<div class="span4">
+							<p class="uppercase">The theme uses <a href="http://fontello.com/" target="_blank"><strong>Fontello - icon fonts generator</strong></a> to insert custom icons font. All the icons in such icon fonts are high DPI / Retina screen ready, so they will look awesome on any device. There are 200 icons already predefined in the theme, however, if you want to change them, follow the instructions left to upload your own icons selection.</p>
+
+							<div class="alert alert-success">
+								To revert back to theme's predefined icons just delete the content of <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/lespaul/assets/font/custom/</code> folder and reload the icons classes in theme admin panel - follow the steps 6), 7) and 8).
+							</div>
+							<div class="alert alert-error">
+								<strong>IMPORTANT:</strong><br />If you've aplied predefined theme icons on your website previously and you've changed the icon font to custom one, you will need to go through the previously applied icons and change them as most likely the icon classes have been changed.
+							</div>
+						</div>
+					</div>
+
+					<h3 id="tips-imagefield" class="pt60">Custom Image Input Field <small>Why there is no image applied?</small></h3>
+					<div class="row">
+						<div class="span7">
+							<img src="bootstrap/img/set-up-image.png" alt="" title="Setting up image with custom image input field" />
+							<ol>
+								<li>
+									Click the <strong>[+]</strong> button of custom image input field. WordPress media uploader will appear. Either upload an image or choose it from Media Library - click the "Show" link right from image thumb and title to display image attributes.
+								</li>
+								<li>
+									Choose the image size you want to use.
+								</li>
+								<li>
+									<strong>Important step:</strong> make sure the actual image URL is set in <em>Link URL</em> field. You can set this by clicking the <strong>[File URL]</strong> button below the input field.
+								</li>
+								<li>
+									Click the <strong>[Insert into post]</strong> button to insert image URL into custom image input field. The image preview should also appear below the input field. <span class="badge badge-warning"><i class="icon-asterisk icon-white"></i></span>
+								</li>
+							</ol>
+						</div>
+						<div class="span4">
+							<p class="uppercase">Sometimes you may wonder why the image wasn't applied when you use <strong>!LesPaul</strong>'s custom image input field. Please, make sure you use the custom input field according to instructions on the left. Most of the theme's images has to be hosted locally (meaning you can not set background images URL from external source for example). This is to make the theme as much high DPI / Retina screen compatible as possible.</p>
+						</div>
+					</div>
+
+					<h3 id="tips-map" class="pt60">Custom Map Styles</h3>
+					<div class="row">
+						<div class="span7">
+							<ol>
+								<li>
+									Navigate to <strong><em>Appearance &raquo; Theme Options &raquo; Design &raquo; Map</em></strong>.
+								</li>
+								<li>
+									Click the <em>"external application to create styling JSON"</em> link and use the application to create your own map design. When done, click the <strong>[Show JSON]</strong> button in <strong>Map Style</strong> section on the right of the external application screen.
+								</li>
+								<li>
+									Copy the JSON string from the opened popup window and insert it into <strong><em>Appearance &raquo; Theme Options &raquo; Design &raquo; Map &raquo;</em></strong> <em>"Custom Google Map styling JSON"</em> textarea (make sure the string is inserted as plain text, no formatting applied).
+								</li>
+								<li>
+									Choose a preffered marker color for your custom map style in <em>"Marker color for custom map style"</em>.
+								</li>
+								<li>
+									Press <strong>[Save Changes]</strong> button to save your map styles.<br />To use the new map style, create a page with <a href="#tpl-map"><span class="label label-inverse">Map</span></a> page template assigned and make sure the <em>"Use default map styling"</em> option on "Map" tab of page settings tabs is not checked.
+								</li>
+							</ol>
+						</div>
+						<div class="span4">
+							<p class="uppercase"><strong>!LesPaul</strong> lets you use default Google Map styling or style the map to your needs. Just follow the instructions left to apply your custom map styles.</p>
+						</div>
+					</div>
+						<div class="alert alert-info video-instructions">
+							<span class="badge badge-warning">&nbsp;<i class="icon-facetime-video icon-white"></i>&nbsp;</span>&nbsp; <strong>Video instruction: "Style the map"</strong>
+						</div>
+						<div class="video-container">
+							<iframe src="http://player.vimeo.com/video/59817994" width="1280" height="720" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+						</div>
+
+					<h3 id="tips-images" class="pt60">Minimal image sizes</h3>
+					<div class="row">
+						<div class="span11">
+							<p>During the first theme setup (when <a href="#options">Quickstart Guide</a> is displayed) it is highly recommended to choose which image formats (aspect ratios) will be used in different website sections. This setting will also affect the minimal image size that you upload into WordPress. As the theme scales and reorganizes the content depending on the screen resolution it is viewed on (the responsive design feature), it requires images of <strong>minimal width of half of the website content area width</strong> (this means if you are using 940px content width layout, minimal image width would be 470px, if you set 1160px website width, the minimal image width would be 580px - website width can be set in <strong><em>Appearance &raquo; Theme Options &raquo; General &raquo; Basics &raquo;</em></strong> <em>"Website width"</em>).</p>
+							<p>The best and recommended upload image width would, however, be at least equal to the width of the website - so <strong>940px or 1160px</strong> (or the size you set up in <strong><em>Settings &raquo; Media</em></strong> for large size if it is bigger).</p>
+							<p>The height of the image depends on previously mentioned image formats selected. As an example, if you choose a blog posts featured image to be displayed in 2:1 aspect ratio, you should upload images of minimal size of 940&times;470px for post featured images.</p>
+							<p>WordPress will rescale and crop the images to selected formats (aspect ratios) automatically during the image upload process.</p>
+							<p>The rule of thumb here: the bigger the image, the better (although, keep the actual storage size of the files to minimum).</p>
+							<div class="alert alert-success">
+								<h5>High DPI / Retina display support</h5>
+								<p>If you want your website to be fully high DPI (also called Retina) screen compatible, just double the sizes of uploaded images (you can lower the quality of JPEG images a bit to reduce the storage size of the image file). The theme itself is already optimized for high DPI screens.</p>
+								<p>To make sure your content images are high DPI screen ready <a href="http://www.totorotimes.com/news/retina-display-wordpress-plugin/" target="_blank">you can read a tutorial</a> and <a href="http://wordpress.org/extend/plugins/wp-retina-2x/" target="_blank">use a specialized WordPress plugin</a> (its installation will be recommended to you after theme activation).</p>
+								<p>If you want to dive more into high DPI screen problematics, I recommend reading <a href="http://retinafy.me/" target="_blank"><strong>Retinafy your web sites &amp; apps</strong></a> book.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		<h2 id="credits">Sources and Credits <small>Scripts, images, icons used to build !LesPaul</small></h2>
+			<div class="row">
+				<div class="span1">
+				</div>
+				<div class="span11">
+					<ul class="columns">
+						<li><a href="http://jquery.com/" target="_blank">jQuery</a></li>
+						<li><a href="http://fancybox.net/" target="_blank">Fancybox</a></li>
+
+						<li><a href="http://codecanyon.net/item/layerslider-wp-the-wordpress-parallax-slider/1362246" target="_blank">LayerSlider WP</a></li>
+						<li><a href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380" target="_blank">Slider Revolution!</a></li>
+						<li><a href="http://soliloquywp.com/" target="_blank">Soliloquy slider</a></li>
+						<li><a href="http://bxslider.com/" target="_blank">bxSlider</a></li>
+
+						<li><a href="http://code.google.com/p/html5shiv/" target="_blank">html5shiv</a></li>
+						<li><a href="http://desandro.github.com/imagesloaded/" target="_blank">ImagesLoaded</a></li>
+						<li><a href="http://isotope.metafizzy.co/" target="_blank">Isotope</a> (Commercial License in use)</li>
+						<li><a href="http://gsgd.co.uk/sandbox/jquery/easing/" target="_blank">jquery.easing</a></li>
+						<li><a href="http://www.littlewebthings.com/projects/countdown/" target="_blank">lwtCountdown</a></li>
+						<li><a href="http://masonry.desandro.com" target="_blank">Masonry</a></li>
+						<li><a href="http://www.no-margin-for-errors.com/projects/prettyPhoto/" target="_blank">PrettyPhoto</a></li>
+
+						<li><a href="http://www.google.com/webfonts" target="_blank">Google WebFonts</a></li>
+						<li><a href="http://fontello.com/" target="_blank">Fontello - icon fonts generator</a></li>
+
+						<li><a href="http://www.defaulticon.com" target="_blank">DefaultIcon icon pack</a></li>
+						<li><a href="http://code.google.com/p/faenza-icon-theme/" target="_blank">Faenza icon pack by Matthieu James</li>
+						<li><a href="http://www.fatcow.com/free-icons" target="_blank">FatCow icon pack</a></li>
+						<li><a href="http://tango.freedesktop.org/" target="_blank">Tango icon pack</a></li>
+						<li><a href="http://www.woothemes.com/2010/08/woocons1/" target="_blank">WooCons1 icon pack</a></li>
+						<li><a href="http://www.woothemes.com/2009/09/woofunction-178-amazing-web-design-icons/" target="_blank">WooFunction icon pack</a></li>
+
+						<li><a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a></li>
+						<li><a href="http://git.io/normalize" target="_blank">normalize.css</a></li>
+						<li><a href="http://gridpak.com/" target="_blank">Gridpak Beta CSS</a></li>
+						<li><a href="https://github.com/thomasgriffin/TGM-Plugin-Activation" target="_blank">TGM-Plugin-Activation</a></li>
+						<li><a href="https://github.com/unisphere/unisphere_notifier" target="_blank">WordPress Theme Update Notifier</a></li>
+					</ul>
+				</div>
+			</div>
+
+
+
+	</div>
+	</section><!-- /Main Content -->
+
+
+
+	<!-- Footer -->
+	<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="span2">
+				<a class="brand alignleft" href="#top"><img src="bootstrap/img/logo-lespaul-manual.png" alt="!LesPaul" title="!LesPaul - back to begining of this User Manual" /></a>
+			</div>
+			<div class="span10">
+				<p>Once again, thank you so much for purchasing this theme. If you have any questions that are beyond the scope of this user manual, please join <a target="_blank" href="http://support.webmandesign.eu">WebMan Support Forums</a>. No guarantees, but I will do my best to assist you. If you like the theme and/or support, please rate it in Downloads section of your <a href="http://www.themeforest.net" target="_blank">ThemeForest</a> user account. Thank you!</p>
+				&copy; <a href="http://www.webmandesign.eu">WebMan</a> 2013
+			</div>
+		</div>
+	</div>
+	</footer><!-- /Footer -->
+
+
+
+	<!-- Javascript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="bootstrap/js/jquery.js"></script>
+	<script src="bootstrap/js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="bootstrap/js/scripts.js"></script>
+
+</body>
+
+<!-- This User Manual was created by WebMan (Oliver Juhas) - http://www.webmandesign.eu, (C) 2013 All rights reserved -->
+
+</html>

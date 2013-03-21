@@ -1,0 +1,111 @@
+/*********************************************/
+/* comments                                  */
+/*********************************************/
+
+	#comments {
+		position: relative;
+		padding-top: 20px;
+	}
+		.content #comments {border-bottom: 0}
+
+	#comments .commentlist {
+		padding: 0 0 20px;
+		margin: 0;
+	}
+		#comments .commentlist.pingbacks {margin-top: 1em}
+		.commentlist li {
+			position: relative;
+			padding: 20px 0 0 70px;
+			margin: 0;
+			list-style: none;
+			background: none;
+			overflow: hidden;
+		}
+			.commentlist li.pingback {
+				min-height: 1em;
+				padding: 0;
+				margin-top: .5em;
+			}
+		.commentlist li li {padding-left: 50px}
+		.commentlist .children {
+			clear: both;
+			margin: 0 0 0 -30px;
+		}
+
+	/* gravatar */
+		.gravatar {
+			position: absolute;
+			left: 0;
+			top: 20px;
+			float: left;
+			width: 50px;
+		}
+			.gravatar img {
+				width: 100%;
+				margin: 0;
+			}
+			.children .gravatar {width: 30px}
+
+	/* author name */
+		.comment .author {
+			float: left;
+			padding: 0;
+			margin: 0;
+			text-transform: uppercase;
+		}
+
+	/* comment heading */
+		.comment-heading {
+			clear: both;
+			padding-bottom: 10px;
+		}
+
+	/* comment text */
+		.comment-text {padding-bottom: 20px}
+			.comment-text p {margin-top: 1em}
+			.comment-text p:first-child {margin-top: 0}
+
+			.commentlist .comment-text ol > li {list-style: decimal}
+			.commentlist .comment-text ol ol > li {list-style: upper-alpha}
+			.commentlist .comment-text ol ol ol > li {list-style: lower-roman}
+			.commentlist .comment-text ol ol ol ol > li {list-style: lower-alpha}
+			.commentlist .comment-text ul,
+			.commentlist .comment-text ol {
+				margin: 1.5em 0 0;
+				margin-left: 0;
+			}
+			.commentlist .comment-text li ul,
+			.commentlist .comment-text li ol {
+				margin-top: .5em;
+				margin-bottom: 0;
+			}
+			.commentlist .comment-text ol {margin-left: 1.75em}
+				.commentlist .comment-text li,
+				.commentlist .comment-text li li {
+					padding: 0;
+					margin-top: .5em;
+					overflow: visible;
+				}
+				.commentlist .comment-text ul > li {
+					padding: 0;
+					margin-left: 1.5em;
+					list-style: disc;
+				}
+
+	/* comment pagination */
+		.comments-nav {
+			position: relative;
+			display: block;
+			clear: both;
+			padding: 10px;
+			overflow: hidden;
+		}
+			#comment-nav-above {margin-top: 20px}
+			#comment-nav-below {}
+			.comments-nav .nav-previous a {float: left}
+			.comments-nav .nav-next a {float: right}
+
+	/* other comments styles */
+		li.bypostauthor {} /* this is required */
+
+

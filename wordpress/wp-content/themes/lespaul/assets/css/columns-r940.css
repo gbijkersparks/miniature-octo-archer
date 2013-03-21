@@ -1,0 +1,130 @@
+/*!
+* Gridpak Beta CSS
+*
+* Generator - http://gridpak.com/
+* Created by @erskinedesign
+*/
+
+/* 12 Column Grid
+================================================== */
+
+	/* #Default screen (wider than 768px)
+	================================================== */
+
+		.boxed .wrap,
+		.wrap.boxed,
+		body.boxed.page-settings-layout .wrap {
+			width: 1020px;
+			max-width: 100%;
+			padding: 0;
+		}
+			.wrap.fullwidth,
+			body.fullwidth.page-settings-layout .wrap {width: 100%}
+		.wrap-inner {
+			width: 1020px;
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+		.pane {
+			position: relative;
+			float: left;
+			display: block;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		.row {
+			margin-bottom: 20px;
+		}
+
+		.one.pane    { width: 8.333%; }
+		.two.pane    { width: 16.666%; }
+		.three.pane  { width: 25.0%; }
+		.four.pane   { width: 33.333%; }
+		.five.pane   { width: 41.666%; }
+		.six.pane    { width: 50.0%; }
+		.seven.pane  { width: 58.333%; }
+		.eight.pane  { width: 66.666%; }
+		.nine.pane   { width: 75.0%; }
+		.ten.pane    { width: 83.333%; }
+		.eleven.pane { width: 91.666%; }
+		.twelve.pane { width: 100%; }
+		/* Golden ratio */
+		.golden-wide.pane   { width: 61.804%; }
+		.golden-narrow.pane { width: 38.196%; }
+
+
+
+	/* #Narrower desktop/tablet screen
+	================================================== */
+
+		@media only screen and (min-width: 768px) and (max-width: 1019px) {
+			.pane {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+
+
+
+	/* #Mobile screen
+	================================================== */
+
+		@media only screen and (max-width: 767px) {
+			body {
+				width: 100%;
+				min-width: 0;
+				padding-left: 0;
+				padding-right: 0;
+				margin-left: 0;
+				margin-right: 0;
+				-webkit-text-size-adjust: none;
+				    -ms-text-size-adjust: none;
+			}
+
+			.boxed .wrap,
+			.wrap.boxed {
+				width: 420px;
+				max-width: 100%;
+			}
+				.wrap.fullwidth {width: 100%}
+			.wrap-inner {
+				width: 420px;
+				padding: 0 20px;
+			}
+			.pane {
+				float: none;
+				clear: both;
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			.one.pane,
+			.one.pane,
+			.two.pane,
+			.three.pane,
+			.four.pane,
+			.five.pane,
+			.six.pane,
+			.seven.pane,
+			.eight.pane,
+			.nine.pane,
+			.ten.pane,
+			.eleven.pane,
+			.twelve.pane,
+			.golden-wide.pane,
+			.golden-narrow.pane { width: 100%; }
+
+			.wrap .columns > div,
+			.wrap .columns > .widget,
+			.wrap .column {
+				width: 100%;
+				margin-left: 0;
+				margin-right: 0;
+			}
+
+			.column + .column,
+			.columns > .widget + .widget {margin-top: 20px}
+		}
+
+

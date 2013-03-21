@@ -1,0 +1,290 @@
+/*
+Package: !LesPaul
+Skin: DEFAULT
+Description: Default !LesPaul theme skin with all CSS3 animations.
+Version: 1.0
+Author: WebMan
+
+Top panel bordered:
+Header bordered:
+Navigation bordered:
+Slider bordered:
+Main heading bordered:
+Breadcrumbs bordered: +.boxed .breadcrumbs-container, +.fullwidth .breadcrumbs
+Page excerpt bordered: +.boxed .page-excerpt-container, +.fullwidth .page-excerpt
+Content bordered:
+Above footer bordered:
+Footer bordered:
+Bottom bordered:
+*/
+
+/*
+NOTES:
+- Always use "-" and "+" prefix for all CSS selectors in Font primary and secondary elements and Bordered elements to add or remove elements from the default theme styling.
+*/
+
+
+
+/*********************************************/
+/* core                                      */
+/*********************************************/
+
+	.wrap:after,
+	.wrap:before,
+	.fullwidth .wrap.boxed:after,
+	.fullwidth .wrap.boxed:before,
+	body.boxed.page-settings-layout .wrap:after,
+	body.boxed.page-settings-layout .wrap:before {
+		display: block;
+		position: absolute;
+		width: 1%;
+		height: 100%;
+		top: 0;
+		background: url(../img/transparent/black/10.png);
+		background: rgba(0,0,0, .1);
+		z-index: -1;
+	}
+		.wrap:after {left: -1%}
+		.wrap:before {right: -1%}
+		.fullwidth .wrap:after,
+		.fullwidth .wrap:before,
+		.wrap.fullwidth:after,
+		.wrap.fullwidth:before,
+		.absolute-header.no-header-fixed .header .wrap:after,
+		.absolute-header.no-header-fixed .header .wrap:before {display: none}
+
+	pre {
+		border-color: #ddd;
+		border-bottom-color: #f3f3f3;
+		-webkit-box-shadow: inset 0 2px 5px 0 rgba(0,0,0, .1);
+		        box-shadow: inset 0 2px 5px 0 rgba(0,0,0, .1);
+	}
+
+	/* headings */
+		h1, h2, h3, h4, h5, h6 {
+			position: relative;
+			line-height: 1em;
+			color: #666;
+		}
+
+		/* main page heading */
+			/* animated icon */
+				.main-heading i[class^="icon-"],
+				.lie9 .main-heading.animated i[class^="icon-"],
+				.browser-opera .main-heading.animated i[class^="icon-"] {
+					right: .25em;
+					top: 50%;
+					margin-top: -.8em;
+					font-size: 4.4em;
+					text-shadow: none;
+					opacity: .50;
+					filter: alpha(opacity=50); /* For IE8 and earlier */
+				}
+					.main-heading.animated i[class^="icon-"] {
+						right: -.25em;
+						margin-top: -.5em;
+						font-size: 40em;
+						text-shadow: 0 0 .25em;
+						opacity: .07;
+						filter: alpha(opacity=7); /* For IE8 and earlier */
+
+						-webkit-transition: all .25s ease-in-out;
+						   -moz-transition: all .25s ease-in-out;
+						     -o-transition: all .25s ease-in-out;
+						    -ms-transition: all .25s ease-in-out;
+						        transition: all .25s ease-in-out;
+
+						-webkit-transform: rotate( 20deg ); /* Safari and Chrome, translate3d hack to render properly */
+						   -moz-transform: rotate( 20deg ); /* Firefox */
+						    -ms-transform: rotate( 20deg ); /* IE 9 */
+						     -o-transform: rotate( 20deg ); /* Opera */
+						        transform: rotate( 20deg );
+					}
+					.lie9 .main-heading.animated i[class^="icon-"],
+					.browser-opera .main-heading.animated i[class^="icon-"] {
+						-webkit-transform: rotate( 0 ); /* Safari and Chrome, translate3d hack to render properly */
+						   -moz-transform: rotate( 0 ); /* Firefox */
+						    -ms-transform: rotate( 0 ); /* IE 9 */
+						     -o-transform: rotate( 0 ); /* Opera */
+						        transform: rotate( 0 );
+					}
+					.main-heading.text-right i[class^="icon-"] {
+						left: -.25em;
+						right: auto;
+					}
+					.lie9 .main-heading.text-right.animated i[class^="icon-"],
+					.browser-opera .main-heading.text-right.animated i[class^="icon-"] {
+						left: .25em;
+						right: auto;
+					}
+
+				.main-heading:hover i[class^="icon-"] {
+					text-shadow: none;
+					opacity: 1;
+					filter: alpha(opacity=100); /* For IE8 and earlier */
+				}
+				.main-heading.animated:hover i[class^="icon-"] {
+					-webkit-transform: scale( .11 ) translate( 2.25em, 0 ); /* Safari and Chrome, translate3d hack to render properly */
+					   -moz-transform: scale( .11 ) translate( 2.25em, 0 ); /* Firefox */
+					    -ms-transform: scale( .11 ) translate( 2.25em, 0 ); /* IE 9 */
+					     -o-transform: scale( .11 ) translate( 2.25em, 0 ); /* Opera */
+					        transform: scale( .11 ) translate( 2.25em, 0 );
+				}
+					.main-heading.text-right.animated:hover i[class^="icon-"] {
+						-webkit-transform: scale( .11 ) translate( -2.25em, 0 ); /* Safari and Chrome, translate3d hack to render properly */
+						   -moz-transform: scale( .11 ) translate( -2.25em, 0 ); /* Firefox */
+						    -ms-transform: scale( .11 ) translate( -2.25em, 0 ); /* IE 9 */
+						     -o-transform: scale( .11 ) translate( -2.25em, 0 ); /* Opera */
+						        transform: scale( .11 ) translate( -2.25em, 0 );
+					}
+					.browser-opera .main-heading.animated:hover i[class^="icon-"],
+					.browser-opera .main-heading.text-right.animated:hover i[class^="icon-"] {
+						opacity: 1;
+						filter: alpha(opacity=100); /* For IE8 and earlier */
+						-webkit-transform: none; /* Safari and Chrome, translate3d hack to render properly */
+						   -moz-transform: none; /* Firefox */
+						    -ms-transform: none; /* IE 9 */
+						     -o-transform: none; /* Opera */
+						        transform: none;
+					}
+
+	/* breadcrumbs and page excerpt */
+		.boxed .breadcrumbs-container,
+		.boxed .page-excerpt-container {
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+			.boxed .main-heading + .breadcrumbs .breadcrumbs-container,
+			.boxed .page-excerpt + .breadcrumbs .breadcrumbs-container {border-top: 0}
+			.boxed .content + .breadcrumbs .breadcrumbs-container,
+			.boxed .above-footer-widgets-wrap + .breadcrumbs .breadcrumbs-container {border-bottom: 0}
+
+		.fullwidth .breadcrumbs,
+		.fullwidth .page-excerpt {
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+		}
+
+
+
+/*********************************************/
+/* header                                    */
+/*********************************************/
+
+	/* header */
+		.header .wrap {min-height: 116px} /* required for under construction page */
+
+		/* logo */
+			.logo,
+			h1.logo {padding-top: 40px}
+			.logo .description {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				left: 0;
+				top: 0;
+				clip: rect(1px, 1px, 1px, 1px);
+				overflow: hidden;
+			}
+
+	/* navigation */
+		.navigation-wrap {line-height: 1.2em}
+		.nav-right .navigation-wrap {padding-top: 34px}
+		.nav-bottom .navigation-wrap {padding-top: 20px}
+
+		.nav-main > ul > li > .inner {
+			padding-bottom: 33px;
+			line-height: 1.4em;
+			text-align: center;
+		}
+			.nav-top .nav-main > ul > li > .inner,
+			.nav-bottom .nav-main > ul > li > .inner {padding-bottom: 10px}
+			.nav-main > ul > li > .inner i {display: inline-block}
+			.nav-main > ul > li > .inner span,
+			.nav-main > ul > li > .inner small {display: block}
+			.nav-main > ul > li[class*="iconnav-"],
+			.nav-main > ul > li[class*="iconnav-"] > a,
+			.nav-main > ul > li[class*="iconnav-"] > .inner {padding-left: 0}
+
+			@media only screen and (min-width: 768px) {
+				body.header-fixed {padding-top: 116px}
+				body.top-bar-enabled.header-fixed {padding-top: 166px}
+
+				.animated .nav-main > ul > li > .inner.normal i,
+				.animated .nav-main > ul > li > .inner.normal span,
+				.animated .nav-main > ul > li > .inner.normal small {
+					-webkit-transition: all .25s ease-in-out;
+					   -moz-transition: all .25s ease-in-out;
+					    -ms-transition: all .25s ease-in-out;
+					     -o-transition: all .25s ease-in-out;
+					        transition: all .25s ease-in-out;
+				}
+					.animated .nav-main > ul > li:hover.normal > .inner span,
+					.animated .nav-main > ul > li:hover.normal > .inner small {
+						-webkit-transform: translate( 0, -.33em ); /* Safari and Chrome, translate3d hack to render properly */
+						   -moz-transform: translate( 0, -.33em ); /* Firefox */
+						    -ms-transform: translate( 0, -.33em ); /* IE 9 */
+						     -o-transform: translate( 0, -.33em ); /* Opera */
+						        transform: translate( 0, -.33em );
+					}
+			}
+
+		/* icon in navigation */
+			.nav-main > ul > li > .inner .nav-icon {
+				position: relative;
+				float: none;
+				margin: 0;
+			}
+				.nav-main > ul > li > .inner .nav-icon:before {margin: 0 !important}
+				.nav-main > ul > li:hover > .inner.normal .nav-icon,
+				.lie9 .animated .nav-main > ul > li:hover > .inner.normal .nav-icon,
+				.browser-opera .animated .nav-main > ul > li:hover > .inner.normal .nav-icon {
+					opacity: .50;
+					filter: alpha(opacity=50); /* For IE8 and earlier */
+				}
+				.animated .nav-main > ul > li > .inner.normal .nav-icon:before {margin-right: 0}
+				.animated .nav-main > ul > li:hover > .inner.normal .nav-icon {
+					opacity: .10 !important;
+					filter: alpha(opacity=10) !important; /* For IE8 and earlier */
+					/* !important is for IE browsers */
+
+					/* IMPORTANT: scale can't be more than, nor equal to 4 as FireFox (v18) has a bug that resets this CSS animation when certain JavaScript is executed (like auto-animated accordion) */
+					-webkit-transform: rotate( 360deg ) scale( 3.9 ) translate( .1em, 0 ); /* Safari and Chrome, translate3d hack to render properly */ /* translate for WebKit only due to animation glich */
+					   -moz-transform: rotate( 360deg ) scale( 3.9 ); /* Firefox */
+					    -ms-transform: rotate( 360deg ) scale( 3.9 ); /* IE 9 */
+					     -o-transform: rotate( 360deg ) scale( 3.9 ); /* Opera */
+					        transform: rotate( 360deg ) scale( 3.9 );
+				}
+					.browser-opera .animated .nav-main > ul > li:hover > .inner.normal .nav-icon {
+						-webkit-transform: none; /* Safari and Chrome, translate3d hack to render properly */
+						   -moz-transform: none; /* Firefox */
+						    -ms-transform: none; /* IE 9 */
+						     -o-transform: none; /* Opera */
+						        transform: none;
+					}
+
+		/* button in navigation */
+			.nav-main > ul > li > .inner.btn {
+				margin-top: .6em;
+				line-height: 1em;
+				text-align: left;
+			}
+				.nav-main > ul > li > .inner.btn:hover {color: inherit}
+				.nav-main > ul > li > .inner.btn .nav-icon {
+					position: absolute;
+					left: 15px;
+				}
+				.nav-main > ul > li > .inner.btn small {font-weight: normal}
+
+		/* subnavigation */
+			.nav-main li ul {
+				-webkit-box-shadow: 0 3px 3px rgba(0,0,0, .25);
+				   -moz-box-shadow: 0 3px 3px rgba(0,0,0, .25);
+				        box-shadow: 0 3px 3px rgba(0,0,0, .25);
+			}
+
+			/* icon in submenu */
+				.nav-main li li[class*="iconnav-"] > a,
+				.nav-main li li[class*="iconnav-"] > .inner {padding-left: 32px}
+
+/* End of skin */
