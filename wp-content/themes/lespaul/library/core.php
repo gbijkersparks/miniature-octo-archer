@@ -3302,8 +3302,8 @@
 			$form = '
 				<div class="idioma">
 					<ul>
-						<li><a href="' . get_option('home') . '"><div class="ico-por"> <span>POR</span></a></li>
-						<li><a href="' .  get_option( 'home') . '/en/"><div class="ico-eng"> <span>ENG</span></a></li>
+						<a href="' . get_option('home') . '"><li><div class="ico-por"> <span>POR</span></li></a>
+						<a href="' .  get_option( 'home') . '/en/"><li><div class="ico-eng"> <span>ENG</span></li></a>
 					</ul>
 				</div>
 				<form method="get" class="form-search" action="' . home_url( '/' ) . '">
