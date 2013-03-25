@@ -1,30 +1,3 @@
-/*
-Package: !LesPaul
-Skin: DEFAULT
-Description: Default !LesPaul theme skin with all CSS3 animations.
-Version: 1.0
-Author: WebMan
-
-Top panel bordered:
-Header bordered:
-Navigation bordered:
-Slider bordered:
-Main heading bordered:
-Breadcrumbs bordered: +.boxed .breadcrumbs-container, +.fullwidth .breadcrumbs
-Page excerpt bordered: +.boxed .page-excerpt-container, +.fullwidth .page-excerpt
-Content bordered:
-Above footer bordered:
-Footer bordered:
-Bottom bordered:
-*/
-
-/*
-NOTES:
-- Always use "-" and "+" prefix for all CSS selectors in Font primary and secondary elements and Bordered elements to add or remove elements from the default theme styling.
-*/
-
-
-
 /*********************************************/
 /* core                                      */
 /*********************************************/
@@ -210,7 +183,7 @@ NOTES:
 				body.header-fixed {padding-top: 116px}
 				body.top-bar-enabled.header-fixed {padding-top: 166px}
 
-				.animated .nav-main > ul > li > .inner.normal i,
+				/*.animated .nav-main > ul > li > .inner.normal i,
 				.animated .nav-main > ul > li > .inner.normal span,
 				.animated .nav-main > ul > li > .inner.normal small {
 					-webkit-transition: all .25s ease-in-out;
@@ -221,12 +194,12 @@ NOTES:
 				}
 					.animated .nav-main > ul > li:hover.normal > .inner span,
 					.animated .nav-main > ul > li:hover.normal > .inner small {
-						-webkit-transform: translate( 0, -.33em ); /* Safari and Chrome, translate3d hack to render properly */
-						   -moz-transform: translate( 0, -.33em ); /* Firefox */
-						    -ms-transform: translate( 0, -.33em ); /* IE 9 */
-						     -o-transform: translate( 0, -.33em ); /* Opera */
+						-webkit-transform: translate( 0, -.33em ); // Safari and Chrome, translate3d hack to render properly 
+						   -moz-transform: translate( 0, -.33em ); // Firefox 
+						    -ms-transform: translate( 0, -.33em ); // IE 9 
+						     -o-transform: translate( 0, -.33em ); // Opera 
 						        transform: translate( 0, -.33em );
-					}
+					}*/
 			}
 
 		/* icon in navigation */
@@ -244,24 +217,24 @@ NOTES:
 				}
 				.animated .nav-main > ul > li > .inner.normal .nav-icon:before {margin-right: 0}
 				.animated .nav-main > ul > li:hover > .inner.normal .nav-icon {
-					opacity: .10 !important;
-					filter: alpha(opacity=10) !important; /* For IE8 and earlier */
+					opacity: 1 !important;
+					filter: alpha(opacity=100) !important; /* For IE8 and earlier */
 					/* !important is for IE browsers */
 
-					/* IMPORTANT: scale can't be more than, nor equal to 4 as FireFox (v18) has a bug that resets this CSS animation when certain JavaScript is executed (like auto-animated accordion) */
-					-webkit-transform: rotate( 360deg ) scale( 3.9 ) translate( .1em, 0 ); /* Safari and Chrome, translate3d hack to render properly */ /* translate for WebKit only due to animation glich */
-					   -moz-transform: rotate( 360deg ) scale( 3.9 ); /* Firefox */
-					    -ms-transform: rotate( 360deg ) scale( 3.9 ); /* IE 9 */
-					     -o-transform: rotate( 360deg ) scale( 3.9 ); /* Opera */
-					        transform: rotate( 360deg ) scale( 3.9 );
+					/* IMPORTANT: scale can't be more than, nor equal to 4 as FireFox (v18) has a bug that resets this CSS animation when certain JavaScript is executed (like auto-animated accordion) 
+					//-webkit-transform: rotate( 360deg ) scale( 3.9 ) translate( .1em, 0 ); // Safari and Chrome, translate3d hack to render properly */ /* translate for WebKit only due to animation glich 
+					   -moz-transform: rotate( 360deg ) scale( 3.9 ); // Firefox 
+					    -ms-transform: rotate( 360deg ) scale( 3.9 ); // IE 9 
+					     -o-transform: rotate( 360deg ) scale( 3.9 ); // Opera 
+					        transform: rotate( 360deg ) scale( 3.9 );*/
 				}
-					.browser-opera .animated .nav-main > ul > li:hover > .inner.normal .nav-icon {
-						-webkit-transform: none; /* Safari and Chrome, translate3d hack to render properly */
-						   -moz-transform: none; /* Firefox */
-						    -ms-transform: none; /* IE 9 */
-						     -o-transform: none; /* Opera */
+					/*.browser-opera .animated .nav-main > ul > li:hover > .inner.normal .nav-icon {
+						-webkit-transform: none; // Safari and Chrome, translate3d hack to render properly
+						   -moz-transform: none; // Firefox
+						    -ms-transform: none; // IE 9
+						     -o-transform: none; // Opera
 						        transform: none;
-					}
+					}*/
 
 		/* button in navigation */
 			.nav-main > ul > li > .inner.btn {
