@@ -16,10 +16,10 @@
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'Atlantes');
+define('DB_NAME', 'Atlantes2');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'Admin');
+define('DB_USER', 'admin');
 
 /** Senha do banco de dados MySQL */
 define('DB_PASSWORD', '1234');
