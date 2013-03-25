@@ -19,7 +19,7 @@
 define('DB_NAME', 'Atlantes');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'admin');
+define('DB_USER', 'Admin');
 
 /** Senha do banco de dados MySQL */
 define('DB_PASSWORD', '1234');
@@ -70,16 +70,6 @@ $table_prefix  = 'wp_';
  * ao português do Brasil.
  */
 define('WPLANG', 'pt_BR');
-
-/* Multisite */
-/*define('WP_ALLOW_MULTISITE', true);*/
-
-define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', false);
-define('DOMAIN_CURRENT_SITE', '192.168.0.215');
-define('PATH_CURRENT_SITE', '/miniature-octo-archer/wordpress/');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);
 
 /**
  * Para desenvolvedores: Modo debugging WordPress.

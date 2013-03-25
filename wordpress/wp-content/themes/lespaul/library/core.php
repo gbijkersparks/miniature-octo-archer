@@ -3299,6 +3299,12 @@
 	if ( ! function_exists( 'wm_search_form' ) ) {
 		function wm_search_form( $form ) {
 			$form = '
+				<div class="idioma">
+					<ul>
+						<li><a href="' . get_option('home') . '"><div class="ico-por"> <span>POR</span></a></li>
+						<li><a href="' .  get_option( 'home') . '/en/"><div class="ico-eng"> <span>ENG</span></a></li>
+					</ul>
+				</div>
 				<form method="get" class="form-search" action="' . home_url( '/' ) . '">
 				<fieldset>
 					<label class="assistive-text invisible">' . __( 'Search for:', 'lespaul_domain' ) . '</label>
