@@ -1,0 +1,121 @@
+{
+	"skin"    : "DEFAULT",
+	"options" : [
+		/* accent color */
+			{
+				"option" : "design-accent-color",
+				"value"  : "a45c6a"
+			},
+
+		/* predefined colors */
+			/* blue */
+				{
+					"option" : "design-type-blue-bg-color",
+					"value"  : "cbe2f2"
+				},
+			/* gray */
+				{
+					"option" : "design-type-gray-bg-color",
+					"value"  : "f6f6f6"
+				},
+			/* green */
+				{
+					"option" : "design-type-green-bg-color",
+					"value"  : "deebb9"
+				},
+			/* orange */
+				{
+					"option" : "design-type-orange-bg-color",
+					"value"  : "f2dab3"
+				},
+			/* red */
+				{
+					"option" : "design-type-red-bg-color",
+					"value"  : "edc5c5"
+				},
+
+		/* design sections */
+			/* top bar */
+				{
+					"option" : "design-toppanel-bg-color",
+					"value"  : "f6f6f6"
+				},
+			/* header */
+			/* navigation */
+			/* slider */
+			/* main heading */
+				{
+					"option" : "design-mainheading-bg-color",
+					"value"  : "1a1a1a"
+				},
+				{
+					"option" : "design-mainheading-color",
+					"value"  : "ffffff"
+				},
+				{
+					"option" : "design-mainheading-alt-color",
+					"value"  : "aaaaaa"
+				},
+				{
+					"option" : "design-mainheading-accent-color",
+					"value"  : "ffffff"
+				},
+			/* breadcrumbs */
+			/* page excerpt */
+			/* content */
+			/* above footer */
+			/* footer */
+				{
+					"option" : "design-footer-bg-color",
+					"value"  : "f6f6f6"
+				},
+				{
+					"option" : "design-footer-color",
+					"value"  : "999999"
+				},
+				{
+					"option" : "design-footer-alt-color",
+					"value"  : "777777"
+				},
+				{
+					"option" : "design-footer-accent-color",
+					"value"  : "999999"
+				},
+			/* bottom */
+				{
+					"option" : "design-bottom-bg-color",
+					"value"  : "1a1a1a"
+				},
+				{
+					"option" : "design-bottom-color",
+					"value"  : "666666"
+				},
+				{
+					"option" : "design-bottom-accent-color",
+					"value"  : "aaaaaa"
+				},
+			/* website background */
+				{
+					"option" : "design-html-bg-color",
+					"value"  : "1a1a1a"
+				},
+
+		/* fonts / typography */
+			{
+				"option" : "design-font-custom",
+				"value"  : "<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>"
+			},
+			{
+				"option" : "design-font-primary",
+				"value"  : "Ubuntu, Helvetica, Arial, Verdana, sans-serif"
+			},
+			{
+				"option" : "design-font-secondary",
+				"value"  : "Ubuntu, Helvetica, Arial, Verdana, sans-serif"
+			},
+			{
+				"option" : "design-font-body-size",
+				"value"  : "13"
+			}
+		]
+}
