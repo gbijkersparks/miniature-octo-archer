@@ -160,7 +160,7 @@ if ( ! is_page_template( 'page-template/construction.php' ) && in_array( wm_opti
 ?>
 </div><!-- /header --></header>
 <?php wm_slider(); ?>
-
+<?php wm_heading(); ?>
 <?php //wm_after_header(); ?>
 
 <div id="content" class="wrap clearfix content<?php echo wm_element_width( 'content' ); ?>">

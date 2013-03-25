@@ -40,40 +40,41 @@ wm_before_footer();
 	}
 	?>
 
-	<section class="bottom-wrap clearfix"><div class="wrap-inner">
+	<!--<section class="bottom-wrap clearfix"><div class="wrap-inner">
 		<div class="twelve pane">
 			<?php
-			if ( is_page_template( 'page-template/landing.php' ) )
-				$menuLocationName = 'menu-landing-page-' . get_the_ID();
-			else
-				$menuLocationName = 'footer-menu';
+			// if ( is_page_template( 'page-template/landing.php' ) )
+			// 	$menuLocationName = 'menu-landing-page-' . get_the_ID();
+			// else
+			// 	$menuLocationName = 'footer-menu';
 
-			if ( ! is_page_template( 'page-template/construction.php' ) )
-				wp_nav_menu( array(
-						'theme_location'  => $menuLocationName,
-						'menu'            => null,
-						'container'       => null,
-						'container_class' => null,
-						'container_id'    => null,
-						'menu_class'      => 'menu-footer',
-						'menu_id'         => null,
-						'echo'            => true,
-						'fallback_cb'     => null,
-						'before'          => null,
-						'after'           => null,
-						'link_before'     => null,
-						'link_after'      => null,
-						'items_wrap'      => '<div class="%2$s"><ul>%3$s</ul></div>',
-						'depth'           => 1,
-						'walker'          => ( has_nav_menu( $menuLocationName ) ) ? ( new wm_widget_walker() ) : ( null )
-					) );
+			// if ( ! is_page_template( 'page-template/construction.php' ) )
+			// 	wp_nav_menu( array(
+			// 			'theme_location'  => $menuLocationName,
+			// 			'menu'            => null,
+			// 			'container'       => null,
+			// 			'container_class' => null,
+			// 			'container_id'    => null,
+			// 			'menu_class'      => 'menu-footer',
+			// 			'menu_id'         => null,
+			// 			'echo'            => true,
+			// 			'fallback_cb'     => null,
+			// 			'before'          => null,
+			// 			'after'           => null,
+			// 			'link_before'     => null,
+			// 			'link_after'      => null,
+			// 			'items_wrap'      => '<div class="%2$s"><ul>%3$s</ul></div>',
+			// 			'depth'           => 1,
+			// 			'walker'          => ( has_nav_menu( $menuLocationName ) ) ? ( new wm_widget_walker() ) : ( null )
+			// 		) );
 
-			$class = ( is_page_template( 'page-template/construction.php' ) ) ? ( 'text-center clearfix' ) : ( 'clearfix' );
+			// $class = ( is_page_template( 'page-template/construction.php' ) ) ? ( 'text-center clearfix' ) : ( 'clearfix' );
 
-			wm_credits( $class );
+			// wm_credits( $class );
 			?>
 		</div>
 	</div></section> <!-- /bottom-wrap -->
+	
 <!-- /footer --></footer>
 
 <!-- wp_footer() -->

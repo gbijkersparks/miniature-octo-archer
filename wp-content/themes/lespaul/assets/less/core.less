@@ -9,7 +9,7 @@
 		width: 100%;
 		height: auto;
 		margin: 0 auto;
-		background-color: #fff;
+		background-color: #e8e8e8;
 		color: #666;
 	}
 	.wrap-widgets .widgets {
@@ -214,6 +214,7 @@
 			position: relative;
 			line-height: 34px;
 			color: #999;
+			background: #FFFFFF;
 			z-index: 1;
 		}
 			.breadcrumbs-container {overflow: hidden}
@@ -246,12 +247,13 @@
 				.breadcrumbs span span:first-child {margin-left: 0} /* support for Yoast SEO Breadcrumbs */
 			.breadcrumbs .form-search {
 				float: right;
-				margin: 10px 0;
+				margin: 10px 20px 0 0;
 			}
+
 			.idioma{
 				float: right;
 				display: inline-block;
-				margin: 3px 0 0 0;
+				margin: 10px 0 0 0;
 				padding: 0;
 				ul{
 					display: inline-block;
@@ -261,7 +263,7 @@
 					li{
 						display: inline-block;
 						list-style: none;
-						padding: 0 20px 0 0;
+						padding: 0 25px 0 5px;
 						a{
 							span{
 
@@ -274,14 +276,20 @@
 				background: url('../img/icon-br.png') no-repeat center;
 				width: 34px;
 				height: 100%;
-				padding: 3px 0 0 40px;
+				padding: 3px 0 0 45px;
 			}
 			.ico-eng{
 				background: url('../img/icon-eng.png') no-repeat center;
 				width: 34px;
 				height: 100%;
-				padding: 3px 0 0 40px;
+				padding: 3px 0 0 45px;
 			}
+
+		.section-heading{
+			background: #F9F9F9;
+			width: 100%;
+			height: 222px;
+		}
 
 	/* pagination (with support for WP-PageNavi and WooCommerce pagination) */
 		.pagination {
@@ -348,5 +356,18 @@
 					padding: 0;
 					margin: 0 0 0 .25em;
 				}
-
+.article-content{
+	.title-section{
+		text-transform: uppercase;
+		text-align: center;
+	}
+	ul{
+		list-style: none;
+		li{
+			list-style: none;
+			text-align: center;
+			color:#959595;
+		}
+	}
+}
 

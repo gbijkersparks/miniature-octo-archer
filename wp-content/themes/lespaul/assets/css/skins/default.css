@@ -172,7 +172,7 @@ NOTES:
 /*********************************************/
 
 	/* header */
-		.header .wrap {min-height: 116px} /* required for under construction page */
+		.header .wrap {min-height: 116px; background: #f9f9f9;} /* required for under construction page */
 
 		/* logo */
 			.logo,
@@ -286,5 +286,6 @@ NOTES:
 			/* icon in submenu */
 				.nav-main li li[class*="iconnav-"] > a,
 				.nav-main li li[class*="iconnav-"] > .inner {padding-left: 32px}
+
 
 /* End of skin */
