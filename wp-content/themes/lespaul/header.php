@@ -154,9 +154,9 @@ if ( ! is_page_template( 'page-template/construction.php' ) && ' nav-top' === wm
 </div> <!-- /wrap-inner -->
 
 <?php
-if ( ! is_page_template( 'page-template/construction.php' ) && in_array( wm_option( 'header-navigation-position' ), array( ' nav-bottom', ' nav-bottom layout-centered' ) ) )
+//if ( ! is_page_template( 'page-template/construction.php' ) && in_array( wm_option( 'header-navigation-position' ), array( ' nav-bottom', ' nav-bottom layout-centered' ) ) )
 	//display only when bottom navigation header layout used and not Under construction template
-	get_template_part( 'nav' );
+	//get_template_part( 'nav' );
 ?>
 </div><!-- /header --></header>
 <?php wm_slider(); ?>

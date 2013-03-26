@@ -6,7 +6,6 @@ Template Name: Blog
 get_header();
 ?>
 <div class="wrap-inner">
-
 <?php
 $postId               = ( is_home() ) ? ( get_option( 'page_for_posts' ) ) : ( null );
 $sidebarLayoutDefault = ( wm_option( 'contents-sidebar-position' ) ) ? ( esc_attr( wm_option( 'contents-sidebar-position' ) ) ) : ( WM_SIDEBAR_DEFAULT_POSITION );
