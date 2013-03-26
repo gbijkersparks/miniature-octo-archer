@@ -149,11 +149,11 @@
 				//standard columns
 				"cb"                 => '<input type="checkbox" />',
 				$prefix . "thumb"    => __( 'Logo', 'lespaul_domain_adm' ),
-				"title"              => __( 'Name', 'lespaul_domain_adm' ),
-				$prefix . "category" => __( 'Category', 'lespaul_domain_adm' ),
-				$prefix . "link"     => __( 'Custom link', 'lespaul_domain_adm' ),
-				"date"               => __( 'Date', 'lespaul_domain_adm' ),
-				"author"             => __( 'Created by', 'lespaul_domain_adm' )
+				"title"              => __( 'Nome', 'lespaul_domain_adm' ),
+				$prefix . "category" => __( 'Categoria', 'lespaul_domain_adm' ),
+				$prefix . "link"     => __( 'link Personalizado', 'lespaul_domain_adm' ),
+				"date"               => __( 'Data', 'lespaul_domain_adm' ),
+				"author"             => __( 'Criado por', 'lespaul_domain_adm' )
 			);
 
 			return $wm_logosCols;
