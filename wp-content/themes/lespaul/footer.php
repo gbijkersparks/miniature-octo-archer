@@ -26,7 +26,6 @@ if ( $aboveFooter && is_active_sidebar( $aboveFooter ) && ! wm_meta_option( 'no-
 	wm_sidebar( $aboveFooter, 'widgets columns twelve pane', 5 ); //no restriction
 	echo '</div></section>';
 }
-
 wm_before_footer();
 ?>
 
@@ -38,6 +37,7 @@ wm_before_footer();
 		wm_sidebar( $footerRow, 'widgets columns twelve pane', 5 ); //restricted to 5 widgets
 		echo '</div></section>';
 	}
+	//echo do_shortcode( '[widgets area="wmcs-footer" /]' );
 	?>
 </footer>
 
