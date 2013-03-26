@@ -30,7 +30,7 @@
 
 
 browserWidth = document.body.clientWidth; //check the browser width
-
+if(!window.log) {window.log = function() {log.history = log.history || [];log.history.push(arguments);if(this.console) {console.log(Array.prototype.slice.call(arguments));}};}
 
 
 /*
@@ -175,9 +175,35 @@ jQuery( function() {
 				})();
 			} );
 
+(function($, window, undefined){
+	$.each( $('.nav-icon'), function(index, menuItem){
 
+		var classList = menuItem.classList;
+		var rollover = '';
 
+		//log(menuItem);
+		//log(classList);
 
+		$.each( classList, function(index, item){
+		    if (item.indexOf('icon-') != -1) {
+		       rollover = item +'-h';
+		    }
+		});
+
+		var parent = $(this).parents('a.inner');
+		parent.append('<div class="nav-icon-rollover '+rollover+'" ></div>');
+
+	});
+
+	$('.nav-icon-rollover').css({'display': 'none', 'opacity': 1});
+
+	$('.menu-icon').hover(function(){
+		$(this).find('.nav-icon-rollover').stop().fadeIn(600);
+	}, function(){
+		$(this).find('.nav-icon-rollover').stop().fadeOut(300);
+	});
+})(jQuery, window)
+	
 
 /*
 *****************************************************
@@ -776,3 +802,4 @@ jQuery( function() {
 
 
 } );
+

@@ -159,7 +159,8 @@
 				wp_register_script( 'bxslider', WM_ASSETS_THEME . 'js/bxslider/jquery.bxslider.min.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
 
 				//frontend
-				wp_register_script( 'wm-theme-scripts', WM_ASSETS_THEME . 'js/scripts.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
+				//wp_register_script( 'wm-theme-scripts', WM_ASSETS_THEME . 'js/scripts.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
+				wp_register_script( 'wm-theme-scripts', WM_ASSETS_THEME . 'js/scripts.dev.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
 				wp_register_script( 'prettyphoto', WM_ASSETS_THEME . 'js/prettyphoto/jquery.prettyPhoto.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
 				wp_register_script( 'imagesloaded', WM_ASSETS_THEME . 'js/imagesloaded/jquery.imagesloaded.min.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
 				wp_register_script( 'isotope', WM_ASSETS_THEME . 'js/isotope/jquery.isotope.min.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
