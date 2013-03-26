@@ -1774,20 +1774,24 @@
 			if ( is_page_template( 'page-template/construction.php' ) || is_404() )
 				return;
 			$before = '
-				<header id="main-heading" class="main-heading wrap clearfix">
-					<div class="wrap-inner">';
+				<header id="main-heading" class="main-heading wrap">
+					<div class="wrap-inner">
+						<div id="heading">';
 
 			$left ='
 				<div id="h-left">
-					<div class="title-section">ESTRUTURAÇÃO EM PRIVARE EQUITY</div>
+					<div class="icon-estrutura"></div>
+					<div class="title-section">estruturação em private equity</div>
 						<ul>
 							<li>Projetos Imobiliários</li>
 							<li>Agronegócios</li>
 							<li>Fundos de Investimento</li>
 						</ul>
-				</div>';
+				</div>
+				<div class="linha-vertical"></div>';
 				$center ='
 				<div id="h-center">
+					<div class="icon-imobiliaria"></div>
 					<div class="title-section">PLATAFORMA IMOBILIÁRIA</div>
 						<ul>
 							<li>Atlantes Incorporações Imobiliária</li>
@@ -1798,6 +1802,7 @@
 				</div>';
 				$right ='
 				<div id="h-right">
+					<div class="icon-agronegocio"></div>
 					<div class="title-section">PLATAFORMA DE AGRONEGÓCIO</div>
 						<ul>
 							<li>Atlantes Agronegócio</li>
@@ -1806,7 +1811,7 @@
 				</div>';
 							
 			$after  = '
-							
+						</div>	
 					</div>
 				</header>';
 

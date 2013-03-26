@@ -32,6 +32,7 @@
 	$fontFile    = ( ! file_exists( '../font/custom/css/fontello-codes.css' ) ) ? ( array( 'icons-font.css', '../font/fontello/css/fontello-codes.css' ) ) : ( array( 'icons-font-custom.css', '../font/custom/css/fontello-codes.css' ) );
 
 	//Start including files and editing output
+		@readfile( 'google-fonts.css' );
 		@readfile( 'normalize.css' );
 		@readfile( 'icons-basic.css' );
 		@readfile( $fontFile[0] );
