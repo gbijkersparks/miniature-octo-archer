@@ -1993,7 +1993,7 @@
 
 						$link        = ( wm_meta_option( 'project-link-list' ) ) ? ( esc_url( wm_meta_option( 'project-link' ) ) ) : ( get_permalink() );
 						$target      = ( 'target-blank' == wm_meta_option( 'project-link-list' ) ) ? ( ' target="_blank"' ) : ( '' );
-						$overlayText = ( 'modal' == wm_meta_option( 'project-link-list' ) ) ? ( __( 'Zoom', 'lespaul_domain' ) ) : ( __( 'View', 'lespaul_domain' ) );
+						$overlayText = ( 'modal' == wm_meta_option( 'project-link-list' ) ) ? ( __( 'Zoom', 'lespaul_domain' ) ) : ( __( '<div class="p-more"></div>Saiba Mais', 'lespaul_domain' ) );
 
 						if ( 0 < $excerptLength && has_excerpt() )
 							$excerptText = wm_string_length( get_the_excerpt(), $excerptLength, '&hellip;' );
