@@ -127,10 +127,20 @@ jQuery( function() {
 	//WooCommerce
 		jQuery( '.widget_product_search input[type="text"]' ).css( { paddingRight : ( jQuery( '.widget_product_search input[type="submit"]' ).outerWidth() + 10 ) } );
 
+	//widget title 
 
+(function($, window, undefined){
+		$.each($('.separator-heading'), function(index, heading){
+			var containerWidth = $(heading).parent().width();
+			var span = $(heading).find('span');
+			var spanWidth = $(heading).find('span').width();
+			log(containerWidth);
+			var offset = 5;
 
-
-
+			$(heading).width(containerWidth-spanWidth-offset);
+			$(span).css({'margin-left': -(spanWidth+offset)});
+		});
+})(jQuery, window);
 /*
 *****************************************************
 *      3) MENU EFFECTS

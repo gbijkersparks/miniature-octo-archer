@@ -4,6 +4,12 @@
 
 	body {}
 
+	.clearfix {
+	  zoom: 1;
+		&:before, &:after { content: ""; display: table; }
+		&:after { clear: both; }
+	}
+
 	.wrap {
 		position: relative;
 		width: 100%;
@@ -17,7 +23,18 @@
 		margin: 0 auto;
 	}
 
+	.widget-heading {
+	 	zoom: 1;
+		&:before, &:after { content: ""; display: table; }
+		&:after { clear: both; }
 
+		display: inline-block;
+		float: right;
+		height: 10px;
+		span {
+			display: inline-block;
+		}
+	}
 
 /*********************************************/
 /* global elements and classes               */
