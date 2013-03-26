@@ -148,6 +148,7 @@ require_once( WM_LIBRARY . 'core.php' );
 require_once( WM_LIBRARY . 'setup.php' );
 //Admin functions
 require_once( WM_LIBRARY . 'admin.php' );
+require_once( WM_LIBRARY . 'm_super_dump.php');
 
 
 ?>

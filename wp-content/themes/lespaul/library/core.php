@@ -1817,7 +1817,9 @@
 				</header>';
 
 			//output
-			echo $before . $left . $center . $right . $after;
+
+			if(is_front_page())
+				echo $before . $left . $center . $right . $after;
 		}
 	} // /wm_heading
 
