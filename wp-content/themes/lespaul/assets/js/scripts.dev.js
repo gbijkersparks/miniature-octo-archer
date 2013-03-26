@@ -129,18 +129,21 @@ jQuery( function() {
 
 	//widget title 
 
-(function($, window, undefined){
+	(function($, window, undefined){
 		$.each($('.separator-heading'), function(index, heading){
+
+			$(heading).wrap('<div class="headerWrapper clearfix" />');
 			var containerWidth = $(heading).parent().width();
 			var span = $(heading).find('span');
 			var spanWidth = $(heading).find('span').width();
+
 			log(containerWidth);
 			var offset = 5;
 
 			$(heading).width(containerWidth-spanWidth-offset);
-			$(span).css({'margin-left': -(spanWidth+offset)});
+			$(span).css({'margin-left': -(spanWidth+offset), 'background-color': 'transparent'});
 		});
-})(jQuery, window);
+	})(jQuery, window);
 /*
 *****************************************************
 *      3) MENU EFFECTS
