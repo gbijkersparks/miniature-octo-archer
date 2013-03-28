@@ -132,21 +132,42 @@ jQuery( function() {
 	(function($, window, undefined){
 		resizeUpdate();
 		$(window).resize( function() { resizeUpdate();});
+
+		$('.cf_upload').wrap('<div class="cf_uploadWrapper" />');
+		var uploadWrapper = $('.cf_uploadWrapper');
+		uploadWrapper.append('<div class="cf_upload-fake" />');
+		uploadWrapper.parent().append('<span class="fileMsg">Nenhum arquivo selecionado</span>')
+		$('.cf_upload-fake').click(function(){
+			$('.cf_upload').click();
+		});
+		$('.cf_upload').change(function(){
+			var $this = $(this);
+			var text = $this.val();
+			textList = text.split("\\");
+			textList[textList.length-1].split("/");
+    		$('.fileMsg').text(textList[textList.length-1]);
+		});
+
+
+		$(".cform .cf-box-b").jqTransCheckBox();
+
+
 		function resizeUpdate() {
 			$.each($('.separator-heading'), function(index, heading){
 
-			$(heading).wrap('<div class="headerWrapper clearfix" />');
-			var containerWidth = $(heading).parent().width();
-			var span = $(heading).find('span');
-			var spanWidth = $(heading).find('span').width();
+				$(heading).wrap('<div class="headerWrapper clearfix" />');
+				var containerWidth = $(heading).parent().width();
+				var span = $(heading).find('span');
+				var spanWidth = $(heading).find('span').width();
 
-			log(containerWidth);
-			var offset = 5;
+				log(containerWidth);
+				var offset = 5;
 
-			$(heading).width(containerWidth-spanWidth-offset);
-			$(span).css({'margin-left': -(spanWidth+offset), 'background-color': 'transparent'});
-		});
+				$(heading).width(containerWidth-spanWidth-offset);
+				$(span).css({'margin-left': -(spanWidth+offset), 'background-color': 'transparent'});
+			});
 		}
+
 	})(jQuery, window);
 /*
 *****************************************************
