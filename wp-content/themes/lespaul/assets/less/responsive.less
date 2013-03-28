@@ -228,7 +228,19 @@
 								.nav-main li li li li a,
 								.nav-main li li li li .inner {padding-left: 65px !important}
 
+		#nav-main {
 
+			li.menu-icon {
+				height: auto;
+				a span {
+					display: block;
+				}
+			}
+
+			.nav-icon, .nav-icon-rollover {
+				display: none !important;
+			}
+		}
 
 		/* CONTENT */
 			/* layout styles */
@@ -319,7 +331,7 @@
 				/* logos */
 					.wrap-logos .column {
 						float: left;
-						width: 33%;
+						width: 25%;
 					}
 
 				/* tables */
@@ -390,4 +402,14 @@
 						padding-top: 0;
 						border-top: 0;
 					}
+	}
+
+
+	@media only screen and (max-width: 479px) {
+		
+		/* logos */
+			.wrap-logos .column {
+				float: left;
+				width: 33%;
+			}
 	}
