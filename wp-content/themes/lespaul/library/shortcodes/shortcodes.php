@@ -1465,9 +1465,26 @@
 							$row  = ( ++$i % $cols === 1 ) ? ( $row + 1 ) : ( $row );
 							$out .= ( $i % $cols === 1 && 1 < $row ) ? ( '</div><div class="row">' ) : ( '' );
 						}
+						
+						// $thumb  = '';
+	     //                $width  = 140;
+	     //                $height = 70;
+	     //                $title  = get_the_title();
+	     //                //$img = get_post_image_src($logos->post->ID);
+	     //                $img = wm_meta_option( 'client-logo' );
+	     //                $default_attr = array(
+	     //                    'src'   => $src,
+	     //                    'class' => "attachment-$size",
+	     //                    'alt'   => trim(strip_tags( $attachment->post_excerpt )),
+	     //                    'title' => trim(strip_tags( $attachment->post_title )),
+	     //                 );
+	     //                $thumbnail = get_the_post_thumbnail($width,$height);
+	     //                $thumb = $thumbnail["thumb"];
 
 						$out   .= '<div class="item column col-1' . $cols . ' no-margin">';
 							$out .= ( $link ) ? ( '<a href="' . $link . '" target="_blank">' ) : ( '' );
+							//if(has_post_thumbnail())
+							//$out .= the_crop_image($img, "&amp;w=$width&amp;h=$height&amp;zc=0",'<img src="' . esc_url( wm_meta_option( 'client-logo' ) ) . '" alt="' . $title . '" title="' . $title . '"' . $grayscale .' />');
 							$out .= '<img src="' . esc_url( wm_meta_option( 'client-logo' ) ) . '" alt="' . get_the_title() . '" title="' . get_the_title() . '"' . $grayscale .' />';
 							$out .= ( $link ) ? ( '</a>' ) : ( '' );
 						$out   .= '</div>';
@@ -2128,6 +2145,7 @@
 	* @param order      [new/old/name/random/NONE]
 	* @param thumb      [BOOLEAN]
 	*/
+	
 	if ( ! function_exists( 'wm_shortcode_staff' ) ) {
 		function wm_shortcode_staff( $atts, $content = null ) {
 			extract( shortcode_atts( array(
@@ -2208,9 +2226,10 @@
 						$staff->the_post();
 
 						if ( wm_option( 'cp-staff-rich' ) )
-							$excerptText  = ( has_excerpt() ) ? ( apply_filters( 'wm_default_content_filters', get_the_excerpt() ) ) : ( '' );
+							$excerptText  = ( has_excerpt() ) ? ( apply_filters( 'wm_default_content_filters', get_the_excerpt() ) ) : (  );
  						else
 							$excerptText = apply_filters( 'wm_default_content_filters', get_the_content() );
+
 
 						$contacts = '';
 						if ( wm_meta_option( 'staff-phone' ) )
@@ -2237,7 +2256,7 @@
 										'size'        => $imgSize,
 										'list'        => true,
 										'placeholder' => true,
-										'overlay'     => __( 'Read more', 'lespaul_domain' ),
+										'overlay'     => __( '<div class="p-more"></div>Saiba Mais', 'lespaul_domain' ),
 									) ),
 								'title'      => '<h3 class="staff-title text-element"><strong>' . get_the_title() . '</strong></h3>',
 								'title-link' => '<h3 class="staff-title text-element"><a href="' . get_permalink() . '"><strong>' . get_the_title() . '</strong></a></h3>',

@@ -170,13 +170,15 @@
 			global $post;
 			$prefix     = 'wm_logos-';
 			$prefixMeta = 'client-';
+            $width  = 140;
+            $height = 140;
 
 			switch ( $wm_logosCol ) {
 				case $prefix . "thumb":
 
 					$size  = explode( 'x', WM_ADMIN_LIST_THUMB );
 					//$image = ( has_post_thumbnail() ) ? ( get_the_post_thumbnail( null, 'widget' ) ) : ( '<img src="' . WM_ASSETS_ADMIN . 'img/no-thumb.png" alt="' . __( 'No image', 'lespaul_domain_adm' ) . '" title="' . __( 'No image', 'lespaul_domain_adm' ) . '" />' );
-					$image = ( wm_meta_option( $prefixMeta . 'logo' ) ) ? ( '<img src="' . esc_url( wm_meta_option( $prefixMeta . 'logo' ) ) . '" alt="" />' ) : ( '' );
+					$image = ( wm_meta_option( $prefixMeta . $width . $height. 'logo' ) ) ? ( '<img src="' . esc_url( wm_meta_option( $prefixMeta . $width . $height. 'logo' ) ) . '" alt="" />' ) : ( '' );
 
 					$hasThumb = ( $image ) ? ( ' has-thumb' ) : ( ' no-thumb' );
 

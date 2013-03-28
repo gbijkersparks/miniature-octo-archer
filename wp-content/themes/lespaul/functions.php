@@ -27,6 +27,7 @@
 *  4) lespaul_domain_panel
 */
 
+require_once(TEMPLATEPATH . '/m_toolbox/m_toolbox.php');
 
 //Getting theme data
 	$shortname = get_template();
@@ -44,7 +45,9 @@
 	$shortname = str_replace( '-v' . $themeVersion, '', $shortname );
 
 
-
+	if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+	}
 //Theme constants
 	//Basic constants
 		define( 'WM_THEME_NAME',      $themeName );
@@ -148,7 +151,6 @@ require_once( WM_LIBRARY . 'core.php' );
 require_once( WM_LIBRARY . 'setup.php' );
 //Admin functions
 require_once( WM_LIBRARY . 'admin.php' );
-require_once( WM_LIBRARY . 'm_super_dump.php');
-
+//require_once( WM_LIBRARY . 'm_super_dump.php');
 
 ?>

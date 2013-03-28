@@ -65,6 +65,7 @@
 		//Main content start
 		add_action( 'wm_after_header', 'wm_slider', 10 );
 		add_action( 'wm_after_header', 'wm_heading', 20 );
+		add_action( 'wm_after_header', 'wm_heading_home', 20 );
 
 		if ( wm_option( 'contents-page-excerpt' ) )
 			add_action( 'wm_after_header', 'wm_page_excerpt', wm_option( 'contents-page-excerpt' ) );
@@ -1770,12 +1771,12 @@
 	* $list = TEXT [if set, outputs H2 instead of H1]
 	* $wrap = HTML ["span" inside H1/H2 text wrapper]
 	*/
-	if ( ! function_exists( 'wm_heading' ) ) {
-		function wm_heading( $list = null, $wrap = null ) {
+	if ( ! function_exists( 'wm_heading_home' ) ) {
+		function wm_heading_home( $list = null, $wrap = null ) {
 			if ( is_page_template( 'page-template/construction.php' ) || is_404() )
 				return;
 			$before = '
-				<header id="main-heading" class="main-heading wrap">
+				<header id="heading-home" class="main-heading wrap">
 					<div class="wrap-inner">
 						<div id="heading">';
 
@@ -1814,12 +1815,201 @@
 			$after  = '
 						</div>	
 					</div>
+					
 				</header>';
 
 			//output
 
 			if(is_front_page())
 				echo $before . $left . $center . $right . $after;
+		}
+	} // /wm_heading-home
+
+
+	if ( ! function_exists( 'wm_heading' ) ) {
+		function wm_heading( $list = null, $wrap = null ) {
+			if ( is_page_template( 'page-template/construction.php' ) || is_404() )
+				return;
+
+			global $post, $page, $paged, $wp_query;
+
+			if ( ! isset( $paged ) )
+				$paged = 0;
+			if ( ! isset( $page ) )
+				$page = 0;
+
+			$authorInfo   = '';
+			$blogPageId   = ( is_home() ) ? ( get_option( 'page_for_posts' ) ) : ( null );
+			$subheading   = ( ! is_archive() ) ? ( wm_meta_option( 'subheading', $blogPageId ) ) : ( '' );
+			$headingAlign = wm_meta_option( 'main-heading-alignment', $blogPageId );
+
+			$headingAlign = ( $headingAlign ) ? ( $headingAlign ) : ( wm_option( 'design-main-heading-alignment' ) );
+
+			if ( is_search() && ! is_home() && ! class_exists( 'Woocommerce' ) )
+				$subheading = sprintf( __( 'Number of items found: %s', 'lespaul_domain' ), $wp_query->found_posts );
+
+			if ( is_author() && 2 > $paged ) {
+				$userID = $wp_query->query_vars['author'];
+
+				$authorDescription = get_the_author_meta( 'description', $userID );
+
+				if ( $authorDescription ) {
+					$authorDescription = '<div class="desc">' . $authorDescription . '</div>';
+
+					$authorWebsite = ( get_the_author_meta( 'user_url', $userID ) ) ? ( '<div class="website"><a href="' . esc_url( get_the_author_meta( 'user_url', $userID ) ) . '">' . __( "Visit author's website", 'lespaul_domain' ) . '</a></div>' ) : ( '' );
+					$authorAvatar  = get_avatar( $userID, 180 );
+					$authorName    = get_the_author_meta( 'display_name', $userID );
+
+					$authorSocial = array();
+					if ( get_the_author_meta( 'facebook', $userID ) )
+						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'facebook', $userID ) ) . '" icon="Facebook" title="' . sprintf( __( '%s on Facebook', 'lespaul_domain' ), $authorName ) . '" size="m"]';
+					if ( get_the_author_meta( 'googleplus', $userID ) )
+						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'googleplus', $userID ) ) . '" icon="Google+" title="' . sprintf( __( '%s on Google+', 'lespaul_domain' ), $authorName ) . '" size="m" rel="me"]';
+					if ( get_the_author_meta( 'twitter', $userID ) )
+						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'twitter', $userID ) ) . '" icon="Twitter" title="' . sprintf( __( '%s on Twitter', 'lespaul_domain' ), $authorName ) . '" size="m"]';
+					$authorSocial = ( ! empty( $authorSocial ) ) ? ( '<div class="socials">' . implode( ' ', $authorSocial ) . '</div>' ) : ( '' );
+
+					$authorInfo = apply_filters( 'wm_default_content_filters', $authorAvatar . $authorDescription . $authorWebsite . $authorSocial );
+				}
+			}
+
+			if ( is_attachment() && ! empty( $post->post_parent ) )
+				$subheading = '<a href="' . get_permalink( $post->post_parent ) . '" title="' . esc_attr( sprintf( __( 'Return to %s', 'lespaul_domain' ), strip_tags( get_the_title( $post->post_parent ) ) ) ) . '">&laquo; ' . get_the_title( $post->post_parent ) . '</a>';
+
+			//List title
+			if ( isset( $list ) && $list ) {
+				$out = '';
+
+				if ( has_post_format( 'status' ) )
+					$out .= ( get_the_title() ) ? ( get_the_title() ) : ( '' );
+				else
+					$out .= ( get_the_title() ) ? ( '<a href="' . get_permalink() . '">' . get_the_title() . '</a>' ) : ( '' );
+
+				$titleSticky = '';
+				if ( is_sticky() )
+					$titleSticky = ' title="' . __( 'This is featured post', 'lespaul_domain' ) . '"';
+
+				$output =  ( $out ) ? ( '<h2 class="post-title"' . $titleSticky . '>' . $out . '</h2>' ) : ( '' );
+
+				//output
+				echo $output;
+				return;
+			}
+
+			//Main H1 title
+			$out = '';
+			if ( is_singular() || $blogPageId ) {
+			//post or page
+
+				$title = ( isset( $wrap ) && $wrap ) ? ( '<' . $wrap . '>' . get_the_title( $blogPageId ) . '</' . $wrap . '>' ) : ( get_the_title( $blogPageId ) );
+				if ( 1 < $page )
+					$out .= ( $title ) ? ( '<a href="' . get_permalink() . '">' . $title . '</a> <small>(part ' . $page . ')</small>' ) : ( '' );
+				else
+					$out .= ( $title ) ? ( $title ) : ( '' );
+
+			} elseif ( is_day() ) {
+			//dayly archives
+
+				$out .= sprintf( __( 'Daily Archives: <span>%s</span>', 'lespaul_domain' ), get_the_date() );
+
+			} elseif ( is_month() ) {
+			//monthly archives
+
+				$out .= sprintf( __( 'Monthly Archives: <span>%s</span>', 'lespaul_domain' ), get_the_date( 'F Y' ) );
+
+			} elseif ( is_year() ) {
+			//yearly archives
+
+				$out .= sprintf( __( 'Yearly Archives: <span>%s</span>', 'lespaul_domain' ), get_the_date( 'Y' ) );
+
+			} elseif ( is_author() ) {
+			//author archive
+
+				$userID = $wp_query->query_vars['author'];
+
+				$out .= sprintf( __( 'Posts by <span>%s</span>', 'lespaul_domain' ), get_the_author_meta( 'display_name', $userID ) );
+
+			} elseif ( is_category() ) {
+			//category archive
+
+				$out .= sprintf( __( 'Posts in <span>%s</span> Category', 'lespaul_domain' ), single_cat_title( '', false ) );
+
+			} elseif ( is_tag() ) {
+			//tag archive
+
+				$out .= sprintf( __( 'Posts Tagged "<span>%s</span>"', 'lespaul_domain' ), single_tag_title( '', false ) );
+
+			} elseif ( is_search() ) {
+			//search
+
+				$out .= sprintf( __( 'Search results for <span>"%s"</span>', 'lespaul_domain' ), get_search_query() );
+
+			} elseif ( is_tax( 'project-category' ) ) {
+			//custom taxonomy
+
+				$portfolioPage   = wm_option( 'general-breadcrumbs-portfolio-page' );
+				$portfolioPageID = wm_page_slug_to_id( $portfolioPage );
+				$portfolioPage   = ( $portfolioPageID ) ? ( get_the_title( $portfolioPageID ) . ' / ' ) : ( '' );
+
+				$out .= $portfolioPage . $wp_query->queried_object->name;
+
+			} else {
+			//other situations
+
+				$out .= ( wm_option( 'pages-default-archives-title' ) ) ? ( wm_option( 'pages-default-archives-title' ) ) : ( '' );
+
+			}
+
+			//WooCommerce titles
+				if ( class_exists( 'Woocommerce' ) && ! $out ) {
+					global $shop_page_title;
+					$shop_page = get_post( woocommerce_get_page_id( 'shop' ) );
+					$out = apply_filters( 'the_title', ( $shop_page_title = get_option( 'woocommerce_shop_page_title' ) )  ? $shop_page_title : $shop_page->post_title );
+				}
+
+			//paged
+			$out .= ( 1 < $paged ) ? ( ' <small>(page ' . $paged . ')</small>' ) : ( '' );
+
+			//post, page title and subtitle display
+			$class = $classContainer = '';
+			if ( wm_meta_option( 'no-heading', $blogPageId ) || ! $out ) {
+				$class           = ( ( is_singular() || is_home() ) && $subheading ) ? ( 'invisible' ) : ( '' );
+				$classContainer .= ( ( is_singular() || is_home() ) && ! $subheading ) ? ( ' invisible' ) : ( ' visible' );
+			} else {
+				$classContainer .= ' visible';
+			}
+
+			$subtitleH2      = ( $subheading ) ? ( '<h2 class="subtitle">' . do_shortcode( $subheading ) . '</h2>' ) : ( '' );
+			$subtitleH2      = ( $authorInfo ) ? ( '<div class="authorinfo">' . $authorInfo . '</div>' ) : ( $subtitleH2 );
+			$classContainer .= ( $subtitleH2 ) ? ( ' has-subtitle' ) : ( '' );
+			$wrapper         = $wrapperEnd = '';
+
+			//main heading background color class
+			$classContainer .= ( wm_css_background( 'design-main-heading-' ) ) ? ( ' set-bg' ) : ( '' );
+			$classContainer .= ( ( is_singular() || is_home() ) && $headingAlign ) ? ( ' text-' . $headingAlign ) : ( '' );
+
+			//icon
+			$headingIcon     = ( ! wm_meta_option( 'main-heading-icon', $blogPageId ) || is_archive() || is_search() ) ? ( '' ) : ( '<i class="' . wm_meta_option( 'main-heading-icon', $blogPageId ) . '"></i>' );
+			$classContainer .= ( ! wm_meta_option( 'main-heading-icon', $blogPageId ) || is_archive() || is_search() ) ? ( '' ) : ( ' has-icon' );
+
+			//wrapper width
+			$classContainer .= wm_element_width( 'mainheading' );
+
+			//CSS3 animations
+			$classContainer .= ( ! wm_option( 'design-no-animation-heading' ) ) ? ( ' animated' ) : ( '' );
+
+			$before = '<header id="main-heading" class="main-heading wrap clearfix' . $classContainer . '"><div class="no-overflow"><div class="wrap-inner"><div class="twelve pane">';
+			$after  = '</div></div></div></header>';
+
+			$mainHeadingTag = ( ! is_front_page() ) ? ( '1' ) : ( '2' );
+			if ( is_front_page() )
+				$class .= ' h1-style';
+			if ( $class )
+				$class = ' class="' . trim( $class ) . '"';
+
+			//output
+			if(! is_front_page())
+			echo $before . $wrapper . $headingIcon . '<h' . $mainHeadingTag . $class . '>' . $out . '</h' . $mainHeadingTag . '>' . $subtitleH2 . $wrapperEnd . $after;
 		}
 	} // /wm_heading
 
