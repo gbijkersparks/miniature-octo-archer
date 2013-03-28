@@ -239,6 +239,7 @@
 			//scripts
 				wp_enqueue_script( 'imagesloaded' );
 				wp_enqueue_script( 'prettyphoto' );
+				wp_enqueue_script( 'jqtransform' );
 
 				if ( is_home() || is_page_template( 'home.php' ) ) {
 					$thisPageId = ( is_home() ) ? ( $blogPageId ) : ( get_the_ID() );

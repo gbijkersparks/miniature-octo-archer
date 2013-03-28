@@ -85,6 +85,7 @@
 				) {
 				//styles
 				wp_enqueue_style( 'fancybox' );
+
 				if ( wm_option( 'branding-panel-logo' ) || wm_option( 'branding-panel-no-logo' ) )
 					wp_enqueue_style( 'wm-options-panel-white-label' );
 				else
