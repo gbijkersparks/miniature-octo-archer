@@ -160,6 +160,7 @@ if ( ! is_page_template( 'page-template/construction.php' ) && ' nav-top' === wm
 ?>
 </div><!-- /header --></header>
 <?php wm_slider(); ?>
+<?php wm_heading_home(); ?>
 <?php wm_heading(); ?>
 <?php //wm_after_header(); ?>
 

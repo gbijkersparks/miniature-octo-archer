@@ -14,7 +14,10 @@
 		width: 100%;
 		height: 100%;
 		z-index: 2;
+		border: 0;
 		color: #959595;
+		-webkit-box-shadow: inset 0 8px 12px -12px #000;
+	    box-shadow: inset 0 8px 12px -12px #000;
 		// border-top: 1px solid;
 	}
 		.content .wrap-inner {
@@ -43,6 +46,17 @@
 /*********************************************/
 /* main content area                         */
 /*********************************************/
+
+article.main{
+	.article-content{
+		.separator-heading{
+			float:right;
+		}
+		.wrap-logos-shortcode{
+			margin-bottom: 30px;
+		}
+	}
+}
 
 	.main {position: relative; margin-top: 20px;}
 		.main.sidebar-left {float: right}
@@ -510,6 +524,29 @@
 			margin-top: 0;
 			padding-top: 0;
 		}
+	#staff-presidente{
+		.wrap-staff-shortcode{
+			.wrap-staff{
+				display: inline-block;
+				article.col-14{
+					display: inline-block;
+					float: left;
+					width: 50%;
+					.staff-thumb{
+
+					}
+					.text{
+						h3.staff-title{
+
+						}
+						.staff-excerpt{
+
+						}
+					}
+				}
+			}
+		}
+	}
 
 
 
