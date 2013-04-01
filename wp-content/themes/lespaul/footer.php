@@ -21,7 +21,7 @@ if ( is_404() && wm_option( 'p404-no-above-footer-widgets' ) )
 	if ( class_exists( 'Woocommerce' ) && is_woocommerce() )
 		$aboveFooter = null;
 
-if ( $aboveFooter && is_active_sidebar( $aboveFooter ) && ! wm_meta_option( 'no-above-footer-widgets' ) ) {
+if ( $aboveFooter && is_active_sidebar( $aboveFooter ) && ! wm_meta_option( 'no-above-footer-widgets' ) && is_front_page() ) {
 	echo '<section id="above-footer" class="wrap clearfix above-footer-widgets-wrap' . wm_element_width( 'abovefooter' ) . '"><div class="wrap-inner">';
 	wm_sidebar( $aboveFooter, 'widgets columns twelve pane', 5 ); //no restriction
 	echo '</div></section>';

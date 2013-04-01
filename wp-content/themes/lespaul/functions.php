@@ -29,6 +29,9 @@
 
 require_once(TEMPLATEPATH . '/m_toolbox/m_toolbox.php');
 
+//update_option('siteurl','http://192.168.0.201/atlantes');
+//update_option('home','http://192.168.0.201/atlantes');
+
 //Getting theme data
 	$shortname = get_template();
 

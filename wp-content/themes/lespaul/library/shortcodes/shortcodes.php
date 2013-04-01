@@ -2226,7 +2226,7 @@
 						$staff->the_post();
 
 						if ( wm_option( 'cp-staff-rich' ) )
-							$excerptText  = ( has_excerpt() ) ? ( apply_filters( 'wm_default_content_filters', get_the_excerpt() ) ) : (  );
+							$excerptText  = ( has_excerpt() ) ? ( apply_filters( 'wm_default_content_filters', get_the_excerpt() ) ) : ('');
  						else
 							$excerptText = apply_filters( 'wm_default_content_filters', get_the_content() );
 
