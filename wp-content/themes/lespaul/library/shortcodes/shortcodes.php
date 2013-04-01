@@ -1649,7 +1649,7 @@
 										'size'        => $imgSize,
 										'list'        => true,
 										'placeholder' => true,
-										'overlay'     => __( 'Read more', 'lespaul_domain' ),
+										'overlay'     => __( 'Saiba Mais ...', 'lespaul_domain' ),
 									) ),
 								'title'   => '<h3 class="post-title text-element"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>',
 								'excerpt' => $excerptText,
@@ -2151,9 +2151,9 @@
 			extract( shortcode_atts( array(
 				'align'      => 'left',
 				'columns'    => 5,
-				'count'      => 4,
+				'count'      => 5,
 				'department' => null,
-				'desc_size'  => 4,
+				'desc_size'  => 5,
 				'order'      => 'new',
 				'thumb'      => true,
 				), $atts )
@@ -2169,8 +2169,8 @@
 			//validation
 			$align         = ( 'right' === trim( $align ) ) ? ( trim( $align ) ) : ( 'left' );
 			$cols          = ( 0 < absint( $columns ) && 7 > absint( $columns ) ) ? ( absint( $columns ) ) : ( 5 );
-			$colsDesc      = ( 1 < absint( $desc_size ) && 7 > absint( $desc_size ) ) ? ( absint( $desc_size ) ) : ( 4 );
-			$count         = ( $count ) ? ( absint( $count ) ) : ( 4 );
+			$colsDesc      = ( 1 < absint( $desc_size ) && 7 > absint( $desc_size ) ) ? ( absint( $desc_size ) ) : ( 5 );
+			$count         = ( $count ) ? ( absint( $count ) ) : ( 5 );
 			$orderMethod   = array(
 					'all'    => array( 'new', 'old', 'name', 'random' ),
 					'new'    => array( 'date', 'DESC' ),
@@ -2244,7 +2244,7 @@
 						}
 						$staffOutput  = array(
 								'thumb' => wm_thumb( array(
-										'class'       => 'staff-thumb',
+										'class'       => '',
 										'size'        => $imgSize,
 										'list'        => true,
 										'link'        => 'modal',
@@ -2252,7 +2252,7 @@
 										'overlay'     => __( 'Zoom', 'lespaul_domain' ),
 									) ),
 								'thumb-permalink' => wm_thumb( array(
-										'class'       => 'staff-thumb',
+										'class'       => '',
 										'size'        => $imgSize,
 										'list'        => true,
 										'placeholder' => true,
@@ -2294,7 +2294,6 @@
 		}
 	} // /wm_shortcode_staff
 	add_shortcode( 'staff', 'wm_shortcode_staff' );
-
 
 
 	/**

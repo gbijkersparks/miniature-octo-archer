@@ -3,14 +3,14 @@
 /*********************************************/
 .home {
 	.content {
-		background: url('../img/bg-wrap.png') no-repeat center top #f9f8f9;
+		background: url('../img/bg-wrap.png') no-repeat center top #f6f6f6;
 	}
 }
 	.content {
 		clear: both;
 		position: relative;
 		z-index: 1;
-		background: #fefefe;
+		background: #f6f6f6;
 		width: 100%;
 		height: 100%;
 		z-index: 2;
@@ -164,12 +164,27 @@ article.main{
 			.list-articles .meta-article {
 				padding: 20px;
 				background-color: #f6f6f6;
+				-webkit-box-shadow: inset 0 10px 12px -12px #C4C4C4;
+	    		box-shadow: inset 0 10px 12px -12px #C4C4C4;
 			}
 
 			.post-media {
 				position: relative;
 				z-index: 1;
 			}
+	.widgets{
+		.headerWrapper{
+			span.text-holder{
+				color:#a1a1a1;
+		
+			}
+		}
+		
+	}
+	#comments{
+		display: none;
+	}
+
 
 		/* post formats */
 			/* link */
@@ -315,8 +330,46 @@ article.main{
 				.search-item .excerpt {margin-left: 100px}
 				.search-item .excerpt {padding: 0}
 
-
-
+a.more-link{
+	color: #0067ac;
+}
+a.more-link:hover{
+		text-decoration: underline;
+		color:#1b4f72;
+	}
+span.author{
+	a{
+		color: #0067ac;
+	}
+	a:hover{
+		text-decoration: underline;
+		color:#1b4f72;
+	}
+}
+span.categories{
+	a{
+		color: #0067ac;
+	}
+	a:hover{
+		text-decoration: underline;
+		color:#1b4f72;
+	}
+}
+.widget{
+	a.twitter-link{
+		color: #0067ac;
+	}
+	a:hover{
+		text-decoration: underline;
+		color:#1b4f72;
+	}
+	
+}
+footer.meta-article{
+	span.permalink{
+		display: none;
+	}
+}
 	/* meta article */
 		.meta-bottom,
 		.meta-bottom + .meta-bottom {border-top: 0}
@@ -432,8 +485,18 @@ article.main{
 					}
 					.bio .posts-by-author a {color: inherit}
 			.bio .desc {margin-top: 20px}
-
-
+.sidebar{
+	margin-top: 20px;
+}
+.wm-twitter-2{
+	ul{
+		list-style: none;
+		li{
+			list-style: none;
+			padding-bottom: 20px;
+		}
+	}
+}
 
 /*********************************************/
 /* error 404 page                            */
@@ -525,28 +588,14 @@ article.main{
 			padding-top: 0;
 		}
 
-	article.staff-presidente{
-		.image-container{
-			width: 50%;
-			float: left;
-			margin-right: 30px;
-			margin-bottom: 50px;
-		}
-		.text{
-			padding-top: 20px;
-		}
-		span.overley{
-			display: block;
-			position: absolute;
+	article#staff-presidente{
+		.col-15{
 			width: 100%;
-			height: 100%;
-			left: 0;
-			top: 150%;
-			padding: 10px;
-			text-transform: uppercase;
-			background: url(../img/transparent/black/50.png);
-			background: rgba(24,75,117,0.5);
-			color: #fff;
+			.image-container{
+				width: 50%;
+				float: left;
+				margin: 10px 20px 50px 0;
+			}
 		}
 	}
 

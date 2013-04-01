@@ -2624,10 +2624,10 @@
 
 					$out .= ( ! post_password_required() ) ? ( apply_filters( 'wm_default_content_filters', get_the_content( '' ) ) ) : ( '<strong>' . __( 'Password protected', 'lespaul_domain' ) . '</strong>' );
 					$out .= '</div>';
-					$out .= '<p><a href="' . get_permalink() . '#more-' . $post->ID . '" class="more-link">' . __( 'Continue reading &raquo;', 'lespaul_domain' ) . '</a></p>';
+					$out .= '<p><a href="' . get_permalink() . '#more-' . $post->ID . '" class="more-link">' . __( 'Continue lendo &raquo;', 'lespaul_domain' ) . '</a></p>';
 				} else {
 					$out .= wm_excerpt( 'wm_excerpt_length_blog', 'wm_excerpt_more' );
-					$out .= '<p><a href="' . get_permalink() . '" class="more-link">' . __( 'Continue reading &raquo;', 'lespaul_domain' ) . '</a></p>';
+					$out .= '<p><a href="' . get_permalink() . '" class="more-link">' . __( 'Continue lendo &raquo;', 'lespaul_domain' ) . '</a></p>';
 				}
 			}
 
@@ -2645,7 +2645,7 @@
 	*/
 	if ( ! function_exists( 'wm_more' ) ) {
 		function wm_more( $class = 'more-link', $print = null ) {
-			$out = '<a href="' . get_permalink() . '" class="' . $class . '">' . __( 'Read more &raquo;', 'lespaul_domain' ) . '</a>';
+			$out = '<a href="' . get_permalink() . '" class="' . $class . '">' . __( 'Saiba Mais &raquo;', 'lespaul_domain' ) . '</a>';
 
 			if ( $print )
 				echo $out;
@@ -2699,16 +2699,16 @@
 								$out .= ( get_the_category_list( '' ) ) ? ( '<span class="categories meta-item">' . sprintf( __( 'In %s', 'lespaul_domain' ), get_the_category_list( ', ' ) ) . '</span>' ) : ( '' );
 
 						break;
-						case 'comments':
+						// case 'comments':
 
-							if ( ! wm_option( 'blog-disable-comments-count' ) && ( comments_open() || get_comments_number() ) ) {
-							//comments displayed only when enabled by admin panel AND if the post has comments eventhough commenting disabled for the post now
+						// 	if ( ! wm_option( 'blog-disable-comments-count' ) && ( comments_open() || get_comments_number() ) ) {
+						// 	//comments displayed only when enabled by admin panel AND if the post has comments eventhough commenting disabled for the post now
 
-								$elementId = ( get_comments_number() ) ? ( '#comments' ) : ( '#respond' );
-								$out      .= '<span class="comments meta-item"><a href="' . get_permalink() . $elementId . '">' . sprintf( __( 'Comments: %s', 'lespaul_domain' ), '<span class="comments-count" title="' . get_comments_number() . '">' . get_comments_number() . '</span>' ) . '</a></span>';
-							}
+						// 		$elementId = ( get_comments_number() ) ? ( '#comments' ) : ( '#respond' );
+						// 		$out      .= '<span class="comments meta-item"><a href="' . get_permalink() . $elementId . '">' . sprintf( __( 'Comments: %s', 'lespaul_domain' ), '<span class="comments-count" title="' . get_comments_number() . '">' . get_comments_number() . '</span>' ) . '</a></span>';
+						// 	}
 
-						break;
+						// break;
 						case 'date':
 
 							if ( ! wm_option( 'blog-disable-date' ) )
