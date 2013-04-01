@@ -150,7 +150,7 @@
 						if ( isset( $term->name ) )
 							$moduleTags[] = $term->name;
 					}
-					$modulePosts[$post->post_name] .= sprintf( __( ' (tags: %s)', 'lespaul_domain_adm' ), implode( ', ', $moduleTags ) );
+					$modulePosts[$post->post_name] .= sprintf( __( ' (tags: %s)', 'atlantes_domain_adm' ), implode( ', ', $moduleTags ) );
 				}
 			}
 
@@ -166,15 +166,15 @@
 				//Accordion
 					array(
 						'id' => 'accordion',
-						'name' => __( 'Accordion', 'lespaul_domain_adm' ),
-						'desc' => __( 'Please, copy the <code>[accordion_item title=""][/accordion_item]</code> sub-shortcode as many times as you need. But keep them wrapped in <code>[accordion][/accordion]</code> parent shortcode.', 'lespaul_domain_adm' ),
+						'name' => __( 'Accordion', 'atlantes_domain_adm' ),
+						'desc' => __( 'Please, copy the <code>[accordion_item title=""][/accordion_item]</code> sub-shortcode as many times as you need. But keep them wrapped in <code>[accordion][/accordion]</code> parent shortcode.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'auto' => array(
-								'label' => __( 'Automatic accordion', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select whether the accordion should automatically animate', 'lespaul_domain_adm' ),
+								'label' => __( 'Automatic accordion', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select whether the accordion should automatically animate', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'No', 'lespaul_domain_adm' ),
-									'1' => __( 'Yes', 'lespaul_domain_adm' ),
+									''  => __( 'No', 'atlantes_domain_adm' ),
+									'1' => __( 'Yes', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -184,51 +184,51 @@
 				//Box
 					array(
 						'id' => 'box',
-						'name' => __( 'Box', 'lespaul_domain_adm' ),
+						'name' => __( 'Box', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'color' => array(
-								'label' => __( 'Color', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose box color', 'lespaul_domain_adm' ),
+								'label' => __( 'Color', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose box color', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'blue'   => __( 'Blue', 'lespaul_domain_adm' ),
-									'gray'   => __( 'Gray', 'lespaul_domain_adm' ),
-									'green'  => __( 'Green', 'lespaul_domain_adm' ),
-									'orange' => __( 'Orange', 'lespaul_domain_adm' ),
-									'red'    => __( 'Red', 'lespaul_domain_adm' ),
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'blue'   => __( 'Blue', 'atlantes_domain_adm' ),
+									'gray'   => __( 'Gray', 'atlantes_domain_adm' ),
+									'green'  => __( 'Green', 'atlantes_domain_adm' ),
+									'orange' => __( 'Orange', 'atlantes_domain_adm' ),
+									'red'    => __( 'Red', 'atlantes_domain_adm' ),
 									)
 								),
 							'icon' => array(
-								'label' => __( 'Icon', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose an icon for this box', 'lespaul_domain_adm' ),
+								'label' => __( 'Icon', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose an icon for this box', 'atlantes_domain_adm' ),
 								'value' => array(
-									''         => __( 'No icon', 'lespaul_domain_adm' ),
-									'cancel'   => __( 'Cancel icon', 'lespaul_domain_adm' ),
-									'check'    => __( 'Check icon', 'lespaul_domain_adm' ),
-									'info'     => __( 'Info icon', 'lespaul_domain_adm' ),
-									'question' => __( 'Question icon', 'lespaul_domain_adm' ),
-									'warning'  => __( 'Warning icon', 'lespaul_domain_adm' ),
+									''         => __( 'No icon', 'atlantes_domain_adm' ),
+									'cancel'   => __( 'Cancel icon', 'atlantes_domain_adm' ),
+									'check'    => __( 'Check icon', 'atlantes_domain_adm' ),
+									'info'     => __( 'Info icon', 'atlantes_domain_adm' ),
+									'question' => __( 'Question icon', 'atlantes_domain_adm' ),
+									'warning'  => __( 'Warning icon', 'atlantes_domain_adm' ),
 									)
 								),
 							'title' => array(
-								'label' => __( 'Optional title', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional box title', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional title', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional box title', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'transparent' => array(
-								'label' => __( 'Opacity', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Whether box background is colored or not', 'lespaul_domain_adm' ),
+								'label' => __( 'Opacity', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Whether box background is colored or not', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'Opaque', 'lespaul_domain_adm' ),
-									'1' => __( 'Transparent', 'lespaul_domain_adm' ),
+									''  => __( 'Opaque', 'atlantes_domain_adm' ),
+									'1' => __( 'Transparent', 'atlantes_domain_adm' ),
 									)
 								),
 							'hero' => array(
-								'label' => __( 'Hero box', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Specially styled hero box', 'lespaul_domain_adm' ),
+								'label' => __( 'Hero box', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Specially styled hero box', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'Normal box', 'lespaul_domain_adm' ),
-									'1' => __( 'Hero box', 'lespaul_domain_adm' ),
+									''  => __( 'Normal box', 'atlantes_domain_adm' ),
+									'1' => __( 'Hero box', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -238,11 +238,11 @@
 				//Big text
 					array(
 						'id' => 'big_text',
-						'name' => __( 'Big text', 'lespaul_domain_adm' ),
+						'name' => __( 'Big text', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -252,66 +252,66 @@
 				//Button
 					array(
 						'id' => 'button',
-						'name' => __( 'Button', 'lespaul_domain_adm' ),
+						'name' => __( 'Button', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'url' => array(
-								'label' => __( 'Link URL', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Button link URL address', 'lespaul_domain_adm' ),
+								'label' => __( 'Link URL', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Button link URL address', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'color' => array(
-								'label' => __( 'Color', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose button color', 'lespaul_domain_adm' ),
+								'label' => __( 'Color', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose button color', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'blue'   => __( 'Blue', 'lespaul_domain_adm' ),
-									'gray'   => __( 'Gray', 'lespaul_domain_adm' ),
-									'green'  => __( 'Green', 'lespaul_domain_adm' ),
-									'orange' => __( 'Orange', 'lespaul_domain_adm' ),
-									'red'    => __( 'Red', 'lespaul_domain_adm' ),
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'blue'   => __( 'Blue', 'atlantes_domain_adm' ),
+									'gray'   => __( 'Gray', 'atlantes_domain_adm' ),
+									'green'  => __( 'Green', 'atlantes_domain_adm' ),
+									'orange' => __( 'Orange', 'atlantes_domain_adm' ),
+									'red'    => __( 'Red', 'atlantes_domain_adm' ),
 									)
 								),
 							'size' => array(
-								'label' => __( 'Size', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Button size', 'lespaul_domain_adm' ),
+								'label' => __( 'Size', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Button size', 'atlantes_domain_adm' ),
 								'value' => array(
-									'm'  => __( 'Medium', 'lespaul_domain_adm' ),
-									's'  => __( 'Small', 'lespaul_domain_adm' ),
-									'l'  => __( 'Large', 'lespaul_domain_adm' ),
-									'xl' => __( 'Extra large', 'lespaul_domain_adm' ),
+									'm'  => __( 'Medium', 'atlantes_domain_adm' ),
+									's'  => __( 'Small', 'atlantes_domain_adm' ),
+									'l'  => __( 'Large', 'atlantes_domain_adm' ),
+									'xl' => __( 'Extra large', 'atlantes_domain_adm' ),
 									)
 								),
 							'align' => array(
-								'label' => __( 'Align', 'lespaul_domain_adm' ),
+								'label' => __( 'Align', 'atlantes_domain_adm' ),
 								'desc'  => '',
 								'value' => array(
 									''      => '',
-									'left'  => __( 'Left', 'lespaul_domain_adm' ),
-									'right' => __( 'Right', 'lespaul_domain_adm' ),
+									'left'  => __( 'Left', 'atlantes_domain_adm' ),
+									'right' => __( 'Right', 'atlantes_domain_adm' ),
 									)
 								),
 							'new_window' => array(
-								'label' => __( 'New window', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Open URL address in new window when button clicked', 'lespaul_domain_adm' ),
+								'label' => __( 'New window', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Open URL address in new window when button clicked', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'No', 'lespaul_domain_adm' ),
-									'1' => __( 'Yes', 'lespaul_domain_adm' ),
+									''  => __( 'No', 'atlantes_domain_adm' ),
+									'1' => __( 'Yes', 'atlantes_domain_adm' ),
 									)
 								),
 							'icon' => array(
-								'label' => __( 'Icon image', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select optional button icon image', 'lespaul_domain_adm' ),
+								'label' => __( 'Icon image', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select optional button icon image', 'atlantes_domain_adm' ),
 								'value' => array_merge( $menuIconsEmpty, $menuIcons ),
 								'image-before' => true,
 								),
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							'id' => array(
-								'label' => __( 'Optional HTML "id" parameter', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional HTML "id" parameter for additional custom styling or JavaScript actions.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional HTML "id" parameter', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional HTML "id" parameter for additional custom styling or JavaScript actions.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -321,63 +321,63 @@
 				//Call to action
 					array(
 						'id' => 'cta',
-						'name' => __( 'Call to action', 'lespaul_domain_adm' ),
+						'name' => __( 'Call to action', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'title' => array(
-								'label' => __( 'Optional title', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional call to action title', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional title', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional call to action title', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'subtitle' => array(
-								'label' => __( 'Optional subtitle', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional call to action subtitle', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional subtitle', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional call to action subtitle', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'button_url' => array(
-								'label' => __( 'Button URL', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Button link URL address', 'lespaul_domain_adm' ),
+								'label' => __( 'Button URL', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Button link URL address', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'button_text' => array(
-								'label' => __( 'Button text', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Button text', 'lespaul_domain_adm' ),
+								'label' => __( 'Button text', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Button text', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'button_color' => array(
-								'label' => __( 'Button color', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose button color', 'lespaul_domain_adm' ),
+								'label' => __( 'Button color', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose button color', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'blue'   => __( 'Blue', 'lespaul_domain_adm' ),
-									'gray'   => __( 'Gray', 'lespaul_domain_adm' ),
-									'green'  => __( 'Green', 'lespaul_domain_adm' ),
-									'orange' => __( 'Orange', 'lespaul_domain_adm' ),
-									'red'    => __( 'Red', 'lespaul_domain_adm' ),
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'blue'   => __( 'Blue', 'atlantes_domain_adm' ),
+									'gray'   => __( 'Gray', 'atlantes_domain_adm' ),
+									'green'  => __( 'Green', 'atlantes_domain_adm' ),
+									'orange' => __( 'Orange', 'atlantes_domain_adm' ),
+									'red'    => __( 'Red', 'atlantes_domain_adm' ),
 									)
 								),
 							'new_window' => array(
-								'label' => __( 'New window', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Open URL address in new window when button clicked', 'lespaul_domain_adm' ),
+								'label' => __( 'New window', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Open URL address in new window when button clicked', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'No', 'lespaul_domain_adm' ),
-									'1' => __( 'Yes', 'lespaul_domain_adm' ),
+									''  => __( 'No', 'atlantes_domain_adm' ),
+									'1' => __( 'Yes', 'atlantes_domain_adm' ),
 									)
 								),
 							'color' => array(
-								'label' => __( 'Area color', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose call to action area color', 'lespaul_domain_adm' ),
+								'label' => __( 'Area color', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose call to action area color', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Transparent', 'lespaul_domain_adm' ),
-									'blue'   => __( 'Blue', 'lespaul_domain_adm' ),
-									'gray'   => __( 'Gray', 'lespaul_domain_adm' ),
-									'green'  => __( 'Green', 'lespaul_domain_adm' ),
-									'orange' => __( 'Orange', 'lespaul_domain_adm' ),
-									'red'    => __( 'Red', 'lespaul_domain_adm' ),
+									''       => __( 'Transparent', 'atlantes_domain_adm' ),
+									'blue'   => __( 'Blue', 'atlantes_domain_adm' ),
+									'gray'   => __( 'Gray', 'atlantes_domain_adm' ),
+									'green'  => __( 'Green', 'atlantes_domain_adm' ),
+									'orange' => __( 'Orange', 'atlantes_domain_adm' ),
+									'red'    => __( 'Red', 'atlantes_domain_adm' ),
 									)
 								),
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -387,37 +387,37 @@
 				//Columns
 					array(
 						'id' => 'columns',
-						'name' => __( 'Columns', 'lespaul_domain_adm' ),
+						'name' => __( 'Columns', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'size' => array(
-								'label' => __( 'Column size', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select column size', 'lespaul_domain_adm' ),
+								'label' => __( 'Column size', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select column size', 'atlantes_domain_adm' ),
 								'value' => array(
-									'1OPTGROUP'   =>  __( 'Halfs', 'lespaul_domain_adm' ),
+									'1OPTGROUP'   =>  __( 'Halfs', 'atlantes_domain_adm' ),
 										'1/2'      => '1/2',
-										'1/2 last' => '1/2' . __( ' last in row', 'lespaul_domain_adm' ),
+										'1/2 last' => '1/2' . __( ' last in row', 'atlantes_domain_adm' ),
 									'1/OPTGROUP'  => '',
-									'2OPTGROUP'   =>  __( 'Thirds', 'lespaul_domain_adm' ),
+									'2OPTGROUP'   =>  __( 'Thirds', 'atlantes_domain_adm' ),
 										'1/3'      => '1/3',
-										'1/3 last' => '1/3' . __( ' last in row', 'lespaul_domain_adm' ),
+										'1/3 last' => '1/3' . __( ' last in row', 'atlantes_domain_adm' ),
 										'2/3'      => '2/3',
-										'2/3 last' => '2/3' . __( ' last in row', 'lespaul_domain_adm' ),
+										'2/3 last' => '2/3' . __( ' last in row', 'atlantes_domain_adm' ),
 									'2/OPTGROUP'  => '',
-									'3OPTGROUP'   =>  __( 'Quarters', 'lespaul_domain_adm' ),
+									'3OPTGROUP'   =>  __( 'Quarters', 'atlantes_domain_adm' ),
 										'1/4'      => '1/4',
-										'1/4 last' => '1/4' . __( ' last in row', 'lespaul_domain_adm' ),
+										'1/4 last' => '1/4' . __( ' last in row', 'atlantes_domain_adm' ),
 										'3/4'      => '3/4',
-										'3/4 last' => '3/4' . __( ' last in row', 'lespaul_domain_adm' ),
+										'3/4 last' => '3/4' . __( ' last in row', 'atlantes_domain_adm' ),
 									'3/OPTGROUP'  => '',
-									'4OPTGROUP'   =>  __( 'Fifths', 'lespaul_domain_adm' ),
+									'4OPTGROUP'   =>  __( 'Fifths', 'atlantes_domain_adm' ),
 										'1/5'      => '1/5',
-										'1/5 last' => '1/5' . __( ' last in row', 'lespaul_domain_adm' ),
+										'1/5 last' => '1/5' . __( ' last in row', 'atlantes_domain_adm' ),
 										'2/5'      => '2/5',
-										'2/5 last' => '2/5' . __( ' last in row', 'lespaul_domain_adm' ),
+										'2/5 last' => '2/5' . __( ' last in row', 'atlantes_domain_adm' ),
 										'3/5'      => '3/5',
-										'3/5 last' => '3/5' . __( ' last in row', 'lespaul_domain_adm' ),
+										'3/5 last' => '3/5' . __( ' last in row', 'atlantes_domain_adm' ),
 										'4/5'      => '4/5',
-										'4/5 last' => '4/5' . __( ' last in row', 'lespaul_domain_adm' ),
+										'4/5 last' => '4/5' . __( ' last in row', 'atlantes_domain_adm' ),
 									'4/OPTGROUP'  => '',
 									)
 								),
@@ -428,45 +428,45 @@
 				//Content Modules
 					array(
 						'id' => 'content_module',
-						'name' => __( 'Content Module', 'lespaul_domain_adm' ),
+						'name' => __( 'Content Module', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'module' => array(
-								'label' => __( 'Content Module', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select Content Module to display', 'lespaul_domain_adm' ),
+								'label' => __( 'Content Module', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select Content Module to display', 'atlantes_domain_adm' ),
 								'value' => $modulePosts
 								),
 							'randomize' => array(
-								'label' => __( 'Or randomize from', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select a tag from where random content module will be chosen', 'lespaul_domain_adm' ),
+								'label' => __( 'Or randomize from', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select a tag from where random content module will be chosen', 'atlantes_domain_adm' ),
 								'value' => wm_tax_array( array(
 										'allCountPost' => '',
-										'allText'      => __( 'Select tag', 'lespaul_domain_adm' ),
+										'allText'      => __( 'Select tag', 'atlantes_domain_adm' ),
 										'hierarchical' => '0',
 										'tax'          => 'content-module-tag',
 									) )
 								),
 							'no_thumb' => array(
-								'label' => __( 'Thumb', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select whether you want the thumbnail image to be displayed', 'lespaul_domain_adm' ),
+								'label' => __( 'Thumb', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select whether you want the thumbnail image to be displayed', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'Show', 'lespaul_domain_adm' ),
-									'1' => __( 'Hide', 'lespaul_domain_adm' )
+									''  => __( 'Show', 'atlantes_domain_adm' ),
+									'1' => __( 'Hide', 'atlantes_domain_adm' )
 									)
 								),
 							'no_title' => array(
-								'label' => __( 'Title', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select whether you want the module title to be displayed', 'lespaul_domain_adm' ),
+								'label' => __( 'Title', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select whether you want the module title to be displayed', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'Show', 'lespaul_domain_adm' ),
-									'1' => __( 'Hide', 'lespaul_domain_adm' )
+									''  => __( 'Show', 'atlantes_domain_adm' ),
+									'1' => __( 'Hide', 'atlantes_domain_adm' )
 									)
 								),
 							'layout' => array(
-								'label' => __( 'Layout', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose which layout to use', 'lespaul_domain_adm' ),
+								'label' => __( 'Layout', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose which layout to use', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'center' => __( 'Centered', 'lespaul_domain_adm' )
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'center' => __( 'Centered', 'atlantes_domain_adm' )
 									)
 								),
 							),
@@ -476,21 +476,21 @@
 				//Countdown timer
 					array(
 						'id' => 'countdown',
-						'name' => __( 'Countdown timer', 'lespaul_domain_adm' ),
+						'name' => __( 'Countdown timer', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'time' => array(
-								'label' => __( 'Time <small>YYYY-MM-DD HH:mm</small>', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Insert the time in "YYYY-MM-DD HH:mm" format (Y = year, M = month, D = day, H = hours, m = minutes)', 'lespaul_domain_adm' ),
+								'label' => __( 'Time <small>YYYY-MM-DD HH:mm</small>', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Insert the time in "YYYY-MM-DD HH:mm" format (Y = year, M = month, D = day, H = hours, m = minutes)', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'size' => array(
-								'label' => __( 'Timer size', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select timer size', 'lespaul_domain_adm' ),
+								'label' => __( 'Timer size', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select timer size', 'atlantes_domain_adm' ),
 								'value' => array(
-									'xl' => __( 'Extra large', 'lespaul_domain_adm' ),
-									'l'  => __( 'Large', 'lespaul_domain_adm' ),
-									'm'  => __( 'Medium', 'lespaul_domain_adm' ),
-									's'  => __( 'Small', 'lespaul_domain_adm' ),
+									'xl' => __( 'Extra large', 'atlantes_domain_adm' ),
+									'l'  => __( 'Large', 'atlantes_domain_adm' ),
+									'm'  => __( 'Medium', 'atlantes_domain_adm' ),
+									's'  => __( 'Small', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -500,43 +500,43 @@
 				//Divider
 					array(
 						'id' => 'divider',
-						'name' => __( 'Divider', 'lespaul_domain_adm' ),
+						'name' => __( 'Divider', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'type' => array(
-								'label' => __( 'Type of divider', 'lespaul_domain_adm' ),
+								'label' => __( 'Type of divider', 'atlantes_domain_adm' ),
 								'desc'  => '',
 								'value' => array(
-									''              => __( 'Default divider', 'lespaul_domain_adm' ),
-									'dashed'        => __( 'Dashed border', 'lespaul_domain_adm' ),
-									'diagonal'      => __( 'Diagonal stripes border', 'lespaul_domain_adm' ),
-									'dotted'        => __( 'Dotted border', 'lespaul_domain_adm' ),
-									'fading'        => __( 'Fading on sides', 'lespaul_domain_adm' ),
-									'star'          => __( 'Double border with star in the middle', 'lespaul_domain_adm' ),
-									'shadow-top'    => __( 'Shadow top', 'lespaul_domain_adm' ),
-									'shadow-bottom' => __( 'Shadow bottom', 'lespaul_domain_adm' ),
-									'plain'         => __( 'No border (usefull to create a space)', 'lespaul_domain_adm' ),
+									''              => __( 'Default divider', 'atlantes_domain_adm' ),
+									'dashed'        => __( 'Dashed border', 'atlantes_domain_adm' ),
+									'diagonal'      => __( 'Diagonal stripes border', 'atlantes_domain_adm' ),
+									'dotted'        => __( 'Dotted border', 'atlantes_domain_adm' ),
+									'fading'        => __( 'Fading on sides', 'atlantes_domain_adm' ),
+									'star'          => __( 'Double border with star in the middle', 'atlantes_domain_adm' ),
+									'shadow-top'    => __( 'Shadow top', 'atlantes_domain_adm' ),
+									'shadow-bottom' => __( 'Shadow bottom', 'atlantes_domain_adm' ),
+									'plain'         => __( 'No border (usefull to create a space)', 'atlantes_domain_adm' ),
 									)
 								),
 							'space_before' => array(
-								'label' => __( 'Space before divider', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Top margin. Insert only number.', 'lespaul_domain_adm' ),
+								'label' => __( 'Space before divider', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Top margin. Insert only number.', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'space_after' => array(
-								'label' => __( 'Space after divider', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Bottom margin. Insert only number.', 'lespaul_domain_adm' ),
+								'label' => __( 'Space after divider', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Bottom margin. Insert only number.', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'opacity' => array(
-								'label' => __( 'Opacity', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Percentual value of divider opacity - 0 = transparent, 100 = opaque', 'lespaul_domain_adm' ),
+								'label' => __( 'Opacity', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Percentual value of divider opacity - 0 = transparent, 100 = opaque', 'atlantes_domain_adm' ),
 								'value' => array(
-									''    => __( 'Default', 'lespaul_domain_adm' ),
+									''    => __( 'Default', 'atlantes_domain_adm' ),
 									'5'  => 5,
 									'10' => 10,
 									'15' => 15,
 									'20' => 20,
-									'25' => __( '25 = default value', 'lespaul_domain_adm' ),
+									'25' => __( '25 = default value', 'atlantes_domain_adm' ),
 									'30' => 30,
 									'35' => 35,
 									'40' => 40,
@@ -554,8 +554,8 @@
 									)
 								),
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -565,21 +565,21 @@
 				//Dropcaps
 					array(
 						'id' => 'dropcaps',
-						'name' => __( 'Dropcaps', 'lespaul_domain_adm' ),
+						'name' => __( 'Dropcaps', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'type' => array(
-								'label' => __( 'Dropcap type', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select prefered dropcap styling', 'lespaul_domain_adm' ),
+								'label' => __( 'Dropcap type', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select prefered dropcap styling', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Basic dropcap', 'lespaul_domain_adm' ),
-									'round'  => __( 'Rounded dropcap', 'lespaul_domain_adm' ),
-									'square' => __( 'Squared dropcap', 'lespaul_domain_adm' ),
-									'leaf'   => __( 'Leaf dropcap', 'lespaul_domain_adm' ),
+									''       => __( 'Basic dropcap', 'atlantes_domain_adm' ),
+									'round'  => __( 'Rounded dropcap', 'atlantes_domain_adm' ),
+									'square' => __( 'Squared dropcap', 'atlantes_domain_adm' ),
+									'leaf'   => __( 'Leaf dropcap', 'atlantes_domain_adm' ),
 									)
 								),
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -589,36 +589,36 @@
 				//FAQ
 					'faq' => array(
 						'id' => 'faq',
-						'name' => __( 'FAQ', 'lespaul_domain_adm' ),
-						'desc' => __( 'You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag.', 'lespaul_domain_adm' ),
+						'name' => __( 'FAQ', 'atlantes_domain_adm' ),
+						'desc' => __( 'You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'category' => array(
-								'label' => __( 'FAQ category', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select a category from where the list will be populated', 'lespaul_domain_adm' ),
+								'label' => __( 'FAQ category', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select a category from where the list will be populated', 'atlantes_domain_adm' ),
 								'value' => wm_tax_array( array(
 										'allCountPost' => 'wm_faq',
-										'allText'      => __( 'All FAQs', 'lespaul_domain_adm' ),
+										'allText'      => __( 'All FAQs', 'atlantes_domain_adm' ),
 										'tax'          => 'faq-category',
 									) )
 								),
 							'order' => array(
-								'label' => __( 'Order', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select order in which items will be displayed', 'lespaul_domain_adm' ),
+								'label' => __( 'Order', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select order in which items will be displayed', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'name'   => __( 'By name', 'lespaul_domain_adm' ),
-									'new'    => __( 'Newest first', 'lespaul_domain_adm' ),
-									'old'    => __( 'Oldest first', 'lespaul_domain_adm' ),
-									'random' => __( 'Randomly', 'lespaul_domain_adm' ),
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'name'   => __( 'By name', 'atlantes_domain_adm' ),
+									'new'    => __( 'Newest first', 'atlantes_domain_adm' ),
+									'old'    => __( 'Oldest first', 'atlantes_domain_adm' ),
+									'random' => __( 'Randomly', 'atlantes_domain_adm' ),
 									)
 								),
 							'align' => array(
-								'label' => __( 'Description align', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Description text alignement (when used - it will disable the filter)', 'lespaul_domain_adm' ),
+								'label' => __( 'Description align', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Description text alignement (when used - it will disable the filter)', 'atlantes_domain_adm' ),
 								'value' => array(
 									''      => '',
-									'left'  => __( 'Description text on the left', 'lespaul_domain_adm' ),
-									'right' => __( 'Description text on the right', 'lespaul_domain_adm' ),
+									'left'  => __( 'Description text on the left', 'atlantes_domain_adm' ),
+									'right' => __( 'Description text on the right', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -628,12 +628,12 @@
 				//Gallery
 					array(
 						'id' => 'gallery',
-						'name' => __( 'Gallery', 'lespaul_domain_adm' ),
-						'desc' => __( 'Please upload images for the post/page gallery via "Add Media" button above visual editor.', 'lespaul_domain_adm' ),
+						'name' => __( 'Gallery', 'atlantes_domain_adm' ),
+						'desc' => __( 'Please upload images for the post/page gallery via "Add Media" button above visual editor.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'columns' => array(
-								'label' => __( 'Columns', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Number of gallery columns', 'lespaul_domain_adm' ),
+								'label' => __( 'Columns', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Number of gallery columns', 'atlantes_domain_adm' ),
 								'value' => array(
 									1 => 1,
 									2 => 2,
@@ -647,32 +647,32 @@
 									)
 								),
 							'flexible' => array(
-								'label' => __( 'Flexibile layout', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Preserves images aspect ratio and uses masonry display', 'lespaul_domain_adm' ),
+								'label' => __( 'Flexibile layout', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Preserves images aspect ratio and uses masonry display', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'No', 'lespaul_domain_adm' ),
-									'1' => __( 'Yes', 'lespaul_domain_adm' ),
+									''  => __( 'No', 'atlantes_domain_adm' ),
+									'1' => __( 'Yes', 'atlantes_domain_adm' ),
 									)
 								),
 							'frame' => array(
-								'label' => __( 'Framed', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Display frame around images', 'lespaul_domain_adm' ),
+								'label' => __( 'Framed', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Display frame around images', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'No', 'lespaul_domain_adm' ),
-									'1' => __( 'Yes', 'lespaul_domain_adm' ),
+									''  => __( 'No', 'atlantes_domain_adm' ),
+									'1' => __( 'Yes', 'atlantes_domain_adm' ),
 									)
 								),
 							'remove' => array(
-								'label' => __( 'Remove', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Image order numbers separated with commas (like "1,2,5" will remove first, second and fifth image from gallery)', 'lespaul_domain_adm' ),
+								'label' => __( 'Remove', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Image order numbers separated with commas (like "1,2,5" will remove first, second and fifth image from gallery)', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'sardine' => array(
-								'label' => __( 'Sardine', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Removes margins around images', 'lespaul_domain_adm' ),
+								'label' => __( 'Sardine', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Removes margins around images', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'No', 'lespaul_domain_adm' ),
-									'1' => __( 'Yes', 'lespaul_domain_adm' ),
+									''  => __( 'No', 'atlantes_domain_adm' ),
+									'1' => __( 'Yes', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -682,11 +682,11 @@
 				//Huge text
 					array(
 						'id' => 'huge_text',
-						'name' => __( 'Huge text', 'lespaul_domain_adm' ),
+						'name' => __( 'Huge text', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -696,23 +696,23 @@
 				//Icons
 					array(
 						'id' => 'icon',
-						'name' => __( 'Icons', 'lespaul_domain_adm' ),
-						'desc' => __( 'Only predefined icons included in icon font can be displayed with this shortcode.', 'lespaul_domain_adm' ),
+						'name' => __( 'Icons', 'atlantes_domain_adm' ),
+						'desc' => __( 'Only predefined icons included in icon font can be displayed with this shortcode.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'type' => array(
-								'label' => __( 'Icon type', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select one of predefined icons', 'lespaul_domain_adm' ),
+								'label' => __( 'Icon type', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select one of predefined icons', 'atlantes_domain_adm' ),
 								'value' => $menuIcons,
 								'image-before' => true,
 								),
 							'size' => array(
-								'label' => __( 'Icon size in pixels', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Insert just a number', 'lespaul_domain_adm' ),
+								'label' => __( 'Icon size in pixels', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Insert just a number', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -722,34 +722,34 @@
 				//Lists
 					array(
 						'id' => 'lists',
-						'name' => __( 'Lists', 'lespaul_domain_adm' ),
+						'name' => __( 'Lists', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'bullet' => array(
-								'label' => __( 'Bullet type', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select list bullet type', 'lespaul_domain_adm' ),
+								'label' => __( 'Bullet type', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select list bullet type', 'atlantes_domain_adm' ),
 								'value' => $menuIcons,
 								'image-before' => true,
 								),
 							),
-						'output-shortcode' => '[list{{bullet}}]' . __( 'Unordered list goes here', 'lespaul_domain_adm' ) . '[/list]'
+						'output-shortcode' => '[list{{bullet}}]' . __( 'Unordered list goes here', 'atlantes_domain_adm' ) . '[/list]'
 					),
 
 				//Last update
 					array(
 						'id' => 'lastupdate',
-						'name' => __( 'Last update', 'lespaul_domain_adm' ),
-						'desc' => __( 'Displays the date when most recent blog post or project was added.', 'lespaul_domain_adm' ),
+						'name' => __( 'Last update', 'atlantes_domain_adm' ),
+						'desc' => __( 'Displays the date when most recent blog post or project was added.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'item' => array(
-								'label' => __( 'Items to watch', 'lespaul_domain_adm' ),
-								'desc'  => __( 'What item group will be watched for last update date', 'lespaul_domain_adm' ),
+								'label' => __( 'Items to watch', 'atlantes_domain_adm' ),
+								'desc'  => __( 'What item group will be watched for last update date', 'atlantes_domain_adm' ),
 								'value' => array(
-									''        => __( 'Blog posts', 'lespaul_domain_adm' ),
-									'project' => __( 'Projects', 'lespaul_domain_adm' ),
+									''        => __( 'Blog posts', 'atlantes_domain_adm' ),
+									'project' => __( 'Projects', 'atlantes_domain_adm' ),
 									)
 								),
 							'format' => array(
-								'label' => __( 'Date format', 'lespaul_domain_adm' ),
+								'label' => __( 'Date format', 'atlantes_domain_adm' ),
 								'desc'  => "",
 								'value' => array(
 									get_option( 'date_format' ) => date( get_option( 'date_format' ) ),
@@ -774,14 +774,14 @@
 				//Login form
 					array(
 						'id' => 'login',
-						'name' => __( 'Login form', 'lespaul_domain_adm' ),
+						'name' => __( 'Login form', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'stay' => array(
-								'label' => __( 'Redirection', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Where the user will be redirected to after successful log in', 'lespaul_domain_adm' ),
+								'label' => __( 'Redirection', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Where the user will be redirected to after successful log in', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'Go to homepage', 'lespaul_domain_adm' ),
-									'1' => __( 'Stay here', 'lespaul_domain_adm' ),
+									''  => __( 'Go to homepage', 'atlantes_domain_adm' ),
+									'1' => __( 'Stay here', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -791,35 +791,35 @@
 				//Logos
 					'logos' => array(
 						'id' => 'logos',
-						'name' => __( 'Logos', 'lespaul_domain_adm' ),
-						'desc' => __( 'You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag.', 'lespaul_domain_adm' ),
+						'name' => __( 'Logos', 'atlantes_domain_adm' ),
+						'desc' => __( 'You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'category' => array(
-								'label' => __( 'Logos category', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select a category from where the list will be populated', 'lespaul_domain_adm' ),
+								'label' => __( 'Logos category', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select a category from where the list will be populated', 'atlantes_domain_adm' ),
 								'value' => wm_tax_array( array(
 										'allCountPost' => 'wm_logos',
-										'allText'      => __( 'All logos', 'lespaul_domain_adm' ),
+										'allText'      => __( 'All logos', 'atlantes_domain_adm' ),
 										'tax'          => 'logos-category',
 									) )
 								),
 							'columns' => array(
-								'label' => __( 'Layout', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select number of columns to lay out the list', 'lespaul_domain_adm' ),
+								'label' => __( 'Layout', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select number of columns to lay out the list', 'atlantes_domain_adm' ),
 								'value' => array(
-									'2' => __( '2 columns', 'lespaul_domain_adm' ),
-									'3' => __( '3 columns', 'lespaul_domain_adm' ),
-									'4' => __( '4 columns', 'lespaul_domain_adm' ),
-									'5' => __( '5 columns', 'lespaul_domain_adm' ),
-									'6' => __( '6 columns', 'lespaul_domain_adm' ),
-									'7' => __( '7 columns', 'lespaul_domain_adm' ),
-									'8' => __( '8 columns', 'lespaul_domain_adm' ),
-									'9' => __( '9 columns', 'lespaul_domain_adm' ),
+									'2' => __( '2 columns', 'atlantes_domain_adm' ),
+									'3' => __( '3 columns', 'atlantes_domain_adm' ),
+									'4' => __( '4 columns', 'atlantes_domain_adm' ),
+									'5' => __( '5 columns', 'atlantes_domain_adm' ),
+									'6' => __( '6 columns', 'atlantes_domain_adm' ),
+									'7' => __( '7 columns', 'atlantes_domain_adm' ),
+									'8' => __( '8 columns', 'atlantes_domain_adm' ),
+									'9' => __( '9 columns', 'atlantes_domain_adm' ),
 									)
 								),
 							'count' => array(
-								'label' => __( 'Logo count', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Number of items to display', 'lespaul_domain_adm' ),
+								'label' => __( 'Logo count', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Number of items to display', 'atlantes_domain_adm' ),
 								'value' => array(
 									'1' => 1,
 									'2' => 2,
@@ -839,44 +839,44 @@
 									)
 								),
 							'order' => array(
-								'label' => __( 'Order', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select order in which items will be displayed', 'lespaul_domain_adm' ),
+								'label' => __( 'Order', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select order in which items will be displayed', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'name'   => __( 'By name', 'lespaul_domain_adm' ),
-									'new'    => __( 'Newest first', 'lespaul_domain_adm' ),
-									'old'    => __( 'Oldest first', 'lespaul_domain_adm' ),
-									'random' => __( 'Randomly', 'lespaul_domain_adm' ),
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'name'   => __( 'By name', 'atlantes_domain_adm' ),
+									'new'    => __( 'Newest first', 'atlantes_domain_adm' ),
+									'old'    => __( 'Oldest first', 'atlantes_domain_adm' ),
+									'random' => __( 'Randomly', 'atlantes_domain_adm' ),
 									)
 								),
 							'align' => array(
-								'label' => __( 'Description align', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional list description alignement', 'lespaul_domain_adm' ),
+								'label' => __( 'Description align', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional list description alignement', 'atlantes_domain_adm' ),
 								'value' => array(
 									''      => '',
-									'left'  => __( 'Description text on the left', 'lespaul_domain_adm' ),
-									'right' => __( 'Description text on the right', 'lespaul_domain_adm' ),
+									'left'  => __( 'Description text on the left', 'atlantes_domain_adm' ),
+									'right' => __( 'Description text on the right', 'atlantes_domain_adm' ),
 									)
 								),
 							'scroll' => array(
-								'label' => __( 'Horizontal scroll', 'lespaul_domain_adm' ),
-								'desc'  => __( 'To enable automatic scroll insert a pause time in miliseconds (minimal value is 1000). To enable manual scroll just insert any text or a number from 1 to 999. Please note that "count" parameter should be greater than "columns" parameter for scroll to work.', 'lespaul_domain_adm' ),
+								'label' => __( 'Horizontal scroll', 'atlantes_domain_adm' ),
+								'desc'  => __( 'To enable automatic scroll insert a pause time in miliseconds (minimal value is 1000). To enable manual scroll just insert any text or a number from 1 to 999. Please note that "count" parameter should be greater than "columns" parameter for scroll to work.', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'scroll_stack' => array(
-								'label' => __( 'Scroll method', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Whether to scroll items one by one or the whole stack', 'lespaul_domain_adm' ),
+								'label' => __( 'Scroll method', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Whether to scroll items one by one or the whole stack', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'One by one', 'lespaul_domain_adm' ),
-									'1' => __( 'Stack', 'lespaul_domain_adm' ),
+									''  => __( 'One by one', 'atlantes_domain_adm' ),
+									'1' => __( 'Stack', 'atlantes_domain_adm' ),
 									)
 								),
 							'grayscale' => array(
-								'label' => __( 'Grayscale', 'lespaul_domain_adm' ),
-								'desc'  => __( 'By default logo images are grayscale, turn to color when mouse hovers', 'lespaul_domain_adm' ),
+								'label' => __( 'Grayscale', 'atlantes_domain_adm' ),
+								'desc'  => __( 'By default logo images are grayscale, turn to color when mouse hovers', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'Keep grayscale', 'lespaul_domain_adm' ),
-									'0' => __( 'Turn off', 'lespaul_domain_adm' ),
+									''  => __( 'Keep grayscale', 'atlantes_domain_adm' ),
+									'0' => __( 'Turn off', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -886,23 +886,23 @@
 				//Marker
 					array(
 						'id' => 'marker',
-						'name' => __( 'Marker', 'lespaul_domain_adm' ),
+						'name' => __( 'Marker', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'color' => array(
-								'label' => __( 'Color', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose marker color', 'lespaul_domain_adm' ),
+								'label' => __( 'Color', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose marker color', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'blue'   => __( 'Blue', 'lespaul_domain_adm' ),
-									'gray'   => __( 'Gray', 'lespaul_domain_adm' ),
-									'green'  => __( 'Green', 'lespaul_domain_adm' ),
-									'orange' => __( 'Orange', 'lespaul_domain_adm' ),
-									'red'    => __( 'Red', 'lespaul_domain_adm' ),
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'blue'   => __( 'Blue', 'atlantes_domain_adm' ),
+									'gray'   => __( 'Gray', 'atlantes_domain_adm' ),
+									'green'  => __( 'Green', 'atlantes_domain_adm' ),
+									'orange' => __( 'Orange', 'atlantes_domain_adm' ),
+									'red'    => __( 'Red', 'atlantes_domain_adm' ),
 									)
 								),
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -912,28 +912,28 @@
 				//Posts
 					array(
 						'id' => 'posts',
-						'name' => __( 'Posts', 'lespaul_domain_adm' ),
-						'desc' => __( 'Does not display Quote and Status posts. You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag.', 'lespaul_domain_adm' ),
+						'name' => __( 'Posts', 'atlantes_domain_adm' ),
+						'desc' => __( 'Does not display Quote and Status posts. You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'category' => array(
-								'label' => __( 'Posts category', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select a category from where the list will be populated', 'lespaul_domain_adm' ),
+								'label' => __( 'Posts category', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select a category from where the list will be populated', 'atlantes_domain_adm' ),
 								'value' => wm_tax_array()
 								),
 							'columns' => array(
-								'label' => __( 'Layout', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select number of columns to lay out the list', 'lespaul_domain_adm' ),
+								'label' => __( 'Layout', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select number of columns to lay out the list', 'atlantes_domain_adm' ),
 								'value' => array(
-									'2' => __( '2 columns', 'lespaul_domain_adm' ),
-									'3' => __( '3 columns', 'lespaul_domain_adm' ),
-									'4' => __( '4 columns', 'lespaul_domain_adm' ),
-									'5' => __( '5 columns', 'lespaul_domain_adm' ),
-									'6' => __( '6 columns', 'lespaul_domain_adm' ),
+									'2' => __( '2 columns', 'atlantes_domain_adm' ),
+									'3' => __( '3 columns', 'atlantes_domain_adm' ),
+									'4' => __( '4 columns', 'atlantes_domain_adm' ),
+									'5' => __( '5 columns', 'atlantes_domain_adm' ),
+									'6' => __( '6 columns', 'atlantes_domain_adm' ),
 									)
 								),
 							'count' => array(
-								'label' => __( 'Posts count', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Number of items to display', 'lespaul_domain_adm' ),
+								'label' => __( 'Posts count', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Number of items to display', 'atlantes_domain_adm' ),
 								'value' => array(
 									'1' => 1,
 									'2' => 2,
@@ -953,8 +953,8 @@
 									)
 								),
 							'excerpt_length' => array(
-								'label' => __( 'Excerpt length', 'lespaul_domain_adm' ),
-								'desc'  => __( 'In words', 'lespaul_domain_adm' ),
+								'label' => __( 'Excerpt length', 'atlantes_domain_adm' ),
+								'desc'  => __( 'In words', 'atlantes_domain_adm' ),
 								'value' => array(
 									''  => '',
 									'0' => 0,
@@ -977,43 +977,43 @@
 									)
 								),
 							'order' => array(
-								'label' => __( 'Order', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select order in which items will be displayed', 'lespaul_domain_adm' ),
+								'label' => __( 'Order', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select order in which items will be displayed', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'name'   => __( 'By name', 'lespaul_domain_adm' ),
-									'new'    => __( 'Newest first', 'lespaul_domain_adm' ),
-									'old'    => __( 'Oldest first', 'lespaul_domain_adm' ),
-									'random' => __( 'Randomly', 'lespaul_domain_adm' ),
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'name'   => __( 'By name', 'atlantes_domain_adm' ),
+									'new'    => __( 'Newest first', 'atlantes_domain_adm' ),
+									'old'    => __( 'Oldest first', 'atlantes_domain_adm' ),
+									'random' => __( 'Randomly', 'atlantes_domain_adm' ),
 									)
 								),
 							'align' => array(
-								'label' => __( 'Description align', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional list description alignement', 'lespaul_domain_adm' ),
+								'label' => __( 'Description align', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional list description alignement', 'atlantes_domain_adm' ),
 								'value' => array(
 									''      => '',
-									'left'  => __( 'Description text on the left', 'lespaul_domain_adm' ),
-									'right' => __( 'Description text on the right', 'lespaul_domain_adm' ),
+									'left'  => __( 'Description text on the left', 'atlantes_domain_adm' ),
+									'right' => __( 'Description text on the right', 'atlantes_domain_adm' ),
 									)
 								),
 							'scroll' => array(
-								'label' => __( 'Horizontal scroll', 'lespaul_domain_adm' ),
-								'desc'  => __( 'To enable automatic scroll insert a pause time in miliseconds (minimal value is 1000). To enable manual scroll just insert any text or a number from 1 to 999. Please note that "count" parameter should be greater than "columns" parameter for scroll to work.', 'lespaul_domain_adm' ),
+								'label' => __( 'Horizontal scroll', 'atlantes_domain_adm' ),
+								'desc'  => __( 'To enable automatic scroll insert a pause time in miliseconds (minimal value is 1000). To enable manual scroll just insert any text or a number from 1 to 999. Please note that "count" parameter should be greater than "columns" parameter for scroll to work.', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'scroll_stack' => array(
-								'label' => __( 'Scroll method', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Whether to scroll items one by one or the whole stack', 'lespaul_domain_adm' ),
+								'label' => __( 'Scroll method', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Whether to scroll items one by one or the whole stack', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'One by one', 'lespaul_domain_adm' ),
-									'1' => __( 'Stack', 'lespaul_domain_adm' ),
+									''  => __( 'One by one', 'atlantes_domain_adm' ),
+									'1' => __( 'Stack', 'atlantes_domain_adm' ),
 									)
 								),
 							'thumb' => array(
-								'label' => __( 'Thumbnail image', 'lespaul_domain_adm' ),
+								'label' => __( 'Thumbnail image', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'Yes', 'lespaul_domain_adm' ),
-									'0' => __( 'No', 'lespaul_domain_adm' ),
+									''  => __( 'Yes', 'atlantes_domain_adm' ),
+									'0' => __( 'No', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -1023,14 +1023,14 @@
 				//Price table
 					'prices' => array(
 						'id' => 'price_table',
-						'name' => __( 'Price Table', 'lespaul_domain_adm' ),
+						'name' => __( 'Price Table', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'table' => array(
-								'label' => __( 'Select table', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select price table to display', 'lespaul_domain_adm' ),
+								'label' => __( 'Select table', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select price table to display', 'atlantes_domain_adm' ),
 								'value' => wm_tax_array( array(
 										'allCountPost' => '',
-										'allText'      => __( 'Select price table', 'lespaul_domain_adm' ),
+										'allText'      => __( 'Select price table', 'atlantes_domain_adm' ),
 										'hierarchical' => '0',
 										'tax'          => 'price-table',
 									) )
@@ -1042,36 +1042,36 @@
 				//Projects
 					'projects' => array(
 						'id' => 'projects',
-						'name' => __( 'Projects', 'lespaul_domain_adm' ),
-						'desc' => __( 'You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag. Filter will be disabled when scroll effect in use.', 'lespaul_domain_adm' ),
+						'name' => __( 'Projects', 'atlantes_domain_adm' ),
+						'desc' => __( 'You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag. Filter will be disabled when scroll effect in use.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'category' => array(
-								'label' => __( 'Projects category', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select a category from where the list will be populated', 'lespaul_domain_adm' ),
+								'label' => __( 'Projects category', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select a category from where the list will be populated', 'atlantes_domain_adm' ),
 								'value' => wm_tax_array( array(
 										'allCountPost' => 'wm_projects',
-										'allText'      => __( 'All projects', 'lespaul_domain_adm' ),
+										'allText'      => __( 'All projects', 'atlantes_domain_adm' ),
 										'parentsOnly'  => true,
 										'tax'          => 'project-category',
 									) )
 								),
 							'columns' => array(
-								'label' => __( 'Layout', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select number of columns to lay out the list', 'lespaul_domain_adm' ),
+								'label' => __( 'Layout', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select number of columns to lay out the list', 'atlantes_domain_adm' ),
 								'value' => array(
-									'1' => __( '1 column', 'lespaul_domain_adm' ),
-									'2' => __( '2 columns', 'lespaul_domain_adm' ),
-									'3' => __( '3 columns', 'lespaul_domain_adm' ),
-									'4' => __( '4 columns', 'lespaul_domain_adm' ),
-									'5' => __( '5 columns', 'lespaul_domain_adm' ),
-									'6' => __( '6 columns', 'lespaul_domain_adm' ),
+									'1' => __( '1 column', 'atlantes_domain_adm' ),
+									'2' => __( '2 columns', 'atlantes_domain_adm' ),
+									'3' => __( '3 columns', 'atlantes_domain_adm' ),
+									'4' => __( '4 columns', 'atlantes_domain_adm' ),
+									'5' => __( '5 columns', 'atlantes_domain_adm' ),
+									'6' => __( '6 columns', 'atlantes_domain_adm' ),
 									)
 								),
 							'count' => array(
-								'label' => __( 'Projects count', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Number of items to display', 'lespaul_domain_adm' ),
+								'label' => __( 'Projects count', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Number of items to display', 'atlantes_domain_adm' ),
 								'value' => array(
-									'' => __( 'All projects (in category)', 'lespaul_domain_adm' ),
+									'' => __( 'All projects (in category)', 'atlantes_domain_adm' ),
 									'1' => 1,
 									'2' => 2,
 									'3' => 3,
@@ -1090,55 +1090,55 @@
 									)
 								),
 							'order' => array(
-								'label' => __( 'Order', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select order in which items will be displayed', 'lespaul_domain_adm' ),
+								'label' => __( 'Order', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select order in which items will be displayed', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'name'   => __( 'By name', 'lespaul_domain_adm' ),
-									'new'    => __( 'Newest first', 'lespaul_domain_adm' ),
-									'old'    => __( 'Oldest first', 'lespaul_domain_adm' ),
-									'random' => __( 'Randomly', 'lespaul_domain_adm' ),
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'name'   => __( 'By name', 'atlantes_domain_adm' ),
+									'new'    => __( 'Newest first', 'atlantes_domain_adm' ),
+									'old'    => __( 'Oldest first', 'atlantes_domain_adm' ),
+									'random' => __( 'Randomly', 'atlantes_domain_adm' ),
 									)
 								),
 							'align' => array(
-								'label' => __( 'Description align', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional list description alignement', 'lespaul_domain_adm' ),
+								'label' => __( 'Description align', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional list description alignement', 'atlantes_domain_adm' ),
 								'value' => array(
 									''      => '',
-									'left'  => __( 'Description text on the left', 'lespaul_domain_adm' ),
-									'right' => __( 'Description text on the right', 'lespaul_domain_adm' ),
+									'left'  => __( 'Description text on the left', 'atlantes_domain_adm' ),
+									'right' => __( 'Description text on the right', 'atlantes_domain_adm' ),
 									)
 								),
 							'filter' => array(
-								'label' => __( 'Projects filter', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional projects filter', 'lespaul_domain_adm' ),
+								'label' => __( 'Projects filter', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional projects filter', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'No filter', 'lespaul_domain_adm' ),
-									'1' => __( 'Animated filtering', 'lespaul_domain_adm' ),
+									''  => __( 'No filter', 'atlantes_domain_adm' ),
+									'1' => __( 'Animated filtering', 'atlantes_domain_adm' ),
 									)
 								),
 							'scroll' => array(
-								'label' => __( 'Horizontal scroll', 'lespaul_domain_adm' ),
-								'desc'  => __( 'To enable automatic scroll insert a pause time in miliseconds (minimal value is 1000). To enable manual scroll just insert any text or a number from 1 to 999. Please note that "count" parameter should be greater than "columns" parameter for scroll to work.', 'lespaul_domain_adm' ) . ' ' . __( 'Filter will be disabled when scroll in use.', 'lespaul_domain_adm' ),
+								'label' => __( 'Horizontal scroll', 'atlantes_domain_adm' ),
+								'desc'  => __( 'To enable automatic scroll insert a pause time in miliseconds (minimal value is 1000). To enable manual scroll just insert any text or a number from 1 to 999. Please note that "count" parameter should be greater than "columns" parameter for scroll to work.', 'atlantes_domain_adm' ) . ' ' . __( 'Filter will be disabled when scroll in use.', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'scroll_stack' => array(
-								'label' => __( 'Scroll method', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Whether to scroll items one by one or the whole stack', 'lespaul_domain_adm' ),
+								'label' => __( 'Scroll method', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Whether to scroll items one by one or the whole stack', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'One by one', 'lespaul_domain_adm' ),
-									'1' => __( 'Stack', 'lespaul_domain_adm' ),
+									''  => __( 'One by one', 'atlantes_domain_adm' ),
+									'1' => __( 'Stack', 'atlantes_domain_adm' ),
 									)
 								),
 							'thumb' => array(
-								'label' => __( 'Thumbnail image', 'lespaul_domain_adm' ),
+								'label' => __( 'Thumbnail image', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'Yes', 'lespaul_domain_adm' ),
-									'0' => __( 'No', 'lespaul_domain_adm' ),
+									''  => __( 'Yes', 'atlantes_domain_adm' ),
+									'0' => __( 'No', 'atlantes_domain_adm' ),
 									)
 								),
 							'excerpt_length' => array(
-								'label' => __( 'Excerpt words count', 'lespaul_domain_adm' ),
+								'label' => __( 'Excerpt words count', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							),
@@ -1148,12 +1148,12 @@
 				//Project attributes
 					'projectAtts' => array(
 						'id' => 'project_attributes',
-						'name' => __( 'Project attributes', 'lespaul_domain_adm' ),
-						'desc' => __( 'Use on project page only. Displays table of project attributes.', 'lespaul_domain_adm' ),
+						'name' => __( 'Project attributes', 'atlantes_domain_adm' ),
+						'desc' => __( 'Use on project page only. Displays table of project attributes.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'title' => array(
-								'label' => __( 'Title', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Attributes table title', 'lespaul_domain_adm' ),
+								'label' => __( 'Title', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Attributes table title', 'atlantes_domain_adm' ),
 								'value' => ''
 								)
 							),
@@ -1163,19 +1163,19 @@
 				//Pullquote
 					array(
 						'id' => 'pullquote',
-						'name' => __( 'Pullquote', 'lespaul_domain_adm' ),
+						'name' => __( 'Pullquote', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'align' => array(
-								'label' => __( 'Align', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose pullquote alignment', 'lespaul_domain_adm' ),
+								'label' => __( 'Align', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose pullquote alignment', 'atlantes_domain_adm' ),
 								'value' => array(
-									'left'  => __( 'Left', 'lespaul_domain_adm' ),
-									'right' => __( 'Right', 'lespaul_domain_adm' ),
+									'left'  => __( 'Left', 'atlantes_domain_adm' ),
+									'right' => __( 'Right', 'atlantes_domain_adm' ),
 									)
 								),
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -1185,8 +1185,8 @@
 				//Raw / pre
 					array(
 						'id' => 'raw',
-						'name' => __( 'Raw preformated text', 'lespaul_domain_adm' ),
-						'desc' => __( 'This shortcode has no settings.', 'lespaul_domain_adm' ),
+						'name' => __( 'Raw preformated text', 'atlantes_domain_adm' ),
+						'desc' => __( 'This shortcode has no settings.', 'atlantes_domain_adm' ),
 						'settings' => array(),
 						'output-shortcode' => '[raw]TEXT[/raw]'
 					),
@@ -1194,19 +1194,19 @@
 				//Screen
 					array(
 						'id' => 'screen',
-						'name' => __( 'Screen', 'lespaul_domain_adm' ),
-						'desc' => __( 'This shortcode will display content on specific screen sizes only.', 'lespaul_domain_adm' ),
+						'name' => __( 'Screen', 'atlantes_domain_adm' ),
+						'desc' => __( 'This shortcode will display content on specific screen sizes only.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'size' => array(
-								'label' => __( 'Screen size', 'lespaul_domain_adm' ),
+								'label' => __( 'Screen size', 'atlantes_domain_adm' ),
 								'value' => array(
-									'desktop'             => __( 'Desktop', 'lespaul_domain_adm' ),
-									'tablet'              => __( 'Tablet', 'lespaul_domain_adm' ),
-									'min tablet'          => __( 'Minimum tablet', 'lespaul_domain_adm' ),
-									'phone'               => __( 'Phone', 'lespaul_domain_adm' ),
-									'phone landscape'     => __( 'Phone landscape', 'lespaul_domain_adm' ),
-									'min phone landscape' => __( 'Minimum phone landscape', 'lespaul_domain_adm' ),
-									'phone portrait'      => __( 'Phone portrait', 'lespaul_domain_adm' ),
+									'desktop'             => __( 'Desktop', 'atlantes_domain_adm' ),
+									'tablet'              => __( 'Tablet', 'atlantes_domain_adm' ),
+									'min tablet'          => __( 'Minimum tablet', 'atlantes_domain_adm' ),
+									'phone'               => __( 'Phone', 'atlantes_domain_adm' ),
+									'phone landscape'     => __( 'Phone landscape', 'atlantes_domain_adm' ),
+									'min phone landscape' => __( 'Minimum phone landscape', 'atlantes_domain_adm' ),
+									'phone portrait'      => __( 'Phone portrait', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -1216,17 +1216,17 @@
 				//Section
 					array(
 						'id' => 'section',
-						'name' => __( 'Section', 'lespaul_domain_adm' ),
-						'desc' => __( 'Use on "Sections" page template only! This will split the page into sections. You can set a custom CSS class and then style the sections individually. You can use "alt" class for alternative section styling.', 'lespaul_domain_adm' ),
+						'name' => __( 'Section', 'atlantes_domain_adm' ),
+						'desc' => __( 'Use on "Sections" page template only! This will split the page into sections. You can set a custom CSS class and then style the sections individually. You can use "alt" class for alternative section styling.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'class' => array(
-								'label' => __( 'Class', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional CSS class name', 'lespaul_domain_adm' ),
+								'label' => __( 'Class', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional CSS class name', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -1236,13 +1236,13 @@
 				//Separator heading
 					array(
 						'id' => 'separator_heading',
-						'name' => __( 'Separator heading', 'lespaul_domain_adm' ),
+						'name' => __( 'Separator heading', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'size' => array(
-								'label' => __( 'Heading size', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose one of HTML heading sizes', 'lespaul_domain_adm' ),
+								'label' => __( 'Heading size', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose one of HTML heading sizes', 'atlantes_domain_adm' ),
 								'value' => array(
-									'' => __( 'Default size (2)', 'lespaul_domain_adm' ),
+									'' => __( 'Default size (2)', 'atlantes_domain_adm' ),
 									1  => 1,
 									2  => 2,
 									3  => 3,
@@ -1252,26 +1252,26 @@
 									)
 								),
 							'align' => array(
-								'label' => __( 'Align', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose text alignment', 'lespaul_domain_adm' ),
+								'label' => __( 'Align', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose text alignment', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Left', 'lespaul_domain_adm' ),
-									'center' => __( 'Center', 'lespaul_domain_adm' ),
-									'right'  => __( 'Right', 'lespaul_domain_adm' ),
+									''       => __( 'Left', 'atlantes_domain_adm' ),
+									'center' => __( 'Center', 'atlantes_domain_adm' ),
+									'right'  => __( 'Right', 'atlantes_domain_adm' ),
 									)
 								),
 							'type' => array(
-								'label' => __( 'Type / styling', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Choose separator heading styling', 'lespaul_domain_adm' ),
+								'label' => __( 'Type / styling', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Choose separator heading styling', 'atlantes_domain_adm' ),
 								'value' => array(
-									''        => __( 'Default (uniform)', 'lespaul_domain_adm' ),
-									'uniform' => __( 'Uniform - each heading is the same', 'lespaul_domain_adm' ),
-									'normal'  => __( 'Normal - keeps heading styles', 'lespaul_domain_adm' ),
+									''        => __( 'Default (uniform)', 'atlantes_domain_adm' ),
+									'uniform' => __( 'Uniform - each heading is the same', 'atlantes_domain_adm' ),
+									'normal'  => __( 'Normal - keeps heading styles', 'atlantes_domain_adm' ),
 									)
 								),
 							'id' => array(
-								'label' => __( 'Id attribute', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional HTML id attribute', 'lespaul_domain_adm' ),
+								'label' => __( 'Id attribute', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional HTML id attribute', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							),
@@ -1281,11 +1281,11 @@
 				//Small text
 					array(
 						'id' => 'small_text',
-						'name' => __( 'Small text', 'lespaul_domain_adm' ),
+						'name' => __( 'Small text', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'style' => array(
-								'label' => __( 'Optional CSS style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional CSS style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Custom CSS rules inserted into "style" attribute.', 'atlantes_domain_adm' ),
 								'value' => '',
 								),
 							),
@@ -1295,36 +1295,36 @@
 				//Social icons
 					array(
 						'id' => 'social',
-						'name' => __( 'Social', 'lespaul_domain_adm' ),
+						'name' => __( 'Social', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'url' => array(
-								'label' => __( 'Link URL', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Social icon link URL address', 'lespaul_domain_adm' ),
+								'label' => __( 'Link URL', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Social icon link URL address', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'icon' => array(
-								'label' => __( 'Icon', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select icon to be displayed', 'lespaul_domain_adm' ),
+								'label' => __( 'Icon', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select icon to be displayed', 'atlantes_domain_adm' ),
 								'value' => array_combine( $socialIconsArray, $socialIconsArray )
 								),
 							'title' => array(
-								'label' => __( 'Title text', 'lespaul_domain_adm' ),
-								'desc'  => __( 'This text will be displayed when mouse hovers over the icon', 'lespaul_domain_adm' ),
+								'label' => __( 'Title text', 'atlantes_domain_adm' ),
+								'desc'  => __( 'This text will be displayed when mouse hovers over the icon', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'size' => array(
-								'label' => __( 'Icon size', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select icon size', 'lespaul_domain_adm' ),
+								'label' => __( 'Icon size', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select icon size', 'atlantes_domain_adm' ),
 								'value' => array(
-									's'  => __( 'Small', 'lespaul_domain_adm' ),
-									'm'  => __( 'Medium', 'lespaul_domain_adm' ),
-									'l'  => __( 'Large', 'lespaul_domain_adm' ),
-									'xl' => __( 'Extra large', 'lespaul_domain_adm' ),
+									's'  => __( 'Small', 'atlantes_domain_adm' ),
+									'm'  => __( 'Medium', 'atlantes_domain_adm' ),
+									'l'  => __( 'Large', 'atlantes_domain_adm' ),
+									'xl' => __( 'Extra large', 'atlantes_domain_adm' ),
 									)
 								),
 							'rel' => array(
-								'label' => __( 'Optional link relation', 'lespaul_domain_adm' ),
-								'desc'  => __( 'This will set up the link "rel" HTML attribute', 'lespaul_domain_adm' ),
+								'label' => __( 'Optional link relation', 'atlantes_domain_adm' ),
+								'desc'  => __( 'This will set up the link "rel" HTML attribute', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							),
@@ -1334,32 +1334,32 @@
 				//Staff
 					'staff' => array(
 						'id' => 'staff',
-						'name' => __( 'Staff', 'lespaul_domain_adm' ),
-						'desc' => __( 'You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag.', 'lespaul_domain_adm' ),
+						'name' => __( 'Staff', 'atlantes_domain_adm' ),
+						'desc' => __( 'You can include a description of the list created with the shortcode. Just place the text between opening and closing shortcode tag.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'department' => array(
-								'label' => __( 'Department', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select a department from where the list will be populated', 'lespaul_domain_adm' ),
+								'label' => __( 'Department', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select a department from where the list will be populated', 'atlantes_domain_adm' ),
 								'value' => wm_tax_array( array(
 										'allCountPost' => 'wm_staff',
-										'allText'      => __( 'All staff', 'lespaul_domain_adm' ),
+										'allText'      => __( 'All staff', 'atlantes_domain_adm' ),
 										'tax'          => 'department',
 									) )
 								),
 							'columns' => array(
-								'label' => __( 'Layout', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select number of columns to lay out the list', 'lespaul_domain_adm' ),
+								'label' => __( 'Layout', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select number of columns to lay out the list', 'atlantes_domain_adm' ),
 								'value' => array(
-									'2' => __( '2 columns', 'lespaul_domain_adm' ),
-									'3' => __( '3 columns', 'lespaul_domain_adm' ),
-									'4' => __( '4 columns', 'lespaul_domain_adm' ),
-									'5' => __( '5 columns', 'lespaul_domain_adm' ),
-									'6' => __( '6 columns', 'lespaul_domain_adm' ),
+									'2' => __( '2 columns', 'atlantes_domain_adm' ),
+									'3' => __( '3 columns', 'atlantes_domain_adm' ),
+									'4' => __( '4 columns', 'atlantes_domain_adm' ),
+									'5' => __( '5 columns', 'atlantes_domain_adm' ),
+									'6' => __( '6 columns', 'atlantes_domain_adm' ),
 									)
 								),
 							'count' => array(
-								'label' => __( 'Staff count', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Number of items to display', 'lespaul_domain_adm' ),
+								'label' => __( 'Staff count', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Number of items to display', 'atlantes_domain_adm' ),
 								'value' => array(
 									'1' => 1,
 									'2' => 2,
@@ -1384,30 +1384,30 @@
 									)
 								),
 							'order' => array(
-								'label' => __( 'Order', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select order in which items will be displayed', 'lespaul_domain_adm' ),
+								'label' => __( 'Order', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select order in which items will be displayed', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Default', 'lespaul_domain_adm' ),
-									'name'   => __( 'By name', 'lespaul_domain_adm' ),
-									'new'    => __( 'Newest first', 'lespaul_domain_adm' ),
-									'old'    => __( 'Oldest first', 'lespaul_domain_adm' ),
-									'random' => __( 'Randomly', 'lespaul_domain_adm' ),
+									''       => __( 'Default', 'atlantes_domain_adm' ),
+									'name'   => __( 'By name', 'atlantes_domain_adm' ),
+									'new'    => __( 'Newest first', 'atlantes_domain_adm' ),
+									'old'    => __( 'Oldest first', 'atlantes_domain_adm' ),
+									'random' => __( 'Randomly', 'atlantes_domain_adm' ),
 									)
 								),
 							'align' => array(
-								'label' => __( 'Description align', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional list description alignement', 'lespaul_domain_adm' ),
+								'label' => __( 'Description align', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional list description alignement', 'atlantes_domain_adm' ),
 								'value' => array(
 									''      => '',
-									'left'  => __( 'Description text on the left', 'lespaul_domain_adm' ),
-									'right' => __( 'Description text on the right', 'lespaul_domain_adm' ),
+									'left'  => __( 'Description text on the left', 'atlantes_domain_adm' ),
+									'right' => __( 'Description text on the right', 'atlantes_domain_adm' ),
 									)
 								),
 							'thumb' => array(
-								'label' => __( 'Thumbnail image', 'lespaul_domain_adm' ),
+								'label' => __( 'Thumbnail image', 'atlantes_domain_adm' ),
 								'value' => array(
-									''  => __( 'Yes', 'lespaul_domain_adm' ),
-									'0' => __( 'No', 'lespaul_domain_adm' ),
+									''  => __( 'Yes', 'atlantes_domain_adm' ),
+									'0' => __( 'No', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -1417,13 +1417,13 @@
 				//Subpages
 					array(
 						'id' => 'subpages',
-						'name' => __( 'Subpages', 'lespaul_domain_adm' ),
+						'name' => __( 'Subpages', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'depth' => array(
-								'label' => __( 'Hierarchy levels', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select the depth of page hierarchy to display', 'lespaul_domain_adm' ),
+								'label' => __( 'Hierarchy levels', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select the depth of page hierarchy to display', 'atlantes_domain_adm' ),
 								'value' => array(
-									'0' => __( 'All levels', 'lespaul_domain_adm' ),
+									'0' => __( 'All levels', 'atlantes_domain_adm' ),
 									'1' => 1,
 									'2' => 2,
 									'3' => 3,
@@ -1432,21 +1432,21 @@
 									)
 								),
 							'order' => array(
-								'label' => __( 'Order', 'lespaul_domain_adm' ),
+								'label' => __( 'Order', 'atlantes_domain_adm' ),
 								'desc'  => '',
 								'value' => array(
 									''      => '',
-									'menu'  => __( 'By menu order', 'lespaul_domain_adm' ),
-									'title' => __( 'By title', 'lespaul_domain_adm' ),
+									'menu'  => __( 'By menu order', 'atlantes_domain_adm' ),
+									'title' => __( 'By title', 'atlantes_domain_adm' ),
 									)
 								),
 							'parents' => array(
-								'label' => __( 'Display parents?', 'lespaul_domain_adm' ),
+								'label' => __( 'Display parents?', 'atlantes_domain_adm' ),
 								'desc'  => '',
 								'value' => array(
 									''      => '',
-									''  => __( 'No', 'lespaul_domain_adm' ),
-									'1' => __( 'Yes', 'lespaul_domain_adm' ),
+									''  => __( 'No', 'atlantes_domain_adm' ),
+									'1' => __( 'Yes', 'atlantes_domain_adm' ),
 									)
 								)
 							),
@@ -1456,27 +1456,27 @@
 				//Table
 					array(
 						'id' => 'table',
-						'name' => __( 'Table', 'lespaul_domain_adm' ),
-						'desc' => __( 'For simple data tables use the shortcode below.', 'lespaul_domain_adm' ) . '<br />' . __( 'However, if you require more control over your table you can use sub-shortcodes for table row (<code>[trow][/trow]</code> or <code>[trow_alt][/trow_alt]</code> for alternatively styled table row), table cell (<code>[tcell][/tcell]</code>) and table heading cell (<code>[tcell_heading][/tcell_heading]</code>). All wrapped in <code>[table][/table]</code> parent shortcode.', 'lespaul_domain_adm' ),
+						'name' => __( 'Table', 'atlantes_domain_adm' ),
+						'desc' => __( 'For simple data tables use the shortcode below.', 'atlantes_domain_adm' ) . '<br />' . __( 'However, if you require more control over your table you can use sub-shortcodes for table row (<code>[trow][/trow]</code> or <code>[trow_alt][/trow_alt]</code> for alternatively styled table row), table cell (<code>[tcell][/tcell]</code>) and table heading cell (<code>[tcell_heading][/tcell_heading]</code>). All wrapped in <code>[table][/table]</code> parent shortcode.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'cols' => array(
-								'label' => __( 'Heading row', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Titles of columns, separated with separator character. This is required to determine the number of columns for the table.', 'lespaul_domain_adm' ),
+								'label' => __( 'Heading row', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Titles of columns, separated with separator character. This is required to determine the number of columns for the table.', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'data' => array(
-								'label' => __( 'Table data', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Table cells data separated with separator character. Will be automatically aligned into columns (depending on "Heading row" setting).', 'lespaul_domain_adm' ),
+								'label' => __( 'Table data', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Table cells data separated with separator character. Will be automatically aligned into columns (depending on "Heading row" setting).', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							'separator' => array(
-								'label' => __( 'Separator character', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Individual table cell data separator used in previous input fields', 'lespaul_domain_adm' ),
+								'label' => __( 'Separator character', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Individual table cell data separator used in previous input fields', 'atlantes_domain_adm' ),
 								'value' => ';'
 								),
 							'heading_col' => array(
-								'label' => __( 'Heading column', 'lespaul_domain_adm' ),
-								'desc'  => __( 'If you wish to display a whole column of the table as a heading, set its order number here', 'lespaul_domain_adm' ),
+								'label' => __( 'Heading column', 'atlantes_domain_adm' ),
+								'desc'  => __( 'If you wish to display a whole column of the table as a heading, set its order number here', 'atlantes_domain_adm' ),
 								'value' => array(
 									''  => '',
 									'1' => 1,
@@ -1492,8 +1492,8 @@
 									)
 								),
 							'class' => array(
-								'label' => __( 'CSS class', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Optional custom css class applied on the table HTML tag', 'lespaul_domain_adm' ),
+								'label' => __( 'CSS class', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Optional custom css class applied on the table HTML tag', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							),
@@ -1503,22 +1503,22 @@
 				//Tabs
 					array(
 						'id' => 'tabs',
-						'name' => __( 'Tabs', 'lespaul_domain_adm' ),
-						'desc' => __( 'Please, copy the <code>[tab title="" icon=""][/tab]</code> sub-shortcode as many times as you need. But keep them wrapped in <code>[tabs][/tabs]</code> parent shortcode.', 'lespaul_domain_adm' ),
+						'name' => __( 'Tabs', 'atlantes_domain_adm' ),
+						'desc' => __( 'Please, copy the <code>[tab title="" icon=""][/tab]</code> sub-shortcode as many times as you need. But keep them wrapped in <code>[tabs][/tabs]</code> parent shortcode.', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'type' => array(
-								'label' => __( 'Tabs type', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select tabs styling', 'lespaul_domain_adm' ),
+								'label' => __( 'Tabs type', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select tabs styling', 'atlantes_domain_adm' ),
 								'value' => array(
-									''              => __( 'Normal tabs', 'lespaul_domain_adm' ),
-									'fullwidth'     => __( 'Full width tabs', 'lespaul_domain_adm' ),
-									'vertical'      => __( 'Vertical tabs', 'lespaul_domain_adm' ),
-									'vertical tour' => __( 'Vertical tabs - tour', 'lespaul_domain_adm' ),
+									''              => __( 'Normal tabs', 'atlantes_domain_adm' ),
+									'fullwidth'     => __( 'Full width tabs', 'atlantes_domain_adm' ),
+									'vertical'      => __( 'Vertical tabs', 'atlantes_domain_adm' ),
+									'vertical tour' => __( 'Vertical tabs - tour', 'atlantes_domain_adm' ),
 									)
 								),
 							'icon' => array(
-								'label' => __( 'Tab icon', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select optional tab icon', 'lespaul_domain_adm' ),
+								'label' => __( 'Tab icon', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select optional tab icon', 'atlantes_domain_adm' ),
 								'value' => array_merge( $menuIconsEmpty, $menuIcons ),
 								'image-before' => true,
 								),
@@ -1529,17 +1529,17 @@
 				//Testimonials
 					'testimonials' => array(
 						'id' => 'testimonials',
-						'name' => __( 'Testimonials', 'lespaul_domain_adm' ),
-						'desc' => __( 'This shortcode will display Quote posts. If featured image of the post set, it will be used as quoted person photo (please upload square images only).', 'lespaul_domain_adm' ),
+						'name' => __( 'Testimonials', 'atlantes_domain_adm' ),
+						'desc' => __( 'This shortcode will display Quote posts. If featured image of the post set, it will be used as quoted person photo (please upload square images only).', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'category' => array(
-								'label' => __( 'Category (required)', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select a category from where the list will be populated', 'lespaul_domain_adm' ),
+								'label' => __( 'Category (required)', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select a category from where the list will be populated', 'atlantes_domain_adm' ),
 								'value' => wm_tax_array( array( 'all' => false ) )
 								),
 							'count' => array(
-								'label' => __( 'Testimonials count', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Number of items to display', 'lespaul_domain_adm' ),
+								'label' => __( 'Testimonials count', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Number of items to display', 'atlantes_domain_adm' ),
 								'value' => array(
 									'1' => 1,
 									'2' => 2,
@@ -1559,17 +1559,17 @@
 									)
 								),
 							'order' => array(
-								'label' => __( 'Order', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select order in which items will be displayed', 'lespaul_domain_adm' ),
+								'label' => __( 'Order', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select order in which items will be displayed', 'atlantes_domain_adm' ),
 								'value' => array(
-									''       => __( 'Newest first', 'lespaul_domain_adm' ),
-									'old'    => __( 'Oldest first', 'lespaul_domain_adm' ),
-									'random' => __( 'Randomly', 'lespaul_domain_adm' ),
+									''       => __( 'Newest first', 'atlantes_domain_adm' ),
+									'old'    => __( 'Oldest first', 'atlantes_domain_adm' ),
+									'random' => __( 'Randomly', 'atlantes_domain_adm' ),
 									)
 								),
 							'speed' => array(
-								'label' => __( 'Speed in seconds', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Time to display one testimonial in seconds', 'lespaul_domain_adm' ),
+								'label' => __( 'Speed in seconds', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Time to display one testimonial in seconds', 'atlantes_domain_adm' ),
 								'value' => array(
 									''  => '',
 									'3'  => 3,
@@ -1594,17 +1594,17 @@
 								),
 							/*
 							'layout' => array(
-								'label' => __( 'Layout', 'lespaul_domain_adm' ),
+								'label' => __( 'Layout', 'atlantes_domain_adm' ),
 								'desc'  => '',
 								'value' => array(
-									''      => __( 'Normal', 'lespaul_domain_adm' ),
-									'large' => __( 'Large', 'lespaul_domain_adm' ),
+									''      => __( 'Normal', 'atlantes_domain_adm' ),
+									'large' => __( 'Large', 'atlantes_domain_adm' ),
 									)
 								),
 							*/
 							'stack' => array(
-								'label' => __( 'Animated stack count', 'lespaul_domain_adm' ),
-								'desc'  => __( 'How many testimonials to display at once (use with animated testimonials only)', 'lespaul_domain_adm' ),
+								'label' => __( 'Animated stack count', 'atlantes_domain_adm' ),
+								'desc'  => __( 'How many testimonials to display at once (use with animated testimonials only)', 'atlantes_domain_adm' ),
 								'value' => array(
 									'' => 1,
 									2  => 2,
@@ -1613,12 +1613,12 @@
 									)
 								),
 							'private' => array(
-								'label' => __( 'Display private posts?', 'lespaul_domain_adm' ),
+								'label' => __( 'Display private posts?', 'atlantes_domain_adm' ),
 								'desc'  => '',
 								'value' => array(
 									''      => '',
-									''  => __( 'No', 'lespaul_domain_adm' ),
-									'1' => __( 'Yes', 'lespaul_domain_adm' ),
+									''  => __( 'No', 'atlantes_domain_adm' ),
+									'1' => __( 'Yes', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -1628,20 +1628,20 @@
 				//Toggles
 					array(
 						'id' => 'toggles',
-						'name' => __( 'Toggles', 'lespaul_domain_adm' ),
+						'name' => __( 'Toggles', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'title' => array(
-								'label' => __( 'Toggle title', 'lespaul_domain_adm' ),
+								'label' => __( 'Toggle title', 'atlantes_domain_adm' ),
 								'desc'  => '',
 								'value' => ''
 								),
 							'open' => array(
-								'label' => __( 'Open by default?', 'lespaul_domain_adm' ),
+								'label' => __( 'Open by default?', 'atlantes_domain_adm' ),
 								'desc'  => '',
 								'value' => array(
 									''      => '',
-									''  => __( 'No', 'lespaul_domain_adm' ),
-									'1' => __( 'Yes', 'lespaul_domain_adm' ),
+									''  => __( 'No', 'atlantes_domain_adm' ),
+									'1' => __( 'Yes', 'atlantes_domain_adm' ),
 									)
 								)
 							),
@@ -1651,8 +1651,8 @@
 				//Uppercase text
 					array(
 						'id' => 'uppercase',
-						'name' => __( 'Uppercase text', 'lespaul_domain_adm' ),
-						'desc' => __( 'This shortcode has no settings.', 'lespaul_domain_adm' ),
+						'name' => __( 'Uppercase text', 'atlantes_domain_adm' ),
+						'desc' => __( 'This shortcode has no settings.', 'atlantes_domain_adm' ),
 						'settings' => array(),
 						'output-shortcode' => '[uppercase]TEXT[/uppercase]'
 					),
@@ -1660,12 +1660,12 @@
 				//Videos
 					array(
 						'id' => 'video',
-						'name' => __( 'Video', 'lespaul_domain_adm' ),
-						'desc' => sprintf( __( '<a%s>Supported video portals</a> and Screenr videos.', 'lespaul_domain_adm' ), ' href="http://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F" target="_blank"' ),
+						'name' => __( 'Video', 'atlantes_domain_adm' ),
+						'desc' => sprintf( __( '<a%s>Supported video portals</a> and Screenr videos.', 'atlantes_domain_adm' ), ' href="http://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F" target="_blank"' ),
 						'settings' => array(
 							'url' => array(
-								'label' => __( 'Video URL', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Insert video URL address here', 'lespaul_domain_adm' ),
+								'label' => __( 'Video URL', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Insert video URL address here', 'atlantes_domain_adm' ),
 								'value' => ''
 								),
 							),
@@ -1675,21 +1675,21 @@
 				//Widget areas
 					array(
 						'id' => 'widgetarea',
-						'name' => __( 'Widget area', 'lespaul_domain_adm' ),
+						'name' => __( 'Widget area', 'atlantes_domain_adm' ),
 						'settings' => array(
 							'area' => array(
-								'label' => __( 'Area to display', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Select a widget area from dropdown menu', 'lespaul_domain_adm' ),
+								'label' => __( 'Area to display', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Select a widget area from dropdown menu', 'atlantes_domain_adm' ),
 								'value' => wm_widget_areas()
 								),
 							'style' => array(
-								'label' => __( 'Style', 'lespaul_domain_adm' ),
-								'desc'  => __( 'Widgets layout of the widget area', 'lespaul_domain_adm' ),
+								'label' => __( 'Style', 'atlantes_domain_adm' ),
+								'desc'  => __( 'Widgets layout of the widget area', 'atlantes_domain_adm' ),
 								'value' => array(
-									''              => __( 'Horizontal', 'lespaul_domain_adm' ),
-									'vertical'      => __( 'Vertical', 'lespaul_domain_adm' ),
-									'sidebar-left'  => __( 'Sidebar left', 'lespaul_domain_adm' ),
-									'sidebar-right' => __( 'Sidebar right', 'lespaul_domain_adm' ),
+									''              => __( 'Horizontal', 'atlantes_domain_adm' ),
+									'vertical'      => __( 'Vertical', 'atlantes_domain_adm' ),
+									'sidebar-left'  => __( 'Sidebar left', 'atlantes_domain_adm' ),
+									'sidebar-right' => __( 'Sidebar right', 'atlantes_domain_adm' ),
 									)
 								),
 							),
@@ -1752,7 +1752,7 @@
 				*/
 
 				//select
-				$out .= '<div class="wm-select-wrap"><label for="select-shortcode">' . __( 'Select a shortcode:', 'lespaul_domain_adm' ) . '</label><select id="select-shortcode" class="wm-select">';
+				$out .= '<div class="wm-select-wrap"><label for="select-shortcode">' . __( 'Select a shortcode:', 'atlantes_domain_adm' ) . '</label><select id="select-shortcode" class="wm-select">';
 				foreach ( $shortcodes as $shortcode ) {
 					$shortcodeId = 'wm-generate-' . $shortcode['id'];
 					$out .= '<option value="#' . $shortcodeId . '">' . $shortcode['name'] . '</option>';
@@ -1771,7 +1771,7 @@
 
 					$out .= '
 						<div id="' . $shortcodeId . '" class="tab-content">
-						<p class="shortcode-title"><strong>' . $shortcode['name'] . '</strong> ' . __( 'shortcode', 'lespaul_domain_adm' ) . '</p>
+						<p class="shortcode-title"><strong>' . $shortcode['name'] . '</strong> ' . __( 'shortcode', 'atlantes_domain_adm' ) . '</p>
 						';
 
 					if ( isset( $shortcode['desc'] ) && $shortcode['desc'] )
@@ -1809,19 +1809,19 @@
 
 							} else {
 
-								$out .= '<input type="text" name="' . $shortcodeId . '-' . $id . '" value="' . $labelValue['value'] . '" id="' . $shortcodeId . '-' . $id . '" class="widefat" title="' . $desc . '"' . $maxlength . ' data-attribute="' . $id . '" /><img src="' . WM_ASSETS_ADMIN . 'img/shortcodes/add16.png" alt="' . __( 'Apply changes', 'lespaul_domain_adm' ) . '" title="' . __( 'Apply changes', 'lespaul_domain_adm' ) . '" class="ico-apply" />';
+								$out .= '<input type="text" name="' . $shortcodeId . '-' . $id . '" value="' . $labelValue['value'] . '" id="' . $shortcodeId . '-' . $id . '" class="widefat" title="' . $desc . '"' . $maxlength . ' data-attribute="' . $id . '" /><img src="' . WM_ASSETS_ADMIN . 'img/shortcodes/add16.png" alt="' . __( 'Apply changes', 'atlantes_domain_adm' ) . '" title="' . __( 'Apply changes', 'atlantes_domain_adm' ) . '" class="ico-apply" />';
 
 							}
 							$out .= '</td></tr>';
 						}
 					}
 
-					$out .= '<tr><td>&nbsp;</td><td><p><a data-parent="' . $shortcodeId . '" class="send-to-generator button-primary">' . __( 'Insert into editor', 'lespaul_domain_adm' ) . '</a></p></td></tr>';
+					$out .= '<tr><td>&nbsp;</td><td><p><a data-parent="' . $shortcodeId . '" class="send-to-generator button-primary">' . __( 'Insert into editor', 'atlantes_domain_adm' ) . '</a></p></td></tr>';
 					$out .= '
 						</table>
 						</form>
 						';
-					$out .= '<p><strong>' . __( 'Or copy and paste in this shortcode:', 'lespaul_domain_adm' ) . '</strong></p>';
+					$out .= '<p><strong>' . __( 'Or copy and paste in this shortcode:', 'atlantes_domain_adm' ) . '</strong></p>';
 					$out .= '<form><textarea class="wm-shortcode-output' . $close . '" cols="30" rows="2" readonly="readonly" onfocus="this.select();" data-reference="' . esc_attr( $shortcodeOutput ) . '">' . esc_attr( $shortcodeOutput ) . '</textarea></form>';
 					$out .= '<!-- /form-wrap --></div>';
 					$out .= '<!-- /tab-content --></div>';

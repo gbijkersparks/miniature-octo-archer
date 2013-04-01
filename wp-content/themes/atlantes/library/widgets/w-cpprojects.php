@@ -42,10 +42,10 @@ class wm_projects_list extends WP_Widget {
 	function __construct() {
 		$id     = 'wm-projects-list';
 		$prefix = ( wm_option( 'branding-panel-no-logo' ) || ! strpos( wm_option( 'branding-panel-logo' ), 'logo-' . WM_THEME_SHORTNAME . '-admin.png' ) ) ? ( '' ) : ( WM_THEME_NAME . ' ' );
-		$name   = '<span>' . $prefix . __( 'Projects', 'lespaul_domain_adm' ) . '</span>';
+		$name   = '<span>' . $prefix . __( 'Projects', 'atlantes_domain_adm' ) . '</span>';
 		$widget_ops = array(
 			'classname'   => 'wm-projects-list',
-			'description' => __( 'List of portfolio projects', 'lespaul_domain_adm' )
+			'description' => __( 'List of portfolio projects', 'atlantes_domain_adm' )
 			);
 		$control_ops = array();
 
@@ -69,20 +69,20 @@ class wm_projects_list extends WP_Widget {
 
 		//HTML to display widget settings form
 		?>
-		<p class="wm-desc"><?php _e( 'Displays list of projects from all or specific categories.', 'lespaul_domain_adm' ); ?></p>
+		<p class="wm-desc"><?php _e( 'Displays list of projects from all or specific categories.', 'atlantes_domain_adm' ); ?></p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'lespaul_domain_adm' ); ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'atlantes_domain_adm' ); ?></label><br />
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'type' ); ?>"><?php _e( 'List type:', 'lespaul_domain_adm' ); ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'type' ); ?>"><?php _e( 'List type:', 'atlantes_domain_adm' ); ?></label><br />
 			<select class="widefat" name="<?php echo $this->get_field_name( 'type' ); ?>" id="<?php echo $this->get_field_id( 'type' ); ?>">
 				<?php
 				$options = array(
-					'rand' => __( 'Random items', 'lespaul_domain_adm' ),
-					'date' => __( 'Recent items', 'lespaul_domain_adm' )
+					'rand' => __( 'Random items', 'atlantes_domain_adm' ),
+					'date' => __( 'Recent items', 'atlantes_domain_adm' )
 					);
 				foreach ( $options as $optId => $option ) {
 					?>
@@ -94,12 +94,12 @@ class wm_projects_list extends WP_Widget {
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Projects source (category):', 'lespaul_domain_adm' ); ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Projects source (category):', 'atlantes_domain_adm' ); ?></label><br />
 			<select class="widefat" name="<?php echo $this->get_field_name( 'category' ); ?>[]" id="<?php echo $this->get_field_id( 'category' ); ?>" multiple="multiple">
 				<?php
 				$options = wm_tax_array( array(
 						'allCountPost' => 'wm_projects',
-						'allText'      => __( 'All projects', 'lespaul_domain_adm' ),
+						'allText'      => __( 'All projects', 'atlantes_domain_adm' ),
 						'parentsOnly'  => true,
 						'return'       => 'term_id',
 						'tax'          => 'project-category',
@@ -116,11 +116,11 @@ class wm_projects_list extends WP_Widget {
 				}
 				?>
 			</select>
-			<small><?php _e( 'Hold down [CTRL] key for multiselection', 'lespaul_domain_adm' ) ?></small>
+			<small><?php _e( 'Hold down [CTRL] key for multiselection', 'atlantes_domain_adm' ) ?></small>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'count' ); ?>"><?php _e( 'Projects count:', 'lespaul_domain_adm' ); ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'count' ); ?>"><?php _e( 'Projects count:', 'atlantes_domain_adm' ); ?></label><br />
 			<input class="text-center" type="number" id="<?php echo $this->get_field_id( 'count' ); ?>" name="<?php echo $this->get_field_name( 'count' ); ?>" value="<?php echo $count; ?>" size="5" maxlength="2" />
 		</p>
 		<?php

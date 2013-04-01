@@ -183,7 +183,7 @@
 
 			//Check that the user is allowed to edit options
 			if ( ! current_user_can( 'switch_themes' ) )
-				wp_die( __( 'You do not have sufficient permissions to access this page.', 'lespaul_domain_adm' ) );
+				wp_die( __( 'You do not have sufficient permissions to access this page.', 'atlantes_domain_adm' ) );
 
 			//Saving fields from theme options form
 			if ( isset( $_GET['page'] ) && ! empty( $_GET['page'] ) && WM_THEME_SHORTNAME . '-options' == $_GET['page'] ) {
@@ -295,9 +295,9 @@
 			//add_theme_page( $page_title, $menu_title, $capability, $menu_slug, $function); //use "themes.php" in redirect
 			add_theme_page(
 					//page_title
-					__( 'Theme Options', 'lespaul_domain_panel' ),
+					__( 'Theme Options', 'atlantes_domain_panel' ),
 					//menu_title
-					__( 'Theme Options', 'lespaul_domain_panel' ),
+					__( 'Theme Options', 'atlantes_domain_panel' ),
 					//capability
 					'switch_themes',
 					//menu_slug
@@ -307,9 +307,9 @@
 				);
 			add_theme_page(
 					//page_title
-					__( 'Options Export/Import', 'lespaul_domain_panel' ),
+					__( 'Options Export/Import', 'atlantes_domain_panel' ),
 					//menu_title
-					__( 'Options Export/Import', 'lespaul_domain_panel' ),
+					__( 'Options Export/Import', 'atlantes_domain_panel' ),
 					//capability
 					'switch_themes',
 					//menu_slug
@@ -350,13 +350,13 @@
 			$delayLong = '';
 
 			if ( $wp_version < WM_WP_COMPATIBILITY ) {
-				$msg[]     = __( 'THIS THEME IS NOT COMPATIBLE WITH YOUR WORDPRESS VERSION. PLEASE UPGRADE YOUR WORDPRESS INSTALLATION.', 'lespaul_domain_panel' );
+				$msg[]     = __( 'THIS THEME IS NOT COMPATIBLE WITH YOUR WORDPRESS VERSION. PLEASE UPGRADE YOUR WORDPRESS INSTALLATION.', 'atlantes_domain_panel' );
 				$delayLong = ' class="delay-long warning"';
 			}
 			if ( isset( $_GET['saved'] ) && ! empty( $_GET['saved'] ) && $_GET['saved'] )
-				$msg[] = __( 'Settings were updated successfully.', 'lespaul_domain_panel' );
+				$msg[] = __( 'Settings were updated successfully.', 'atlantes_domain_panel' );
 			if ( isset( $_GET['reset'] ) && ! empty( $_GET['reset'] ) && $_GET['reset'] )
-				$msg[] = __( 'Settings were reset.', 'lespaul_domain_panel' );
+				$msg[] = __( 'Settings were reset.', 'atlantes_domain_panel' );
 
 			//Display message box if any message sent
 			if ( ! empty( $msg ) ) {
@@ -415,11 +415,11 @@
 					if ( wm_option( 'branding-panel-logo' ) || wm_option( 'branding-panel-no-logo' ) )
 						$panelTitle = '';
 					if ( ! wm_option( 'branding-panel-no-logo' ) && strpos( wm_option( 'branding-panel-logo' ), 'logo-' . WM_THEME_SHORTNAME . '-admin.png' ) )
-						$panelTitle = sprintf( '<small>' . __( 'Using %1$s theme, version %2$s', 'lespaul_domain_panel' ) . '</small>', WM_THEME_NAME, WM_THEME_VERSION );
+						$panelTitle = sprintf( '<small>' . __( 'Using %1$s theme, version %2$s', 'atlantes_domain_panel' ) . '</small>', WM_THEME_NAME, WM_THEME_VERSION );
 
 					echo $panelTitle;
 					?>
-					<input name="save" type="submit" value="<?php _e( 'Save changes', 'lespaul_domain_panel' ) ?>" class="btn submit" />
+					<input name="save" type="submit" value="<?php _e( 'Save changes', 'atlantes_domain_panel' ) ?>" class="btn submit" />
 				</h2>
 
 				<!-- MAIN CONTENT -->
@@ -430,7 +430,7 @@
 				<!-- FOOTER -->
 				<div id="wrap-footer">
 					<p>&copy; WebMan | Version 2.0<br /><a href="http://support.webmandesign.eu" target="_blank">WebMan Support</a></p>
-					<input name="save" type="submit" value="<?php _e( 'Save changes', 'lespaul_domain_panel' ) ?>" class="btn submit" />
+					<input name="save" type="submit" value="<?php _e( 'Save changes', 'atlantes_domain_panel' ) ?>" class="btn submit" />
 					<?php wp_nonce_field( 'wm-theme-options-form' ); ?>
 					<input type="hidden" name="action" value="save" />
 				</div> <!-- /footer -->
@@ -439,7 +439,7 @@
 
 			<?php if ( wm_option( 'general-theme-options-reset' ) ) { //is reset button enabled? ?>
 			<form method="post" class="reset-form" action="<?php echo admin_url( 'themes.php?page=' . WM_THEME_SHORTNAME . '-options' ); ?>">
-				<input name="reset" type="submit" value="<?php _e( 'Reset defaults', 'lespaul_domain_panel' ) ?>" class="btn submit" />
+				<input name="reset" type="submit" value="<?php _e( 'Reset defaults', 'atlantes_domain_panel' ) ?>" class="btn submit" />
 				<?php wp_nonce_field( 'wm-theme-options-reset' ); ?>
 				<input type="hidden" name="action" value="reset" />
 			</form>

@@ -61,7 +61,7 @@
 	//Generic login error messages
 	if ( ! function_exists( 'wm_login_generic_message' ) ) {
 		function wm_login_generic_message() {
-			return __( 'It seems something went wrong...', 'lespaul_domain_adm' );
+			return __( 'It seems something went wrong...', 'atlantes_domain_adm' );
 		}
 	} // /wm_login_generic_message
 
@@ -115,11 +115,11 @@
 		add_theme_support( 'menus' );
 		//menus array
 		$registeredMenusArray = array(
-				'main-navigation' => __( 'Main navigation', 'lespaul_domain_adm' ),
-				'footer-menu'     => __( 'Footer menu', 'lespaul_domain_adm' ),
+				'main-navigation' => __( 'Main navigation', 'atlantes_domain_adm' ),
+				'footer-menu'     => __( 'Footer menu', 'atlantes_domain_adm' ),
 			);
 			if ( ! wm_option( 'contents-page-template-sitemap-php' ) )
-				$registeredMenusArray['sitemap-links'] = __( 'Sitemap links', 'lespaul_domain_adm' );
+				$registeredMenusArray['sitemap-links'] = __( 'Sitemap links', 'atlantes_domain_adm' );
 
 			//separate menu for each landing page
 			$landingPages = get_pages( array(
@@ -128,7 +128,7 @@
 					'hierarchical' => 0
 				) );
 			foreach ( $landingPages as $landingPage ) {
-				$registeredMenusArray['menu-landing-page-' . $landingPage->ID] = '"' . $landingPage->post_title . '" ' . __( 'page navigation', 'lespaul_domain_adm' );
+				$registeredMenusArray['menu-landing-page-' . $landingPage->ID] = '"' . $landingPage->post_title . '" ' . __( 'page navigation', 'atlantes_domain_adm' );
 			}
 		//register menus
 		register_nav_menus( $registeredMenusArray );
@@ -202,21 +202,21 @@
 	*  2) main WordPress admin extensions (like post metaboxes)
 	*  3) theme's contextual help texts
 	*  4) theme admin panel (accessed by administrators only)
-	* You can find all theme translation .PO files (and place translated .MO files) in "lespaul/langs/" folder and subsequent subfolders.
+	* You can find all theme translation .PO files (and place translated .MO files) in "atlantes/langs/" folder and subsequent subfolders.
 	*
 	* Theme uses these textdomains:
-	*  1) lespaul_domain
-	*  2) lespaul_domain_adm
-	*  3) lespaul_domain_help
-	*  4) lespaul_domain_panel
+	*  1) atlantes_domain
+	*  2) atlantes_domain_adm
+	*  3) atlantes_domain_help
+	*  4) atlantes_domain_panel
 	*/
-	load_theme_textdomain( 'lespaul_domain', WM_LANGUAGES );
+	load_theme_textdomain( 'atlantes_domain', WM_LANGUAGES );
 	if( is_admin() )
-		load_theme_textdomain( 'lespaul_domain_adm', WM_LANGUAGES . '/admin' );
+		load_theme_textdomain( 'atlantes_domain_adm', WM_LANGUAGES . '/admin' );
 	if ( is_admin() && ! wm_option( 'general-no-help' ) )
-		load_theme_textdomain( 'lespaul_domain_help', WM_LANGUAGES . '/help' );
+		load_theme_textdomain( 'atlantes_domain_help', WM_LANGUAGES . '/help' );
 	if( is_admin() && current_user_can( 'switch_themes' ) )
-		load_theme_textdomain( 'lespaul_domain_panel', WM_LANGUAGES . '/wm-admin-panel' );
+		load_theme_textdomain( 'atlantes_domain_panel', WM_LANGUAGES . '/wm-admin-panel' );
 
 
 

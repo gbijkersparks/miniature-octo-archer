@@ -103,7 +103,7 @@
 	*/
 	if ( ! function_exists( 'wm_excerpt_meta_admin_box' ) ) {
 		function wm_excerpt_meta_admin_box() {
-			add_meta_box( 'wm-metabox-wm_excerpt_meta-meta', __( 'Page excerpt', 'lespaul_domain_adm' ), 'wm_excerpt_meta_form', 'page', 'normal', 'high' );
+			add_meta_box( 'wm-metabox-wm_excerpt_meta-meta', __( 'Page excerpt', 'atlantes_domain_adm' ), 'wm_excerpt_meta_form', 'page', 'normal', 'high' );
 		}
 	} // /wm_excerpt_meta_admin_box
 

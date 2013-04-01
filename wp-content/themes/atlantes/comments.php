@@ -13,19 +13,19 @@ if ( ! empty( $_SERVER['SCRIPT_FILENAME'] ) && 'comments.php' == basename( $_SER
 ?>
 
 	<h2 id="comments-title">
-	<?php printf( __( 'Comments (%s)', 'lespaul_domain' ), get_comments_number() ); ?>
+	<?php printf( __( 'Comments (%s)', 'atlantes_domain' ), get_comments_number() ); ?>
 	</h2>
 
 <?php
 if ( have_comments() ) :
 ?>
-	<?php if ( ! comments_open() ) echo '<h3 class="comments-closed">' . __( 'Comments are closed. You can not add new comments.', 'lespaul_domain' ) . '</h3>'; ?>
+	<?php if ( ! comments_open() ) echo '<h3 class="comments-closed">' . __( 'Comments are closed. You can not add new comments.', 'atlantes_domain' ) . '</h3>'; ?>
 
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) { //are there comments to navigate through ?>
 	<nav id="comment-nav-above" class="comments-nav">
-		<h3 class="assistive-text invisible"><?php _e( 'Comment navigation', 'lespaul_domain' ); ?></h3>
-		<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older comments', 'lespaul_domain' ) ); ?></div>
-		<div class="nav-next"><?php next_comments_link( __( 'Newer comments &rarr;', 'lespaul_domain' ) ); ?></div>
+		<h3 class="assistive-text invisible"><?php _e( 'Comment navigation', 'atlantes_domain' ); ?></h3>
+		<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older comments', 'atlantes_domain' ) ); ?></div>
+		<div class="nav-next"><?php next_comments_link( __( 'Newer comments &rarr;', 'atlantes_domain' ) ); ?></div>
 	</nav>
 	<?php } ?>
 
@@ -40,9 +40,9 @@ if ( have_comments() ) :
 
 	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) { //are there comments to navigate through ?>
 	<nav id="comment-nav-below" class="comments-nav">
-		<h3 class="assistive-text invisible"><?php _e( 'Comment navigation', 'lespaul_domain' ); ?></h3>
-		<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older comments', 'lespaul_domain' ) ); ?></div>
-		<div class="nav-next"><?php next_comments_link( __( 'Newer comments &rarr;', 'lespaul_domain' ) ); ?></div>
+		<h3 class="assistive-text invisible"><?php _e( 'Comment navigation', 'atlantes_domain' ); ?></h3>
+		<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older comments', 'atlantes_domain' ) ); ?></div>
+		<div class="nav-next"><?php next_comments_link( __( 'Newer comments &rarr;', 'atlantes_domain' ) ); ?></div>
 	</nav>
 	<?php } ?>
 

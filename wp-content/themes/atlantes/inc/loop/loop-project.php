@@ -45,7 +45,7 @@ $projectLayout = array();
 			$out .= '<img src="' . $imageSrc[0] . '" alt="' . esc_attr( $imageAlt ) . '" title="' . esc_attr( $imageTitle ) . '" />';
 			$out .= '</a>';
 		} else {
-			$out .= '[box color="red" icon="warning"]' . __( 'Please set "Project main image" option', 'lespaul_domain' ) . '[/box]';
+			$out .= '[box color="red" icon="warning"]' . __( 'Please set "Project main image" option', 'atlantes_domain' ) . '[/box]';
 		}
 
 	} elseif ( 'slider-project' === $basicProjectType ) {
@@ -78,7 +78,7 @@ $projectLayout = array();
 
 			wp_enqueue_script( 'bxslider' );
 		} else {
-			$out .= '[box color="red" icon="warning"]' . __( 'Please upload project images to create a gallery', 'lespaul_domain' ) . '[/box]';
+			$out .= '[box color="red" icon="warning"]' . __( 'Please upload project images to create a gallery', 'atlantes_domain' ) . '[/box]';
 		}
 
 	} elseif ( 'video-project' === $basicProjectType ) {
@@ -89,7 +89,7 @@ $projectLayout = array();
 		if ( $videoURL )
 			$out .= '[video url="' . esc_url( $videoURL ) . '" /]';
 		else
-			$out .= '[box color="red" icon="warning"]' . __( 'Please set "Video URL" option', 'lespaul_domain' ) . '[/box]';
+			$out .= '[box color="red" icon="warning"]' . __( 'Please set "Video URL" option', 'atlantes_domain' ) . '[/box]';
 
 	} elseif ( 'audio-project' === $basicProjectType ) {
 	//audio
@@ -105,7 +105,7 @@ $projectLayout = array();
 		if ( $audioURL )
 			$out .= strip_tags( wp_oembed_get( esc_url( $audioURL ) ), '<iframe>' );
 		else
-			$out .= '[box color="red" icon="warning"]' . __( 'Please set "Audio URL" option', 'lespaul_domain' ) . '[/box]';
+			$out .= '[box color="red" icon="warning"]' . __( 'Please set "Audio URL" option', 'atlantes_domain' ) . '[/box]';
 
 	}
 

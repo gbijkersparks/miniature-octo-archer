@@ -47,7 +47,7 @@
 				) );
 
 			if ( have_posts() ) {
-				$out  = '<div class="column col-12"><h3>' . __( 'Latest blog posts', 'lespaul_domain' ) . '</h3>';
+				$out  = '<div class="column col-12"><h3>' . __( 'Latest blog posts', 'atlantes_domain' ) . '</h3>';
 				$out .= '<ul class="no-menu">';
 				while ( have_posts() ) :
 					the_post();
@@ -58,7 +58,7 @@
 			}
 
 			the_widget( 'wm_projects_list', array(
-					'title' => __( 'Latest projects', 'lespaul_domain' ),
+					'title' => __( 'Latest projects', 'atlantes_domain' ),
 					'type'  => 'date',
 					'count' => 20
 				), array(
@@ -72,7 +72,7 @@
 			<?php echo do_shortcode( '[divider type="dotted" /]' ); ?>
 
 			<div class="column col-12">
-				<h3><?php _e( 'Blog categories', 'lespaul_domain' ); ?></h3>
+				<h3><?php _e( 'Blog categories', 'atlantes_domain' ); ?></h3>
 				<ul class="no-menu">
 				<?php wp_list_categories( array(
 					'orderby'      => 'name',
@@ -84,7 +84,7 @@
 			</div>
 
 			<div class="column col-12 last">
-				<h3><?php _e( 'Monthly archives', 'lespaul_domain' ); ?></h3>
+				<h3><?php _e( 'Monthly archives', 'atlantes_domain' ); ?></h3>
 				<ul class="no-menu">
 				<?php wp_get_archives( 'type=monthly&show_post_count=1' ); ?>
 				</ul>

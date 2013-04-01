@@ -53,7 +53,7 @@ global $woocommerce;
 
 	<div id="payment">
 		<?php if ($order->order_total > 0) : ?>
-		<h3><?php _e( 'Payment option', 'lespaul_domain' ) ?></h3>
+		<h3><?php _e( 'Payment option', 'atlantes_domain' ) ?></h3>
 
 		<ul class="payment_methods methods">
 			<?php

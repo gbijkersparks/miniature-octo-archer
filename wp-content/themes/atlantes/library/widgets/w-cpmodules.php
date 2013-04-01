@@ -42,10 +42,10 @@ class wm_cpmodules_content extends WP_Widget {
 	function __construct() {
 		$id     = 'wm-content-module';
 		$prefix = ( wm_option( 'branding-panel-no-logo' ) || ! strpos( wm_option( 'branding-panel-logo' ), 'logo-' . WM_THEME_SHORTNAME . '-admin.png' ) ) ? ( '' ) : ( WM_THEME_NAME . ' ' );
-		$name   = '<span>' . $prefix . __( 'Content Module', 'lespaul_domain_adm' ) . '</span>';
+		$name   = '<span>' . $prefix . __( 'Content Module', 'atlantes_domain_adm' ) . '</span>';
 		$widget_ops = array(
 			'classname'   => 'wm-content-module',
-			'description' => __( 'Displays specific Content Module post', 'lespaul_domain_adm' )
+			'description' => __( 'Displays specific Content Module post', 'atlantes_domain_adm' )
 			);
 		$control_ops = array();
 
@@ -70,10 +70,10 @@ class wm_cpmodules_content extends WP_Widget {
 
 		//HTML to display widget settings form
 		?>
-		<p class="wm-desc"><?php _e( 'Displays content of the specific Content Module custom post. Please choose the Content Module and set other options.', 'lespaul_domain_adm' ) ?></p>
+		<p class="wm-desc"><?php _e( 'Displays content of the specific Content Module custom post. Please choose the Content Module and set other options.', 'atlantes_domain_adm' ) ?></p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'lespaul_domain_adm' ) ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'atlantes_domain_adm' ) ?></label><br />
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 
@@ -87,9 +87,9 @@ class wm_cpmodules_content extends WP_Widget {
 				) );
 			if ( $contentModules->have_posts() ) {
 				?>
-				<label for="<?php echo $this->get_field_id( 'moduleID' ); ?>"><?php _e( 'Content Module to display:', 'lespaul_domain_adm' ) ?></label><br />
+				<label for="<?php echo $this->get_field_id( 'moduleID' ); ?>"><?php _e( 'Content Module to display:', 'atlantes_domain_adm' ) ?></label><br />
 				<select class="widefat" id="<?php echo $this->get_field_id( 'moduleID' ); ?>" name="<?php echo $this->get_field_name( 'moduleID' ); ?>">
-					<option value="" <?php selected( $moduleID, '' ); ?>><?php _e( '- Select Content Module -', 'lespaul_domain_adm' ); ?></option>
+					<option value="" <?php selected( $moduleID, '' ); ?>><?php _e( '- Select Content Module -', 'atlantes_domain_adm' ); ?></option>
 				<?php
 				while ( $contentModules->have_posts() ) {
 					$contentModules->the_post();
@@ -103,7 +103,7 @@ class wm_cpmodules_content extends WP_Widget {
 							if ( isset( $term->name ) )
 								$moduleTags[] = $term->name;
 						}
-						$tags .= sprintf( __( ' (tags: %s)', 'lespaul_domain_adm' ), implode( ', ', $moduleTags ) );
+						$tags .= sprintf( __( ' (tags: %s)', 'atlantes_domain_adm' ), implode( ', ', $moduleTags ) );
 					}
 					?>
 					<option<?php echo ' value="'. $infomoduleID . '" '; selected( $moduleID, $infomoduleID ); ?>><?php the_title(); echo $tags; ?></option>
@@ -112,24 +112,24 @@ class wm_cpmodules_content extends WP_Widget {
 				</select>
 				<?php
 			} else {
-				_e( 'There are no Content Modules to choose from. Please add a new Content Module first.', 'lespaul_domain_adm' );
+				_e( 'There are no Content Modules to choose from. Please add a new Content Module first.', 'atlantes_domain_adm' );
 			};
 			?>
 		</p>
 
 		<p>
 			<input id="<?php echo $this->get_field_id( 'moduleTitle' ); ?>" name="<?php echo $this->get_field_name( 'moduleTitle' ); ?>" type="checkbox" <?php checked( $moduleTitle, 'on' ); ?>/>
-			<label for="<?php echo $this->get_field_id( 'moduleTitle' ); ?>"><?php _e( 'Disable Content Module title', 'lespaul_domain_adm' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'moduleTitle' ); ?>"><?php _e( 'Disable Content Module title', 'atlantes_domain_adm' ); ?></label>
 		</p>
 
 		<p>
 			<input id="<?php echo $this->get_field_id( 'thumb' ); ?>" name="<?php echo $this->get_field_name( 'thumb' ); ?>" type="checkbox" <?php checked( $thumb, 'on' ); ?>/>
-			<label for="<?php echo $this->get_field_id( 'thumb' ); ?>"><?php _e( 'Disable featured image', 'lespaul_domain_adm' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'thumb' ); ?>"><?php _e( 'Disable featured image', 'atlantes_domain_adm' ); ?></label>
 		</p>
 
 		<p>
 			<input id="<?php echo $this->get_field_id( 'layout' ); ?>" value="center" name="<?php echo $this->get_field_name( 'layout' ); ?>" type="checkbox" <?php checked( $layout, 'center' ); ?>/>
-			<label for="<?php echo $this->get_field_id( 'layout' ); ?>"><?php _e( 'Use centered text layout', 'lespaul_domain_adm' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'layout' ); ?>"><?php _e( 'Use centered text layout', 'atlantes_domain_adm' ); ?></label>
 		</p>
 		<?php
 	} // /form

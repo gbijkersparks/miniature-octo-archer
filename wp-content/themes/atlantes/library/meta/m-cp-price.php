@@ -51,19 +51,19 @@
 				array(
 					"type" => "section-open",
 					"section-id" => "general-settings",
-					"title" => __( 'Price set up', 'lespaul_domain_adm' )
+					"title" => __( 'Price set up', 'atlantes_domain_adm' )
 				),
 					array(
 						"type" => "text",
 						"id" => $prefix."cost",
-						"label" => __( 'Price cost (including currency)', 'lespaul_domain_adm' ),
-						"desc" => __( 'The actual price cost displayed including currency', 'lespaul_domain_adm' )
+						"label" => __( 'Price cost (including currency)', 'atlantes_domain_adm' ),
+						"desc" => __( 'The actual price cost displayed including currency', 'atlantes_domain_adm' )
 					),
 					array(
 						"type" => "text",
 						"id" => $prefix."note",
-						"label" => __( 'Note text', 'lespaul_domain_adm' ),
-						"desc" => __( 'Additional note displayed below price cost', 'lespaul_domain_adm' )
+						"label" => __( 'Note text', 'atlantes_domain_adm' ),
+						"desc" => __( 'Additional note displayed below price cost', 'atlantes_domain_adm' )
 					),
 					array(
 						"type" => "hr"
@@ -71,8 +71,8 @@
 					array(
 						"type" => "text",
 						"id" => $prefix."order",
-						"label" => __( 'Price column order', 'lespaul_domain_adm' ),
-						"desc" => __( 'Set a number to order price columns in price table. Higher number will move the column further to the right in the price table.<br />Leave empty or set to 0 (zero) to keep the default ordering (by date created).', 'lespaul_domain_adm' ),
+						"label" => __( 'Price column order', 'atlantes_domain_adm' ),
+						"desc" => __( 'Set a number to order price columns in price table. Higher number will move the column further to the right in the price table.<br />Leave empty or set to 0 (zero) to keep the default ordering (by date created).', 'atlantes_domain_adm' ),
 						"size" => 3,
 						"maxlength" => 3,
 						"validate" => "absint"
@@ -87,34 +87,34 @@
 				array(
 					"type" => "section-open",
 					"section-id" => "button-settings",
-					"title" => __( 'Button set up', 'lespaul_domain_adm' )
+					"title" => __( 'Button set up', 'atlantes_domain_adm' )
 				),
 					array(
 						"type" => "text",
 						"id" => $prefix."btn-text",
-						"label" => __( 'Button text', 'lespaul_domain_adm' ),
-						"desc" => __( 'Price button text', 'lespaul_domain_adm' ),
+						"label" => __( 'Button text', 'atlantes_domain_adm' ),
+						"desc" => __( 'Price button text', 'atlantes_domain_adm' ),
 						"default" => ""
 					),
 					array(
 						"type" => "text",
 						"id" => $prefix."btn-url",
-						"label" => __( 'Button link', 'lespaul_domain_adm' ),
-						"desc" => __( 'Price button URL link', 'lespaul_domain_adm' ),
+						"label" => __( 'Button link', 'atlantes_domain_adm' ),
+						"desc" => __( 'Price button URL link', 'atlantes_domain_adm' ),
 						"default" => ""
 					),
 					array(
 						"type" => "select",
 						"id" => $prefix."btn-color",
-						"label" => __( 'Button color', 'lespaul_domain_adm' ),
-						"desc" => __( 'Choose style of the button', 'lespaul_domain_adm' ),
+						"label" => __( 'Button color', 'atlantes_domain_adm' ),
+						"desc" => __( 'Choose style of the button', 'atlantes_domain_adm' ),
 						"options" => array(
-							''       => __( 'Link color button (default)', 'lespaul_domain_adm' ),
-							'gray'   => __( 'Gray button', 'lespaul_domain_adm' ),
-							'green'  => __( 'Green button', 'lespaul_domain_adm' ),
-							'blue'   => __( 'Blue button', 'lespaul_domain_adm' ),
-							'orange' => __( 'Orange button', 'lespaul_domain_adm' ),
-							'red'    => __( 'Red button', 'lespaul_domain_adm' ),
+							''       => __( 'Link color button (default)', 'atlantes_domain_adm' ),
+							'gray'   => __( 'Gray button', 'atlantes_domain_adm' ),
+							'green'  => __( 'Green button', 'atlantes_domain_adm' ),
+							'blue'   => __( 'Blue button', 'atlantes_domain_adm' ),
+							'orange' => __( 'Orange button', 'atlantes_domain_adm' ),
+							'red'    => __( 'Red button', 'atlantes_domain_adm' ),
 							),
 						"default" => ""
 					),
@@ -128,17 +128,17 @@
 				array(
 					"type" => "section-open",
 					"section-id" => "styling-settings",
-					"title" => __( 'Styling', 'lespaul_domain_adm' )
+					"title" => __( 'Styling', 'atlantes_domain_adm' )
 				),
 					array(
 						"type" => "radio",
 						"id" => $prefix."style",
-						"label" => __( 'Column style', 'lespaul_domain_adm' ),
-						"desc" => __( 'Select, how this column should be styles', 'lespaul_domain_adm' ),
+						"label" => __( 'Column style', 'atlantes_domain_adm' ),
+						"desc" => __( 'Select, how this column should be styles', 'atlantes_domain_adm' ),
 						"options" => array(
-							''          => __( 'Price column', 'lespaul_domain_adm' ),
-							' featured' => __( 'Featured price column', 'lespaul_domain_adm' ),
-							' legend'   => __( 'Legend', 'lespaul_domain_adm' ),
+							''          => __( 'Price column', 'atlantes_domain_adm' ),
+							' featured' => __( 'Featured price column', 'atlantes_domain_adm' ),
+							' legend'   => __( 'Legend', 'atlantes_domain_adm' ),
 							),
 					),
 					array(
@@ -147,8 +147,8 @@
 					array(
 						"type" => "color",
 						"id" => $prefix."color",
-						"label" => __( 'Custom column color', 'lespaul_domain_adm' ),
-						"desc" => __( 'Sets the custom price column background color', 'lespaul_domain_adm' ),
+						"label" => __( 'Custom column color', 'atlantes_domain_adm' ),
+						"desc" => __( 'Sets the custom price column background color', 'atlantes_domain_adm' ),
 						"default" => "",
 						"validate" => "color"
 					),
@@ -183,7 +183,7 @@
 
 				//Tabs
 				$out .= '<ul class="tabs no-js">';
-				$out .= '<li class="item-0 visual-editor"><a href="#wm-meta-visual-editor">' . __( 'Content', 'lespaul_domain_adm' ) . '</a></li>';
+				$out .= '<li class="item-0 visual-editor"><a href="#wm-meta-visual-editor">' . __( 'Content', 'atlantes_domain_adm' ) . '</a></li>';
 				$i = 0;
 				foreach ( $metaFields as $tab ) {
 					if ( 'section-open' == $tab['type'] ) {
@@ -225,7 +225,7 @@
 			//Content
 			wm_render_form( $metaFields, 'meta' );
 
-			echo '<div class="modal-box"><a class="button-primary" data-action="stay">' . __( 'Wait, I need to save my changes first!', 'lespaul_domain_adm' ) . '</a><a class="button" data-action="leave">' . __( 'OK, leave without saving...', 'lespaul_domain_adm' ) . '</a></div></div> <!-- /wm-wrap -->';
+			echo '<div class="modal-box"><a class="button-primary" data-action="stay">' . __( 'Wait, I need to save my changes first!', 'atlantes_domain_adm' ) . '</a><a class="button" data-action="leave">' . __( 'OK, leave without saving...', 'atlantes_domain_adm' ) . '</a></div></div> <!-- /wm-wrap -->';
 		}
 	} // /wm_price_metabox_end
 

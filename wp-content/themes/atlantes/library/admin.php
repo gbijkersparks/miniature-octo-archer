@@ -242,9 +242,9 @@
 
 			//excerpt field titles
 			if ( 'edit' == $current_screen->parent_base && 'wm_projects' == $current_screen->id )
-				$out .= "\r\n" . 'jQuery( "#postexcerpt h3.hndle span" ).html("' . addslashes( __( 'Excerpt - see the <em title="On General and Layout tab of Project Settigns metabox">Project page layout</em> option for how excerpt is displayed', 'lespaul_domain_adm' ) ) . '");';
+				$out .= "\r\n" . 'jQuery( "#postexcerpt h3.hndle span" ).html("' . addslashes( __( 'Excerpt - see the <em title="On General and Layout tab of Project Settigns metabox">Project page layout</em> option for how excerpt is displayed', 'atlantes_domain_adm' ) ) . '");';
 			if ( 'edit' == $current_screen->parent_base && 'wm_staff' == $current_screen->id )
-				$out .= "\r\n" . 'jQuery( "#postexcerpt h3.hndle span" ).html("' . __( 'Excerpt - short description displayed in staff list', 'lespaul_domain_adm' ) . '");';
+				$out .= "\r\n" . 'jQuery( "#postexcerpt h3.hndle span" ).html("' . __( 'Excerpt - short description displayed in staff list', 'atlantes_domain_adm' ) . '");';
 
 			//display shortcode of logo categories
 			if ( 'edit-tags' === $current_screen->base && 'logos-category' === $current_screen->taxonomy )
@@ -308,7 +308,7 @@
 						//object where the pointer displays
 						'#contextual-help-link',
 						//pointer content
-						'<h3>' . __( 'Documentation in Help', 'lespaul_domain_adm' ) . '</h3><p>' . __( 'The theme extends WordPress contextual help, making it convenient resource of information. Please, check this first if you get stuck or need more info on a topic.', 'lespaul_domain_adm' ) . '</p><p><strong>' . __( 'The whole shortcode documentation can be found here, but you can sure use Shortcode Generator, which is much more easier.', 'lespaul_domain_adm' ) . '</strong></p><p>' . sprintf( __( 'Additional resource: <a%s>Theme user manual</a>.', 'lespaul_domain_adm' ), ' href="' . WM_ONLINE_MANUAL_URL . '" target="_blank"' ) . '</p>'
+						'<h3>' . __( 'Documentation in Help', 'atlantes_domain_adm' ) . '</h3><p>' . __( 'The theme extends WordPress contextual help, making it convenient resource of information. Please, check this first if you get stuck or need more info on a topic.', 'atlantes_domain_adm' ) . '</p><p><strong>' . __( 'The whole shortcode documentation can be found here, but you can sure use Shortcode Generator, which is much more easier.', 'atlantes_domain_adm' ) . '</strong></p><p>' . sprintf( __( 'Additional resource: <a%s>Theme user manual</a>.', 'atlantes_domain_adm' ), ' href="' . WM_ONLINE_MANUAL_URL . '" target="_blank"' ) . '</p>'
 					);
 				$seenIt = explode( ',', (string) get_user_meta( get_current_user_id(), 'dismissed_wp_pointers', true ) );
 				//insert scripts only if pointers of these IDs haven't been dismissed: wmfeature01
@@ -549,31 +549,31 @@
 				);
 
 			if ( current_user_can( 'edit_pages' ) )
-				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=page"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-pages-32x32-white.png" alt="" /><span>' . __( 'Pages', 'lespaul_domain_adm' ) . '</span></a>';
+				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=page"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-pages-32x32-white.png" alt="" /><span>' . __( 'Pages', 'atlantes_domain_adm' ) . '</span></a>';
 
 			if ( current_user_can( 'edit_posts' ) && ! wm_option( 'branding-remove-menu-posts' ) )
-				$outLinks .= '<a href="' . get_admin_url() . 'edit.php"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-posts-32x32-white.png" alt="" /><span>' . __( 'Posts', 'lespaul_domain_adm' ) . '</span></a>';
+				$outLinks .= '<a href="' . get_admin_url() . 'edit.php"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-posts-32x32-white.png" alt="" /><span>' . __( 'Posts', 'atlantes_domain_adm' ) . '</span></a>';
 
 			if ( current_user_can( 'moderate_comments' ) && ! wm_option( 'branding-remove-menu-comments' ) )
-				$outLinks .= '<a href="' . get_admin_url() . 'edit-comments.php"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-comments-32x32-white.png" alt="" /><span>' . __( 'Comments', 'lespaul_domain_adm' ) . '</span></a>';
+				$outLinks .= '<a href="' . get_admin_url() . 'edit-comments.php"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-comments-32x32-white.png" alt="" /><span>' . __( 'Comments', 'atlantes_domain_adm' ) . '</span></a>';
 
 			if ( current_user_can( $userCan[wm_option( 'cp-role-projects' )] ) && 'disable' !== wm_option( 'cp-role-projects' ) )
-				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_projects"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-portfolio-32x32-white.png" alt="" /><span>' . __( 'Projects', 'lespaul_domain_adm' ) . '</span></a>';
+				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_projects"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-portfolio-32x32-white.png" alt="" /><span>' . __( 'Projects', 'atlantes_domain_adm' ) . '</span></a>';
 
 			if ( current_user_can( $userCan[wm_option( 'cp-role-logos' )] ) && 'disable' !== wm_option( 'cp-role-logos' ) )
-				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_logos"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-clients-32x32-white.png" alt="" /><span>' . __( 'Logos', 'lespaul_domain_adm' ) . '</span></a>';
+				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_logos"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-clients-32x32-white.png" alt="" /><span>' . __( 'Logos', 'atlantes_domain_adm' ) . '</span></a>';
 
 			if ( current_user_can( $userCan[wm_option( 'cp-role-modules' )] ) && 'disable' !== wm_option( 'cp-role-modules' ) )
-				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_modules"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-modules-32x32-white.png" alt="" /><span>' . __( 'Modules', 'lespaul_domain_adm' ) . '</span></a>';
+				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_modules"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-modules-32x32-white.png" alt="" /><span>' . __( 'Modules', 'atlantes_domain_adm' ) . '</span></a>';
 
 			if ( current_user_can( $userCan[wm_option( 'cp-role-faq' )] ) && 'disable' !== wm_option( 'cp-role-faq' ) )
-				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_faq"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-faq-32x32-white.png" alt="" /><span>' . __( 'FAQ', 'lespaul_domain_adm' ) . '</span></a>';
+				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_faq"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-faq-32x32-white.png" alt="" /><span>' . __( 'FAQ', 'atlantes_domain_adm' ) . '</span></a>';
 
 			if ( current_user_can( $userCan[wm_option( 'cp-role-prices' )] ) && 'disable' !== wm_option( 'cp-role-prices' ) )
-				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_price"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-price-32x32-white.png" alt="" /><span>' . __( 'Prices', 'lespaul_domain_adm' ) . '</span></a>';
+				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_price"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-price-32x32-white.png" alt="" /><span>' . __( 'Prices', 'atlantes_domain_adm' ) . '</span></a>';
 
 			if ( current_user_can( $userCan[wm_option( 'cp-role-staff' )] ) && 'disable' !== wm_option( 'cp-role-staff' ) )
-				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_staff"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-team-32x32-white.png" alt="" /><span>' . __( 'Staff', 'lespaul_domain_adm' ) . '</span></a>';
+				$outLinks .= '<a href="' . get_admin_url() . 'edit.php?post_type=wm_staff"><img src="' . WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-team-32x32-white.png" alt="" /><span>' . __( 'Staff', 'atlantes_domain_adm' ) . '</span></a>';
 
 			$outLinks = ( $outLinks ) ? ( '<p class="links">' . $outLinks . '</p>' ) : ( '' );
 
@@ -609,7 +609,7 @@
 	if ( ! function_exists( 'wm_admin_post_list_columns' ) ) {
 		function wm_admin_post_list_columns( $columns ) {
 			$add             = array_slice( $columns, 0, 1 );
-			$add['wm-thumb'] = __( 'Image', 'lespaul_domain_adm' );
+			$add['wm-thumb'] = __( 'Image', 'atlantes_domain_adm' );
 			$columns         = array_merge( $add, array_slice( $columns, 1 ) );
 
 			return $columns;
@@ -624,9 +624,9 @@
 	if ( ! function_exists( 'wm_admin_page_list_columns' ) ) {
 		function wm_admin_page_list_columns( $columns ) {
 			$add                    = array_slice( $columns, 0, 2 );
-			$add['wm-thumb']        = __( 'Image', 'lespaul_domain_adm' );
+			$add['wm-thumb']        = __( 'Image', 'atlantes_domain_adm' );
 			$columns                = array_merge( $add, array_slice( $columns, 2 ) );
-			$columns['wm-template'] = __( 'Page template', 'lespaul_domain_adm' );
+			$columns['wm-template'] = __( 'Page template', 'atlantes_domain_adm' );
 
 			return $columns;
 		}
@@ -646,10 +646,10 @@
 					$overlay = '';
 					if ( wm_meta_option( 'slider-type' ) && 'none' != wm_meta_option( 'slider-type' ) ) {
 						$sliderImg = ( file_exists( WM_ASSETS_ADMIN . 'img/sliders/' . wm_meta_option( 'slider-type' ) . '.png' ) ) ? ( WM_ASSETS_ADMIN . 'img/sliders/' . wm_meta_option( 'slider-type' ) . '.png' ) : ( WM_ASSETS_ADMIN . 'img/sliders/custom.png' );
-						$overlay = '<span class="overlay"><img src="' . $sliderImg . '" alt="" title="' . sprintf( __( 'Page with %s slider', 'lespaul_domain_adm' ), ucfirst( wm_meta_option( 'slider-type' ) ) ) . '" /></span>';
+						$overlay = '<span class="overlay"><img src="' . $sliderImg . '" alt="" title="' . sprintf( __( 'Page with %s slider', 'atlantes_domain_adm' ), ucfirst( wm_meta_option( 'slider-type' ) ) ) . '" /></span>';
 					}
 
-					$imageTitle = ( has_post_format( 'status' ) ) ? ( __( 'Status text: ', 'lespaul_domain_adm' ) . esc_attr( strip_tags( get_the_content() ) ) ) : ( esc_attr( strip_tags( get_the_title() ) ) );
+					$imageTitle = ( has_post_format( 'status' ) ) ? ( __( 'Status text: ', 'atlantes_domain_adm' ) . esc_attr( strip_tags( get_the_content() ) ) ) : ( esc_attr( strip_tags( get_the_title() ) ) );
 					$image = ( has_post_thumbnail() ) ? ( get_the_post_thumbnail( null, 'widget', array( 'title' => $imageTitle ) ) ) : ( '' );
 					$image = ( ! has_post_thumbnail() && $overlay ) ? ( '' ) : ( $image );
 
@@ -818,161 +818,161 @@
 
 				//others
 					array(
-						'title'    => __( 'Framed image', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected image', 'lespaul_domain_adm' ) . '"></span>',
+						'title'    => __( 'Framed image', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected image', 'atlantes_domain_adm' ) . '"></span>',
 						'selector' => 'img',
 						'classes'  => 'frame'
 					),
 					array(
-						'title'    => __( 'Clear floats', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected paragraph, heading, list, blockquote or DIV', 'lespaul_domain_adm' ) . '"></span>',
+						'title'    => __( 'Clear floats', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected paragraph, heading, list, blockquote or DIV', 'atlantes_domain_adm' ) . '"></span>',
 						'selector' => 'p,h1,h2,h3,h4,h5,h6,ul,ol,blockquote,div',
 						'classes'  => 'clear'
 					),
 					array(
-						'title'    => __( 'Remove top margin', 'lespaul_domain_adm' ). ' <span class="inline-help" title="' . __( 'Apply on selected paragraph, heading, list or address element', 'lespaul_domain_adm' ) . '"></span>',
+						'title'    => __( 'Remove top margin', 'atlantes_domain_adm' ). ' <span class="inline-help" title="' . __( 'Apply on selected paragraph, heading, list or address element', 'atlantes_domain_adm' ) . '"></span>',
 						'selector' => 'p,h1,h2,h3,h4,h5,h6,ul,ol,address',
 						'classes'  => 'mt0'
 					),
 					array(
-						'title'    => __( 'Fully bordered table', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected table', 'lespaul_domain_adm' ) . '"></span>',
+						'title'    => __( 'Fully bordered table', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected table', 'atlantes_domain_adm' ) . '"></span>',
 						'selector' => 'table',
 						'classes'  => 'table-bordered'
 					),
 
 				//boxes
 					array(
-						'title' => __( 'BOXES', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected text.', 'lespaul_domain_adm' ) . '"></span>'
+						'title' => __( 'BOXES', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected text.', 'atlantes_domain_adm' ) . '"></span>'
 					),
 						array(
-							'title'   => __( 'Blue box', 'lespaul_domain_adm' ),
+							'title'   => __( 'Blue box', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'box color-blue',
 							'exact'   => true,
 							'wrapper' => true
 						),
 						array(
-							'title'   => __( 'Gray box', 'lespaul_domain_adm' ),
+							'title'   => __( 'Gray box', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'box color-gray',
 							'exact'   => true,
 							'wrapper' => true
 						),
 						array(
-							'title'   => __( 'Green box', 'lespaul_domain_adm' ),
+							'title'   => __( 'Green box', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'box color-green',
 							'exact'   => true,
 							'wrapper' => true
 						),
 						array(
-							'title'   => __( 'Orange box', 'lespaul_domain_adm' ),
+							'title'   => __( 'Orange box', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'box color-orange',
 							'exact'   => true,
 							'wrapper' => true
 						),
 						array(
-							'title'   => __( 'Red box', 'lespaul_domain_adm' ),
+							'title'   => __( 'Red box', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'box color-red',
 							'exact'   => true,
 							'wrapper' => true
 						),
 						array(
-							'title'    => __( 'Add Info icon', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Add Info icon', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'div.box',
 							'classes'  => 'iconbox info'
 						),
 						array(
-							'title'    => __( 'Add Question icon', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Add Question icon', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'div.box',
 							'classes'  => 'iconbox question'
 						),
 						array(
-							'title'    => __( 'Add Check icon', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Add Check icon', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'div.box',
 							'classes'  => 'iconbox check'
 						),
 						array(
-							'title'    => __( 'Add Warning icon', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Add Warning icon', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'div.box',
 							'classes'  => 'iconbox warning'
 						),
 						array(
-							'title'    => __( 'Add Cancel icon', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Add Cancel icon', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'div.box',
 							'classes'  => 'iconbox cancel'
 						),
 						array(
-							'title'    => __( 'Make hero box', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Make hero box', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on box', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'div.box',
 							'classes'  => 'hero'
 						),
 
 				//buttons
 					array(
-						'title' => __( 'BUTTONS', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected link, that will be transformed to medium size button', 'lespaul_domain_adm' ) . '"></span>'
+						'title' => __( 'BUTTONS', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected link, that will be transformed to medium size button', 'atlantes_domain_adm' ) . '"></span>'
 					),
 						array(
-							'title'    => __( 'Blue button', 'lespaul_domain_adm' ),
+							'title'    => __( 'Blue button', 'atlantes_domain_adm' ),
 							'selector' => 'a',
 							'classes'  => 'btn color-blue'
 						),
 						array(
-							'title'    => __( 'Gray button', 'lespaul_domain_adm' ),
+							'title'    => __( 'Gray button', 'atlantes_domain_adm' ),
 							'selector' => 'a',
 							'classes'  => 'btn color-gray'
 						),
 						array(
-							'title'    => __( 'Green button', 'lespaul_domain_adm' ),
+							'title'    => __( 'Green button', 'atlantes_domain_adm' ),
 							'selector' => 'a',
 							'classes'  => 'btn color-green'
 						),
 						array(
-							'title'    => __( 'Orange button', 'lespaul_domain_adm' ),
+							'title'    => __( 'Orange button', 'atlantes_domain_adm' ),
 							'selector' => 'a',
 							'classes'  => 'btn color-orange'
 						),
 						array(
-							'title'    => __( 'Red button', 'lespaul_domain_adm' ),
+							'title'    => __( 'Red button', 'atlantes_domain_adm' ),
 							'selector' => 'a',
 							'classes'  => 'btn color-red'
 						),
 						array(
-							'title'    => __( 'Make button small', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on button', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Make button small', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on button', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'a.btn',
 							'classes'  => 'size-small'
 						),
 						array(
-							'title'    => __( 'Make button large', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on button', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Make button large', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on button', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'a.btn',
 							'classes'  => 'size-large'
 						),
 						array(
-							'title'    => __( 'Make button extra large', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on button', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Make button extra large', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on button', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'a.btn',
 							'classes'  => 'size-extra-large'
 						),
 
 				//code
 					array(
-						'title' => __( 'CODE', 'lespaul_domain_adm' )
+						'title' => __( 'CODE', 'atlantes_domain_adm' )
 					),
 						array(
-							'title'  => __( 'Inline code HTML tag', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected unformated text', 'lespaul_domain_adm' ) . '"></span>',
+							'title'  => __( 'Inline code HTML tag', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected unformated text', 'atlantes_domain_adm' ) . '"></span>',
 							'inline' => 'code'
 						),
 
 				//columns
 					array(
-						'title' => __( 'COLUMNS', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected unformated text. You can format the text afterwards.', 'lespaul_domain_adm' ) . '"></span>'
+						'title' => __( 'COLUMNS', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected unformated text. You can format the text afterwards.', 'atlantes_domain_adm' ) . '"></span>'
 					),
 						array(
-							'title'   => __( 'Column 1/2', 'lespaul_domain_adm' ),
+							'title'   => __( 'Column 1/2', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'column col-12'
 						),
 							array(
-								'title'   => __( 'Column 1/2 last', 'lespaul_domain_adm' ),
+								'title'   => __( 'Column 1/2 last', 'atlantes_domain_adm' ),
 								'block'   => 'div',
 								'classes' => 'column col-12 last',
 								'attributes' => array(
@@ -980,12 +980,12 @@
 									)
 							),
 						array(
-							'title'   => __( 'Column 1/3', 'lespaul_domain_adm' ),
+							'title'   => __( 'Column 1/3', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'column col-13'
 						),
 							array(
-								'title'   => __( 'Column 1/3 last', 'lespaul_domain_adm' ),
+								'title'   => __( 'Column 1/3 last', 'atlantes_domain_adm' ),
 								'block'   => 'div',
 								'classes' => 'column col-13 last',
 								'attributes' => array(
@@ -993,12 +993,12 @@
 									)
 							),
 						array(
-							'title'   => __( 'Column 2/3', 'lespaul_domain_adm' ),
+							'title'   => __( 'Column 2/3', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'column col-23'
 						),
 							array(
-								'title'   => __( 'Column 2/3 last', 'lespaul_domain_adm' ),
+								'title'   => __( 'Column 2/3 last', 'atlantes_domain_adm' ),
 								'block'   => 'div',
 								'classes' => 'column col-23 last',
 								'attributes' => array(
@@ -1006,12 +1006,12 @@
 									)
 							),
 						array(
-							'title'   => __( 'Column 1/4', 'lespaul_domain_adm' ),
+							'title'   => __( 'Column 1/4', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'column col-14'
 						),
 							array(
-								'title'   => __( 'Column 1/4 last', 'lespaul_domain_adm' ),
+								'title'   => __( 'Column 1/4 last', 'atlantes_domain_adm' ),
 								'block'   => 'div',
 								'classes' => 'column col-14 last',
 								'attributes' => array(
@@ -1019,12 +1019,12 @@
 									)
 							),
 						array(
-							'title'   => __( 'Column 3/4', 'lespaul_domain_adm' ),
+							'title'   => __( 'Column 3/4', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'column col-34'
 						),
 							array(
-								'title'   => __( 'Column 3/4 last', 'lespaul_domain_adm' ),
+								'title'   => __( 'Column 3/4 last', 'atlantes_domain_adm' ),
 								'block'   => 'div',
 								'classes' => 'column col-34 last',
 								'attributes' => array(
@@ -1032,12 +1032,12 @@
 									)
 							),
 						array(
-							'title'   => __( 'Column 1/5', 'lespaul_domain_adm' ),
+							'title'   => __( 'Column 1/5', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'column col-15'
 						),
 							array(
-								'title'   => __( 'Column 1/5 last', 'lespaul_domain_adm' ),
+								'title'   => __( 'Column 1/5 last', 'atlantes_domain_adm' ),
 								'block'   => 'div',
 								'classes' => 'column col-15 last',
 								'attributes' => array(
@@ -1045,12 +1045,12 @@
 									)
 							),
 						array(
-							'title'   => __( 'Column 2/5', 'lespaul_domain_adm' ),
+							'title'   => __( 'Column 2/5', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'column col-25'
 						),
 							array(
-								'title'   => __( 'Column 2/5 last', 'lespaul_domain_adm' ),
+								'title'   => __( 'Column 2/5 last', 'atlantes_domain_adm' ),
 								'block'   => 'div',
 								'classes' => 'column col-25 last',
 								'attributes' => array(
@@ -1058,12 +1058,12 @@
 									)
 							),
 						array(
-							'title'   => __( 'Column 3/5', 'lespaul_domain_adm' ),
+							'title'   => __( 'Column 3/5', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'column col-35'
 						),
 							array(
-								'title'   => __( 'Column 3/5 last', 'lespaul_domain_adm' ),
+								'title'   => __( 'Column 3/5 last', 'atlantes_domain_adm' ),
 								'block'   => 'div',
 								'classes' => 'column col-35 last',
 								'attributes' => array(
@@ -1071,12 +1071,12 @@
 									)
 							),
 						array(
-							'title'   => __( 'Column 4/5', 'lespaul_domain_adm' ),
+							'title'   => __( 'Column 4/5', 'atlantes_domain_adm' ),
 							'block'   => 'div',
 							'classes' => 'column col-45'
 						),
 							array(
-								'title'   => __( 'Column 4/5 last', 'lespaul_domain_adm' ),
+								'title'   => __( 'Column 4/5 last', 'atlantes_domain_adm' ),
 								'block'   => 'div',
 								'classes' => 'column col-45 last',
 								'attributes' => array(
@@ -1086,140 +1086,140 @@
 
 				//divider
 					array(
-						'title' => __( 'DIVIDER', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected horizontal line element.', 'lespaul_domain_adm' ) . '"></span>'
+						'title' => __( 'DIVIDER', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected horizontal line element.', 'atlantes_domain_adm' ) . '"></span>'
 					),
 						array(
-							'title'    => __( 'Fading sides', 'lespaul_domain_adm' ),
+							'title'    => __( 'Fading sides', 'atlantes_domain_adm' ),
 							'selector' => 'hr',
 							'classes'  => 'fading'
 						),
 						array(
-							'title'    => __( 'Dashed border', 'lespaul_domain_adm' ),
+							'title'    => __( 'Dashed border', 'atlantes_domain_adm' ),
 							'selector' => 'hr',
 							'classes'  => 'dashed'
 						),
 						array(
-							'title'    => __( 'Dotted border', 'lespaul_domain_adm' ),
+							'title'    => __( 'Dotted border', 'atlantes_domain_adm' ),
 							'selector' => 'hr',
 							'classes'  => 'dotted'
 						),
 						array(
-							'title'    => __( 'Double border with star', 'lespaul_domain_adm' ),
+							'title'    => __( 'Double border with star', 'atlantes_domain_adm' ),
 							'selector' => 'hr',
 							'classes'  => 'star'
 						),
 						array(
-							'title'    => __( 'Shadow bottom', 'lespaul_domain_adm' ),
+							'title'    => __( 'Shadow bottom', 'atlantes_domain_adm' ),
 							'selector' => 'hr',
 							'classes'  => 'shadow-bottom'
 						),
 						array(
-							'title'    => __( 'Shadow top', 'lespaul_domain_adm' ),
+							'title'    => __( 'Shadow top', 'atlantes_domain_adm' ),
 							'selector' => 'hr',
 							'classes'  => 'shadow-top'
 						),
 
 				//dropcaps
 					array(
-						'title' => __( 'DROPCAPS', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected letter', 'lespaul_domain_adm' ) . '"></span>'
+						'title' => __( 'DROPCAPS', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected letter', 'atlantes_domain_adm' ) . '"></span>'
 					),
 						array(
-							'title'   => __( 'Normal dropcap', 'lespaul_domain_adm' ),
+							'title'   => __( 'Normal dropcap', 'atlantes_domain_adm' ),
 							'inline'  => 'span',
 							'classes' => 'dropcap'
 						),
 						array(
-							'title'   => __( 'Rounded dropcap', 'lespaul_domain_adm' ),
+							'title'   => __( 'Rounded dropcap', 'atlantes_domain_adm' ),
 							'inline'  => 'span',
 							'classes' => 'dropcap round'
 						),
 						array(
-							'title'   => __( 'Square dropcap', 'lespaul_domain_adm' ),
+							'title'   => __( 'Square dropcap', 'atlantes_domain_adm' ),
 							'inline'  => 'span',
 							'classes' => 'dropcap square'
 						),
 						array(
-							'title'   => __( 'Leaf dropcap', 'lespaul_domain_adm' ),
+							'title'   => __( 'Leaf dropcap', 'atlantes_domain_adm' ),
 							'inline'  => 'span',
 							'classes' => 'dropcap leaf'
 						),
 
 				//markers, highlights
 					array(
-						'title' => __( 'MARKERS', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected unformated text', 'lespaul_domain_adm' ) . '"></span>'
+						'title' => __( 'MARKERS', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected unformated text', 'atlantes_domain_adm' ) . '"></span>'
 					),
 						array(
-							'title'   => __( 'Blue marker', 'lespaul_domain_adm' ),
+							'title'   => __( 'Blue marker', 'atlantes_domain_adm' ),
 							'inline'  => 'mark',
 							'classes' => 'marker color-blue'
 						),
 						array(
-							'title'   => __( 'Gray marker', 'lespaul_domain_adm' ),
+							'title'   => __( 'Gray marker', 'atlantes_domain_adm' ),
 							'inline'  => 'mark',
 							'classes' => 'marker color-gray'
 						),
 						array(
-							'title'   => __( 'Green marker', 'lespaul_domain_adm' ),
+							'title'   => __( 'Green marker', 'atlantes_domain_adm' ),
 							'inline'  => 'mark',
 							'classes' => 'marker color-green'
 						),
 						array(
-							'title'   => __( 'Orange marker', 'lespaul_domain_adm' ),
+							'title'   => __( 'Orange marker', 'atlantes_domain_adm' ),
 							'inline'  => 'mark',
 							'classes' => 'marker color-orange'
 						),
 						array(
-							'title'   => __( 'Red marker', 'lespaul_domain_adm' ),
+							'title'   => __( 'Red marker', 'atlantes_domain_adm' ),
 							'inline'  => 'mark',
 							'classes' => 'marker color-red'
 						),
 
 				//quotes
 					array(
-						'title' => __( 'QUOTES', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected blockquote element', 'lespaul_domain_adm' ) . '"></span>'
+						'title' => __( 'QUOTES', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected blockquote element', 'atlantes_domain_adm' ) . '"></span>'
 					),
 						array(
-							'title'   => __( 'Cite (quoted author)', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Insert it inside blockquote element', 'lespaul_domain_adm' ) . '"></span>',
+							'title'   => __( 'Cite (quoted author)', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Insert it inside blockquote element', 'atlantes_domain_adm' ) . '"></span>',
 							'inline'  => 'cite',
 							'classes' => 'quote-source'
 						),
 						array(
-							'title'    => __( 'Left pullquote', 'lespaul_domain_adm' ),
+							'title'    => __( 'Left pullquote', 'atlantes_domain_adm' ),
 							'selector' => 'blockquote',
 							'classes'  => 'pullquote alignleft'
 						),
 						array(
-							'title'    => __( 'Right pullquote', 'lespaul_domain_adm' ),
+							'title'    => __( 'Right pullquote', 'atlantes_domain_adm' ),
 							'selector' => 'blockquote',
 							'classes'  => 'pullquote alignright'
 						),
 
 				//text
 					array(
-						'title' => __( 'TEXT', 'lespaul_domain_adm' ),
+						'title' => __( 'TEXT', 'atlantes_domain_adm' ),
 					),
 						array(
-							'title'   => __( 'Small text', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected text', 'lespaul_domain_adm' ) . '"></span>',
+							'title'   => __( 'Small text', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected text', 'atlantes_domain_adm' ) . '"></span>',
 							'inline'  => 'small',
 							'classes' => ''
 						),
 						array(
-							'title'    => __( 'Big text', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected paragraph or heading element', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Big text', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected paragraph or heading element', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'p,h2,h3,h4,h5,h6',
 							'classes'  => 'size-big'
 						),
 						array(
-							'title'    => __( 'Huge text', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected paragraph or heading element', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Huge text', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected paragraph or heading element', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'p,h2,h3,h4,h5,h6',
 							'classes'  => 'size-huge'
 						),
 						array(
-							'title'   => __( 'Uppercase', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected text', 'lespaul_domain_adm' ) . '"></span>',
+							'title'   => __( 'Uppercase', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected text', 'atlantes_domain_adm' ) . '"></span>',
 							'inline'  => 'span',
 							'classes' => 'uppercase'
 						),
 						array(
-							'title'    => __( 'Alternate font', 'lespaul_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected paragraph, heading, DIV, table element or on a link', 'lespaul_domain_adm' ) . '"></span>',
+							'title'    => __( 'Alternate font', 'atlantes_domain_adm' ) . ' <span class="inline-help" title="' . __( 'Apply on selected paragraph, heading, DIV, table element or on a link', 'atlantes_domain_adm' ) . '"></span>',
 							'selector' => 'p,h2,h3,h4,h5,h6,div,table,a',
 							'classes'  => 'font-secondary'
 						),
@@ -1340,16 +1340,16 @@
 			$screen = get_current_screen();
 
 			if ( 'wm_logos' == $screen->post_type )
-				$title = __( "Name / title", 'lespaul_domain_adm' );
+				$title = __( "Name / title", 'atlantes_domain_adm' );
 
 			if ( 'wm_staff' == $screen->post_type )
-				$title = __( "Person's name", 'lespaul_domain_adm' );
+				$title = __( "Person's name", 'atlantes_domain_adm' );
 
 			if ( 'wm_price' == $screen->post_type )
-				$title = __( "Price column title", 'lespaul_domain_adm' );
+				$title = __( "Price column title", 'atlantes_domain_adm' );
 
 			if ( 'wm_faq' == $screen->post_type )
-				$title = __( "Enter question here", 'lespaul_domain_adm' );
+				$title = __( "Enter question here", 'atlantes_domain_adm' );
 
 			return $title;
 		}
@@ -1372,18 +1372,18 @@
 			if ( 'wm_price' === $current_screen->id )
 				$content = '
 					<ul>
-						<li>' . __( '<strong>Your feature</strong> goes here', 'lespaul_domain_adm' ) . '</li>
-						<li>' . __( '<strong>Another feature</strong> on separate list item', 'lespaul_domain_adm' ) . '</li>
-						<li>' . __( 'Will be automatically centered', 'lespaul_domain_adm' ) . '</li>'
+						<li>' . __( '<strong>Your feature</strong> goes here', 'atlantes_domain_adm' ) . '</li>
+						<li>' . __( '<strong>Another feature</strong> on separate list item', 'atlantes_domain_adm' ) . '</li>
+						<li>' . __( 'Will be automatically centered', 'atlantes_domain_adm' ) . '</li>'
 						. $iconShortcodes . '
 					</ul>
 					';
 
 			if ( 'wm_faq' === $current_screen->id )
-				$content = '<p>' . __( 'Your answer goes here...', 'lespaul_domain_adm' ) . '</p>';
+				$content = '<p>' . __( 'Your answer goes here...', 'atlantes_domain_adm' ) . '</p>';
 
 			if ( 'wm_staff' === $current_screen->id )
-				$content = ( wm_option( 'cp-staff-rich' ) ) ? ( '<p>' . __( 'Rich staff member info goes here, place the short description into excerpt field below...', 'lespaul_domain_adm' ) . '</p>' ) : ( '<p>' . __( 'Staff member info goes here...', 'lespaul_domain_adm' ) . '</p>' );
+				$content = ( wm_option( 'cp-staff-rich' ) ) ? ( '<p>' . __( 'Rich staff member info goes here, place the short description into excerpt field below...', 'atlantes_domain_adm' ) . '</p>' ) : ( '<p>' . __( 'Staff member info goes here...', 'atlantes_domain_adm' ) . '</p>' );
 
 			return $content;
 		}

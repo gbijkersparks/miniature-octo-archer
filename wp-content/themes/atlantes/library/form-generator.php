@@ -215,7 +215,7 @@
 			wm_render_form( $options, 'meta' );
 
 			if ( $confirmLink )
-				echo '<div class="modal-box"><a class="button-primary" data-action="stay">' . __( 'Wait, I need to save my changes first!', 'lespaul_domain_adm' ) . '</a><a class="button" data-action="leave">' . __( 'OK, leave without saving...', 'lespaul_domain_adm' ) . '</a></div>';
+				echo '<div class="modal-box"><a class="button-primary" data-action="stay">' . __( 'Wait, I need to save my changes first!', 'atlantes_domain_adm' ) . '</a><a class="button" data-action="leave">' . __( 'OK, leave without saving...', 'atlantes_domain_adm' ) . '</a></div>';
 
 			echo '</div> <!-- /wm-wrap -->';
 		}
@@ -606,7 +606,7 @@
 				<!-- Text input -->
 				<div class="option" data-option="<?php echo $valId; ?>">
 				<p>
-					<?php if ( $default ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'lespaul_domain_adm' ) . '">' . __( 'Default value', 'lespaul_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
+					<?php if ( $default ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'atlantes_domain_adm' ) . '">' . __( 'Default value', 'atlantes_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
 					<label for="<?php echo $valId; ?>"><?php echo strip_tags( $value['label'] ); ?></label>
 				</p>
 				<?php if ( isset( $value['desc'] ) && $value['desc'] ) echo '<p class="desc">' . $value['desc'] . '</p>'; ?>
@@ -670,7 +670,7 @@
 				if ( isset( $value['label'] ) ) {
 					?>
 					<p>
-						<?php if ( isset( $default ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'lespaul_domain_adm' ) . '">' . __( 'Default value', 'lespaul_domain_adm' ) . '<span>' . esc_html( $default ) . '</span></a>'; ?>
+						<?php if ( isset( $default ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'atlantes_domain_adm' ) . '">' . __( 'Default value', 'atlantes_domain_adm' ) . '<span>' . esc_html( $default ) . '</span></a>'; ?>
 						<label for="<?php echo $valId; ?>"><?php echo strip_tags( $value['label'] ); ?></label>
 					</p>
 					<?php
@@ -738,7 +738,7 @@
 				<?php if ( isset( $value['desc'] ) && $value['desc'] ) echo '<p class="desc">' . $value['desc'] . '</p>'; ?>
 				<p>
 					<span class="select-wrapper<?php echo $icons; ?>">
-						<?php if ( $icons ) echo '<i class="" title="' . __( 'Preview', 'lespaul_domain_adm' ) . '"></i>'; ?>
+						<?php if ( $icons ) echo '<i class="" title="' . __( 'Preview', 'atlantes_domain_adm' ) . '"></i>'; ?>
 						<select name="<?php echo $valId; ?>" id="<?php echo $valId; ?>">
 							<?php
 							if ( isset( $value['options'] ) && is_array( $value['options'] ) && ! empty( $value['options'] ) ) {
@@ -1283,8 +1283,8 @@
 				<div class="pattern-boxes<?php echo $hidden; ?>">
 				<?php
 				if ( $preview && 'checkbox' != $field) {
-					echo '<div class="pattern-preview"><div><span>' . __( 'Pattern preview', 'lespaul_domain_adm' ) . '</span></div></div>';
-					$previewText = ' - ' . __( 'Click the pattern for preview', 'lespaul_domain_adm' );
+					echo '<div class="pattern-preview"><div><span>' . __( 'Pattern preview', 'atlantes_domain_adm' ) . '</span></div></div>';
+					$previewText = ' - ' . __( 'Click the pattern for preview', 'atlantes_domain_adm' );
 				}
 				if ( isset( $value['options'] ) && is_array( $value['options'] ) && ! empty( $value['options'] ) ) {
 					foreach ( $value['options'] as $pattern ) {
@@ -1292,7 +1292,7 @@
 						<div class="pattern-box<?php if ( $pattern['id'] == $setValue ) echo ' active'; ?>">
 							<label for="<?php echo $valId . '-' . $pattern['id']; ?>" title="<?php echo $pattern['name'] . $previewText; ?>">
 								<span<?php if ( ! $preview ) echo ' class="background-size"'; ?> style="background: <?php echo $bgColor; ?> url(<?php echo $pattern['img']; ?>) <?php echo $repeat; ?>repeat 50%"><?php echo $pattern['name']; ?></span>
-								<?php if ( $pattern['img'] ) : ?><a href="<?php echo $pattern['img']; ?>" target="_blank" title="<?php _e( 'Open image in another window', 'lespaul_domain_adm' ); ?>"><?php _e( 'Link to the image', 'lespaul_domain_adm' ); ?></a><?php endif; ?>
+								<?php if ( $pattern['img'] ) : ?><a href="<?php echo $pattern['img']; ?>" target="_blank" title="<?php _e( 'Open image in another window', 'atlantes_domain_adm' ); ?>"><?php _e( 'Link to the image', 'atlantes_domain_adm' ); ?></a><?php endif; ?>
 							</label><br />
 							<?php if ( ! $hidden ) { ?>
 							<input type="<?php echo $field; ?>" name="<?php echo $valId; if ( 'checkbox' == $field ) echo '[' . $i . ']'; ?>" id="<?php echo $valId . '-' . $pattern['id']; ?>" value="<?php echo $pattern['id']; ?>" <?php
@@ -1343,7 +1343,7 @@
 				<div class="option" data-option="<?php echo $valId; ?>">
 				<div class="color-wrapper"<?php if ( isset( $value['onchange'] ) && $value['onchange'] ) echo ' data-onchange="' . esc_attr( $value['onchange'] ) . '"'; ?>>
 					<p>
-						<?php if ( isset( $value['default'] ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'lespaul_domain_adm' ) . '">' . __( 'Default value', 'lespaul_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
+						<?php if ( isset( $value['default'] ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'atlantes_domain_adm' ) . '">' . __( 'Default value', 'atlantes_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
 						<label data-for="<?php echo $valId; ?>"><?php echo strip_tags( $value['label'] ); ?></label>
 					</p>
 					<p class="color-text">
@@ -1362,7 +1362,7 @@
 							echo esc_html( esc_attr( $val ) );
 						else
 							echo $default;
-						?>"<?php if ( ! ( $val || $default ) ) echo ' placeholder="' . __( 'Use theme styles', 'lespaul_domain_adm' ) . '"'; ?> maxlength="6" />
+						?>"<?php if ( ! ( $val || $default ) ) echo ' placeholder="' . __( 'Use theme styles', 'atlantes_domain_adm' ) . '"'; ?> maxlength="6" />
 					</p>
 					<?php if ( isset( $value['desc'] ) && $value['desc'] ) echo '<p class="desc">' . $value['desc'] . '</p>'; ?>
 				</div> <!-- /color-wrapper -->
@@ -1408,12 +1408,12 @@
 				<!-- Image input -->
 				<div class="option" data-option="<?php echo $valId; ?>">
 				<p>
-					<?php if ( isset( $value['default'] ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'lespaul_domain_adm' ) . '">' . __( 'Default value', 'lespaul_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
+					<?php if ( isset( $value['default'] ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'atlantes_domain_adm' ) . '">' . __( 'Default value', 'atlantes_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
 					<label for="<?php echo $valId; ?>"><?php echo strip_tags( $value['label'] ); ?></label>
 				</p>
 				<?php if ( isset( $value['desc'] ) && $value['desc'] ) echo '<p class="desc">' . $value['desc'] . '</p>'; ?>
 				<p id="<?php echo $valId; ?>-file" class="image-input-container">
-					<span class="btn-add upload-image no-js"><?php _e( 'Upload an image', 'lespaul_domain_adm' ) ?></span>
+					<span class="btn-add upload-image no-js"><?php _e( 'Upload an image', 'atlantes_domain_adm' ) ?></span>
 					<input type="text" name="<?php echo $valId; if ( $readonly ) echo '[url]'; ?>" id="<?php echo $valId; ?>" value="<?php
 						if ( $readonly )
 							$out = ( $val ) ? ( $val['url'] ) : ( $default );
@@ -1431,8 +1431,8 @@
 					<input type="hidden" name="<?php echo $valId; ?>[id]" id="<?php echo $valId; ?>-ID" value="<?php if ( isset( $val['url'] ) && $val['url'] && isset( $val['id'] ) ) echo $val['id']; ?>" />
 					<?php } ?>
 				</p>
-				<div class="image-container <?php echo $valId; ?>-file<?php if ( ! $out ) echo ' hide'; ?>" title="<?php _e( 'Image preview', 'lespaul_domain_adm' ); ?>">
-					<a href="<?php echo $out; ?>" class="fancybox" title="<?php _e( 'Image full size preview', 'lespaul_domain_adm' ); ?>">
+				<div class="image-container <?php echo $valId; ?>-file<?php if ( ! $out ) echo ' hide'; ?>" title="<?php _e( 'Image preview', 'atlantes_domain_adm' ); ?>">
+					<a href="<?php echo $out; ?>" class="fancybox" title="<?php _e( 'Image full size preview', 'atlantes_domain_adm' ); ?>">
 						<img src="<?php
 							if ( $readonly && isset( $val['id'] ) ) {
 								$out = wp_get_attachment_image_src( $val['id'], $imageSize );
@@ -1446,9 +1446,9 @@
 								echo $out;
 							else
 								echo WM_ASSETS_ADMIN . 'img/icons/ico-warning.png';
-						?>" alt="" <?php if ( ! $out ) echo ' title="' . __( 'Image does not exist', 'lespaul_domain_adm' ) . '"' ?> />
+						?>" alt="" <?php if ( ! $out ) echo ' title="' . __( 'Image does not exist', 'atlantes_domain_adm' ) . '"' ?> />
 					</a>
-					<em><small><?php _e( 'Image preview', 'lespaul_domain_adm' ); ?></small></em>
+					<em><small><?php _e( 'Image preview', 'atlantes_domain_adm' ); ?></small></em>
 				</div>
 				</div> <!-- /option -->
 				<?php
@@ -1482,12 +1482,12 @@
 				<!-- Audio input -->
 				<div class="option" data-option="<?php echo $valId; ?>">
 				<p>
-					<?php if ( isset( $value['default'] ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'lespaul_domain_adm' ) . '">' . __( 'Default value', 'lespaul_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
+					<?php if ( isset( $value['default'] ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'atlantes_domain_adm' ) . '">' . __( 'Default value', 'atlantes_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
 					<label for="<?php echo $valId; ?>"><?php echo strip_tags( $value['label'] ); ?></label>
 				</p>
 				<?php if ( isset( $value['desc'] ) && $value['desc'] ) echo '<p class="desc">' . $value['desc'] . '</p>'; ?>
 				<p id="<?php echo $valId; ?>-file" class="image-input-container">
-					<span class="btn-add upload-audio no-js"><?php _e( 'Upload audio file', 'lespaul_domain_adm' ) ?></span>
+					<span class="btn-add upload-audio no-js"><?php _e( 'Upload audio file', 'atlantes_domain_adm' ) ?></span>
 					<input type="text" name="<?php echo $valId; ?>" id="<?php echo $valId; ?>" value="<?php
 						$out = ( $val ) ? ( esc_url( $val ) ) : ( esc_url( $default ) );
 
@@ -1526,12 +1526,12 @@
 				<!-- Audio input -->
 				<div class="option" data-option="<?php echo $valId; ?>">
 				<p>
-					<?php if ( isset( $value['default'] ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'lespaul_domain_adm' ) . '">' . __( 'Default value', 'lespaul_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
+					<?php if ( isset( $value['default'] ) ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'atlantes_domain_adm' ) . '">' . __( 'Default value', 'atlantes_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
 					<label for="<?php echo $valId; ?>"><?php echo strip_tags( $value['label'] ); ?></label>
 				</p>
 				<?php if ( isset( $value['desc'] ) && $value['desc'] ) echo '<p class="desc">' . $value['desc'] . '</p>'; ?>
 				<p id="<?php echo $valId; ?>-file" class="image-input-container">
-					<span class="btn-add upload-video no-js"><?php _e( 'Upload video file', 'lespaul_domain_adm' ) ?></span>
+					<span class="btn-add upload-video no-js"><?php _e( 'Upload video file', 'atlantes_domain_adm' ) ?></span>
 					<input type="text" name="<?php echo $valId; ?>" id="<?php echo $valId; ?>" value="<?php
 						$out = ( $val ) ? ( esc_url( $val ) ) : ( esc_url( $default ) );
 
@@ -1575,7 +1575,7 @@
 				else
 					$default = ( isset( $value['default'] ) ) ? ( esc_attr( $value['default'] ) ) : ( null );
 
-				$fieldLabels = ( isset( $value['field-labels'] ) ) ? ( $value['field-labels'] ) : ( array( __( 'Attribute', 'lespaul_domain_adm' ), __( 'Value', 'lespaul_domain_adm' ) ) );
+				$fieldLabels = ( isset( $value['field-labels'] ) ) ? ( $value['field-labels'] ) : ( array( __( 'Attribute', 'atlantes_domain_adm' ), __( 'Value', 'atlantes_domain_adm' ) ) );
 				?>
 				<!-- Items creator -->
 				<div class="option no-js" data-option="<?php echo $valId; ?>">
@@ -1586,7 +1586,7 @@
 					<?php
 					$i = 0;
 					$btnClass = 'btn-remove';
-					$btnText  = __( 'Remove item', 'lespaul_domain_adm' );
+					$btnText  = __( 'Remove item', 'atlantes_domain_adm' );
 
 					if ( is_array( $val ) && ! empty( $val ) ) {
 
@@ -1771,7 +1771,7 @@
 					?>
 					</ul>
 					<p>
-						<a class="btn-add"><?php _e( 'Add an item', 'lespaul_domain_adm' ) ?></a>
+						<a class="btn-add"><?php _e( 'Add an item', 'atlantes_domain_adm' ) ?></a>
 					</p>
 				</div> <!-- /add-items -->
 				</div> <!-- /option -->
@@ -1810,7 +1810,7 @@
 				?>
 				<div class="option" data-option="<?php echo $valId; ?>">
 				<p class="slide-number">
-					<?php if ( isset( $default ) ) echo '<a data-default="' . $valId . '" class="btn btn-default default-slider" title="' . __( 'Use default value', 'lespaul_domain_adm' ) . '">' . __( 'Default value', 'lespaul_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
+					<?php if ( isset( $default ) ) echo '<a data-default="' . $valId . '" class="btn btn-default default-slider" title="' . __( 'Use default value', 'atlantes_domain_adm' ) . '">' . __( 'Default value', 'atlantes_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
 					<label for="<?php echo $valId; ?>"><?php echo strip_tags( $value['label'] ); ?></label>
 				</p>
 				<?php if ( isset( $value['desc'] ) && $value['desc'] ) echo '<p class="desc">' . $value['desc'] . '</p>'; ?>
@@ -1873,7 +1873,7 @@
 				?>
 				<div class="option" data-option="<?php echo $valId; ?>">
 				<p>
-					<?php if ( $default ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'lespaul_domain_adm' ) . '">' . __( 'Default value', 'lespaul_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
+					<?php if ( $default ) echo '<a data-default="' . $valId . '" class="btn btn-default" title="' . __( 'Use default value', 'atlantes_domain_adm' ) . '">' . __( 'Default value', 'atlantes_domain_adm' ) . '<span>' . $default . '</span></a>'; ?>
 					<label for="<?php echo $valId; ?>"><?php echo strip_tags( $value['label'] ); ?></label>
 				</p>
 				<?php if ( isset( $value['desc'] ) && $value['desc'] ) echo '<p class="desc">' . $value['desc'] . '</p>'; ?>
@@ -2104,7 +2104,7 @@
 		*/
 		if ( ! function_exists( 'wm_form_hrtop' ) ) {
 			function wm_form_hrtop() {
-				echo '<div class="separator top"><a href="#"><small>' . __( '&uarr; Top of the page', 'lespaul_domain_adm' ) . '</small></a></div>';
+				echo '<div class="separator top"><a href="#"><small>' . __( '&uarr; Top of the page', 'atlantes_domain_adm' ) . '</small></a></div>';
 			}
 		} // /wm_form_hrtop
 

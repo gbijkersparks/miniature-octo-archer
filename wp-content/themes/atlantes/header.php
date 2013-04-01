@@ -83,7 +83,7 @@ if ( $isTopBar ) {
 	if ( wm_option( 'header-top-bar-fixed' ) )
 		$topbarClasses = ' fixed';
 
-	echo "\r\n\r\n" . '<div id="top-bar" class="clearfix top-bar' . $topbarClasses . '"><div class="wrap' . wm_element_width( 'toppanel' ) . '"><div class="wrap-inner"><div class="twelve pane clearfix">' . "\r\n" . '<!-- TOP BAR -->' . "\r\n" . '<a class="invisible" href="#nav-main">' . __( 'Go to main navigation', 'lespaul_domain' ) . '</a>' . "\r\n";
+	echo "\r\n\r\n" . '<div id="top-bar" class="clearfix top-bar' . $topbarClasses . '"><div class="wrap' . wm_element_width( 'toppanel' ) . '"><div class="wrap-inner"><div class="twelve pane clearfix">' . "\r\n" . '<!-- TOP BAR -->' . "\r\n" . '<a class="invisible" href="#nav-main">' . __( 'Go to main navigation', 'atlantes_domain' ) . '</a>' . "\r\n";
 
 	wm_sidebar( 'top-bar-widgets', 'widgets', 2 ); //restricted to 2 widgets
 
@@ -140,7 +140,7 @@ if ( ! is_page_template( 'page-template/construction.php' ) && ' nav-top' === wm
 		$headerText = strtr( $headerText, $replaceArray );
 
 		if ( $headerText )
-			echo '<div class="header-right"><a class="invisible" href="#nav-main">' . __( 'Ir para navegação principal', 'lespaul_domain' ) . '</a><div class="header-right-content">' . apply_filters( 'wm_default_content_filters', $headerText ) . '</div></div>';
+			echo '<div class="header-right"><a class="invisible" href="#nav-main">' . __( 'Ir para navegação principal', 'atlantes_domain' ) . '</a><div class="header-right-content">' . apply_filters( 'wm_default_content_filters', $headerText ) . '</div></div>';
 
 	} else {
 

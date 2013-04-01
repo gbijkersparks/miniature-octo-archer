@@ -70,16 +70,16 @@
 				'menu_icon'           => WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-portfolio.png',
 				'supports'            => $supports,
 				'labels'              => array(
-					'name'               => __( 'Projects', 'lespaul_domain_adm' ),
-					'singular_name'      => __( 'Project', 'lespaul_domain_adm' ),
-					'add_new'            => __( 'Add new project', 'lespaul_domain_adm' ),
-					'add_new_item'       => __( 'Add new project', 'lespaul_domain_adm' ),
-					'new_item'           => __( 'Add new project', 'lespaul_domain_adm' ),
-					'edit_item'          => __( 'Edit project', 'lespaul_domain_adm' ),
-					'view_item'          => __( 'View project', 'lespaul_domain_adm' ),
-					'search_items'       => __( 'Search projects', 'lespaul_domain_adm' ),
-					'not_found'          => __( 'No project found', 'lespaul_domain_adm' ),
-					'not_found_in_trash' => __( 'No project found in trash', 'lespaul_domain_adm' ),
+					'name'               => __( 'Projects', 'atlantes_domain_adm' ),
+					'singular_name'      => __( 'Project', 'atlantes_domain_adm' ),
+					'add_new'            => __( 'Add new project', 'atlantes_domain_adm' ),
+					'add_new_item'       => __( 'Add new project', 'atlantes_domain_adm' ),
+					'new_item'           => __( 'Add new project', 'atlantes_domain_adm' ),
+					'edit_item'          => __( 'Edit project', 'atlantes_domain_adm' ),
+					'view_item'          => __( 'View project', 'atlantes_domain_adm' ),
+					'search_items'       => __( 'Search projects', 'atlantes_domain_adm' ),
+					'not_found'          => __( 'No project found', 'atlantes_domain_adm' ),
+					'not_found_in_trash' => __( 'No project found in trash', 'atlantes_domain_adm' ),
 					'parent_item_colon'  => ''
 				)
 			);
@@ -108,32 +108,32 @@
 			$messages['wm_projects'] = array(
 				0  => '', // Unused. Messages start at index 1.
 				1  => sprintf(
-					__( 'Project updated. <a href="%s">View project</a>', 'lespaul_domain_adm' ),
+					__( 'Project updated. <a href="%s">View project</a>', 'atlantes_domain_adm' ),
 					esc_url( get_permalink( $post_ID ) )
 					),
-				2  => __( 'Custom field updated.', 'lespaul_domain_adm' ),
-				3  => __( 'Custom field deleted.', 'lespaul_domain_adm' ),
-				4  => __( 'Project updated.', 'lespaul_domain_adm' ),
+				2  => __( 'Custom field updated.', 'atlantes_domain_adm' ),
+				3  => __( 'Custom field deleted.', 'atlantes_domain_adm' ),
+				4  => __( 'Project updated.', 'atlantes_domain_adm' ),
 				5  => ( isset( $_GET['revision'] ) ) ? ( sprintf(
-					__( 'Project restored to revision from %s', 'lespaul_domain_adm' ),
+					__( 'Project restored to revision from %s', 'atlantes_domain_adm' ),
 						wp_post_revision_title( (int) $_GET['revision'], false )
 					) ) : ( false ),
 				6  => sprintf(
-					__( 'Project published. <a href="%s">View project</a>', 'lespaul_domain_adm' ),
+					__( 'Project published. <a href="%s">View project</a>', 'atlantes_domain_adm' ),
 						esc_url( get_permalink($post_ID) )
 					),
-				7  => __( 'Project saved.', 'lespaul_domain_adm' ),
+				7  => __( 'Project saved.', 'atlantes_domain_adm' ),
 				8  => sprintf(
-					__( 'Project submitted. <a target="_blank" href="%s">Preview project</a>', 'lespaul_domain_adm' ),
+					__( 'Project submitted. <a target="_blank" href="%s">Preview project</a>', 'atlantes_domain_adm' ),
 						esc_url( add_query_arg( 'preview', 'true', get_permalink( $post_ID ) ) )
 					),
 				9  => sprintf(
-					__( 'Project scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview project</a>', 'lespaul_domain_adm' ),
+					__( 'Project scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview project</a>', 'atlantes_domain_adm' ),
 						get_the_date() . ', ' . get_the_time(),
 						esc_url( get_permalink( $post_ID ) )
 					),
 				10 => sprintf(
-					__( 'Project draft updated. <a target="_blank" href="%s">Preview project</a>', 'lespaul_domain_adm' ),
+					__( 'Project draft updated. <a target="_blank" href="%s">Preview project</a>', 'atlantes_domain_adm' ),
 						esc_url( add_query_arg( 'preview', 'true', get_permalink( $post_ID ) ) )
 					),
 				);
@@ -163,13 +163,13 @@
 			$wm_projectsCols = array(
 				//standard columns
 				"cb"                 => '<input type="checkbox" />',
-				$prefix . "thumb"    => __( 'Image', 'lespaul_domain_adm' ),
-				"title"              => __( 'Project', 'lespaul_domain_adm' ),
-				$prefix . "category" => __( 'Category', 'lespaul_domain_adm' ),
-				$prefix . "link"     => __( 'Custom link', 'lespaul_domain_adm' ),
-				"date"               => __( 'Date', 'lespaul_domain_adm' ),
-				"author"             => __( 'Created by', 'lespaul_domain_adm' ),
-				$prefix . "layout"   => __( 'Layout', 'lespaul_domain_adm' )
+				$prefix . "thumb"    => __( 'Image', 'atlantes_domain_adm' ),
+				"title"              => __( 'Project', 'atlantes_domain_adm' ),
+				$prefix . "category" => __( 'Category', 'atlantes_domain_adm' ),
+				$prefix . "link"     => __( 'Custom link', 'atlantes_domain_adm' ),
+				"date"               => __( 'Date', 'atlantes_domain_adm' ),
+				"author"             => __( 'Created by', 'atlantes_domain_adm' ),
+				$prefix . "layout"   => __( 'Layout', 'atlantes_domain_adm' )
 			);
 
 			return $wm_projectsCols;
@@ -246,7 +246,7 @@
 				break;
 				case $prefix . "layout":
 
-					$layout = ( 'plain' === wm_meta_option( $prefixMeta . 'single-layout' ) ) ? ( __( 'Post', 'lespaul_domain_adm' ) ) : ( __( 'Project', 'lespaul_domain_adm' ) );
+					$layout = ( 'plain' === wm_meta_option( $prefixMeta . 'single-layout' ) ) ? ( __( 'Post', 'atlantes_domain_adm' ) ) : ( __( 'Project', 'atlantes_domain_adm' ) );
 					edit_post_link( $layout );
 
 				break;

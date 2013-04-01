@@ -73,8 +73,8 @@
 				//User Manual link everywhere
 				$screen->add_help_tab( array(
 					'id'      => 'theme-user-manual',
-					'title'   => __( 'User Manual', 'lespaul_domain_help' ),
-					'content' => '<h3>' . __( 'Theme online user manual', 'lespaul_domain_help' ) . '</h3><p>' . sprintf( __( 'For further assistance please check the online <a href="%1s" target="_blank">%2s User Manual</a>.', 'lespaul_domain_help' ), WM_ONLINE_MANUAL_URL, WM_THEME_NAME ) . '</p>',
+					'title'   => __( 'User Manual', 'atlantes_domain_help' ),
+					'content' => '<h3>' . __( 'Theme online user manual', 'atlantes_domain_help' ) . '</h3><p>' . sprintf( __( 'For further assistance please check the online <a href="%1s" target="_blank">%2s User Manual</a>.', 'atlantes_domain_help' ), WM_ONLINE_MANUAL_URL, WM_THEME_NAME ) . '</p>',
 				) );
 
 			} else {

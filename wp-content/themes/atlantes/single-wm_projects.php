@@ -30,15 +30,15 @@ if ( is_active_sidebar( $overrideSidebar ) && 'none' != $sidebarLayout ) {
 	<?php
 	//next/previous project links
 		$out = '';
-		$out .= ( be_get_previous_post( true, '', 'project-category' ) ) ? ( '<a href="' . get_permalink( be_get_previous_post( true, '', 'project-category' )->ID ) . '" title="' . sprintf( __( 'Projeto Anterior (%s)', 'lespaul_domain' ), esc_attr( strip_tags( get_the_title( be_get_previous_post( true, '', 'project-category' )->ID ) ) ) ) . '" class="prev">' . trim( get_the_title( be_get_previous_post( true, '', 'project-category' )->ID ) ) . '</a>' ) : ( null );
-		$out .= ( be_get_next_post( true, '', 'project-category' ) ) ? ( '<a href="' . get_permalink( be_get_next_post( true, '', 'project-category' )->ID ) . '" title="' . sprintf( __( 'Próximo Projeto (%s)', 'lespaul_domain' ), esc_attr( strip_tags( get_the_title( be_get_next_post( true, '', 'project-category' )->ID ) ) ) ) . '" class="next">' . trim( get_the_title( be_get_next_post( true, '', 'project-category' )->ID ) ) . '</a>' ) : ( null );
+		$out .= ( be_get_previous_post( true, '', 'project-category' ) ) ? ( '<a href="' . get_permalink( be_get_previous_post( true, '', 'project-category' )->ID ) . '" title="' . sprintf( __( 'Projeto Anterior (%s)', 'atlantes_domain' ), esc_attr( strip_tags( get_the_title( be_get_previous_post( true, '', 'project-category' )->ID ) ) ) ) . '" class="prev">' . trim( get_the_title( be_get_previous_post( true, '', 'project-category' )->ID ) ) . '</a>' ) : ( null );
+		$out .= ( be_get_next_post( true, '', 'project-category' ) ) ? ( '<a href="' . get_permalink( be_get_next_post( true, '', 'project-category' )->ID ) . '" title="' . sprintf( __( 'Próximo Projeto (%s)', 'atlantes_domain' ), esc_attr( strip_tags( get_the_title( be_get_next_post( true, '', 'project-category' )->ID ) ) ) ) . '" class="next">' . trim( get_the_title( be_get_next_post( true, '', 'project-category' )->ID ) ) . '</a>' ) : ( null );
 		if ( $out )
 			echo '<footer class="meta-project">' . $out . '</footer>';
 
 	//Related projects
 		if ( ! wm_option( 'contents-no-related-projects' ) && ! wm_meta_option( 'project-no-related' ) ) {
 			$columns = ( ! wm_meta_option( 'layout' ) || 'none' === wm_meta_option( 'layout' ) ) ? ( 4 ) : ( 3 );
-			$title   = ( wm_option( 'contents-related-projects-title' ) ) ? ( strip_tags( wm_option( 'contents-related-projects-title' ) ) ) : ( __( 'Related projects', 'lespaul_domain' ) );
+			$title   = ( wm_option( 'contents-related-projects-title' ) ) ? ( strip_tags( wm_option( 'contents-related-projects-title' ) ) ) : ( __( 'Related projects', 'atlantes_domain' ) );
 			echo do_shortcode( '[projects related="' . $title . '" columns="' . $columns . '" count="' . $columns . '" order="random" thumb="1" /]' );
 		}
 	?>

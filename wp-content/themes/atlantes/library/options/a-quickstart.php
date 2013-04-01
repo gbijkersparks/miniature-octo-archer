@@ -17,21 +17,21 @@ array_push( $options,
 array(
 	"type" => "section-open",
 	"section-id" => "quickstart",
-	"title" => __( 'Quickstart', 'lespaul_domain_panel' )
+	"title" => __( 'Quickstart', 'atlantes_domain_panel' )
 ),
 
 	array(
 		"type" => "sub-tabs",
 		"parent-section-id" => "quickstart",
 		"list" => array(
-			__( 'Quickstart guide', 'lespaul_domain_panel' )
+			__( 'Quickstart guide', 'atlantes_domain_panel' )
 			)
 	),
 
 	array(
 		"type" => "sub-section-open",
 		"sub-section-id" => "quickstart-1",
-		"title" => __( 'Quickstart guide', 'lespaul_domain_panel' )
+		"title" => __( 'Quickstart guide', 'atlantes_domain_panel' )
 	),
 		array(
 			"type" => "intro",

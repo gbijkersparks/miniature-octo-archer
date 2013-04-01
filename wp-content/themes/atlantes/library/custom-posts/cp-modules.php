@@ -71,16 +71,16 @@
 				'menu_icon'           => WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-modules.png',
 				'supports'            => $supports,
 				'labels'              => array(
-					'name'               => __( 'Content Modules', 'lespaul_domain_adm' ),
-					'singular_name'      => __( 'Content module', 'lespaul_domain_adm' ),
-					'add_new'            => __( 'Add new module', 'lespaul_domain_adm' ),
-					'add_new_item'       => __( 'Add new module', 'lespaul_domain_adm' ),
-					'new_item'           => __( 'Add new module', 'lespaul_domain_adm' ),
-					'edit_item'          => __( 'Edit module', 'lespaul_domain_adm' ),
-					'view_item'          => __( 'View module', 'lespaul_domain_adm' ),
-					'search_items'       => __( 'Search modules', 'lespaul_domain_adm' ),
-					'not_found'          => __( 'No module found', 'lespaul_domain_adm' ),
-					'not_found_in_trash' => __( 'No module found in trash', 'lespaul_domain_adm' ),
+					'name'               => __( 'Content Modules', 'atlantes_domain_adm' ),
+					'singular_name'      => __( 'Content module', 'atlantes_domain_adm' ),
+					'add_new'            => __( 'Add new module', 'atlantes_domain_adm' ),
+					'add_new_item'       => __( 'Add new module', 'atlantes_domain_adm' ),
+					'new_item'           => __( 'Add new module', 'atlantes_domain_adm' ),
+					'edit_item'          => __( 'Edit module', 'atlantes_domain_adm' ),
+					'view_item'          => __( 'View module', 'atlantes_domain_adm' ),
+					'search_items'       => __( 'Search modules', 'atlantes_domain_adm' ),
+					'not_found'          => __( 'No module found', 'atlantes_domain_adm' ),
+					'not_found_in_trash' => __( 'No module found in trash', 'atlantes_domain_adm' ),
 					'parent_item_colon'  => ''
 				)
 			);
@@ -108,22 +108,22 @@
 
 			$messages['wm_modules'] = array(
 				0  => '', // Unused. Messages start at index 1.
-				1  => __( 'Updated.', 'lespaul_domain_adm' ),
-				2  => __( 'Custom field updated.', 'lespaul_domain_adm' ),
-				3  => __( 'Custom field deleted.', 'lespaul_domain_adm' ),
-				4  => __( 'Updated.', 'lespaul_domain_adm' ),
+				1  => __( 'Updated.', 'atlantes_domain_adm' ),
+				2  => __( 'Custom field updated.', 'atlantes_domain_adm' ),
+				3  => __( 'Custom field deleted.', 'atlantes_domain_adm' ),
+				4  => __( 'Updated.', 'atlantes_domain_adm' ),
 				5  => ( isset( $_GET['revision'] ) ) ? ( sprintf(
-					__( 'Restored to revision from %s', 'lespaul_domain_adm' ),
+					__( 'Restored to revision from %s', 'atlantes_domain_adm' ),
 						wp_post_revision_title( (int) $_GET['revision'], false )
 					) ) : ( false ),
-				6  => __( 'Published.', 'lespaul_domain_adm' ),
-				7  => __( 'Saved.', 'lespaul_domain_adm' ),
-				8  => __( 'Submitted.', 'lespaul_domain_adm' ),
+				6  => __( 'Published.', 'atlantes_domain_adm' ),
+				7  => __( 'Saved.', 'atlantes_domain_adm' ),
+				8  => __( 'Submitted.', 'atlantes_domain_adm' ),
 				9  => sprintf(
-					__( 'Scheduled for: <strong>%s</strong>.', 'lespaul_domain_adm' ),
+					__( 'Scheduled for: <strong>%s</strong>.', 'atlantes_domain_adm' ),
 						get_the_date() . ', ' . get_the_time()
 					),
-				10 => __( 'Draft updated.', 'lespaul_domain_adm' ),
+				10 => __( 'Draft updated.', 'atlantes_domain_adm' ),
 				);
 
 			return $messages;
@@ -151,13 +151,13 @@
 			$wm_modulesCols = array(
 				//standard columns
 				"cb"                  => '<input type="checkbox" />',
-				$prefix . "thumb"     => __( 'Image <small>[type]</small>', 'lespaul_domain_adm' ),
-				"title"               => __( 'Content module', 'lespaul_domain_adm' ),
-				$prefix . "shortcode" => __( 'Shortcode', 'lespaul_domain_adm' ),
-				$prefix . "tag"       => __( 'Tags', 'lespaul_domain_adm' ),
-				$prefix . "link"      => __( 'Custom link', 'lespaul_domain_adm' ),
-				"date"                => __( 'Date', 'lespaul_domain_adm' ),
-				"author"              => __( 'Created by', 'lespaul_domain_adm' )
+				$prefix . "thumb"     => __( 'Image <small>[type]</small>', 'atlantes_domain_adm' ),
+				"title"               => __( 'Content module', 'atlantes_domain_adm' ),
+				$prefix . "shortcode" => __( 'Shortcode', 'atlantes_domain_adm' ),
+				$prefix . "tag"       => __( 'Tags', 'atlantes_domain_adm' ),
+				$prefix . "link"      => __( 'Custom link', 'atlantes_domain_adm' ),
+				"date"                => __( 'Date', 'atlantes_domain_adm' ),
+				"author"              => __( 'Created by', 'atlantes_domain_adm' )
 			);
 
 			return $wm_modulesCols;
@@ -199,7 +199,7 @@
 					echo '</span>';
 
 					if ( 'icon' == wm_meta_option( $prefixMeta . 'type' ) )
-						echo ' <small>' . __( '[Icon module]', 'lespaul_domain_adm' ) . '</small>';
+						echo ' <small>' . __( '[Icon module]', 'atlantes_domain_adm' ) . '</small>';
 
 				break;
 				case $prefix . "link":

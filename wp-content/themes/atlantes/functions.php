@@ -18,13 +18,13 @@
 *  2) main WordPress admin extensions (like post metaboxes)
 *  3) theme's contextual help texts
 *  4) theme admin panel (accessed by administrators only)
-* You can find all theme translation .PO files (and place translated .MO files) in "lespaul/langs/" folder and subsequent subfolders.
+* You can find all theme translation .PO files (and place translated .MO files) in "atlantes/langs/" folder and subsequent subfolders.
 *
 * Theme uses these textdomains:
-*  1) lespaul_domain
-*  2) lespaul_domain_adm
-*  3) lespaul_domain_help
-*  4) lespaul_domain_panel
+*  1) atlantes_domain
+*  2) atlantes_domain_adm
+*  3) atlantes_domain_help
+*  4) atlantes_domain_panel
 */
 
 require_once(TEMPLATEPATH . '/m_toolbox/m_toolbox.php');
@@ -99,7 +99,7 @@ require_once(TEMPLATEPATH . '/m_toolbox/m_toolbox.php');
 		define( 'WM_DEFAULT_LOGO_SIZE', '218,38' );
 
 	//Others
-		define( 'WM_MSG_ACCESS_DENIED', '<article class="main twelve pane">[box color="red" icon="warning"]' . __( 'You do not have sufficient rights to display this page.', 'lespaul_domain' ) . '[/box]</article>' );
+		define( 'WM_MSG_ACCESS_DENIED', '<article class="main twelve pane">[box color="red" icon="warning"]' . __( 'You do not have sufficient rights to display this page.', 'atlantes_domain' ) . '[/box]</article>' );
 		define( 'WM_ONLINE_MANUAL_URL', 'http://www.webmandesign.eu/manual/' . $shortname . '/' );
 
 

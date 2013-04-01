@@ -55,28 +55,28 @@
 				$iconSet = $typeSet = '';
 			}
 
-			$out['type']['label'] = '<label for="term_meta-type">' . __( 'Behaviour', 'lespaul_domain_adm' ) . '</label>';
+			$out['type']['label'] = '<label for="term_meta-type">' . __( 'Behaviour', 'atlantes_domain_adm' ) . '</label>';
 			$out['type']['field'] = '<p><select name="term_meta[type]" id="term_meta-type">';
 				$projectTypes = array(
-						'static-project' => __( 'Image', 'lespaul_domain_adm' ),
-						'slider-project' => __( 'Slideshow of images', 'lespaul_domain_adm' ),
-						'video-project'  => __( 'Video', 'lespaul_domain_adm' ),
-						'audio-project'  => __( 'Audio', 'lespaul_domain_adm' ),
+						'static-project' => __( 'Image', 'atlantes_domain_adm' ),
+						'slider-project' => __( 'Slideshow of images', 'atlantes_domain_adm' ),
+						'video-project'  => __( 'Video', 'atlantes_domain_adm' ),
+						'audio-project'  => __( 'Audio', 'atlantes_domain_adm' ),
 					);
 				foreach ( $projectTypes as $key => $value ) {
 					$out['type']['field'] .= '<option value="' . $key . '" ' . selected( $typeSet, $key, false ) . '>' . $value . '</option>';
 				}
-				$out['type']['field'] .= '</select></p><p class="description">' . __( 'Select one of predefined behaviours for this project type', 'lespaul_domain_adm' ) . '</p>';
+				$out['type']['field'] .= '</select></p><p class="description">' . __( 'Select one of predefined behaviours for this project type', 'atlantes_domain_adm' ) . '</p>';
 
 
-			$out['icon']['label'] = '<label for="term_meta-icon">' . __( 'Icon', 'lespaul_domain_adm' ) . '</label>';
-			$out['icon']['field'] = '<p><span class="image-before"></span><select name="term_meta[icon]" id="term_meta-icon"><option value="">' . __( '- Select icon -', 'lespaul_domain_adm' ) . '</option>';
+			$out['icon']['label'] = '<label for="term_meta-icon">' . __( 'Icon', 'atlantes_domain_adm' ) . '</label>';
+			$out['icon']['field'] = '<p><span class="image-before"></span><select name="term_meta[icon]" id="term_meta-icon"><option value="">' . __( '- Select icon -', 'atlantes_domain_adm' ) . '</option>';
 				$fontFile  = ( ! file_exists( WM_FONT . 'custom/config.json' ) ) ? ( WM_FONT . 'fontello/config.json' ) : ( WM_FONT . 'custom/config.json' );
 				$fontIcons = wm_fontello_classes( $fontFile );
 				foreach ( $fontIcons as $icon ) {
 					$out['icon']['field'] .= '<option value="' . $icon . '" ' . selected( $iconSet, $icon, false ) . '>' . ucwords( str_replace( '-', ' ', substr( $icon, 4 ) ) ) . '</option>';
 				}
-				$out['icon']['field'] .= '</select></p><p class="description">' . __( 'Select one of predefined icons for this project type', 'lespaul_domain_adm' ) . '<br /><small>' . __( 'TIP: Double click the select field to keep it in focus while hiding the dropdown and use arrow keys to browse icons.', 'lespaul_domain_adm' ) . '</small></p>
+				$out['icon']['field'] .= '</select></p><p class="description">' . __( 'Select one of predefined icons for this project type', 'atlantes_domain_adm' ) . '<br /><small>' . __( 'TIP: Double click the select field to keep it in focus while hiding the dropdown and use arrow keys to browse icons.', 'atlantes_domain_adm' ) . '</small></p>
 					<script type="text/javascript">
 						<!--
 						jQuery( "#tag-description, #description" ).closest( ".form-field" ).hide();

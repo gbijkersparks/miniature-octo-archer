@@ -750,31 +750,31 @@
 				<div class="countdown-timer' . $size . '">
 					<div id="countdown-timer-' . absint( ++$countdownIDs ) . '">
 						<div class="dash weeks_dash">
-							<span class="dash_title">' . __( 'Weeks', 'lespaul_domain' ) . '</span>
+							<span class="dash_title">' . __( 'Weeks', 'atlantes_domain' ) . '</span>
 							<div class="digit first">0</div>
 							<div class="digit">0</div>
 						</div>
 
 						<div class="dash days_dash">
-							<span class="dash_title">' . __( 'Days', 'lespaul_domain' ) . '</span>
+							<span class="dash_title">' . __( 'Days', 'atlantes_domain' ) . '</span>
 							<div class="digit first">0</div>
 							<div class="digit">0</div>
 						</div>
 
 						<div class="dash hours_dash">
-							<span class="dash_title">' . __( 'Hours', 'lespaul_domain' ) . '</span>
+							<span class="dash_title">' . __( 'Hours', 'atlantes_domain' ) . '</span>
 							<div class="digit first">0</div>
 							<div class="digit">0</div>
 						</div>
 
 						<div class="dash minutes_dash">
-							<span class="dash_title">' . __( 'Minutes', 'lespaul_domain' ) . '</span>
+							<span class="dash_title">' . __( 'Minutes', 'atlantes_domain' ) . '</span>
 							<div class="digit first">0</div>
 							<div class="digit">0</div>
 						</div>
 
 						<div class="dash seconds_dash">
-							<span class="dash_title">' . __( 'Seconds', 'lespaul_domain' ) . '</span>
+							<span class="dash_title">' . __( 'Seconds', 'atlantes_domain' ) . '</span>
 							<div class="digit first">0</div>
 							<div class="digit">0</div>
 						</div>
@@ -990,16 +990,16 @@
 
 
 			if ( ! is_user_logged_in() ) {
-				$out .= '<h3>' . __( 'Log in', 'lespaul_domain' ) . '</h3>';
+				$out .= '<h3>' . __( 'Log in', 'atlantes_domain' ) . '</h3>';
 
 				$out .= wp_login_form( array(
 					'echo'           => false,
 					'redirect'       => $redirect,
 					'form_id'        => 'form-login',
-					'label_username' => __( 'Username', 'lespaul_domain' ),
-					'label_password' => __( 'Password', 'lespaul_domain' ),
-					'label_remember' => __( 'Remember Me', 'lespaul_domain' ),
-					'label_log_in'   => __( 'Log In', 'lespaul_domain' ),
+					'label_username' => __( 'Username', 'atlantes_domain' ),
+					'label_password' => __( 'Password', 'atlantes_domain' ),
+					'label_remember' => __( 'Remember Me', 'atlantes_domain' ),
+					'label_log_in'   => __( 'Log In', 'atlantes_domain' ),
 					'id_username'    => 'user_login',
 					'id_password'    => 'user_pass',
 					'id_remember'    => 'rememberme',
@@ -1009,9 +1009,9 @@
 					'value_remember' => false
 					) );
 
-				$out .= '<p class="note"><small><a href="' . wp_lostpassword_url( get_permalink() ) . '" title="' . __( 'Password will be resent to your e-mail address.', 'lespaul_domain' ) . '">' . __( 'I have lost my password', 'lespaul_domain' ) . '</a></small></p>';
+				$out .= '<p class="note"><small><a href="' . wp_lostpassword_url( get_permalink() ) . '" title="' . __( 'Password will be resent to your e-mail address.', 'atlantes_domain' ) . '">' . __( 'I have lost my password', 'atlantes_domain' ) . '</a></small></p>';
 			} else {
-				$out .= '[button url="' . wp_logout_url( get_permalink() ) . '" color="red" size="xl"]' . __( 'Log out', 'lespaul_domain' ) . '[/button]';
+				$out .= '[button url="' . wp_logout_url( get_permalink() ) . '" color="red" size="xl"]' . __( 'Log out', 'atlantes_domain' ) . '[/button]';
 			}
 
 			$out .= '</div>';
@@ -1649,7 +1649,7 @@
 										'size'        => $imgSize,
 										'list'        => true,
 										'placeholder' => true,
-										'overlay'     => __( 'Read more', 'lespaul_domain' ),
+										'overlay'     => __( 'Read more', 'atlantes_domain' ),
 									) ),
 								'title'   => '<h3 class="post-title text-element"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>',
 								'excerpt' => $excerptText,
@@ -1903,10 +1903,10 @@
 			}
 			if ( empty( $projectIcons ) )
 				$projectIcons = array(
-						'static-project' => array( 'wmicon-image', __( 'Image', 'lespaul_domain' ) ),
-						'slider-project' => array( 'wmicon-gallery', __( 'Image slider', 'lespaul_domain' ) ),
-						'video-project'  => array( 'wmicon-video', __( 'Video', 'lespaul_domain' ) ),
-						'audio-project'  => array( 'wmicon-audio', __( 'Audio', 'lespaul_domain' ) )
+						'static-project' => array( 'wmicon-image', __( 'Image', 'atlantes_domain' ) ),
+						'slider-project' => array( 'wmicon-gallery', __( 'Image slider', 'atlantes_domain' ) ),
+						'video-project'  => array( 'wmicon-video', __( 'Video', 'atlantes_domain' ) ),
+						'audio-project'  => array( 'wmicon-audio', __( 'Audio', 'atlantes_domain' ) )
 					);
 
 			//get the projects
@@ -1949,7 +1949,7 @@
 					//if parent category set - filter from child categories
 
 						$parentCategory = get_term_by( 'id', $category, 'project-category' );
-						$filterContent .= '<li><a href="#" data-filter="*" class="active">' . sprintf( __( 'All <span>%s</span>', 'lespaul_domain' ), $parentCategory->name ) . '</a></li>';
+						$filterContent .= '<li><a href="#" data-filter="*" class="active">' . sprintf( __( 'All <span>%s</span>', 'atlantes_domain' ), $parentCategory->name ) . '</a></li>';
 
 						$terms  = get_term_children( $category, 'project-category' );
 						$count  = count( $terms );
@@ -1968,7 +1968,7 @@
 					} else {
 					//no parent category - filter from all categories
 
-						$filterContent .= '<li><a href="#" data-filter="*" class="active">' . __( 'All', 'lespaul_domain' ) . '</a></li>';
+						$filterContent .= '<li><a href="#" data-filter="*" class="active">' . __( 'All', 'atlantes_domain' ) . '</a></li>';
 
 						$terms = get_terms( 'project-category' );
 						$count = count( $terms );
@@ -2010,7 +2010,7 @@
 
 						$link        = ( wm_meta_option( 'project-link-list' ) ) ? ( esc_url( wm_meta_option( 'project-link' ) ) ) : ( get_permalink() );
 						$target      = ( 'target-blank' == wm_meta_option( 'project-link-list' ) ) ? ( ' target="_blank"' ) : ( '' );
-						$overlayText = ( 'modal' == wm_meta_option( 'project-link-list' ) ) ? ( __( 'Zoom', 'lespaul_domain' ) ) : ( __( '<div class="p-more"></div>Saiba Mais', 'lespaul_domain' ) );
+						$overlayText = ( 'modal' == wm_meta_option( 'project-link-list' ) ) ? ( __( 'Zoom', 'atlantes_domain' ) ) : ( __( '<div class="p-more"></div>Saiba Mais', 'atlantes_domain' ) );
 
 						if ( 0 < $excerptLength && has_excerpt() )
 							$excerptText = wm_string_length( get_the_excerpt(), $excerptLength, '&hellip;' );
@@ -2018,7 +2018,7 @@
 							$excerptText = '';
 
 						$icon      = 'wmicon-image';
-						$iconTitle = __( 'Image', 'lespaul_domain' );
+						$iconTitle = __( 'Image', 'atlantes_domain' );
 						if ( wm_meta_option( 'project-type' ) ) {
 							if ( isset( $projectIcons[wm_meta_option( 'project-type' )][0] ) )
 								$icon = $projectIcons[wm_meta_option( 'project-type' )][0];
@@ -2109,7 +2109,7 @@
 
 			if ( wm_meta_option( 'project-link' ) ) {
 				$link = wm_meta_option( 'project-link' );
-				$out .= '<li class="attribute-link"><strong class="attribute-heading">' . __( 'Project URL', 'lespaul_domain' ) . ':</strong> ';
+				$out .= '<li class="attribute-link"><strong class="attribute-heading">' . __( 'Project URL', 'atlantes_domain' ) . ':</strong> ';
 				$out .= '<a href="' . esc_url( $link ) . '">' . $link . '</a></li>';
 			}
 
@@ -2249,14 +2249,14 @@
 										'list'        => true,
 										'link'        => 'modal',
 										'placeholder' => true,
-										'overlay'     => __( 'Zoom', 'lespaul_domain' ),
+										'overlay'     => __( 'Zoom', 'atlantes_domain' ),
 									) ),
 								'thumb-permalink' => wm_thumb( array(
 										'class'       => 'staff-thumb',
 										'size'        => $imgSize,
 										'list'        => true,
 										'placeholder' => true,
-										'overlay'     => __( '<div class="p-more"></div>Saiba Mais', 'lespaul_domain' ),
+										'overlay'     => __( '<div class="p-more"></div>Saiba Mais', 'atlantes_domain' ),
 									) ),
 								'title'      => '<h3 class="staff-title text-element"><strong>' . get_the_title() . '</strong></h3>',
 								'title-link' => '<h3 class="staff-title text-element"><a href="' . get_permalink() . '"><strong>' . get_the_title() . '</strong></a></h3>',
@@ -3145,7 +3145,7 @@
 
 			//output
 			if ( ! $out )
-				$out = do_shortcode( '[box color="red" icon="warning"]' . __( 'Please check the video URL', 'lespaul_domain' ) . '[/box]' );
+				$out = do_shortcode( '[box color="red" icon="warning"]' . __( 'Please check the video URL', 'atlantes_domain' ) . '[/box]' );
 
 			return $out;
 		}

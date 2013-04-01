@@ -53,7 +53,7 @@
 
 			$role  = ( wm_option( 'cp-role-logos' ) ) ? ( wm_option( 'cp-role-logos' ) ) : ( 'post' );
 			$slug  = ( wm_option( 'cp-permalink-logos' ) ) ? ( wm_option( 'cp-permalink-logos' ) ) : ( 'logo' );
-			$title = __( 'Logos', 'lespaul_domain_adm' );
+			$title = __( 'Logos', 'atlantes_domain_adm' );
 
 			$args = array(
 				'query_var'           => 'logos',
@@ -70,14 +70,14 @@
 				'labels'              => array(
 					'name'               => $title,
 					'singular_name'      => $title,
-					'add_new'            => __( 'Add new', 'lespaul_domain_adm' ),
-					'add_new_item'       => __( 'Add new', 'lespaul_domain_adm' ),
-					'new_item'           => __( 'Add new', 'lespaul_domain_adm' ),
-					'edit_item'          => __( 'Edit', 'lespaul_domain_adm' ),
-					'view_item'          => __( 'View', 'lespaul_domain_adm' ),
-					'search_items'       => __( 'Search', 'lespaul_domain_adm' ),
-					'not_found'          => __( 'No item found', 'lespaul_domain_adm' ),
-					'not_found_in_trash' => __( 'No item found in trash', 'lespaul_domain_adm' ),
+					'add_new'            => __( 'Add new', 'atlantes_domain_adm' ),
+					'add_new_item'       => __( 'Add new', 'atlantes_domain_adm' ),
+					'new_item'           => __( 'Add new', 'atlantes_domain_adm' ),
+					'edit_item'          => __( 'Edit', 'atlantes_domain_adm' ),
+					'view_item'          => __( 'View', 'atlantes_domain_adm' ),
+					'search_items'       => __( 'Search', 'atlantes_domain_adm' ),
+					'not_found'          => __( 'No item found', 'atlantes_domain_adm' ),
+					'not_found_in_trash' => __( 'No item found in trash', 'atlantes_domain_adm' ),
 					'parent_item_colon'  => ''
 				)
 			);
@@ -105,22 +105,22 @@
 
 			$messages['wm_logos'] = array(
 				0  => '', // Unused. Messages start at index 1.
-				1  => __( 'Updated.', 'lespaul_domain_adm' ),
-				2  => __( 'Custom field updated.', 'lespaul_domain_adm' ),
-				3  => __( 'Custom field deleted.', 'lespaul_domain_adm' ),
-				4  => __( 'Updated.', 'lespaul_domain_adm' ),
+				1  => __( 'Updated.', 'atlantes_domain_adm' ),
+				2  => __( 'Custom field updated.', 'atlantes_domain_adm' ),
+				3  => __( 'Custom field deleted.', 'atlantes_domain_adm' ),
+				4  => __( 'Updated.', 'atlantes_domain_adm' ),
 				5  => ( isset( $_GET['revision'] ) ) ? ( sprintf(
-					__( 'Restored to revision from %s', 'lespaul_domain_adm' ),
+					__( 'Restored to revision from %s', 'atlantes_domain_adm' ),
 						wp_post_revision_title( (int) $_GET['revision'], false )
 					) ) : ( false ),
-				6  => __( 'Published.', 'lespaul_domain_adm' ),
-				7  => __( 'Saved.', 'lespaul_domain_adm' ),
-				8  => __( 'Submitted.', 'lespaul_domain_adm' ),
+				6  => __( 'Published.', 'atlantes_domain_adm' ),
+				7  => __( 'Saved.', 'atlantes_domain_adm' ),
+				8  => __( 'Submitted.', 'atlantes_domain_adm' ),
 				9  => sprintf(
-					__( 'Scheduled for: <strong>%s</strong>.', 'lespaul_domain_adm' ),
+					__( 'Scheduled for: <strong>%s</strong>.', 'atlantes_domain_adm' ),
 						get_the_date() . ', ' . get_the_time()
 					),
-				10 => __( 'Draft updated.', 'lespaul_domain_adm' ),
+				10 => __( 'Draft updated.', 'atlantes_domain_adm' ),
 				);
 
 			return $messages;
@@ -148,12 +148,12 @@
 			$wm_logosCols = array(
 				//standard columns
 				"cb"                 => '<input type="checkbox" />',
-				$prefix . "thumb"    => __( 'Logo', 'lespaul_domain_adm' ),
-				"title"              => __( 'Nome', 'lespaul_domain_adm' ),
-				$prefix . "category" => __( 'Categoria', 'lespaul_domain_adm' ),
-				$prefix . "link"     => __( 'link Personalizado', 'lespaul_domain_adm' ),
-				"date"               => __( 'Data', 'lespaul_domain_adm' ),
-				"author"             => __( 'Criado por', 'lespaul_domain_adm' )
+				$prefix . "thumb"    => __( 'Logo', 'atlantes_domain_adm' ),
+				"title"              => __( 'Nome', 'atlantes_domain_adm' ),
+				$prefix . "category" => __( 'Categoria', 'atlantes_domain_adm' ),
+				$prefix . "link"     => __( 'link Personalizado', 'atlantes_domain_adm' ),
+				"date"               => __( 'Data', 'atlantes_domain_adm' ),
+				"author"             => __( 'Criado por', 'atlantes_domain_adm' )
 			);
 
 			return $wm_logosCols;
@@ -177,7 +177,7 @@
 				case $prefix . "thumb":
 
 					$size  = explode( 'x', WM_ADMIN_LIST_THUMB );
-					//$image = ( has_post_thumbnail() ) ? ( get_the_post_thumbnail( null, 'widget' ) ) : ( '<img src="' . WM_ASSETS_ADMIN . 'img/no-thumb.png" alt="' . __( 'No image', 'lespaul_domain_adm' ) . '" title="' . __( 'No image', 'lespaul_domain_adm' ) . '" />' );
+					//$image = ( has_post_thumbnail() ) ? ( get_the_post_thumbnail( null, 'widget' ) ) : ( '<img src="' . WM_ASSETS_ADMIN . 'img/no-thumb.png" alt="' . __( 'No image', 'atlantes_domain_adm' ) . '" title="' . __( 'No image', 'atlantes_domain_adm' ) . '" />' );
 					$image = ( wm_meta_option( $prefixMeta . $width . $height. 'logo' ) ) ? ( '<img src="' . esc_url( wm_meta_option( $prefixMeta . $width . $height. 'logo' ) ) . '" alt="" />' ) : ( '' );
 
 					$hasThumb = ( $image ) ? ( ' has-thumb' ) : ( ' no-thumb' );

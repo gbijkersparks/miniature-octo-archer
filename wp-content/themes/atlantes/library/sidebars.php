@@ -66,7 +66,7 @@
 	$widgetAreasCustom      = array();
 	$sidebarArraysCheck     = array();
 	$widgetAreasCustomNames = wm_option( 'widgets-sidebars' );
-	$sidebarDescription     = sprintf( __( 'Custom widget area created in %s admin panel. Flexible layout, maximum 5 widgets (when displayed horizontally).', 'lespaul_domain_adm' ), WM_THEME_NAME );
+	$sidebarDescription     = sprintf( __( 'Custom widget area created in %s admin panel. Flexible layout, maximum 5 widgets (when displayed horizontally).', 'atlantes_domain_adm' ), WM_THEME_NAME );
 
 	if ( is_array( $widgetAreasCustomNames ) && ! empty( $widgetAreasCustomNames ) ) {
 		foreach ( $widgetAreasCustomNames as $sidebarName ) {

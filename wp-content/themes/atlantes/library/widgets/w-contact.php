@@ -42,10 +42,10 @@ class wm_contact_info extends WP_Widget {
 	function __construct() {
 		$id     = 'wm-contact-info';
 		$prefix = ( wm_option( 'branding-panel-no-logo' ) || ! strpos( wm_option( 'branding-panel-logo' ), 'logo-' . WM_THEME_SHORTNAME . '-admin.png' ) ) ? ( '' ) : ( WM_THEME_NAME . ' ' );
-		$name   = '<span>' . $prefix . __( 'Contact', 'lespaul_domain_adm' ) . '</span>';
+		$name   = '<span>' . $prefix . __( 'Contact', 'atlantes_domain_adm' ) . '</span>';
 		$widget_ops = array(
 			'classname'   => 'wm-contact-info',
-			'description' => __( 'Contact information', 'lespaul_domain_adm' )
+			'description' => __( 'Contact information', 'atlantes_domain_adm' )
 			);
 		$control_ops = array();
 
@@ -71,38 +71,38 @@ class wm_contact_info extends WP_Widget {
 
 		//HTML to display widget settings form
 		?>
-		<p class="wm-desc"><?php _e( 'Displays specially styled contact information. JavaScript anti-spam protection will be applied on the email address (also, email will not be displayed when JavaScript is turned off).', 'lespaul_domain_adm' ) ?></p>
+		<p class="wm-desc"><?php _e( 'Displays specially styled contact information. JavaScript anti-spam protection will be applied on the email address (also, email will not be displayed when JavaScript is turned off).', 'atlantes_domain_adm' ) ?></p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'lespaul_domain_adm' ) ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'atlantes_domain_adm' ) ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'name' ); ?>"><?php _e( 'Name:', 'lespaul_domain_adm' ) ?></label>
+			<label for="<?php echo $this->get_field_id( 'name' ); ?>"><?php _e( 'Name:', 'atlantes_domain_adm' ) ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'name' ); ?>" name="<?php echo $this->get_field_name( 'name' ); ?>" type="text" value="<?php echo esc_attr( $name ); ?>" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'address' ); ?>"><?php _e( 'Address:', 'lespaul_domain_adm' ) ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'address' ); ?>"><?php _e( 'Address:', 'atlantes_domain_adm' ) ?></label><br />
 			<textarea cols="50" rows="5" id="<?php echo $this->get_field_id( 'address' ); ?>" name="<?php echo $this->get_field_name( 'address' ); ?>"><?php echo esc_attr( $address ); ?></textarea>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'hours' ); ?>"><?php _e( 'Business hours:', 'lespaul_domain_adm' ) ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'hours' ); ?>"><?php _e( 'Business hours:', 'atlantes_domain_adm' ) ?></label><br />
 			<textarea cols="50" rows="3" id="<?php echo $this->get_field_id( 'hours' ); ?>" name="<?php echo $this->get_field_name( 'hours' ); ?>"><?php echo esc_attr( $hours ); ?></textarea>
-			<small><?php _e( 'Use comma to separate days and times<br />(such as "Friday, 9:00 - 16:00")', 'lespaul_domain_adm' ) ?></small>
+			<small><?php _e( 'Use comma to separate days and times<br />(such as "Friday, 9:00 - 16:00")', 'atlantes_domain_adm' ) ?></small>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'phone' ); ?>"><?php _e( 'Phone number:', 'lespaul_domain_adm' ) ?></label>
+			<label for="<?php echo $this->get_field_id( 'phone' ); ?>"><?php _e( 'Phone number:', 'atlantes_domain_adm' ) ?></label>
 			<textarea cols="50" rows="2" id="<?php echo $this->get_field_id( 'phone' ); ?>" name="<?php echo $this->get_field_name( 'phone' ); ?>"><?php echo esc_attr( $phone ); ?></textarea>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'email' ); ?>"><?php _e( 'Email address:', 'lespaul_domain_adm' ) ?></label>
+			<label for="<?php echo $this->get_field_id( 'email' ); ?>"><?php _e( 'Email address:', 'atlantes_domain_adm' ) ?></label>
 			<textarea cols="50" rows="2" id="<?php echo $this->get_field_id( 'email' ); ?>" name="<?php echo $this->get_field_name( 'email' ); ?>"><?php echo esc_attr( $email ); ?></textarea>
-			<small><?php _e( 'JavaScript anti-spam protection applied', 'lespaul_domain_adm' ); ?></small>
+			<small><?php _e( 'JavaScript anti-spam protection applied', 'atlantes_domain_adm' ); ?></small>
 		</p>
 		<?php
 	} // /form

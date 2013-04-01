@@ -193,7 +193,7 @@
 			$args = wp_parse_args( $args, array(
 					'all'          => true, //whether to display "all" option
 					'allCountPost' => 'post', //post type to count posts for "all" option, if left empty, the posts count will not be displayed
-					'allText'      => __( 'All posts', 'lespaul_domain_adm' ), //"all" option text
+					'allText'      => __( 'All posts', 'atlantes_domain_adm' ), //"all" option text
 					'hierarchical' => '1', //whether taxonomy is hierarchical
 					'orderBy'      => 'name', //in which order the taxonomy titles should appear
 					'parentsOnly'  => false, //will return only parent (highest level) categories
@@ -241,7 +241,7 @@
 		function wm_pages( $return = 'post_name' ) {
 			$pages       = get_pages();
 			$outArray    = array();
-			$outArray[0] = __( '- Select page -', 'lespaul_domain_adm' );
+			$outArray[0] = __( '- Select page -', 'atlantes_domain_adm' );
 
 			foreach ( $pages as $page ) {
 				$indents = $pagePath = '';
@@ -278,7 +278,7 @@
 			global $wp_registered_sidebars;
 
 			$outArray     = array();
-			$outArray[''] = __( '- Select area -', 'lespaul_domain_adm' );
+			$outArray[''] = __( '- Select area -', 'atlantes_domain_adm' );
 
 			foreach ( $wp_registered_sidebars as $area ) {
 				$outArray[ $area['id'] ] = $area['name'];
@@ -348,7 +348,7 @@
 			//empty item
 			$filesArray = array(
 				array(
-					'name' => __( '- None -', 'lespaul_domain_adm' ),
+					'name' => __( '- None -', 'atlantes_domain_adm' ),
 					'id'   => '',
 					'img'  => ''
 				)
@@ -399,19 +399,19 @@
 				'fields'  => array( 'user_login', 'display_name' ) //get user login and display name only
 			) );
 
-			$outArray[''] = __( '&mdash; Select user or user group &mdash;', 'lespaul_domain_adm' );
+			$outArray[''] = __( '&mdash; Select user or user group &mdash;', 'atlantes_domain_adm' );
 
-			$outArray['1OPTGROUP'] = __( 'User groups', 'lespaul_domain_adm' );
+			$outArray['1OPTGROUP'] = __( 'User groups', 'atlantes_domain_adm' );
 				//group-CAPABILITY
-				$outArray['group-read']          = __( 'Subscribers', 'lespaul_domain_adm' );
-				$outArray['group-edit_posts']    = __( 'Contributors', 'lespaul_domain_adm' );
-				$outArray['group-publish_posts'] = __( 'Authors', 'lespaul_domain_adm' );
-				$outArray['group-publish_pages'] = __( 'Editors', 'lespaul_domain_adm' );
-				$outArray['group-switch_themes'] = __( 'Administrators', 'lespaul_domain_adm' );
+				$outArray['group-read']          = __( 'Subscribers', 'atlantes_domain_adm' );
+				$outArray['group-edit_posts']    = __( 'Contributors', 'atlantes_domain_adm' );
+				$outArray['group-publish_posts'] = __( 'Authors', 'atlantes_domain_adm' );
+				$outArray['group-publish_pages'] = __( 'Editors', 'atlantes_domain_adm' );
+				$outArray['group-switch_themes'] = __( 'Administrators', 'atlantes_domain_adm' );
 			$outArray['1/OPTGROUP'] = '';
 
-			$outArray['2OPTGROUP'] = __( 'Users', 'lespaul_domain_adm' );
-				$outArray['-1'] = __( '&mdash; All users (logged in)', 'lespaul_domain_adm' );
+			$outArray['2OPTGROUP'] = __( 'Users', 'atlantes_domain_adm' );
+				$outArray['-1'] = __( '&mdash; All users (logged in)', 'atlantes_domain_adm' );
 			foreach ( $users as $user ) {
 				$outArray[$user->user_login] = $user->display_name;
 			}
@@ -824,8 +824,8 @@
 	if ( ! function_exists( 'wm_pagination' ) ) {
 		function wm_pagination( $query = null, $args = array() ) {
 			$args = wp_parse_args( $args, array(
-					'label_previous' => __( 'Prev', 'lespaul_domain' ),
-					'label_next'     => __( 'Next', 'lespaul_domain' ),
+					'label_previous' => __( 'Prev', 'atlantes_domain' ),
+					'label_next'     => __( 'Next', 'atlantes_domain' ),
 					'before_output'  => '<div class="pagination clearfix">',
 					'after_output'   => '</div> <!-- /pagination -->',
 					'print'          => true
@@ -900,8 +900,8 @@
 					'separator'        => '&raquo;',
 					'before_output'    => '<div class="breadcrumbs wrap clearfix' . $classContainer . '"><div class="wrap-inner"><div class="twelve pane"><div class="breadcrumbs-container">',
 					'after_output'     => '</div></div></div></div>',
-					'curently_reading' => esc_attr( __( 'Currently viewing "%s"', 'lespaul_domain' ) ),
-					'back_to'          => esc_attr( __( 'Back to homepage', 'lespaul_domain' ) ),
+					'curently_reading' => esc_attr( __( 'Currently viewing "%s"', 'atlantes_domain' ) ),
+					'back_to'          => esc_attr( __( 'Back to homepage', 'atlantes_domain' ) ),
 				) );
 
 			$out = '';
@@ -950,7 +950,7 @@
 			if ( ! is_home() && ! is_front_page() ) {
 			//no front page, nor home (posts list) page
 
-				$out = $args['before_output'] . '<a href="' . home_url() . '" class="home-item" title="' . $args['back_to'] . '">' . __( 'Home', 'lespaul_domain' ) . '</a>' . $separator;
+				$out = $args['before_output'] . '<a href="' . home_url() . '" class="home-item" title="' . $args['back_to'] . '">' . __( 'Home', 'atlantes_domain' ) . '</a>' . $separator;
 
 				if ( is_category() ) {
 				//output single cat name and its parents
@@ -977,27 +977,27 @@
 					$dayname   = get_the_time('l');
 
 					if ( is_year() )
-						$out .= '<span class="current-item" title="' . sprintf( $args['curently_reading'], sprintf( __( 'year %d archive', 'lespaul_domain' ), absint( $year ) ) ) . '">' . sprintf( __( 'Year %d archive', 'lespaul_domain' ), absint( $year ) ) . '</span>';
+						$out .= '<span class="current-item" title="' . sprintf( $args['curently_reading'], sprintf( __( 'year %d archive', 'atlantes_domain' ), absint( $year ) ) ) . '">' . sprintf( __( 'Year %d archive', 'atlantes_domain' ), absint( $year ) ) . '</span>';
 					if ( is_month() )
-						$out .= '<a href="' . get_year_link( $year ) . '">' . $year . '</a>' . $separator . '<span class="current-item">' . sprintf( __( '%s archive', 'lespaul_domain' ), $monthname ) . '</span>';
+						$out .= '<a href="' . get_year_link( $year ) . '">' . $year . '</a>' . $separator . '<span class="current-item">' . sprintf( __( '%s archive', 'atlantes_domain' ), $monthname ) . '</span>';
 					if ( is_day() )
-						$out .= '<a href="' . get_year_link( $year ) . '">' . $year . '</a>' . $separator . '<a href="' . get_month_link( $year, $month ) . '">' . $monthname . '</a>' . $separator . '<span class="current-item" title="' . sprintf( $args['curently_reading'], sprintf( __( 'day %1$d, %2$s archive', 'lespaul_domain' ), $day, $dayname ) ) . '">' . sprintf( __( 'Day %1$d, %2$s archive', 'lespaul_domain' ), $day, $dayname ) . '</span>';
+						$out .= '<a href="' . get_year_link( $year ) . '">' . $year . '</a>' . $separator . '<a href="' . get_month_link( $year, $month ) . '">' . $monthname . '</a>' . $separator . '<span class="current-item" title="' . sprintf( $args['curently_reading'], sprintf( __( 'day %1$d, %2$s archive', 'atlantes_domain' ), $day, $dayname ) ) . '">' . sprintf( __( 'Day %1$d, %2$s archive', 'atlantes_domain' ), $day, $dayname ) . '</span>';
 
 				} elseif ( is_author() ) {
 				//author archives
 
 					$curauth = get_user_by( 'slug', get_query_var( 'author_name' ) );
-					$out .= '<span class="current-item" title="' . sprintf( $args['curently_reading'], sprintf( __( 'posts by %s', 'lespaul_domain' ), $curauth->display_name ) ) . '">' . sprintf( __( 'Posts by <em>%s</em>', 'lespaul_domain' ), $curauth->display_name ) . '</span>';
+					$out .= '<span class="current-item" title="' . sprintf( $args['curently_reading'], sprintf( __( 'posts by %s', 'atlantes_domain' ), $curauth->display_name ) ) . '">' . sprintf( __( 'Posts by <em>%s</em>', 'atlantes_domain' ), $curauth->display_name ) . '</span>';
 
 				} elseif ( is_tag() ) {
 				//tag archives
 
-					$out .= '<span class="current-item" title="' . sprintf( $args['curently_reading'], sprintf( __( '%s tag archive', 'lespaul_domain' ), single_tag_title( '', false ) ) ) . '">' . sprintf( __( '<em>%s</em> tag archive', 'lespaul_domain' ), single_tag_title( '', false ) ) . '</span>';
+					$out .= '<span class="current-item" title="' . sprintf( $args['curently_reading'], sprintf( __( '%s tag archive', 'atlantes_domain' ), single_tag_title( '', false ) ) ) . '">' . sprintf( __( '<em>%s</em> tag archive', 'atlantes_domain' ), single_tag_title( '', false ) ) . '</span>';
 
 				} elseif ( is_search() ) {
 				//search results
 
-					$out .= '<span class="current-item">' . sprintf( __( 'Search results for <em>"%s"</em>', 'lespaul_domain' ), get_search_query() ) . '</span>';
+					$out .= '<span class="current-item">' . sprintf( __( 'Search results for <em>"%s"</em>', 'atlantes_domain' ), get_search_query() ) . '</span>';
 
 				} elseif ( is_single() && ! empty( $cats ) ) {
 				//single post with hierarchical categories
@@ -1051,7 +1051,7 @@
 				} elseif ( is_404() ) {
 				//error 404 page
 
-					$out .= '<span class="current-item">' . __( 'Page not found', 'lespaul_domain' ) . '</span>';
+					$out .= '<span class="current-item">' . __( 'Page not found', 'atlantes_domain' ) . '</span>';
 
 				} elseif ( is_page() ) {
 				//page with hierarchical parent pages
@@ -1066,19 +1066,19 @@
 				} else {
 				//default
 
-					$out .= '<span class="current-item">' . __( 'Archive', 'lespaul_domain' ) . '</span>';
+					$out .= '<span class="current-item">' . __( 'Archive', 'atlantes_domain' ) . '</span>';
 
 				}
 
 			} elseif ( is_home() ) {
 			//home (posts list) page
 
-				//$title = ( wm_option( 'pages-default-archives-title' ) ) ? ( wm_option( 'pages-default-archives-title' ) ) : ( __( 'Archives', 'lespaul_domain' ) );
+				//$title = ( wm_option( 'pages-default-archives-title' ) ) ? ( wm_option( 'pages-default-archives-title' ) ) : ( __( 'Archives', 'atlantes_domain' ) );
 				$title = get_the_title( get_option( 'page_for_posts' ) );
 
 				if ( get_option( 'page_for_posts' ) ) {
 					$out  = $args['before_output'];
-					$out .= '<a href="' . home_url() . '" class="home-item">' . __( 'Home', 'lespaul_domain' ) . '</a>' . $separator . '<span class="current-item">' . $title . '</span>';
+					$out .= '<a href="' . home_url() . '" class="home-item">' . __( 'Home', 'atlantes_domain' ) . '</a>' . $separator . '<span class="current-item">' . $title . '</span>';
 				}
 
 			} elseif ( is_front_page() ) {
@@ -1088,7 +1088,7 @@
 
 				if ( get_option( 'page_on_front' ) ) {
 					$out  = $args['before_output'];
-					$out .= '<a href="' . home_url() . '" class="home-item">' . __( 'Home', 'lespaul_domain' ) . '</a>';
+					$out .= '<a href="' . home_url() . '" class="home-item">' . __( 'Home', 'atlantes_domain' ) . '</a>';
 				}
 
 			}
@@ -1145,7 +1145,7 @@
 			$checkPage = ( wm_check_wp_version( 3.4 ) ) ? ( 'wp-login.php?action=postpass' ) : ( 'wp-pass.php' );
 			$out       = '';
 
-			$out = do_shortcode( '[box color="red" icon="warning"]<form class="protected-post-form" action="' . get_option( 'siteurl' ) . '/' . $checkPage . '" method="post"><h4>' . __( 'Enter password to view the content:', 'lespaul_domain' ) . '</h4><p><input name="post_password" id="' . $label . '" type="password" size="20" /><input type="submit" name="Submit" id="submit" value="' . esc_attr__( 'Submit', 'lespaul_domain' ) . '" /></p></form>[/box]' );
+			$out = do_shortcode( '[box color="red" icon="warning"]<form class="protected-post-form" action="' . get_option( 'siteurl' ) . '/' . $checkPage . '" method="post"><h4>' . __( 'Enter password to view the content:', 'atlantes_domain' ) . '</h4><p><input name="post_password" id="' . $label . '" type="password" size="20" /><input type="submit" name="Submit" id="submit" value="' . esc_attr__( 'Submit', 'atlantes_domain' ) . '" /></p></form>[/box]' );
 
 			return $out;
 		}
@@ -1176,11 +1176,11 @@
 				?>
 				<li class="pingback">
 					<p>
-						<strong><?php _e( 'Pingback:', 'lespaul_domain' ); ?></strong>
+						<strong><?php _e( 'Pingback:', 'atlantes_domain' ); ?></strong>
 						<?php comment_author_link(); ?>
 						<?php
 						if ( get_edit_comment_link() )
-							echo ' | <a href="' . get_edit_comment_link() . '" class="edit-link">' . __( 'Edit', 'lespaul_domain' ) . '</a>';
+							echo ' | <a href="' . get_edit_comment_link() . '" class="edit-link">' . __( 'Edit', 'atlantes_domain' ) . '</a>';
 						?>
 
 					</p>
@@ -1198,15 +1198,15 @@
 								<strong class="author"><?php comment_author_link(); ?></strong><br />
 
 								<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>" class="published-on">
-									<time datetime="<?php echo esc_attr( get_comment_date( 'c' ) ); ?>"><?php printf( __( '%1$s at %2$s', 'lespaul_domain' ), esc_html( get_comment_date() ), esc_html( get_comment_time() ) ); ?></time>
+									<time datetime="<?php echo esc_attr( get_comment_date( 'c' ) ); ?>"><?php printf( __( '%1$s at %2$s', 'atlantes_domain' ), esc_html( get_comment_date() ), esc_html( get_comment_time() ) ); ?></time>
 								</a>
 
 								<?php
 								if ( get_edit_comment_link() )
-									echo ' | <a href="' . get_edit_comment_link() . '" class="comment-edit-link">' . __( 'Edit', 'lespaul_domain' ) . '</a>';
+									echo ' | <a href="' . get_edit_comment_link() . '" class="comment-edit-link">' . __( 'Edit', 'atlantes_domain' ) . '</a>';
 
 								comment_reply_link( array_merge( $args, array(
-									'reply_text' => __( ' | Reply', 'lespaul_domain' ),
+									'reply_text' => __( ' | Reply', 'atlantes_domain' ),
 									'depth'      => $depth,
 									'max_depth'  => $args['max_depth']
 									) ) );
@@ -1216,7 +1216,7 @@
 							<div class="comment-text">
 								<?php
 								if ( '0' == $comment->comment_approved )
-									echo '<p class="awaiting"><em>' . __( 'Your comment is awaiting moderation.', 'lespaul_domain' ) . '</em></p>';
+									echo '<p class="awaiting"><em>' . __( 'Your comment is awaiting moderation.', 'atlantes_domain' ) . '</em></p>';
 
 								comment_text();
 								?>
@@ -1242,7 +1242,7 @@
 			$haveTrackbacks = get_comments( array( 'type' => 'pings' ) );
 
 			if ( ! empty( $haveTrackbacks ) ) {
-				echo '<' . $tag . '>' . __( 'Pingbacks list', 'lespaul_domain' ) . '</' . $tag . '>';
+				echo '<' . $tag . '>' . __( 'Pingbacks list', 'atlantes_domain' ) . '</' . $tag . '>';
 				?>
 				<ol class="commentlist pingbacks">
 					<?php
@@ -1503,7 +1503,7 @@
 							$out .= '<div id="map" class="map"' . $height . '></div>';
 							$out .= '
 								<script><!--
-									var mapName   = "' . __( 'Custom', 'lespaul_domain' ) . '",
+									var mapName   = "' . __( 'Custom', 'atlantes_domain' ) . '",
 									    mapStyle  = "' . wm_meta_option( 'map-style' ) . '",
 									    mapZoom   = ' . absint( wm_meta_option( 'map-zoom' ) ) . ',
 									    mapCoords = ' . $locationsArray . ',
@@ -1515,7 +1515,7 @@
 									    pinBounce = ' . absint( wm_option( 'design-map-bounce-marker' ) ) . ';
 								//--></script>' . "\r\n\r\n";
 						} else {
-							$out .= '<div class="wrap-inner"><div class="twelve pane"><br /><div class="box color-red text-center"><h3>' . __( 'Please, set the map location', 'lespaul_domain' ) . '</h3></div></div></div>';
+							$out .= '<div class="wrap-inner"><div class="twelve pane"><br /><div class="box color-red text-center"><h3>' . __( 'Please, set the map location', 'atlantes_domain' ) . '</h3></div></div></div>';
 						}
 					break;
 
@@ -1565,7 +1565,7 @@
 				$highDPIlogo = ( isset( $logoImage[1]['url'] ) && isset( $logoImage[1]['id'] ) ) ? ( wp_get_attachment_image_src( $logoImage[1]['id'], 'full' ) ) : ( array( '' ) );
 
 				$atts = array(
-						'alt'   => sprintf( __( '%s logo', 'lespaul_domain' ), trim( get_bloginfo( 'name' ) ) ),
+						'alt'   => sprintf( __( '%s logo', 'atlantes_domain' ), trim( get_bloginfo( 'name' ) ) ),
 						'title' => esc_attr( get_bloginfo( 'name' ) . $separator . get_bloginfo( 'description' ) ),
 						'class' => '',
 						'data-highdpi' => ( $highDPIlogo[0] ) ? ( $highDPIlogo[0] ) : ( $logoURL[0] ),
@@ -1574,7 +1574,7 @@
 			} else {
 				$logoURL     = WM_ASSETS_THEME . 'img/branding' . $skin . '/logo-' . WM_THEME_SHORTNAME . '.png';
 				$highDPIlogo = WM_ASSETS_THEME . 'img/branding' . $skin . '/logo-' . WM_THEME_SHORTNAME . '@2x.png';
-				$logoImage   = '<img width="' . $logoSize[0] . '" height="' . $logoSize[1] . '" src="' . $logoURL . '" alt="' . sprintf( __( '%s logo', 'lespaul_domain' ), trim( get_bloginfo( 'name' ) ) ) . '" title="' . get_bloginfo( 'name' ) . $separator . get_bloginfo( 'description' ) . '" data-highdpi="' . $highDPIlogo . '" />';
+				$logoImage   = '<img width="' . $logoSize[0] . '" height="' . $logoSize[1] . '" src="' . $logoURL . '" alt="' . sprintf( __( '%s logo', 'atlantes_domain' ), trim( get_bloginfo( 'name' ) ) ) . '" title="' . get_bloginfo( 'name' ) . $separator . get_bloginfo( 'description' ) . '" data-highdpi="' . $highDPIlogo . '" />';
 			}
 
 			//SEO logo HTML tag
@@ -1658,7 +1658,7 @@
 			</div> <!-- /credits -->
 			<?php
 			if ( $topButton )
-					echo '<a href="#top" class="top-of-page wmicon-up" title="' . __( 'Back to top of page', 'lespaul_domain' ) . '"><span>' . __( 'Back to top', 'lespaul_domain' ) . '</span></a>';
+					echo '<a href="#top" class="top-of-page wmicon-up" title="' . __( 'Back to top of page', 'atlantes_domain' ) . '"><span>' . __( 'Back to top', 'atlantes_domain' ) . '</span></a>';
 		}
 	} // /wm_credits
 
@@ -1692,17 +1692,17 @@
 			if ( is_tag() ) {
 			//tag archive
 
-				$title = sprintf( __( 'Tag archive for "%s"', 'lespaul_domain' ), single_tag_title( '', false ) ) . $sep;
+				$title = sprintf( __( 'Tag archive for "%s"', 'atlantes_domain' ), single_tag_title( '', false ) ) . $sep;
 
 			} elseif ( is_search() ) {
 			//search
 
-				$title = sprintf( __( 'Search for "%s"', 'lespaul_domain' ), get_search_query() ) . $sep;
+				$title = sprintf( __( 'Search for "%s"', 'atlantes_domain' ), get_search_query() ) . $sep;
 
 			} elseif ( is_archive() ) {
 			//general archive
 
-				$title = sprintf( __( 'Archive for %s', 'lespaul_domain' ), $title ) . $sep;
+				$title = sprintf( __( 'Archive for %s', 'atlantes_domain' ), $title ) . $sep;
 
 			} elseif ( is_singular() && ! is_404() && ! is_front_page() && ! is_home() ) {
 			//is page or post but not 404, front page nor home page post list
@@ -1712,7 +1712,7 @@
 			} elseif ( is_404() ) {
 			//404 page
 
-				$title = ( wm_option( 'p404-title' ) ) ? ( wm_option( 'p404-title' ) . $sep ) : ( __( 'Web page was not found', 'lespaul_domain' ) . $sep );
+				$title = ( wm_option( 'p404-title' ) ) ? ( wm_option( 'p404-title' ) . $sep ) : ( __( 'Web page was not found', 'atlantes_domain' ) . $sep );
 
 			} elseif ( is_home() && get_option( 'page_for_posts' ) ) {
 			//post page (if set) - get the actual page title
@@ -1729,10 +1729,10 @@
 
 			//paginated
 			if ( 1 < $paged )
-				$title .= sprintf( __( ' (page %s)', 'lespaul_domain' ), $paged );
+				$title .= sprintf( __( ' (page %s)', 'atlantes_domain' ), $paged );
 			//article parts
 			if ( 1 < $page )
-				$title .= sprintf( __( ' (part %s)', 'lespaul_domain' ), $page );
+				$title .= sprintf( __( ' (part %s)', 'atlantes_domain' ), $page );
 
 			return esc_attr( $title );
 		}
@@ -1847,7 +1847,7 @@
 			$headingAlign = ( $headingAlign ) ? ( $headingAlign ) : ( wm_option( 'design-main-heading-alignment' ) );
 
 			if ( is_search() && ! is_home() && ! class_exists( 'Woocommerce' ) )
-				$subheading = sprintf( __( 'Number of items found: %s', 'lespaul_domain' ), $wp_query->found_posts );
+				$subheading = sprintf( __( 'Number of items found: %s', 'atlantes_domain' ), $wp_query->found_posts );
 
 			if ( is_author() && 2 > $paged ) {
 				$userID = $wp_query->query_vars['author'];
@@ -1857,17 +1857,17 @@
 				if ( $authorDescription ) {
 					$authorDescription = '<div class="desc">' . $authorDescription . '</div>';
 
-					$authorWebsite = ( get_the_author_meta( 'user_url', $userID ) ) ? ( '<div class="website"><a href="' . esc_url( get_the_author_meta( 'user_url', $userID ) ) . '">' . __( "Visit author's website", 'lespaul_domain' ) . '</a></div>' ) : ( '' );
+					$authorWebsite = ( get_the_author_meta( 'user_url', $userID ) ) ? ( '<div class="website"><a href="' . esc_url( get_the_author_meta( 'user_url', $userID ) ) . '">' . __( "Visit author's website", 'atlantes_domain' ) . '</a></div>' ) : ( '' );
 					$authorAvatar  = get_avatar( $userID, 180 );
 					$authorName    = get_the_author_meta( 'display_name', $userID );
 
 					$authorSocial = array();
 					if ( get_the_author_meta( 'facebook', $userID ) )
-						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'facebook', $userID ) ) . '" icon="Facebook" title="' . sprintf( __( '%s on Facebook', 'lespaul_domain' ), $authorName ) . '" size="m"]';
+						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'facebook', $userID ) ) . '" icon="Facebook" title="' . sprintf( __( '%s on Facebook', 'atlantes_domain' ), $authorName ) . '" size="m"]';
 					if ( get_the_author_meta( 'googleplus', $userID ) )
-						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'googleplus', $userID ) ) . '" icon="Google+" title="' . sprintf( __( '%s on Google+', 'lespaul_domain' ), $authorName ) . '" size="m" rel="me"]';
+						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'googleplus', $userID ) ) . '" icon="Google+" title="' . sprintf( __( '%s on Google+', 'atlantes_domain' ), $authorName ) . '" size="m" rel="me"]';
 					if ( get_the_author_meta( 'twitter', $userID ) )
-						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'twitter', $userID ) ) . '" icon="Twitter" title="' . sprintf( __( '%s on Twitter', 'lespaul_domain' ), $authorName ) . '" size="m"]';
+						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'twitter', $userID ) ) . '" icon="Twitter" title="' . sprintf( __( '%s on Twitter', 'atlantes_domain' ), $authorName ) . '" size="m"]';
 					$authorSocial = ( ! empty( $authorSocial ) ) ? ( '<div class="socials">' . implode( ' ', $authorSocial ) . '</div>' ) : ( '' );
 
 					$authorInfo = apply_filters( 'wm_default_content_filters', $authorAvatar . $authorDescription . $authorWebsite . $authorSocial );
@@ -1875,7 +1875,7 @@
 			}
 
 			if ( is_attachment() && ! empty( $post->post_parent ) )
-				$subheading = '<a href="' . get_permalink( $post->post_parent ) . '" title="' . esc_attr( sprintf( __( 'Return to %s', 'lespaul_domain' ), strip_tags( get_the_title( $post->post_parent ) ) ) ) . '">&laquo; ' . get_the_title( $post->post_parent ) . '</a>';
+				$subheading = '<a href="' . get_permalink( $post->post_parent ) . '" title="' . esc_attr( sprintf( __( 'Return to %s', 'atlantes_domain' ), strip_tags( get_the_title( $post->post_parent ) ) ) ) . '">&laquo; ' . get_the_title( $post->post_parent ) . '</a>';
 
 			//List title
 			if ( isset( $list ) && $list ) {
@@ -1888,7 +1888,7 @@
 
 				$titleSticky = '';
 				if ( is_sticky() )
-					$titleSticky = ' title="' . __( 'This is featured post', 'lespaul_domain' ) . '"';
+					$titleSticky = ' title="' . __( 'This is featured post', 'atlantes_domain' ) . '"';
 
 				$output =  ( $out ) ? ( '<h2 class="post-title"' . $titleSticky . '>' . $out . '</h2>' ) : ( '' );
 
@@ -1911,39 +1911,39 @@
 			} elseif ( is_day() ) {
 			//dayly archives
 
-				$out .= sprintf( __( 'Daily Archives: <span>%s</span>', 'lespaul_domain' ), get_the_date() );
+				$out .= sprintf( __( 'Daily Archives: <span>%s</span>', 'atlantes_domain' ), get_the_date() );
 
 			} elseif ( is_month() ) {
 			//monthly archives
 
-				$out .= sprintf( __( 'Monthly Archives: <span>%s</span>', 'lespaul_domain' ), get_the_date( 'F Y' ) );
+				$out .= sprintf( __( 'Monthly Archives: <span>%s</span>', 'atlantes_domain' ), get_the_date( 'F Y' ) );
 
 			} elseif ( is_year() ) {
 			//yearly archives
 
-				$out .= sprintf( __( 'Yearly Archives: <span>%s</span>', 'lespaul_domain' ), get_the_date( 'Y' ) );
+				$out .= sprintf( __( 'Yearly Archives: <span>%s</span>', 'atlantes_domain' ), get_the_date( 'Y' ) );
 
 			} elseif ( is_author() ) {
 			//author archive
 
 				$userID = $wp_query->query_vars['author'];
 
-				$out .= sprintf( __( 'Posts by <span>%s</span>', 'lespaul_domain' ), get_the_author_meta( 'display_name', $userID ) );
+				$out .= sprintf( __( 'Posts by <span>%s</span>', 'atlantes_domain' ), get_the_author_meta( 'display_name', $userID ) );
 
 			} elseif ( is_category() ) {
 			//category archive
 
-				$out .= sprintf( __( 'Posts in <span>%s</span> Category', 'lespaul_domain' ), single_cat_title( '', false ) );
+				$out .= sprintf( __( 'Posts in <span>%s</span> Category', 'atlantes_domain' ), single_cat_title( '', false ) );
 
 			} elseif ( is_tag() ) {
 			//tag archive
 
-				$out .= sprintf( __( 'Posts Tagged "<span>%s</span>"', 'lespaul_domain' ), single_tag_title( '', false ) );
+				$out .= sprintf( __( 'Posts Tagged "<span>%s</span>"', 'atlantes_domain' ), single_tag_title( '', false ) );
 
 			} elseif ( is_search() ) {
 			//search
 
-				$out .= sprintf( __( 'Search results for <span>"%s"</span>', 'lespaul_domain' ), get_search_query() );
+				$out .= sprintf( __( 'Search results for <span>"%s"</span>', 'atlantes_domain' ), get_search_query() );
 
 			} elseif ( is_tax( 'project-category' ) ) {
 			//custom taxonomy
@@ -2161,7 +2161,7 @@
 	*/
 	if ( ! function_exists( 'wm_media_uploader_image_sizes' ) ) {
 		function wm_media_uploader_image_sizes( $sizes ) {
-			$sizes['content-width'] = __( 'Content width', 'lespaul_domain_panel' );
+			$sizes['content-width'] = __( 'Content width', 'atlantes_domain_panel' );
 
 			return $sizes;
 		}
@@ -2191,80 +2191,80 @@
 		function wm_media_filters( $mimes ) {
 			//multimedia
 			$mimes['image/x-icon'] = array(
-					__( 'Icons', 'lespaul_domain_adm' ),
-					__( 'Manage icons', 'lespaul_domain_adm' ),
-					_n_noop( 'Icon <span class="count">(%s)</span>', 'Icons <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'Icons', 'atlantes_domain_adm' ),
+					__( 'Manage icons', 'atlantes_domain_adm' ),
+					_n_noop( 'Icon <span class="count">(%s)</span>', 'Icons <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/x-shockwave-flash'] = array(
-					__( 'SWFs', 'lespaul_domain_adm' ),
-					__( 'Manage SWFs', 'lespaul_domain_adm' ),
-					_n_noop( 'SWF <span class="count">(%s)</span>', 'SWFs <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'SWFs', 'atlantes_domain_adm' ),
+					__( 'Manage SWFs', 'atlantes_domain_adm' ),
+					_n_noop( 'SWF <span class="count">(%s)</span>', 'SWFs <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 
 			//office documents
 			$mimes['application/msword'] = array(
-					__( 'MS Word documents', 'lespaul_domain_adm' ),
-					__( 'Manage MS Word documents', 'lespaul_domain_adm' ),
-					_n_noop( 'MS Word document <span class="count">(%s)</span>', 'MS Word documents <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'MS Word documents', 'atlantes_domain_adm' ),
+					__( 'Manage MS Word documents', 'atlantes_domain_adm' ),
+					_n_noop( 'MS Word document <span class="count">(%s)</span>', 'MS Word documents <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/vnd.ms-excel'] = array(
-					__( 'MS Excel spreadsheets', 'lespaul_domain_adm' ),
-					__( 'Manage MS Excel spreadsheets', 'lespaul_domain_adm' ),
-					_n_noop( 'MS Excel spreadsheet <span class="count">(%s)</span>', 'MS Excel spreadsheets <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'MS Excel spreadsheets', 'atlantes_domain_adm' ),
+					__( 'Manage MS Excel spreadsheets', 'atlantes_domain_adm' ),
+					_n_noop( 'MS Excel spreadsheet <span class="count">(%s)</span>', 'MS Excel spreadsheets <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/vnd.ms-powerpoint'] = array(
-					__( 'MS Powerpoint presentations', 'lespaul_domain_adm' ),
-					__( 'Manage MS Powerpoint presentations', 'lespaul_domain_adm' ),
-					_n_noop( 'MS Powerpoint presentation <span class="count">(%s)</span>', 'MS Powerpoint presentations <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'MS Powerpoint presentations', 'atlantes_domain_adm' ),
+					__( 'Manage MS Powerpoint presentations', 'atlantes_domain_adm' ),
+					_n_noop( 'MS Powerpoint presentation <span class="count">(%s)</span>', 'MS Powerpoint presentations <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/rtf'] = array(
-					__( 'RTFs', 'lespaul_domain_adm' ),
-					__( 'Manage RTFs', 'lespaul_domain_adm' ),
-					_n_noop( 'RTF <span class="count">(%s)</span>', 'RTFs <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'RTFs', 'atlantes_domain_adm' ),
+					__( 'Manage RTFs', 'atlantes_domain_adm' ),
+					_n_noop( 'RTF <span class="count">(%s)</span>', 'RTFs <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/vnd.oasis.opendocument.text'] = array(
-					__( 'ODT documents', 'lespaul_domain_adm' ),
-					__( 'Manage ODT documents', 'lespaul_domain_adm' ),
-					_n_noop( 'ODT document <span class="count">(%s)</span>', 'ODT documents <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'ODT documents', 'atlantes_domain_adm' ),
+					__( 'Manage ODT documents', 'atlantes_domain_adm' ),
+					_n_noop( 'ODT document <span class="count">(%s)</span>', 'ODT documents <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/vnd.oasis.opendocument.spreadsheet'] = array(
-					__( 'ODS spreadsheets', 'lespaul_domain_adm' ),
-					__( 'Manage ODS spreadsheets', 'lespaul_domain_adm' ),
-					_n_noop( 'ODS spreadsheet <span class="count">(%s)</span>', 'ODS spreadsheets <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'ODS spreadsheets', 'atlantes_domain_adm' ),
+					__( 'Manage ODS spreadsheets', 'atlantes_domain_adm' ),
+					_n_noop( 'ODS spreadsheet <span class="count">(%s)</span>', 'ODS spreadsheets <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/vnd.oasis.opendocument.presentation'] = array(
-					__( 'ODP presentations', 'lespaul_domain_adm' ),
-					__( 'Manage ODP presentations', 'lespaul_domain_adm' ),
-					_n_noop( 'ODP presentation <span class="count">(%s)</span>', 'ODP presentations <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'ODP presentations', 'atlantes_domain_adm' ),
+					__( 'Manage ODP presentations', 'atlantes_domain_adm' ),
+					_n_noop( 'ODP presentation <span class="count">(%s)</span>', 'ODP presentations <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 
 			//pdf
 			$mimes['application/pdf'] = array(
-					__( 'PDFs', 'lespaul_domain_adm' ),
-					__( 'Manage PDFs', 'lespaul_domain_adm' ),
-					_n_noop( 'PDF <span class="count">(%s)</span>', 'PDFs <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'PDFs', 'atlantes_domain_adm' ),
+					__( 'Manage PDFs', 'atlantes_domain_adm' ),
+					_n_noop( 'PDF <span class="count">(%s)</span>', 'PDFs <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 
 			//packages
 			$mimes['application/zip'] = array(
-					__( 'ZIPs', 'lespaul_domain_adm' ),
-					__( 'Manage ZIPs', 'lespaul_domain_adm' ),
-					_n_noop( 'ZIP <span class="count">(%s)</span>', 'ZIPs <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'ZIPs', 'atlantes_domain_adm' ),
+					__( 'Manage ZIPs', 'atlantes_domain_adm' ),
+					_n_noop( 'ZIP <span class="count">(%s)</span>', 'ZIPs <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/x-gzip'] = array(
-					__( 'GZIPs', 'lespaul_domain_adm' ),
-					__( 'Manage GZIPs', 'lespaul_domain_adm' ),
-					_n_noop( 'GZIP <span class="count">(%s)</span>', 'GZIPs <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'GZIPs', 'atlantes_domain_adm' ),
+					__( 'Manage GZIPs', 'atlantes_domain_adm' ),
+					_n_noop( 'GZIP <span class="count">(%s)</span>', 'GZIPs <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/rar'] = array(
-					__( 'RARs', 'lespaul_domain_adm' ),
-					__( 'Manage RARs', 'lespaul_domain_adm' ),
-					_n_noop( 'RAR <span class="count">(%s)</span>', 'RARs <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'RARs', 'atlantes_domain_adm' ),
+					__( 'Manage RARs', 'atlantes_domain_adm' ),
+					_n_noop( 'RAR <span class="count">(%s)</span>', 'RARs <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 			$mimes['application/x-msdownload'] = array(
-					__( 'EXEs', 'lespaul_domain_adm' ),
-					__( 'Manage EXEs', 'lespaul_domain_adm' ),
-					_n_noop( 'EXE <span class="count">(%s)</span>', 'EXEs <span class="count">(%s)</span>', 'lespaul_domain_adm' )
+					__( 'EXEs', 'atlantes_domain_adm' ),
+					__( 'Manage EXEs', 'atlantes_domain_adm' ),
+					_n_noop( 'EXE <span class="count">(%s)</span>', 'EXEs <span class="count">(%s)</span>', 'atlantes_domain_adm' )
 				);
 
 			return $mimes;
@@ -2531,7 +2531,7 @@
 			$out = '';
 			if ( $excerpt ) {
 				if ( post_password_required() )
-					$excerpt = '<strong>' . __( 'Password protected', 'lespaul_domain' ) . '</strong>';
+					$excerpt = '<strong>' . __( 'Password protected', 'atlantes_domain' ) . '</strong>';
 				$out .= '<div class="excerpt">';
 				$out .= apply_filters( 'wm_default_content_filters', $excerpt );
 				$out .= '</div>';
@@ -2554,7 +2554,7 @@
 
 				if ( $excerpt && $allowed ) {
 					if ( post_password_required() )
-						$excerpt = '<strong>' . __( 'Password protected', 'lespaul_domain' ) . '</strong>';
+						$excerpt = '<strong>' . __( 'Password protected', 'atlantes_domain' ) . '</strong>';
 
 					echo '<div id="page-excerpt" class="wrap clearfix page-excerpt"><div class="wrap-inner"><div class="twelve pane"><div class="page-excerpt-container clearfix">' . apply_filters( 'wm_default_content_filters', $excerpt ) . '</div></div></div></div>';
 				}
@@ -2621,12 +2621,12 @@
 					if ( has_excerpt() && ! post_password_required() )
 						$out .= '<div class="excerpt">' . apply_filters( 'wm_default_content_filters', get_the_excerpt() ) . '</div>';
 
-					$out .= ( ! post_password_required() ) ? ( apply_filters( 'wm_default_content_filters', get_the_content( '' ) ) ) : ( '<strong>' . __( 'Password protected', 'lespaul_domain' ) . '</strong>' );
+					$out .= ( ! post_password_required() ) ? ( apply_filters( 'wm_default_content_filters', get_the_content( '' ) ) ) : ( '<strong>' . __( 'Password protected', 'atlantes_domain' ) . '</strong>' );
 					$out .= '</div>';
-					$out .= '<p><a href="' . get_permalink() . '#more-' . $post->ID . '" class="more-link">' . __( 'Continue reading &raquo;', 'lespaul_domain' ) . '</a></p>';
+					$out .= '<p><a href="' . get_permalink() . '#more-' . $post->ID . '" class="more-link">' . __( 'Continue reading &raquo;', 'atlantes_domain' ) . '</a></p>';
 				} else {
 					$out .= wm_excerpt( 'wm_excerpt_length_blog', 'wm_excerpt_more' );
-					$out .= '<p><a href="' . get_permalink() . '" class="more-link">' . __( 'Continue reading &raquo;', 'lespaul_domain' ) . '</a></p>';
+					$out .= '<p><a href="' . get_permalink() . '" class="more-link">' . __( 'Continue reading &raquo;', 'atlantes_domain' ) . '</a></p>';
 				}
 			}
 
@@ -2644,7 +2644,7 @@
 	*/
 	if ( ! function_exists( 'wm_more' ) ) {
 		function wm_more( $class = 'more-link', $print = null ) {
-			$out = '<a href="' . get_permalink() . '" class="' . $class . '">' . __( 'Read more &raquo;', 'lespaul_domain' ) . '</a>';
+			$out = '<a href="' . get_permalink() . '" class="' . $class . '">' . __( 'Read more &raquo;', 'atlantes_domain' ) . '</a>';
 
 			if ( $print )
 				echo $out;
@@ -2683,19 +2683,19 @@
 						case 'permalink':
 
 							if ( ! wm_option( 'blog-disable-permalink' ) )
-								$out .= '<span class="permalink meta-item"><a href="' . get_permalink() . '" title="' . esc_attr( sprintf( __( 'Permalink to %s', 'lespaul_domain' ), the_title_attribute( 'echo=0' ) ) ) . '" rel="bookmark"><span>' . get_the_title() . '</span></a></span>';
+								$out .= '<span class="permalink meta-item"><a href="' . get_permalink() . '" title="' . esc_attr( sprintf( __( 'Permalink to %s', 'atlantes_domain' ), the_title_attribute( 'echo=0' ) ) ) . '" rel="bookmark"><span>' . get_the_title() . '</span></a></span>';
 
 						break;
 						case 'author':
 
 							if ( ! wm_option( 'blog-disable-author' ) )
-								$out .= '<span class="author vcard meta-item">' . sprintf( __( 'By %s', 'lespaul_domain' ), '<a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author">' . get_the_author() . '</a>' ) . '</span>';
+								$out .= '<span class="author vcard meta-item">' . sprintf( __( 'By %s', 'atlantes_domain' ), '<a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '" rel="author">' . get_the_author() . '</a>' ) . '</span>';
 
 						break;
 						case 'cats':
 
 							if ( ! wm_option( 'blog-disable-cats' ) )
-								$out .= ( get_the_category_list( '' ) ) ? ( '<span class="categories meta-item">' . sprintf( __( 'In %s', 'lespaul_domain' ), get_the_category_list( ', ' ) ) . '</span>' ) : ( '' );
+								$out .= ( get_the_category_list( '' ) ) ? ( '<span class="categories meta-item">' . sprintf( __( 'In %s', 'atlantes_domain' ), get_the_category_list( ', ' ) ) . '</span>' ) : ( '' );
 
 						break;
 						case 'comments':
@@ -2704,7 +2704,7 @@
 							//comments displayed only when enabled by admin panel AND if the post has comments eventhough commenting disabled for the post now
 
 								$elementId = ( get_comments_number() ) ? ( '#comments' ) : ( '#respond' );
-								$out      .= '<span class="comments meta-item"><a href="' . get_permalink() . $elementId . '">' . sprintf( __( 'Comments: %s', 'lespaul_domain' ), '<span class="comments-count" title="' . get_comments_number() . '">' . get_comments_number() . '</span>' ) . '</a></span>';
+								$out      .= '<span class="comments meta-item"><a href="' . get_permalink() . $elementId . '">' . sprintf( __( 'Comments: %s', 'atlantes_domain' ), '<span class="comments-count" title="' . get_comments_number() . '">' . get_comments_number() . '</span>' ) . '</a></span>';
 							}
 
 						break;
@@ -2717,7 +2717,7 @@
 						case 'tags':
 
 							if ( ! wm_option( 'blog-disable-tags' ) )
-								$out .= ( get_the_tag_list( '', '', '' ) ) ? ( '<span class="tags meta-item">' . sprintf( __( '<strong>Tags:</strong> %s', 'lespaul_domain' ), get_the_tag_list( '', ', ', '' ) ) . '</span>' ) : ( '' );
+								$out .= ( get_the_tag_list( '', '', '' ) ) ? ( '<span class="tags meta-item">' . sprintf( __( '<strong>Tags:</strong> %s', 'atlantes_domain' ), get_the_tag_list( '', ', ', '' ) ) . '</span>' ) : ( '' );
 
 						break;
 						default:
@@ -2746,7 +2746,7 @@
 				'before'         => '<p class="pagination post">',
 				'after'          => '</p>',
 				'next_or_number' => 'number',
-				'pagelink'       => '<span class="page-numbers">' . __( 'Part %', 'lespaul_domain' ) . '</span>',
+				'pagelink'       => '<span class="page-numbers">' . __( 'Part %', 'atlantes_domain' ) . '</span>',
 			) );
 		}
 	} // /wm_post_parts
@@ -2774,7 +2774,7 @@
 				$authorDescription = explode( '<!--more-->', $authorDescription ); //allows using WordPress more tag to display short description on single posts and full info on author archives pages
 
 				$authorName     = get_the_author_meta( 'display_name' );
-				$authorWebsite  = ( get_the_author_meta( 'user_url' ) ) ? ( ' <small><a href="' . esc_url( get_the_author_meta( 'user_url' ) ) . '">' . __( "Visit author's website", 'lespaul_domain' ) . '</a></small>' ) : ( '' );
+				$authorWebsite  = ( get_the_author_meta( 'user_url' ) ) ? ( ' <small><a href="' . esc_url( get_the_author_meta( 'user_url' ) ) . '">' . __( "Visit author's website", 'atlantes_domain' ) . '</a></small>' ) : ( '' );
 				$authorPostsUrl = get_author_posts_url( get_the_author_meta( 'ID' ) );
 				$authorAvatar   = get_avatar( get_the_author_meta( 'ID' ), 180 );
 
@@ -2783,13 +2783,13 @@
 
 				$outSocial = array();
 				if ( get_the_author_meta( 'facebook' ) )
-					$outSocial[] = '[social url="' . esc_url( get_the_author_meta( 'facebook' ) ) . '" icon="Facebook" title="' . sprintf( __( '%s on Facebook', 'lespaul_domain' ), $authorName ) . '" size="s"]';
+					$outSocial[] = '[social url="' . esc_url( get_the_author_meta( 'facebook' ) ) . '" icon="Facebook" title="' . sprintf( __( '%s on Facebook', 'atlantes_domain' ), $authorName ) . '" size="s"]';
 				if ( get_the_author_meta( 'googleplus' ) )
-					$outSocial[] = '[social url="' . esc_url( get_the_author_meta( 'googleplus' ) ) . '" icon="Google+" title="' . sprintf( __( '%s on Google+', 'lespaul_domain' ), $authorName ) . '" size="s" rel="me"]';
+					$outSocial[] = '[social url="' . esc_url( get_the_author_meta( 'googleplus' ) ) . '" icon="Google+" title="' . sprintf( __( '%s on Google+', 'atlantes_domain' ), $authorName ) . '" size="s" rel="me"]';
 				if ( get_the_author_meta( 'twitter' ) )
-					$outSocial[] = '[social url="' . esc_url( get_the_author_meta( 'twitter' ) ) . '" icon="Twitter" title="' . sprintf( __( '%s on Twitter', 'lespaul_domain' ), $authorName ) . '" size="s"]';
+					$outSocial[] = '[social url="' . esc_url( get_the_author_meta( 'twitter' ) ) . '" icon="Twitter" title="' . sprintf( __( '%s on Twitter', 'atlantes_domain' ), $authorName ) . '" size="s"]';
 
-				$out .= '<h3 class="mt0"><small>' . __( 'By', 'lespaul_domain' ) . '</small> <a href="' . $authorPostsUrl . '"><strong>' . $authorName . '</strong></a>';
+				$out .= '<h3 class="mt0"><small>' . __( 'By', 'atlantes_domain' ) . '</small> <a href="' . $authorPostsUrl . '"><strong>' . $authorName . '</strong></a>';
 
 				if ( $outSocial )
 					$out .= '<span class="author-social-links">' . implode( ' ', $outSocial ) . $authorWebsite . '</span>';
@@ -2809,7 +2809,7 @@
 						);
 					$authorPosts = new WP_Query( $queryArgs );
 					if ( $authorPosts->have_posts() ) {
-						$out .= '<h5>' . __( 'More from author:', 'lespaul_domain' ) . '</h5>';
+						$out .= '<h5>' . __( 'More from author:', 'atlantes_domain' ) . '</h5>';
 						$out .= '<ul class="posts-by-author">';
 						while ( $authorPosts->have_posts() ) {
 							$authorPosts->the_post();
@@ -2837,7 +2837,7 @@
 	if ( ! function_exists( 'wm_not_found' ) ) {
 		function wm_not_found() {
 			$out  = '<article class="not-found">';
-			$out .= '<h2>' . __( 'No item found', 'lespaul_domain' ) . '</h2>';
+			$out .= '<h2>' . __( 'No item found', 'atlantes_domain' ) . '</h2>';
 			$out .= '</article>';
 
 			echo $out;
@@ -3367,9 +3367,9 @@
 				</div>
 				<form method="get" class="form-search" action="' . home_url( '/' ) . '">
 				<fieldset>
-					<label class="assistive-text invisible">' . __( 'Search for:', 'lespaul_domain' ) . '</label>
+					<label class="assistive-text invisible">' . __( 'Search for:', 'atlantes_domain' ) . '</label>
 					<input type="text" class="text" name="s" placeholder="' . wm_option( 'general-search-placeholder' ) . '" />
-					<input type="submit" class="submit" value="' . __( 'Submit', 'lespaul_domain' ) . '" />
+					<input type="submit" class="submit" value="' . __( 'Submit', 'atlantes_domain' ) . '" />
 					<i class="wmicon-search"></i>
 				</fieldset>
 				</form>

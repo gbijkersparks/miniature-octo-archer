@@ -50,21 +50,21 @@
 				array(
 					"type" => "section-open",
 					"section-id" => "general",
-					"title" => __( 'Client info', 'lespaul_domain_adm' )
+					"title" => __( 'Client info', 'atlantes_domain_adm' )
 				),
 					array(
 						"type" => "image",
 						"id" => $prefix."logo",
-						"label" => __( 'Logo', 'lespaul_domain_adm' ),
-						"desc" => __( 'Logo image URL. Keep the logo images constant aspect ratio to display correctly in Logos shortcode.', 'lespaul_domain_adm' ),
+						"label" => __( 'Logo', 'atlantes_domain_adm' ),
+						"desc" => __( 'Logo image URL. Keep the logo images constant aspect ratio to display correctly in Logos shortcode.', 'atlantes_domain_adm' ),
 						"default" => "",
 						"imgsize" => 'full'
 					),
 					array(
 						"type" => "text",
 						"id" => $prefix."link",
-						"label" => __( "Custom link URL", 'lespaul_domain_adm' ),
-						"desc" => __( 'When left blank, no link will be applied', 'lespaul_domain_adm' ),
+						"label" => __( "Custom link URL", 'atlantes_domain_adm' ),
+						"desc" => __( 'When left blank, no link will be applied', 'atlantes_domain_adm' ),
 						"validate" => "url"
 					),
 				array(
@@ -143,7 +143,7 @@
 	*/
 	if ( ! function_exists( 'wm_logos_cp_admin_box' ) ) {
 		function wm_logos_cp_admin_box() {
-			add_meta_box( 'wm-metabox-wm_logos-meta', __( 'Logo info', 'lespaul_domain_adm' ), 'wm_logos_cp_meta_options', 'wm_logos', 'normal', 'high' );
+			add_meta_box( 'wm-metabox-wm_logos-meta', __( 'Logo info', 'atlantes_domain_adm' ), 'wm_logos_cp_meta_options', 'wm_logos', 'normal', 'high' );
 		}
 	} // /wm_logos_cp_admin_box
 

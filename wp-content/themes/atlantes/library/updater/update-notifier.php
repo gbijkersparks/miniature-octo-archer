@@ -75,9 +75,9 @@
 			if ( (float) $latestVersion > (float) $installedVersion ) { //Compare current theme version with the remote XML version
 				add_theme_page(
 					//page_title
-					sprintf( __( '%s Theme Updates', 'lespaul_domain_adm' ), WM_THEME_NAME ),
+					sprintf( __( '%s Theme Updates', 'atlantes_domain_adm' ), WM_THEME_NAME ),
 					//menu_title
-					__( 'Theme Updates', 'lespaul_domain_adm' ) . ' <span class="update-plugins count-1"><span class="update-count">1</span></span>',
+					__( 'Theme Updates', 'atlantes_domain_adm' ) . ' <span class="update-plugins count-1"><span class="update-count">1</span></span>',
 					//capability
 					'switch_themes',
 					//menu_slug
@@ -132,47 +132,47 @@
 		<div class="wrap update-notifier">
 
 			<div id="icon-tools" class="icon32"></div>
-			<h2><?php printf( __( '<strong>%s</strong> Theme Updates', 'lespaul_domain_adm' ), WM_THEME_NAME ); ?></h2>
+			<h2><?php printf( __( '<strong>%s</strong> Theme Updates', 'atlantes_domain_adm' ), WM_THEME_NAME ); ?></h2>
 
 			<br />
 
 			<div id="message" class="updated below-h2">
 				<p>
 				<strong><?php echo $xml->message; ?></strong><br />
-				<?php printf( __( 'You have version %1$s installed. Update to version %2$s.', 'lespaul_domain_adm' ), WM_THEME_VERSION, trim( $xml->latest ) ); ?>
+				<?php printf( __( 'You have version %1$s installed. Update to version %2$s.', 'atlantes_domain_adm' ), WM_THEME_VERSION, trim( $xml->latest ) ); ?>
 				</p>
 			</div>
 
 			<div id="instructions">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/screenshot.png" alt="" class="theme-img" />
 
-				<h3><?php _e( 'Update Download and Instructions', 'lespaul_domain_adm' ); ?></h3>
+				<h3><?php _e( 'Update Download and Instructions', 'atlantes_domain_adm' ); ?></h3>
 
-				<p><?php _e( 'To update the theme, login to <a href="http://www.themeforest.net/" target="_blank">ThemeForest</a>, head over to <strong>downloads section</strong> and re-download the theme like you did when you bought it. Feel free to leave any feedback and rating :)', 'lespaul_domain_adm' ); ?></p>
+				<p><?php _e( 'To update the theme, login to <a href="http://www.themeforest.net/" target="_blank">ThemeForest</a>, head over to <strong>downloads section</strong> and re-download the theme like you did when you bought it. Feel free to leave any feedback and rating :)', 'atlantes_domain_adm' ); ?></p>
 
-				<p><?php _e( 'To install the new updated theme unzipp the zipped theme package file obtained from ThemeForest on your computer. Open the theme package folder and head over to <code>install</code> subfolder where you will find a theme installation ZIP file.', 'lespaul_domain_adm' ); ?></p>
+				<p><?php _e( 'To install the new updated theme unzipp the zipped theme package file obtained from ThemeForest on your computer. Open the theme package folder and head over to <code>install</code> subfolder where you will find a theme installation ZIP file.', 'atlantes_domain_adm' ); ?></p>
 
-				<p><?php _e( 'Now use one of these options to update the theme:', 'lespaul_domain_adm' ); ?></p>
+				<p><?php _e( 'Now use one of these options to update the theme:', 'atlantes_domain_adm' ); ?></p>
 
 				<ol>
 					<li>
-						<strong><?php _e( 'Easier, but might take longer time', 'lespaul_domain_adm' ); ?></strong><br />
-						<?php _e( 'Unzip the theme installation ZIP file on your computer. Upload the unzipped theme folder using FTP client to your server (into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code>) overwriting all the current theme files.', 'lespaul_domain_adm' ); ?>
+						<strong><?php _e( 'Easier, but might take longer time', 'atlantes_domain_adm' ); ?></strong><br />
+						<?php _e( 'Unzip the theme installation ZIP file on your computer. Upload the unzipped theme folder using FTP client to your server (into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code>) overwriting all the current theme files.', 'atlantes_domain_adm' ); ?>
 
-						<p class="note"><?php _e( "<strong>Note:</strong> <em>If you didn't make any changes to the theme files, you are free to overwrite files with the new ones without the risk of loosing theme settings, pages, posts, etc, and backwards compatibility is guaranteed. In case you have made changes to the theme files, make sure you have a backup copy of your changes before you overwrite theme files.</em>", 'lespaul_domain_adm' ); ?></p>
+						<p class="note"><?php _e( "<strong>Note:</strong> <em>If you didn't make any changes to the theme files, you are free to overwrite files with the new ones without the risk of loosing theme settings, pages, posts, etc, and backwards compatibility is guaranteed. In case you have made changes to the theme files, make sure you have a backup copy of your changes before you overwrite theme files.</em>", 'atlantes_domain_adm' ); ?></p>
 					</li>
 					<li>
-						<strong><?php _e( 'More advanced', 'lespaul_domain_adm' ); ?></strong><br />
-						<?php printf( __( 'Upload the theme installation ZIP file using FTP client to your server (into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code>). Using your FTP client, rename the old theme folder (for example from %1s to %2s). When the old theme folder is renamed, unzip the theme installation zip file on the server. After checking if the theme works fine, delete the renamed old theme folder from server (or keep it as a backup, but it will take space on your server unnecessarily...).', 'lespaul_domain_adm' ), '<code>' . WM_THEME_SHORTNAME . '</code>', '<code>' . WM_THEME_SHORTNAME . '-old</code>' ); ?>
+						<strong><?php _e( 'More advanced', 'atlantes_domain_adm' ); ?></strong><br />
+						<?php printf( __( 'Upload the theme installation ZIP file using FTP client to your server (into <code>YOUR_WORDPRESS_INSTALLATION/wp-content/themes/</code>). Using your FTP client, rename the old theme folder (for example from %1s to %2s). When the old theme folder is renamed, unzip the theme installation zip file on the server. After checking if the theme works fine, delete the renamed old theme folder from server (or keep it as a backup, but it will take space on your server unnecessarily...).', 'atlantes_domain_adm' ), '<code>' . WM_THEME_SHORTNAME . '</code>', '<code>' . WM_THEME_SHORTNAME . '-old</code>' ); ?>
 					</li>
 				</ol>
 			</div>
 
 			<div id="changelog" class="note">
-				<div class="icon32 icon32-posts-page" id="icon-edit-pages"><br /></div><h2><?php _e( 'Update Changes', 'lespaul_domain_adm' ); ?></h2>
+				<div class="icon32 icon32-posts-page" id="icon-edit-pages"><br /></div><h2><?php _e( 'Update Changes', 'atlantes_domain_adm' ); ?></h2>
 				<?php echo $xml->changelog; ?>
 				<hr />
-				<h3><?php _e( 'Files changed:', 'lespaul_domain_adm' ); ?></h3>
+				<h3><?php _e( 'Files changed:', 'atlantes_domain_adm' ); ?></h3>
 				<code><?php echo str_replace( ', ', '</code><br /><code>', $xml->changefiles ); ?></code>
 			</div>
 		</div>

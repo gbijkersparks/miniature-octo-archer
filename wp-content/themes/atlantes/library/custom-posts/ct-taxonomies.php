@@ -55,15 +55,15 @@
 					'query_var'         => 'project-category',
 					'rewrite'           => array( 'slug' => $slugProjectCategory ),
 					'labels'            => array(
-						'name'          => __( 'Project categories', 'lespaul_domain_adm' ),
-						'singular_name' => __( 'Project category', 'lespaul_domain_adm' ),
-						'search_items'  => __( 'Search categories', 'lespaul_domain_adm' ),
-						'all_items'     => __( 'All categories', 'lespaul_domain_adm' ),
-						'parent_item'   => __( 'Parent category', 'lespaul_domain_adm' ),
-						'edit_item'     => __( 'Edit category', 'lespaul_domain_adm' ),
-						'update_item'   => __( 'Update category', 'lespaul_domain_adm' ),
-						'add_new_item'  => __( 'Add new category', 'lespaul_domain_adm' ),
-						'new_item_name' => __( 'New category title', 'lespaul_domain_adm' )
+						'name'          => __( 'Project categories', 'atlantes_domain_adm' ),
+						'singular_name' => __( 'Project category', 'atlantes_domain_adm' ),
+						'search_items'  => __( 'Search categories', 'atlantes_domain_adm' ),
+						'all_items'     => __( 'All categories', 'atlantes_domain_adm' ),
+						'parent_item'   => __( 'Parent category', 'atlantes_domain_adm' ),
+						'edit_item'     => __( 'Edit category', 'atlantes_domain_adm' ),
+						'update_item'   => __( 'Update category', 'atlantes_domain_adm' ),
+						'add_new_item'  => __( 'Add new category', 'atlantes_domain_adm' ),
+						'new_item_name' => __( 'New category title', 'atlantes_domain_adm' )
 					)
 				) );
 				register_taxonomy( 'project-type', 'wm_projects', array(
@@ -73,15 +73,15 @@
 					'query_var'         => 'project-type',
 					'rewrite'           => array( 'slug' => $slugProjectType ),
 					'labels'            => array(
-						'name'          => __( 'Project types', 'lespaul_domain_adm' ),
-						'singular_name' => __( 'Project type', 'lespaul_domain_adm' ),
-						'search_items'  => __( 'Search types', 'lespaul_domain_adm' ),
-						'all_items'     => __( 'All types', 'lespaul_domain_adm' ),
-						'parent_item'   => __( 'Parent type', 'lespaul_domain_adm' ),
-						'edit_item'     => __( 'Edit type', 'lespaul_domain_adm' ),
-						'update_item'   => __( 'Update type', 'lespaul_domain_adm' ),
-						'add_new_item'  => __( 'Add new type', 'lespaul_domain_adm' ),
-						'new_item_name' => __( 'New type title', 'lespaul_domain_adm' )
+						'name'          => __( 'Project types', 'atlantes_domain_adm' ),
+						'singular_name' => __( 'Project type', 'atlantes_domain_adm' ),
+						'search_items'  => __( 'Search types', 'atlantes_domain_adm' ),
+						'all_items'     => __( 'All types', 'atlantes_domain_adm' ),
+						'parent_item'   => __( 'Parent type', 'atlantes_domain_adm' ),
+						'edit_item'     => __( 'Edit type', 'atlantes_domain_adm' ),
+						'update_item'   => __( 'Update type', 'atlantes_domain_adm' ),
+						'add_new_item'  => __( 'Add new type', 'atlantes_domain_adm' ),
+						'new_item_name' => __( 'New type title', 'atlantes_domain_adm' )
 					)
 				) );
 			}
@@ -95,15 +95,15 @@
 					'query_var'         => 'department',
 					'rewrite'           => array( 'slug' => $slugStaffDepartment ),
 					'labels'            => array(
-						'name'          => __( 'Departments', 'lespaul_domain_adm' ),
-						'singular_name' => __( 'Department', 'lespaul_domain_adm' ),
-						'search_items'  => __( 'Search departments', 'lespaul_domain_adm' ),
-						'all_items'     => __( 'All departments', 'lespaul_domain_adm' ),
-						'parent_item'   => __( 'Parent department', 'lespaul_domain_adm' ),
-						'edit_item'     => __( 'Edit department', 'lespaul_domain_adm' ),
-						'update_item'   => __( 'Update department', 'lespaul_domain_adm' ),
-						'add_new_item'  => __( 'Add new department', 'lespaul_domain_adm' ),
-						'new_item_name' => __( 'New department title', 'lespaul_domain_adm' )
+						'name'          => __( 'Departments', 'atlantes_domain_adm' ),
+						'singular_name' => __( 'Department', 'atlantes_domain_adm' ),
+						'search_items'  => __( 'Search departments', 'atlantes_domain_adm' ),
+						'all_items'     => __( 'All departments', 'atlantes_domain_adm' ),
+						'parent_item'   => __( 'Parent department', 'atlantes_domain_adm' ),
+						'edit_item'     => __( 'Edit department', 'atlantes_domain_adm' ),
+						'update_item'   => __( 'Update department', 'atlantes_domain_adm' ),
+						'add_new_item'  => __( 'Add new department', 'atlantes_domain_adm' ),
+						'new_item_name' => __( 'New department title', 'atlantes_domain_adm' )
 					)
 				) );
 
@@ -116,15 +116,15 @@
 					'query_var'         => 'price-table',
 					'rewrite'           => array( 'slug' => 'price-table' ),
 					'labels'            => array(
-						'name'          => __( 'Price tables', 'lespaul_domain_adm' ),
-						'singular_name' => __( 'Price table', 'lespaul_domain_adm' ),
-						'search_items'  => __( 'Search price table', 'lespaul_domain_adm' ),
-						'all_items'     => __( 'All price tables', 'lespaul_domain_adm' ),
-						'parent_item'   => __( 'Parent price table', 'lespaul_domain_adm' ),
-						'edit_item'     => __( 'Edit price table', 'lespaul_domain_adm' ),
-						'update_item'   => __( 'Update price table', 'lespaul_domain_adm' ),
-						'add_new_item'  => __( 'Add new price table', 'lespaul_domain_adm' ),
-						'new_item_name' => __( 'New price table title', 'lespaul_domain_adm' )
+						'name'          => __( 'Price tables', 'atlantes_domain_adm' ),
+						'singular_name' => __( 'Price table', 'atlantes_domain_adm' ),
+						'search_items'  => __( 'Search price table', 'atlantes_domain_adm' ),
+						'all_items'     => __( 'All price tables', 'atlantes_domain_adm' ),
+						'parent_item'   => __( 'Parent price table', 'atlantes_domain_adm' ),
+						'edit_item'     => __( 'Edit price table', 'atlantes_domain_adm' ),
+						'update_item'   => __( 'Update price table', 'atlantes_domain_adm' ),
+						'add_new_item'  => __( 'Add new price table', 'atlantes_domain_adm' ),
+						'new_item_name' => __( 'New price table title', 'atlantes_domain_adm' )
 					)
 				) );
 
@@ -137,15 +137,15 @@
 					'query_var'         => 'faq-category',
 					'rewrite'           => array( 'slug' => 'faq-category' ),
 					'labels'            => array(
-						'name'          => __( 'FAQ categories', 'lespaul_domain_adm' ),
-						'singular_name' => __( 'FAQ category', 'lespaul_domain_adm' ),
-						'search_items'  => __( 'Search FAQ category', 'lespaul_domain_adm' ),
-						'all_items'     => __( 'All FAQ categories', 'lespaul_domain_adm' ),
-						'parent_item'   => __( 'Parent FAQ category', 'lespaul_domain_adm' ),
-						'edit_item'     => __( 'Edit FAQ category', 'lespaul_domain_adm' ),
-						'update_item'   => __( 'Update FAQ category', 'lespaul_domain_adm' ),
-						'add_new_item'  => __( 'Add new FAQ category', 'lespaul_domain_adm' ),
-						'new_item_name' => __( 'New FAQ category title', 'lespaul_domain_adm' )
+						'name'          => __( 'FAQ categories', 'atlantes_domain_adm' ),
+						'singular_name' => __( 'FAQ category', 'atlantes_domain_adm' ),
+						'search_items'  => __( 'Search FAQ category', 'atlantes_domain_adm' ),
+						'all_items'     => __( 'All FAQ categories', 'atlantes_domain_adm' ),
+						'parent_item'   => __( 'Parent FAQ category', 'atlantes_domain_adm' ),
+						'edit_item'     => __( 'Edit FAQ category', 'atlantes_domain_adm' ),
+						'update_item'   => __( 'Update FAQ category', 'atlantes_domain_adm' ),
+						'add_new_item'  => __( 'Add new FAQ category', 'atlantes_domain_adm' ),
+						'new_item_name' => __( 'New FAQ category title', 'atlantes_domain_adm' )
 					)
 				) );
 
@@ -158,15 +158,15 @@
 					'query_var'         => 'logos-category',
 					'rewrite'           => array( 'slug' => 'logo-category' ),
 					'labels'            => array(
-						'name'          => __( 'Categories', 'lespaul_domain_adm' ),
-						'singular_name' => __( 'Category', 'lespaul_domain_adm' ),
-						'search_items'  => __( 'Search category', 'lespaul_domain_adm' ),
-						'all_items'     => __( 'All categories', 'lespaul_domain_adm' ),
-						'parent_item'   => __( 'Parent category', 'lespaul_domain_adm' ),
-						'edit_item'     => __( 'Edit category', 'lespaul_domain_adm' ),
-						'update_item'   => __( 'Update category', 'lespaul_domain_adm' ),
-						'add_new_item'  => __( 'Add new category', 'lespaul_domain_adm' ),
-						'new_item_name' => __( 'New category title', 'lespaul_domain_adm' )
+						'name'          => __( 'Categories', 'atlantes_domain_adm' ),
+						'singular_name' => __( 'Category', 'atlantes_domain_adm' ),
+						'search_items'  => __( 'Search category', 'atlantes_domain_adm' ),
+						'all_items'     => __( 'All categories', 'atlantes_domain_adm' ),
+						'parent_item'   => __( 'Parent category', 'atlantes_domain_adm' ),
+						'edit_item'     => __( 'Edit category', 'atlantes_domain_adm' ),
+						'update_item'   => __( 'Update category', 'atlantes_domain_adm' ),
+						'add_new_item'  => __( 'Add new category', 'atlantes_domain_adm' ),
+						'new_item_name' => __( 'New category title', 'atlantes_domain_adm' )
 					)
 				) );
 
@@ -178,14 +178,14 @@
 				'query_var'         => 'cmtag',
 				'rewrite'           => array( 'slug' => 'cmtag' ),
 				'labels'            => array(
-					'name'          => __( 'Tags', 'lespaul_domain_adm' ),
-					'singular_name' => __( 'Tag', 'lespaul_domain_adm' ),
-					'search_items'  => __( 'Search tags', 'lespaul_domain_adm' ),
-					'all_items'     => __( 'All tags', 'lespaul_domain_adm' ),
-					'edit_item'     => __( 'Edit tag', 'lespaul_domain_adm' ),
-					'update_item'   => __( 'Update tag', 'lespaul_domain_adm' ),
-					'add_new_item'  => __( 'Add new tag', 'lespaul_domain_adm' ),
-					'new_item_name' => __( 'New tag title', 'lespaul_domain_adm' )
+					'name'          => __( 'Tags', 'atlantes_domain_adm' ),
+					'singular_name' => __( 'Tag', 'atlantes_domain_adm' ),
+					'search_items'  => __( 'Search tags', 'atlantes_domain_adm' ),
+					'all_items'     => __( 'All tags', 'atlantes_domain_adm' ),
+					'edit_item'     => __( 'Edit tag', 'atlantes_domain_adm' ),
+					'update_item'   => __( 'Update tag', 'atlantes_domain_adm' ),
+					'add_new_item'  => __( 'Add new tag', 'atlantes_domain_adm' ),
+					'new_item_name' => __( 'New tag title', 'atlantes_domain_adm' )
 				)
 			) );
 		}

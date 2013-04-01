@@ -42,10 +42,10 @@ class wm_post_list extends WP_Widget {
 	function __construct() {
 		$id     = 'wm-posts-list';
 		$prefix = ( wm_option( 'branding-panel-no-logo' ) || ! strpos( wm_option( 'branding-panel-logo' ), 'logo-' . WM_THEME_SHORTNAME . '-admin.png' ) ) ? ( '' ) : ( WM_THEME_NAME . ' ' );
-		$name   = '<span>' . $prefix . __( 'Posts', 'lespaul_domain_adm' ) . '</span>';
+		$name   = '<span>' . $prefix . __( 'Posts', 'atlantes_domain_adm' ) . '</span>';
 		$widget_ops = array(
 			'classname'   => 'wm-posts-list',
-			'description' => __( 'List of recent, popular, random or upcoming posts with thumbnail images', 'lespaul_domain_adm' )
+			'description' => __( 'List of recent, popular, random or upcoming posts with thumbnail images', 'atlantes_domain_adm' )
 			);
 		$control_ops = array();
 
@@ -71,22 +71,22 @@ class wm_post_list extends WP_Widget {
 
 		//HTML to display widget settings form
 		?>
-		<p class="wm-desc"><?php _e( 'Displays advanced posts list. You can set multiple post categories, just press [CTRL] key and click the category names.', 'lespaul_domain_adm' ) ?><br /><?php _e( 'Please note that this widget does not display Quote and Status post formats.', 'lespaul_domain_adm' ) ?></p>
+		<p class="wm-desc"><?php _e( 'Displays advanced posts list. You can set multiple post categories, just press [CTRL] key and click the category names.', 'atlantes_domain_adm' ) ?><br /><?php _e( 'Please note that this widget does not display Quote and Status post formats.', 'atlantes_domain_adm' ) ?></p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'lespaul_domain_adm' ) ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'atlantes_domain_adm' ) ?></label><br />
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'type' ); ?>"><?php _e( 'List type:', 'lespaul_domain_adm' ); ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'type' ); ?>"><?php _e( 'List type:', 'atlantes_domain_adm' ); ?></label><br />
 			<select class="widefat" name="<?php echo $this->get_field_name( 'type' ); ?>" id="<?php echo $this->get_field_id( 'type' ); ?>">
 				<?php
 				$options = array(
-					'date,DESC,publish'          => __( 'Recent posts', 'lespaul_domain_adm' ),
-					'comment_count,DESC,publish' => __( 'Popular posts', 'lespaul_domain_adm' ),
-					'rand,DESC,publish'          => __( 'Random posts', 'lespaul_domain_adm' ),
-					'date,DESC,future'           => __( 'Upcoming posts', 'lespaul_domain_adm' )
+					'date,DESC,publish'          => __( 'Recent posts', 'atlantes_domain_adm' ),
+					'comment_count,DESC,publish' => __( 'Popular posts', 'atlantes_domain_adm' ),
+					'rand,DESC,publish'          => __( 'Random posts', 'atlantes_domain_adm' ),
+					'date,DESC,future'           => __( 'Upcoming posts', 'atlantes_domain_adm' )
 					);
 				foreach ( $options as $optId => $option ) {
 					?>
@@ -98,7 +98,7 @@ class wm_post_list extends WP_Widget {
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'excerptLength' ); ?>"><?php _e( 'Excerpt length in:', 'lespaul_domain_adm' ); ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'excerptLength' ); ?>"><?php _e( 'Excerpt length in:', 'atlantes_domain_adm' ); ?></label><br />
 			<select class="widefat" name="<?php echo $this->get_field_name( 'excerptLength' ); ?>" id="<?php echo $this->get_field_id( 'excerptLength' ); ?>">
 				<?php
 				$options = array(
@@ -122,7 +122,7 @@ class wm_post_list extends WP_Widget {
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Posts source (category):', 'lespaul_domain_adm' ); ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Posts source (category):', 'atlantes_domain_adm' ); ?></label><br />
 			<select class="widefat" name="<?php echo $this->get_field_name( 'category' ); ?>[]" id="<?php echo $this->get_field_id( 'category' ); ?>" multiple="multiple">
 				<?php
 				$options = wm_tax_array( array( 'return' => 'term_id' ) );
@@ -138,17 +138,17 @@ class wm_post_list extends WP_Widget {
 				}
 				?>
 			</select>
-			<small><?php _e( 'Hold down [CTRL] key for multiselection', 'lespaul_domain_adm' ) ?></small>
+			<small><?php _e( 'Hold down [CTRL] key for multiselection', 'atlantes_domain_adm' ) ?></small>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'count' ); ?>"><?php _e( 'Posts count:', 'lespaul_domain_adm' ) ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'count' ); ?>"><?php _e( 'Posts count:', 'atlantes_domain_adm' ) ?></label><br />
 			<input class="text-center" type="number" id="<?php echo $this->get_field_id( 'count' ); ?>" name="<?php echo $this->get_field_name( 'count' ); ?>" value="<?php echo $count; ?>" size="5" maxlength="2" />
 		</p>
 
 		<p>
 			<input id="<?php echo $this->get_field_id( 'date' ); ?>" name="<?php echo $this->get_field_name( 'date' ); ?>" type="checkbox" <?php checked( $date, 'on' ); ?>/>
-			<label for="<?php echo $this->get_field_id( 'date' ); ?>"><?php _e( 'Disable publish date', 'lespaul_domain_adm' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'date' ); ?>"><?php _e( 'Disable publish date', 'atlantes_domain_adm' ); ?></label>
 		</p>
 		<?php
 	} // /form

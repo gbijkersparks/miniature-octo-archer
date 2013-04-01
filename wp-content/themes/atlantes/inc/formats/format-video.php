@@ -27,7 +27,7 @@ $mediaClasses = ( in_array( $blogLayout, array( ' media-left', ' media-right', '
 	if ( $mediaURL )
 		echo do_shortcode( '[video url="' . esc_url( $mediaURL ) . '" /]' );
 	else
-		echo do_shortcode( '[box color="red" icon="warning"]' . __( 'Please set the video URL address', 'lespaul_domain' ) . '[/box]' );
+		echo do_shortcode( '[box color="red" icon="warning"]' . __( 'Please set the video URL address', 'atlantes_domain' ) . '[/box]' );
 	?>
 </div>
 

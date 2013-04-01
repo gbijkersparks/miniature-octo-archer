@@ -35,7 +35,7 @@ $mediaClasses = ( in_array( $blogLayout, array( ' media-left', ' media-right', '
 	if ( $mediaURL )
 		echo '<div class="audio-container">' . wp_oembed_get( esc_url( $mediaURL ) ) . '</div>';
 	else
-		echo do_shortcode( '[box color="red" icon="warning"]' . __( 'Please set the SoundCloud audio URL address', 'lespaul_domain' ) . '[/box]' );
+		echo do_shortcode( '[box color="red" icon="warning"]' . __( 'Please set the SoundCloud audio URL address', 'atlantes_domain' ) . '[/box]' );
 	?>
 </div>
 

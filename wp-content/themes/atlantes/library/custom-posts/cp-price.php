@@ -67,16 +67,16 @@
 				'menu_icon'           => WM_ASSETS_ADMIN . 'img/icons/custom-posts/ico-price.png',
 				'supports'            => array( 'title', 'editor' ),
 				'labels'              => array(
-					'name'               => __( 'Prices', 'lespaul_domain_adm' ),
-					'singular_name'      => __( 'Price', 'lespaul_domain_adm' ),
-					'add_new'            => __( 'Add new price', 'lespaul_domain_adm' ),
-					'add_new_item'       => __( 'Add new price', 'lespaul_domain_adm' ),
-					'new_item'           => __( 'Add new price', 'lespaul_domain_adm' ),
-					'edit_item'          => __( 'Edit price', 'lespaul_domain_adm' ),
-					'view_item'          => __( 'View price', 'lespaul_domain_adm' ),
-					'search_items'       => __( 'Search price', 'lespaul_domain_adm' ),
-					'not_found'          => __( 'No price found', 'lespaul_domain_adm' ),
-					'not_found_in_trash' => __( 'No price found in trash', 'lespaul_domain_adm' ),
+					'name'               => __( 'Prices', 'atlantes_domain_adm' ),
+					'singular_name'      => __( 'Price', 'atlantes_domain_adm' ),
+					'add_new'            => __( 'Add new price', 'atlantes_domain_adm' ),
+					'add_new_item'       => __( 'Add new price', 'atlantes_domain_adm' ),
+					'new_item'           => __( 'Add new price', 'atlantes_domain_adm' ),
+					'edit_item'          => __( 'Edit price', 'atlantes_domain_adm' ),
+					'view_item'          => __( 'View price', 'atlantes_domain_adm' ),
+					'search_items'       => __( 'Search price', 'atlantes_domain_adm' ),
+					'not_found'          => __( 'No price found', 'atlantes_domain_adm' ),
+					'not_found_in_trash' => __( 'No price found in trash', 'atlantes_domain_adm' ),
 					'parent_item_colon'  => ''
 				)
 			);
@@ -104,22 +104,22 @@
 
 			$messages['wm_price'] = array(
 				0  => '', // Unused. Messages start at index 1.
-				1  => __( 'Updated.', 'lespaul_domain_adm' ),
-				2  => __( 'Custom field updated.', 'lespaul_domain_adm' ),
-				3  => __( 'Custom field deleted.', 'lespaul_domain_adm' ),
-				4  => __( 'Updated.', 'lespaul_domain_adm' ),
+				1  => __( 'Updated.', 'atlantes_domain_adm' ),
+				2  => __( 'Custom field updated.', 'atlantes_domain_adm' ),
+				3  => __( 'Custom field deleted.', 'atlantes_domain_adm' ),
+				4  => __( 'Updated.', 'atlantes_domain_adm' ),
 				5  => ( isset( $_GET['revision'] ) ) ? ( sprintf(
-					__( 'Restored to revision from %s', 'lespaul_domain_adm' ),
+					__( 'Restored to revision from %s', 'atlantes_domain_adm' ),
 						wp_post_revision_title( (int) $_GET['revision'], false )
 					) ) : ( false ),
-				6  => __( 'Published.', 'lespaul_domain_adm' ),
-				7  => __( 'Saved.', 'lespaul_domain_adm' ),
-				8  => __( 'Submitted.', 'lespaul_domain_adm' ),
+				6  => __( 'Published.', 'atlantes_domain_adm' ),
+				7  => __( 'Saved.', 'atlantes_domain_adm' ),
+				8  => __( 'Submitted.', 'atlantes_domain_adm' ),
 				9  => sprintf(
-					__( 'Scheduled for: <strong>%s</strong>.', 'lespaul_domain_adm' ),
+					__( 'Scheduled for: <strong>%s</strong>.', 'atlantes_domain_adm' ),
 						get_the_date() . ', ' . get_the_time()
 					),
-				10 => __( 'Draft updated.', 'lespaul_domain_adm' ),
+				10 => __( 'Draft updated.', 'atlantes_domain_adm' ),
 				);
 
 			return $messages;
@@ -147,14 +147,14 @@
 			$wm_priceCols = array(
 				//standard columns
 				"cb"                 => '<input type="checkbox" />',
-				"title"              => __( 'Price', 'lespaul_domain_adm' ),
-				$prefix . "cost"     => __( 'Cost', 'lespaul_domain_adm' ),
-				$prefix . "featured" => __( 'Featured', 'lespaul_domain_adm' ),
-				$prefix . "color"    => __( 'Color', 'lespaul_domain_adm' ),
-				$prefix . "table"    => __( 'Price table', 'lespaul_domain_adm' ),
-				$prefix . "order"    => __( 'Order', 'lespaul_domain_adm' ),
-				"date"               => __( 'Date', 'lespaul_domain_adm' ),
-				"author"             => __( 'Created by', 'lespaul_domain_adm' )
+				"title"              => __( 'Price', 'atlantes_domain_adm' ),
+				$prefix . "cost"     => __( 'Cost', 'atlantes_domain_adm' ),
+				$prefix . "featured" => __( 'Featured', 'atlantes_domain_adm' ),
+				$prefix . "color"    => __( 'Color', 'atlantes_domain_adm' ),
+				$prefix . "table"    => __( 'Price table', 'atlantes_domain_adm' ),
+				$prefix . "order"    => __( 'Order', 'atlantes_domain_adm' ),
+				"date"               => __( 'Date', 'atlantes_domain_adm' ),
+				"author"             => __( 'Created by', 'atlantes_domain_adm' )
 			);
 
 			return $wm_priceCols;

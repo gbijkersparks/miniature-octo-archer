@@ -55,7 +55,7 @@
 
 			//Get icons
 			$menuIcons = array();
-			$menuIcons[''] = __( '- select icon -', 'lespaul_domain_adm' );
+			$menuIcons[''] = __( '- select icon -', 'atlantes_domain_adm' );
 			foreach ( $fontIcons as $icon ) {
 				$menuIcons[$icon] = ucwords( str_replace( '-', ' ', substr( $icon, 4 ) ) );
 			}
@@ -87,10 +87,10 @@
 			}
 			if ( empty( $projectTypes ) )
 				$projectTypes = array(
-						'static-project' => __( 'Image', 'lespaul_domain_adm' ),
-						'slider-project' => __( 'Slideshow of images', 'lespaul_domain_adm' ),
-						'video-project'  => __( 'Video', 'lespaul_domain_adm' ),
-						'audio-project'  => __( 'Audio', 'lespaul_domain_adm' ),
+						'static-project' => __( 'Image', 'atlantes_domain_adm' ),
+						'slider-project' => __( 'Slideshow of images', 'atlantes_domain_adm' ),
+						'video-project'  => __( 'Video', 'atlantes_domain_adm' ),
+						'audio-project'  => __( 'Audio', 'atlantes_domain_adm' ),
 					);
 
 			//The actual meta fields
@@ -99,23 +99,23 @@
 				array(
 					"type" => "section-open",
 					"section-id" => "featured-media-section",
-					"title" => __( 'Media', 'lespaul_domain_adm' ),
+					"title" => __( 'Media', 'atlantes_domain_adm' ),
 					"exclude" => array()
 				),
 					array(
 						"type" => "box",
 						"content" => '
-							<p>' . __( 'Featured image will be used in projects list so please set this always.', 'lespaul_domain_adm' ) . '</p>
-							<a class="button-primary thickbox button-set-featured-image" href="' . get_admin_url() . 'media-upload.php?post_id=' . $postId . '&tab=library&type=image&TB_iframe=1">' . __( 'Set featured image', 'lespaul_domain_adm' ) . '</a>
-							<a class="button-primary thickbox" href="' . get_admin_url() . 'media-upload.php?post_id=' . $postId . '&type=image&TB_iframe=1">' . __( 'Add/manage project images', 'lespaul_domain_adm' ) . '</a>
+							<p>' . __( 'Featured image will be used in projects list so please set this always.', 'atlantes_domain_adm' ) . '</p>
+							<a class="button-primary thickbox button-set-featured-image" href="' . get_admin_url() . 'media-upload.php?post_id=' . $postId . '&tab=library&type=image&TB_iframe=1">' . __( 'Set featured image', 'atlantes_domain_adm' ) . '</a>
+							<a class="button-primary thickbox" href="' . get_admin_url() . 'media-upload.php?post_id=' . $postId . '&type=image&TB_iframe=1">' . __( 'Add/manage project images', 'atlantes_domain_adm' ) . '</a>
 							',
 					),
 
 					array(
 						"type" => "select",
 						"id" => $prefix."type",
-						"label" => __( 'Project media type', 'lespaul_domain_adm' ),
-						"desc" => __( 'Select a type of project featured media', 'lespaul_domain_adm' ),
+						"label" => __( 'Project media type', 'atlantes_domain_adm' ),
+						"desc" => __( 'Select a type of project featured media', 'atlantes_domain_adm' ),
 						"options" => $projectTypes,
 						"default" => "static"
 					),
@@ -128,8 +128,8 @@
 								),
 							"type" => "image",
 							"id" => $prefix."image",
-							"label" => __( 'Project main image', 'lespaul_domain_adm' ),
-							"desc" => __( 'Used as main project preview image. To upload a new image, press the [+] button and use the Media Uploader as you would be adding an image into post.', 'lespaul_domain_adm' ),
+							"label" => __( 'Project main image', 'atlantes_domain_adm' ),
+							"desc" => __( 'Used as main project preview image. To upload a new image, press the [+] button and use the Media Uploader as you would be adding an image into post.', 'atlantes_domain_adm' ),
 							"default" => "",
 							"readonly" => true,
 							"imgsize" => 'mobile'
@@ -143,8 +143,8 @@
 								),
 							"type" => "patterns",
 							"id" => "slider-gallery-images",
-							"label" => __( 'Slideshow images', 'lespaul_domain_adm' ),
-							"desc" => __( 'Set gallery for this post (upload images below). Note that you need to save/update the post once the images have been uploaded to display them below.', 'lespaul_domain_adm' ) . '<br /><a class="button thickbox" href="' . get_admin_url() . 'media-upload.php?post_id=' . $postId . '&type=image&TB_iframe=1">' . __( 'Add/manage gallery images', 'lespaul_domain_adm' ) . '</a>',
+							"label" => __( 'Slideshow images', 'atlantes_domain_adm' ),
+							"desc" => __( 'Set gallery for this post (upload images below). Note that you need to save/update the post once the images have been uploaded to display them below.', 'atlantes_domain_adm' ) . '<br /><a class="button thickbox" href="' . get_admin_url() . 'media-upload.php?post_id=' . $postId . '&type=image&TB_iframe=1">' . __( 'Add/manage gallery images', 'atlantes_domain_adm' ) . '</a>',
 							"options" => wm_get_post_images(),
 							"hidden" => true
 						),
@@ -155,8 +155,8 @@
 								),
 							"type" => "slider",
 							"id" => $prefix."slider-duration",
-							"label" => __( 'Slide display time', 'lespaul_domain_adm' ),
-							"desc" => __( 'Display duration of single slide (in seconds)', 'lespaul_domain_adm' ),
+							"label" => __( 'Slide display time', 'atlantes_domain_adm' ),
+							"desc" => __( 'Display duration of single slide (in seconds)', 'atlantes_domain_adm' ),
 							"default" => 5,
 							"min" => 1,
 							"max" => 20,
@@ -172,8 +172,8 @@
 								),
 							"type" => "text",
 							"id" => $prefix."video",
-							"label" => __( 'Video URL address', 'lespaul_domain_adm' ),
-							"desc" => sprintf( __( 'Enter full video URL (<a%s>supported video portals</a> and Screenr videos only)', 'lespaul_domain_adm' ), ' href="http://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F" target="_blank"' ). '<br />' . __( 'If you set featured image, it will be used as video cover image. The video starts to play after clicking the image (for Vimeo and YouTube videos only).', 'lespaul_domain_adm' ),
+							"label" => __( 'Video URL address', 'atlantes_domain_adm' ),
+							"desc" => sprintf( __( 'Enter full video URL (<a%s>supported video portals</a> and Screenr videos only)', 'atlantes_domain_adm' ), ' href="http://codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F" target="_blank"' ). '<br />' . __( 'If you set featured image, it will be used as video cover image. The video starts to play after clicking the image (for Vimeo and YouTube videos only).', 'atlantes_domain_adm' ),
 							"validate" => "url"
 						),
 
@@ -185,8 +185,8 @@
 								),
 							"type" => "text",
 							"id" => $prefix."audio",
-							"label" => __( 'SoundCloud audio URL address', 'lespaul_domain_adm' ),
-							"desc" => __( 'Set the <a href="http://www.soundcloud.com" target="_blank">SoundCloud.com</a> audio clip URL address', 'lespaul_domain_adm' ),
+							"label" => __( 'SoundCloud audio URL address', 'atlantes_domain_adm' ),
+							"desc" => __( 'Set the <a href="http://www.soundcloud.com" target="_blank">SoundCloud.com</a> audio clip URL address', 'atlantes_domain_adm' ),
 							"validate" => "url"
 						)
 				);
@@ -202,27 +202,27 @@
 				array(
 					"type" => "section-open",
 					"section-id" => "attributes-settings",
-					"title" => __( 'Attributes', 'lespaul_domain_adm' )
+					"title" => __( 'Attributes', 'atlantes_domain_adm' )
 				),
 					array(
 						"type" => "text",
 						"id" => $prefix."link",
-						"label" => __( 'Project URL link', 'lespaul_domain_adm' ),
-						"desc" => __( 'When left blank, no link will be displayed', 'lespaul_domain_adm' )
+						"label" => __( 'Project URL link', 'atlantes_domain_adm' ),
+						"desc" => __( 'When left blank, no link will be displayed', 'atlantes_domain_adm' )
 					),
 						array(
 							"type" => "select",
 							"id" => $prefix."link-list",
-							"label" => __( 'Link action', 'lespaul_domain_adm' ),
-							"desc" => __( 'Choose how to display/apply the link set above', 'lespaul_domain_adm' ),
+							"label" => __( 'Link action', 'atlantes_domain_adm' ),
+							"desc" => __( 'Choose how to display/apply the link set above', 'atlantes_domain_adm' ),
 							"options" => array(
-									"1OPTGROUP"      => __( 'Project page', 'lespaul_domain_adm' ),
-										""             => __( 'Display link on project page', 'lespaul_domain_adm' ),
+									"1OPTGROUP"      => __( 'Project page', 'atlantes_domain_adm' ),
+										""             => __( 'Display link on project page', 'atlantes_domain_adm' ),
 									"1/OPTGROUP"     => "",
-									"2OPTGROUP"      => __( 'Apply directly in projects list (on portfolio pages)', 'lespaul_domain_adm' ),
-										"modal"        => __( 'Open in popup window (videos and images only)', 'lespaul_domain_adm' ),
-										"target-blank" => __( 'Open in new tab/window', 'lespaul_domain_adm' ),
-										"target-self"  => __( 'Open in same window', 'lespaul_domain_adm' ),
+									"2OPTGROUP"      => __( 'Apply directly in projects list (on portfolio pages)', 'atlantes_domain_adm' ),
+										"modal"        => __( 'Open in popup window (videos and images only)', 'atlantes_domain_adm' ),
+										"target-blank" => __( 'Open in new tab/window', 'atlantes_domain_adm' ),
+										"target-self"  => __( 'Open in same window', 'atlantes_domain_adm' ),
 									"2/OPTGROUP"     => "",
 								),
 							"default" => "",
@@ -234,8 +234,8 @@
 					array(
 						"type" => "additems",
 						"id" => $prefix."attributes",
-						"label" => __( 'Project attributes', 'lespaul_domain_adm' ),
-						"desc" => __( 'Press [+] button to add an attribute, then type in the attribute name and value (you can use <code>[project_attributes title="Project info" /]</code> shortcode to display attributes anywhere in project content or excerpt - by default they will be displayed as first thing above project excerpt - you can set the layout on "General and layout" tab)', 'lespaul_domain_adm' ),
+						"label" => __( 'Project attributes', 'atlantes_domain_adm' ),
+						"desc" => __( 'Press [+] button to add an attribute, then type in the attribute name and value (you can use <code>[project_attributes title="Project info" /]</code> shortcode to display attributes anywhere in project content or excerpt - by default they will be displayed as first thing above project excerpt - you can set the layout on "General and layout" tab)', 'atlantes_domain_adm' ),
 						"default" => $defaultAtts,
 						"field" => "attributes"
 					),
@@ -249,13 +249,13 @@
 				array(
 					"type" => "section-open",
 					"section-id" => "heading",
-					"title" => __( 'Heading', 'lespaul_domain_adm' )
+					"title" => __( 'Heading', 'atlantes_domain_adm' )
 				),
 					array(
 						"type" => "checkbox",
 						"id" => "no-heading",
-						"label" => __( 'Disable main heading', 'lespaul_domain_adm' ),
-						"desc" => __( 'Hides post/page main heading - the title', 'lespaul_domain_adm' ),
+						"label" => __( 'Disable main heading', 'atlantes_domain_adm' ),
+						"desc" => __( 'Hides post/page main heading - the title', 'atlantes_domain_adm' ),
 						"value" => "true"
 					),
 						array(
@@ -264,8 +264,8 @@
 						array(
 							"type" => "textarea",
 							"id" => "subheading",
-							"label" => __( 'Subtitle', 'lespaul_domain_adm' ),
-							"desc" => __( 'If defined, the specially styled subtitle will be displayed', 'lespaul_domain_adm' ),
+							"label" => __( 'Subtitle', 'atlantes_domain_adm' ),
+							"desc" => __( 'If defined, the specially styled subtitle will be displayed', 'atlantes_domain_adm' ),
 							"default" => "",
 							"validate" => "lineBreakHTML",
 							"rows" => 2,
@@ -274,21 +274,21 @@
 						array(
 							"type" => "select",
 							"id" => "main-heading-alignment",
-							"label" => __( 'Main heading alignment', 'lespaul_domain_adm' ),
-							"desc" => __( 'Set the text alignment in main heading area', 'lespaul_domain_adm' ),
+							"label" => __( 'Main heading alignment', 'atlantes_domain_adm' ),
+							"desc" => __( 'Set the text alignment in main heading area', 'atlantes_domain_adm' ),
 							"options" => array(
-									""       => __( 'Default', 'lespaul_domain_adm' ),
-									"left"   => __( 'Left', 'lespaul_domain_adm' ),
-									"center" => __( 'Center', 'lespaul_domain_adm' ),
-									"right"  => __( 'Right', 'lespaul_domain_adm' ),
+									""       => __( 'Default', 'atlantes_domain_adm' ),
+									"left"   => __( 'Left', 'atlantes_domain_adm' ),
+									"center" => __( 'Center', 'atlantes_domain_adm' ),
+									"right"  => __( 'Right', 'atlantes_domain_adm' ),
 								),
 							"default" => ""
 						),
 						array(
 							"type" => "select",
 							"id" => "main-heading-icon",
-							"label" => __( 'Main heading icon', 'lespaul_domain_adm' ),
-							"desc" => __( 'Select an icon to display in main heading area', 'lespaul_domain_adm' ),
+							"label" => __( 'Main heading icon', 'atlantes_domain_adm' ),
+							"desc" => __( 'Select an icon to display in main heading area', 'atlantes_domain_adm' ),
 							"options" => $menuIcons,
 							"icons" => true
 						),
@@ -302,13 +302,13 @@
 				array(
 					"type" => "section-open",
 					"section-id" => "layout",
-					"title" => __( 'Layout', 'lespaul_domain_adm' )
+					"title" => __( 'Layout', 'atlantes_domain_adm' )
 				),
 					array(
 						"type" => "select",
 						"id" => $prefix."single-layout",
-						"label" => __( 'Project page layout', 'lespaul_domain_adm' ),
-						"desc" => __( 'Sets the layout for this project page', 'lespaul_domain_adm' ),
+						"label" => __( 'Project page layout', 'atlantes_domain_adm' ),
+						"desc" => __( 'Sets the layout for this project page', 'atlantes_domain_adm' ),
 						"options" => $projectLayouts,
 						"default" => wm_option( 'general-project-default-layout' ),
 						"optgroups" => true
@@ -316,8 +316,8 @@
 					array(
 						"type" => "checkbox",
 						"id" => "toggle-header-position",
-						"label" => __( 'Toggle header position', 'lespaul_domain_adm' ),
-						"desc" => __( 'Sticks the header to the top when it is not and vice versa', 'lespaul_domain_adm' ),
+						"label" => __( 'Toggle header position', 'atlantes_domain_adm' ),
+						"desc" => __( 'Sticks the header to the top when it is not and vice versa', 'atlantes_domain_adm' ),
 						"value" => "true"
 					)
 			);
@@ -327,8 +327,8 @@
 					array(
 						"type" => "checkbox",
 						"id" => $prefix."no-related",
-						"label" => __( 'Disable related projects', 'lespaul_domain_adm' ),
-						"desc" => __( 'Hides related projects list', 'lespaul_domain_adm' )
+						"label" => __( 'Disable related projects', 'atlantes_domain_adm' ),
+						"desc" => __( 'Hides related projects list', 'atlantes_domain_adm' )
 					)
 				);
 
@@ -337,8 +337,8 @@
 					array(
 						"type" => "checkbox",
 						"id" => "no-above-footer-widgets",
-						"label" => __( 'Disable widgets above footer', 'lespaul_domain_adm' ),
-						"desc" => __( 'Hides widget area above footer', 'lespaul_domain_adm' ),
+						"label" => __( 'Disable widgets above footer', 'atlantes_domain_adm' ),
+						"desc" => __( 'Hides widget area above footer', 'atlantes_domain_adm' ),
 						"value" => "true"
 					)
 				);
@@ -350,16 +350,16 @@
 						array(
 							"type" => "layouts",
 							"id" => "layout",
-							"label" => __( 'Sidebar position', 'lespaul_domain_adm' ),
-							"desc" => __( 'Choose a sidebar position on the post/page (set the first one to use the theme default settings)', 'lespaul_domain_adm' ),
+							"label" => __( 'Sidebar position', 'atlantes_domain_adm' ),
+							"desc" => __( 'Choose a sidebar position on the post/page (set the first one to use the theme default settings)', 'atlantes_domain_adm' ),
 							"options" => $sidebarPosition,
 							"default" => ""
 						),
 						array(
 							"type" => "select",
 							"id" => "sidebar",
-							"label" => __( 'Choose a sidebar', 'lespaul_domain_adm' ),
-							"desc" => __( 'Select a widget area used as a sidebar for this post/page (if not set, the dafault theme settings will apply)', 'lespaul_domain_adm' ),
+							"label" => __( 'Choose a sidebar', 'atlantes_domain_adm' ),
+							"desc" => __( 'Select a widget area used as a sidebar for this post/page (if not set, the dafault theme settings will apply)', 'atlantes_domain_adm' ),
 							"options" => wm_widget_areas(),
 							"default" => ""
 						),
@@ -373,11 +373,11 @@
 				array(
 					"type" => "section-open",
 					"section-id" => "background-settings",
-					"title" => __( 'Backgrounds', 'lespaul_domain_adm' )
+					"title" => __( 'Backgrounds', 'atlantes_domain_adm' )
 				),
 					array(
 						"type" => "heading4",
-						"content" => __( 'Main heading area background', 'lespaul_domain_panel' )
+						"content" => __( 'Main heading area background', 'atlantes_domain_panel' )
 					),
 					array(
 						"id" => $prefix."bg-heading",
@@ -387,8 +387,8 @@
 						array(
 							"type" => "slider",
 							"id" => $prefixBgHeading."padding",
-							"label" => __( 'Section padding', 'lespaul_domain_adm' ),
-							"desc" => __( 'Top and bottom padding size applied on the section (leave zero for default)', 'lespaul_domain_adm' ),
+							"label" => __( 'Section padding', 'atlantes_domain_adm' ),
+							"desc" => __( 'Top and bottom padding size applied on the section (leave zero for default)', 'atlantes_domain_adm' ),
 							"default" => 0,
 							"min" => 1,
 							"max" => 100,
@@ -398,24 +398,24 @@
 						array(
 							"type" => "color",
 							"id" => $prefixBgHeading."color",
-							"label" => __( 'Text color', 'lespaul_domain_adm' ),
-							"desc" => __( 'Sets the custom main heading text color', 'lespaul_domain_adm' ),
+							"label" => __( 'Text color', 'atlantes_domain_adm' ),
+							"desc" => __( 'Sets the custom main heading text color', 'atlantes_domain_adm' ),
 							"default" => "",
 							"validate" => "color"
 						),
 						array(
 							"type" => "color",
 							"id" => $prefixBgHeading."bg-color",
-							"label" => __( 'Background color', 'lespaul_domain_adm' ),
-							"desc" => __( 'Sets the custom main heading background color', 'lespaul_domain_adm' ),
+							"label" => __( 'Background color', 'atlantes_domain_adm' ),
+							"desc" => __( 'Sets the custom main heading background color', 'atlantes_domain_adm' ),
 							"default" => "",
 							"validate" => "color"
 						),
 						array(
 							"type" => "image",
 							"id" => $prefixBgHeading."bg-img-url",
-							"label" => __( 'Custom background image', 'lespaul_domain_adm' ),
-							"desc" => __( 'To upload a new image, press the [+] button and use the Media Uploader as you would be adding an image into post', 'lespaul_domain_adm' ),
+							"label" => __( 'Custom background image', 'atlantes_domain_adm' ),
+							"desc" => __( 'To upload a new image, press the [+] button and use the Media Uploader as you would be adding an image into post', 'atlantes_domain_adm' ),
 							"default" => "",
 							"readonly" => true,
 							"imgsize" => 'mobile'
@@ -423,31 +423,31 @@
 						array(
 							"type" => "select",
 							"id" => $prefixBgHeading."bg-img-position",
-							"label" => __( 'Background image position', 'lespaul_domain_adm' ),
-							"desc" => __( 'Set background image position', 'lespaul_domain_adm' ),
+							"label" => __( 'Background image position', 'atlantes_domain_adm' ),
+							"desc" => __( 'Set background image position', 'atlantes_domain_adm' ),
 							"options" => array(
-								'50% 50%'   => __( 'Center', 'lespaul_domain_adm' ),
-								'50% 0'     => __( 'Center horizontally, top', 'lespaul_domain_adm' ),
-								'50% 100%'  => __( 'Center horizontally, bottom', 'lespaul_domain_adm' ),
-								'0 0'       => __( 'Left, top', 'lespaul_domain_adm' ),
-								'0 50%'     => __( 'Left, center vertically', 'lespaul_domain_adm' ),
-								'0 100%'    => __( 'Left, bottom', 'lespaul_domain_adm' ),
-								'100% 0'    => __( 'Right, top', 'lespaul_domain_adm' ),
-								'100% 50%'  => __( 'Right, center vertically', 'lespaul_domain_adm' ),
-								'100% 100%' => __( 'Right, bottom', 'lespaul_domain_adm' ),
+								'50% 50%'   => __( 'Center', 'atlantes_domain_adm' ),
+								'50% 0'     => __( 'Center horizontally, top', 'atlantes_domain_adm' ),
+								'50% 100%'  => __( 'Center horizontally, bottom', 'atlantes_domain_adm' ),
+								'0 0'       => __( 'Left, top', 'atlantes_domain_adm' ),
+								'0 50%'     => __( 'Left, center vertically', 'atlantes_domain_adm' ),
+								'0 100%'    => __( 'Left, bottom', 'atlantes_domain_adm' ),
+								'100% 0'    => __( 'Right, top', 'atlantes_domain_adm' ),
+								'100% 50%'  => __( 'Right, center vertically', 'atlantes_domain_adm' ),
+								'100% 100%' => __( 'Right, bottom', 'atlantes_domain_adm' ),
 								),
 							"default" => '50% 0'
 						),
 						array(
 							"type" => "select",
 							"id" => $prefixBgHeading."bg-img-repeat",
-							"label" => __( 'Background image repeat', 'lespaul_domain_adm' ),
-							"desc" => __( 'Set background image repeating', 'lespaul_domain_adm' ),
+							"label" => __( 'Background image repeat', 'atlantes_domain_adm' ),
+							"desc" => __( 'Set background image repeating', 'atlantes_domain_adm' ),
 							"options" => array(
-								'no-repeat' => __( 'Do not repeat', 'lespaul_domain_adm' ),
-								'repeat'    => __( 'Repeat', 'lespaul_domain_adm' ),
-								'repeat-x'  => __( 'Repeat horizontally', 'lespaul_domain_adm' ),
-								'repeat-y'  => __( 'Repeat vertically', 'lespaul_domain_adm' )
+								'no-repeat' => __( 'Do not repeat', 'atlantes_domain_adm' ),
+								'repeat'    => __( 'Repeat', 'atlantes_domain_adm' ),
+								'repeat-x'  => __( 'Repeat horizontally', 'atlantes_domain_adm' ),
+								'repeat-y'  => __( 'Repeat vertically', 'atlantes_domain_adm' )
 								),
 							"default" => 'no-repeat'
 						),
@@ -473,7 +473,7 @@
 
 					array(
 						"type" => "heading4",
-						"content" => __( 'Page background', 'lespaul_domain_panel' )
+						"content" => __( 'Page background', 'atlantes_domain_panel' )
 					),
 					array(
 						"id" => $prefix."bg",
@@ -483,16 +483,16 @@
 						array(
 							"type" => "color",
 							"id" => $prefixBg."bg-color",
-							"label" => __( 'Background color', 'lespaul_domain_adm' ),
-							"desc" => __( 'Sets the custom website background color.', 'lespaul_domain_adm' ) . '<br />' . __( 'Please always set this to reset any possible background styles applied on main HTML element.', 'lespaul_domain_adm' ),
+							"label" => __( 'Background color', 'atlantes_domain_adm' ),
+							"desc" => __( 'Sets the custom website background color.', 'atlantes_domain_adm' ) . '<br />' . __( 'Please always set this to reset any possible background styles applied on main HTML element.', 'atlantes_domain_adm' ),
 							"default" => "",
 							"validate" => "color"
 						),
 						array(
 							"type" => "image",
 							"id" => $prefixBg."bg-img-url",
-							"label" => __( 'Custom background image', 'lespaul_domain_adm' ),
-							"desc" => __( 'To upload a new image, press the [+] button and use the Media Uploader as you would be adding an image into post', 'lespaul_domain_adm' ),
+							"label" => __( 'Custom background image', 'atlantes_domain_adm' ),
+							"desc" => __( 'To upload a new image, press the [+] button and use the Media Uploader as you would be adding an image into post', 'atlantes_domain_adm' ),
 							"default" => "",
 							"readonly" => true,
 							"imgsize" => 'mobile'
@@ -500,50 +500,50 @@
 						array(
 							"type" => "select",
 							"id" => $prefixBg."bg-img-position",
-							"label" => __( 'Background image position', 'lespaul_domain_adm' ),
-							"desc" => __( 'Set background image position', 'lespaul_domain_adm' ),
+							"label" => __( 'Background image position', 'atlantes_domain_adm' ),
+							"desc" => __( 'Set background image position', 'atlantes_domain_adm' ),
 							"options" => array(
-								'50% 50%'   => __( 'Center', 'lespaul_domain_adm' ),
-								'50% 0'     => __( 'Center horizontally, top', 'lespaul_domain_adm' ),
-								'50% 100%'  => __( 'Center horizontally, bottom', 'lespaul_domain_adm' ),
-								'0 0'       => __( 'Left, top', 'lespaul_domain_adm' ),
-								'0 50%'     => __( 'Left, center vertically', 'lespaul_domain_adm' ),
-								'0 100%'    => __( 'Left, bottom', 'lespaul_domain_adm' ),
-								'100% 0'    => __( 'Right, top', 'lespaul_domain_adm' ),
-								'100% 50%'  => __( 'Right, center vertically', 'lespaul_domain_adm' ),
-								'100% 100%' => __( 'Right, bottom', 'lespaul_domain_adm' ),
+								'50% 50%'   => __( 'Center', 'atlantes_domain_adm' ),
+								'50% 0'     => __( 'Center horizontally, top', 'atlantes_domain_adm' ),
+								'50% 100%'  => __( 'Center horizontally, bottom', 'atlantes_domain_adm' ),
+								'0 0'       => __( 'Left, top', 'atlantes_domain_adm' ),
+								'0 50%'     => __( 'Left, center vertically', 'atlantes_domain_adm' ),
+								'0 100%'    => __( 'Left, bottom', 'atlantes_domain_adm' ),
+								'100% 0'    => __( 'Right, top', 'atlantes_domain_adm' ),
+								'100% 50%'  => __( 'Right, center vertically', 'atlantes_domain_adm' ),
+								'100% 100%' => __( 'Right, bottom', 'atlantes_domain_adm' ),
 								),
 							"default" => '50% 0'
 						),
 						array(
 							"type" => "select",
 							"id" => $prefixBg."bg-img-repeat",
-							"label" => __( 'Background image repeat', 'lespaul_domain_adm' ),
-							"desc" => __( 'Set background image repeating', 'lespaul_domain_adm' ),
+							"label" => __( 'Background image repeat', 'atlantes_domain_adm' ),
+							"desc" => __( 'Set background image repeating', 'atlantes_domain_adm' ),
 							"options" => array(
-								'no-repeat' => __( 'Do not repeat', 'lespaul_domain_adm' ),
-								'repeat'    => __( 'Repeat', 'lespaul_domain_adm' ),
-								'repeat-x'  => __( 'Repeat horizontally', 'lespaul_domain_adm' ),
-								'repeat-y'  => __( 'Repeat vertically', 'lespaul_domain_adm' )
+								'no-repeat' => __( 'Do not repeat', 'atlantes_domain_adm' ),
+								'repeat'    => __( 'Repeat', 'atlantes_domain_adm' ),
+								'repeat-x'  => __( 'Repeat horizontally', 'atlantes_domain_adm' ),
+								'repeat-y'  => __( 'Repeat vertically', 'atlantes_domain_adm' )
 								),
 							"default" => 'no-repeat'
 						),
 						array(
 							"type" => "radio",
 							"id" => $prefixBg."bg-img-attachment",
-							"label" => __( 'Background image attachment', 'lespaul_domain_adm' ),
-							"desc" => __( 'Set background image attachment', 'lespaul_domain_adm' ),
+							"label" => __( 'Background image attachment', 'atlantes_domain_adm' ),
+							"desc" => __( 'Set background image attachment', 'atlantes_domain_adm' ),
 							"options" => array(
-								'fixed'  => __( 'Fixed position', 'lespaul_domain_adm' ),
-								'scroll' => __( 'Move on scrolling', 'lespaul_domain_adm' )
+								'fixed'  => __( 'Fixed position', 'atlantes_domain_adm' ),
+								'scroll' => __( 'Move on scrolling', 'atlantes_domain_adm' )
 								),
 							"default" => 'fixed'
 						),
 						array(
 							"type" => "checkbox",
 							"id" => $prefixBg."bg-img-fit-window",
-							"label" => __( 'Fit browser window width', 'lespaul_domain_adm' ),
-							"desc" => __( 'Makes the image to scale to browser window width. Note that background image position and repeat options does not apply when this is checked.', 'lespaul_domain_adm' ),
+							"label" => __( 'Fit browser window width', 'atlantes_domain_adm' ),
+							"desc" => __( 'Makes the image to scale to browser window width. Note that background image position and repeat options does not apply when this is checked.', 'atlantes_domain_adm' ),
 							"value" => "true"
 						),
 					array(
@@ -581,7 +581,7 @@
 
 				//Tabs
 				$out .= '<ul class="tabs no-js">';
-				$out .= '<li class="item-0 visual-editor"><a href="#wm-meta-visual-editor">' . __( 'Content', 'lespaul_domain_adm' ) . '</a></li>';
+				$out .= '<li class="item-0 visual-editor"><a href="#wm-meta-visual-editor">' . __( 'Content', 'atlantes_domain_adm' ) . '</a></li>';
 				$i = 0;
 				foreach ( $metaFields as $tab ) {
 					if ( 'section-open' == $tab['type'] ) {
@@ -623,7 +623,7 @@
 			//Content
 			wm_render_form( $metaFields, 'meta' );
 
-			echo '<div class="modal-box"><a class="button-primary" data-action="stay">' . __( 'Wait, I need to save my changes first!', 'lespaul_domain_adm' ) . '</a><a class="button" data-action="leave">' . __( 'OK, leave without saving...', 'lespaul_domain_adm' ) . '</a></div></div> <!-- /wm-wrap -->';
+			echo '<div class="modal-box"><a class="button-primary" data-action="stay">' . __( 'Wait, I need to save my changes first!', 'atlantes_domain_adm' ) . '</a><a class="button" data-action="leave">' . __( 'OK, leave without saving...', 'atlantes_domain_adm' ) . '</a></div></div> <!-- /wm-wrap -->';
 		}
 	} // /wm_projects_metabox_end
 

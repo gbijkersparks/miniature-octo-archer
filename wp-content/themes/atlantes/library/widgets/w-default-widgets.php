@@ -50,14 +50,14 @@ function reg_wm_default_widgets() {
 class wm_WP_Widget_Pages extends WP_Widget {
 
 	function __construct() {
-		$widget_ops = array('classname' => 'widget_pages', 'description' => __( 'Your site&#8217;s WordPress Pages', 'lespaul_domain_adm' ) );
-		parent::__construct('pages', __('Pages', 'lespaul_domain_adm' ), $widget_ops);
+		$widget_ops = array('classname' => 'widget_pages', 'description' => __( 'Your site&#8217;s WordPress Pages', 'atlantes_domain_adm' ) );
+		parent::__construct('pages', __('Pages', 'atlantes_domain_adm' ), $widget_ops);
 	}
 
 	function widget( $args, $instance ) {
 		extract( $args );
 
-		$title = apply_filters('widget_title', empty( $instance['title'] ) ? __( 'Pages', 'lespaul_domain_adm' ) : $instance['title'], $instance, $this->id_base);
+		$title = apply_filters('widget_title', empty( $instance['title'] ) ? __( 'Pages', 'atlantes_domain_adm' ) : $instance['title'], $instance, $this->id_base);
 		$sortby = empty( $instance['sortby'] ) ? 'menu_order' : $instance['sortby'];
 		$exclude = empty( $instance['exclude'] ) ? '' : $instance['exclude'];
 
@@ -107,19 +107,19 @@ class wm_WP_Widget_Pages extends WP_Widget {
 		$title = esc_attr( $instance['title'] );
 		$exclude = esc_attr( $instance['exclude'] );
 	?>
-		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'lespaul_domain_adm' ); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
+		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'atlantes_domain_adm' ); ?></label> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $title; ?>" /></p>
 		<p>
-			<label for="<?php echo $this->get_field_id('sortby'); ?>"><?php _e( 'Sort by:', 'lespaul_domain_adm' ); ?></label>
+			<label for="<?php echo $this->get_field_id('sortby'); ?>"><?php _e( 'Sort by:', 'atlantes_domain_adm' ); ?></label>
 			<select name="<?php echo $this->get_field_name('sortby'); ?>" id="<?php echo $this->get_field_id('sortby'); ?>" class="widefat">
-				<option value="post_title"<?php selected( $instance['sortby'], 'post_title' ); ?>><?php _e('Page title', 'lespaul_domain_adm' ); ?></option>
-				<option value="menu_order"<?php selected( $instance['sortby'], 'menu_order' ); ?>><?php _e('Page order', 'lespaul_domain_adm' ); ?></option>
-				<option value="ID"<?php selected( $instance['sortby'], 'ID' ); ?>><?php _e( 'Page ID', 'lespaul_domain_adm' ); ?></option>
+				<option value="post_title"<?php selected( $instance['sortby'], 'post_title' ); ?>><?php _e('Page title', 'atlantes_domain_adm' ); ?></option>
+				<option value="menu_order"<?php selected( $instance['sortby'], 'menu_order' ); ?>><?php _e('Page order', 'atlantes_domain_adm' ); ?></option>
+				<option value="ID"<?php selected( $instance['sortby'], 'ID' ); ?>><?php _e( 'Page ID', 'atlantes_domain_adm' ); ?></option>
 			</select>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('exclude'); ?>"><?php _e( 'Exclude:', 'lespaul_domain_adm' ); ?></label> <input type="text" value="<?php echo $exclude; ?>" name="<?php echo $this->get_field_name('exclude'); ?>" id="<?php echo $this->get_field_id('exclude'); ?>" class="widefat" />
+			<label for="<?php echo $this->get_field_id('exclude'); ?>"><?php _e( 'Exclude:', 'atlantes_domain_adm' ); ?></label> <input type="text" value="<?php echo $exclude; ?>" name="<?php echo $this->get_field_name('exclude'); ?>" id="<?php echo $this->get_field_id('exclude'); ?>" class="widefat" />
 			<br />
-			<small><?php _e( 'Page IDs, separated by commas.', 'lespaul_domain_adm' ); ?></small>
+			<small><?php _e( 'Page IDs, separated by commas.', 'atlantes_domain_adm' ); ?></small>
 		</p>
 	<?php
 	}
@@ -136,8 +136,8 @@ class wm_WP_Widget_Pages extends WP_Widget {
 class wm_WP_Nav_Menu_Widget extends WP_Widget {
 
 	function __construct() {
-		$widget_ops = array( 'description' => __('Use this widget to add one of your custom menus as a widget.', 'lespaul_domain_adm' ) );
-		parent::__construct( 'nav_menu', __('Custom Menu', 'lespaul_domain_adm' ), $widget_ops );
+		$widget_ops = array( 'description' => __('Use this widget to add one of your custom menus as a widget.', 'atlantes_domain_adm' ) );
+		parent::__construct( 'nav_menu', __('Custom Menu', 'atlantes_domain_adm' ), $widget_ops );
 	}
 
 	function widget($args, $instance) {
@@ -179,16 +179,16 @@ class wm_WP_Nav_Menu_Widget extends WP_Widget {
 
 		// If no menus exists, direct the user to go and create some.
 		if ( !$menus ) {
-			echo '<p>'. sprintf( __('No menus have been created yet. <a href="%s">Create some</a>.', 'lespaul_domain_adm' ), admin_url('nav-menus.php') ) .'</p>';
+			echo '<p>'. sprintf( __('No menus have been created yet. <a href="%s">Create some</a>.', 'atlantes_domain_adm' ), admin_url('nav-menus.php') ) .'</p>';
 			return;
 		}
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'lespaul_domain_adm' ) ?></label>
+			<label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:', 'atlantes_domain_adm' ) ?></label>
 			<input type="text" class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo $title; ?>" />
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('nav_menu'); ?>"><?php _e('Select Menu:', 'lespaul_domain_adm' ); ?></label>
+			<label for="<?php echo $this->get_field_id('nav_menu'); ?>"><?php _e('Select Menu:', 'atlantes_domain_adm' ); ?></label>
 			<select id="<?php echo $this->get_field_id('nav_menu'); ?>" name="<?php echo $this->get_field_name('nav_menu'); ?>">
 		<?php
 			foreach ( $menus as $menu ) {

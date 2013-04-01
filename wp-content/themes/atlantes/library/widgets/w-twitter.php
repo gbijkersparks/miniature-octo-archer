@@ -42,10 +42,10 @@ class wm_twitter extends WP_Widget {
 	function __construct() {
 		$id     = 'wm-twitter';
 		$prefix = ( wm_option( 'branding-panel-no-logo' ) || ! strpos( wm_option( 'branding-panel-logo' ), 'logo-' . WM_THEME_SHORTNAME . '-admin.png' ) ) ? ( '' ) : ( WM_THEME_NAME . ' ' );
-		$name   = '<span>' . $prefix . __( 'Twitter', 'lespaul_domain_adm' ) . '</span>';
+		$name   = '<span>' . $prefix . __( 'Twitter', 'atlantes_domain_adm' ) . '</span>';
 		$widget_ops = array(
 			'classname'   => 'wm-twitter',
-			'description' => __( 'Seus tweets recentes', 'lespaul_domain_adm' )
+			'description' => __( 'Seus tweets recentes', 'atlantes_domain_adm' )
 			);
 		$control_ops = array();
 
@@ -69,26 +69,26 @@ class wm_twitter extends WP_Widget {
 
 		//HTML to display widget settings form
 		?>
-		<p class="wm-desc"><?php _e( 'Exibe tweets recentes da conta do Twitter específico. Também exibe detalhes da conta do Twitter. Tweets são sendo armazenados em cache para reduzir o carregamento da página.', 'lespaul_domain_adm' ) ?></p>
+		<p class="wm-desc"><?php _e( 'Exibe tweets recentes da conta do Twitter específico. Também exibe detalhes da conta do Twitter. Tweets são sendo armazenados em cache para reduzir o carregamento da página.', 'atlantes_domain_adm' ) ?></p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Título:', 'lespaul_domain_adm' ) ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Título:', 'atlantes_domain_adm' ) ?></label><br />
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'username' ); ?>"><?php _e( 'Usuário do Twitter:', 'lespaul_domain_adm' ) ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'username' ); ?>"><?php _e( 'Usuário do Twitter:', 'atlantes_domain_adm' ) ?></label><br />
 			<input class="widefat" id="<?php echo $this->get_field_id( 'username' ); ?>" name="<?php echo $this->get_field_name( 'username' ); ?>" type="text" value="<?php echo esc_attr( $username ); ?>" />
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'count' ); ?>"><?php _e( 'Número de tweets para exibir:', 'lespaul_domain_adm' ) ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'count' ); ?>"><?php _e( 'Número de tweets para exibir:', 'atlantes_domain_adm' ) ?></label><br />
 			<input class="text-center" type="number" id="<?php echo $this->get_field_id( 'count' ); ?>" name="<?php echo $this->get_field_name( 'count' ); ?>" value="<?php echo $count; ?>" size="5" maxlength="2" min="1" max="10" />
 		</p>
 
 		<p>
 			<input id="<?php echo $this->get_field_id( 'userinfo' ); ?>" name="<?php echo $this->get_field_name( 'userinfo' ); ?>" type="checkbox" <?php checked( $userinfo, 'on' ); ?>/>
-			<label for="<?php echo $this->get_field_id( 'userinfo' ); ?>"><?php _e( 'Desativar Twitter informações de usuário', 'lespaul_domain_adm' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'userinfo' ); ?>"><?php _e( 'Desativar Twitter informações de usuário', 'atlantes_domain_adm' ); ?></label>
 		</p>
 		<?php
 	} // /form
@@ -231,7 +231,7 @@ class wm_twitter extends WP_Widget {
 			}
 			$out = $outInfo . '<ul>' . $out . '</ul>';
 		} else {
-			$out = do_shortcode( '[box color="red" icon="warning"]' . __( 'No tweets.', 'lespaul_domain' ) . '[/box]' );
+			$out = do_shortcode( '[box color="red" icon="warning"]' . __( 'No tweets.', 'atlantes_domain' ) . '[/box]' );
 		}
 
 		$out .= "\r\n<!-- Tweets from: " . $protocol . '://api.twitter.com/1/statuses/user_timeline.xml?include_rts=true&screen_name=' . esc_attr( $username ) . " -->";

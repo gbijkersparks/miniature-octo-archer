@@ -24,7 +24,7 @@ get_header();
 <article class="main twelve pane">
 
 	<div class="article-content">
-		<?php echo do_shortcode( '[box color="red" icon="warning"]' . __( 'Please, set the URL first.', 'lespaul_domain' ) . '[/box]' ); ?>
+		<?php echo do_shortcode( '[box color="red" icon="warning"]' . __( 'Please, set the URL first.', 'atlantes_domain' ) . '[/box]' ); ?>
 	</div>
 
 </article> <!-- /main -->

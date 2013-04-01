@@ -67,7 +67,7 @@
 
 				//Tabs
 				$out .= '<ul class="tabs no-js">';
-				$out .= '<li class="item-0 visual-editor"><a href="#wm-meta-visual-editor">' . __( 'Content', 'lespaul_domain_adm' ) . '</a></li>';
+				$out .= '<li class="item-0 visual-editor"><a href="#wm-meta-visual-editor">' . __( 'Content', 'atlantes_domain_adm' ) . '</a></li>';
 				$i = 0;
 				foreach ( $metaPostOptions as $tab ) {
 					if ( 'section-open' == $tab['type'] ) {
@@ -111,7 +111,7 @@
 			//Content
 			wm_render_form( $metaPostOptions, 'meta' );
 
-			echo '<div class="modal-box"><a class="button-primary" data-action="stay">' . __( 'Wait, I need to save my changes first!', 'lespaul_domain_adm' ) . '</a><a class="button" data-action="leave">' . __( 'OK, leave without saving...', 'lespaul_domain_adm' ) . '</a></div></div> <!-- /wm-wrap -->';
+			echo '<div class="modal-box"><a class="button-primary" data-action="stay">' . __( 'Wait, I need to save my changes first!', 'atlantes_domain_adm' ) . '</a><a class="button" data-action="leave">' . __( 'OK, leave without saving...', 'atlantes_domain_adm' ) . '</a></div></div> <!-- /wm-wrap -->';
 		}
 	} // /wm_post_metabox_end
 

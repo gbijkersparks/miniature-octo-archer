@@ -8,9 +8,9 @@
 	?>
 
 		<nav id="nav-main" class="nav-main" role="navigation"><!-- NAVIGATION -->
-			<a class="invisible" href="#main-title" title="<?php _e( 'Ir para o conteúdo', 'lespaul_domain' ); ?>"><?php _e( 'Ir para o conteúdo', 'lespaul_domain' ); ?></a>
+			<a class="invisible" href="#main-title" title="<?php _e( 'Ir para o conteúdo', 'atlantes_domain' ); ?>"><?php _e( 'Ir para o conteúdo', 'atlantes_domain' ); ?></a>
 			<div class="mobile-menu">
-				<span class="wmicon-menu btn"><?php _e( 'Menu', 'lespaul_domain' ); ?></span>
+				<span class="wmicon-menu btn"><?php _e( 'Menu', 'atlantes_domain' ); ?></span>
 			</div>
 
 			<?php

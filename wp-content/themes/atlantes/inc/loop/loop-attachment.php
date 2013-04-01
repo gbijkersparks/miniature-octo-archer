@@ -18,7 +18,7 @@
 
 	<footer class="meta-article">
 		<span class="meta-item"><?php
-			printf( __( 'Published on %s', 'lespaul_domain' ),
+			printf( __( 'Published on %s', 'atlantes_domain' ),
 				sprintf( '<time title="%1$s">%2$s</time>',
 					esc_attr( get_the_time() ),
 					get_the_date()
@@ -31,10 +31,10 @@
 			$metadata = wp_get_attachment_metadata();
 			$metadata['width'] = ( isset( $metadata['width'] ) && $metadata['width'] ) ? ( $metadata['width'] ) : ( '?' );
 			$metadata['height'] = ( isset( $metadata['height'] ) && $metadata['height'] ) ? ( $metadata['height'] ) : ( '?' );
-			printf( __( 'Full size of %s pixels', 'lespaul_domain' ),
+			printf( __( 'Full size of %s pixels', 'atlantes_domain' ),
 				sprintf( '<a href="%1$s" title="%2$s">%3$s &times; %4$s</a>',
 					wp_get_attachment_url(),
-					esc_attr( __( 'Link to full-size image', 'lespaul_domain' ) ),
+					esc_attr( __( 'Link to full-size image', 'atlantes_domain' ) ),
 					$metadata['width'],
 					$metadata['height']
 				)

@@ -42,10 +42,10 @@ class wm_subpages extends WP_Widget {
 	function __construct() {
 		$id     = 'wm-sub-pages';
 		$prefix = ( wm_option( 'branding-panel-no-logo' ) || ! strpos( wm_option( 'branding-panel-logo' ), 'logo-' . WM_THEME_SHORTNAME . '-admin.png' ) ) ? ( '' ) : ( WM_THEME_NAME . ' ' );
-		$name   = '<span>' . $prefix . __( 'Submenu', 'lespaul_domain_adm' ) . '</span>';
+		$name   = '<span>' . $prefix . __( 'Submenu', 'atlantes_domain_adm' ) . '</span>';
 		$widget_ops = array(
 			'classname'   => 'wm-sub-pages',
-			'description' => __( 'List of subpages (submenu)', 'lespaul_domain_adm' )
+			'description' => __( 'List of subpages (submenu)', 'atlantes_domain_adm' )
 			);
 		$control_ops = array();
 
@@ -68,27 +68,27 @@ class wm_subpages extends WP_Widget {
 
 		//HTML to display widget settings form
 		?>
-		<p class="wm-desc"><?php _e( 'Displays a hierarchical list of subpages and siblings pages for the current page (page submenu).', 'lespaul_domain_adm' ) ?></p>
+		<p class="wm-desc"><?php _e( 'Displays a hierarchical list of subpages and siblings pages for the current page (page submenu).', 'atlantes_domain_adm' ) ?></p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'lespaul_domain_adm' ) ?></label>
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'atlantes_domain_adm' ) ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" />
-			<small><?php _e( 'If you leave blank, the main parent page title will be displayed.', 'lespaul_domain_adm' ) ?></small>
+			<small><?php _e( 'If you leave blank, the main parent page title will be displayed.', 'atlantes_domain_adm' ) ?></small>
 		</p>
 
 		<p>
 			<input id="<?php echo $this->get_field_id( 'parent' ); ?>" name="<?php echo $this->get_field_name( 'parent' ); ?>" type="checkbox" <?php checked( $parent, 'on' ); ?>/>
-			<label for="<?php echo $this->get_field_id( 'parent' ); ?>"><?php _e( 'Direct parent and children only', 'lespaul_domain_adm' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'parent' ); ?>"><?php _e( 'Direct parent and children only', 'atlantes_domain_adm' ); ?></label>
 		</p>
 
 		<p>
-			<label for="<?php echo $this->get_field_id( 'order' ); ?>"><?php _e( 'List order:', 'lespaul_domain_adm' ); ?></label><br />
+			<label for="<?php echo $this->get_field_id( 'order' ); ?>"><?php _e( 'List order:', 'atlantes_domain_adm' ); ?></label><br />
 			<select class="widefat" name="<?php echo $this->get_field_name( 'order' ); ?>" id="<?php echo $this->get_field_id( 'order' ); ?>">
 				<?php
 				$options = array(
-					'post_title' => __( 'By name', 'lespaul_domain_adm' ),
-					'post_date'  => __( 'By date', 'lespaul_domain_adm' ),
-					'menu_order' => __( 'Menu order', 'lespaul_domain_adm' ),
+					'post_title' => __( 'By name', 'atlantes_domain_adm' ),
+					'post_date'  => __( 'By date', 'atlantes_domain_adm' ),
+					'menu_order' => __( 'Menu order', 'atlantes_domain_adm' ),
 					);
 				foreach ( $options as $optId => $option ) {
 					?>
