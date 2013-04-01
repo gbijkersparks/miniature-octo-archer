@@ -1,1 +1,0 @@
-Patterns were downloaded from www.subtlepatterns.com and created by WebMan (www.webmandesign.eu)
