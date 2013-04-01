@@ -2624,17 +2624,10 @@
 
 					$out .= ( ! post_password_required() ) ? ( apply_filters( 'wm_default_content_filters', get_the_content( '' ) ) ) : ( '<strong>' . __( 'Password protected', 'atlantes_domain' ) . '</strong>' );
 					$out .= '</div>';
-<<<<<<< HEAD:wp-content/themes/lespaul/library/core.php
-					$out .= '<p><a href="' . get_permalink() . '#more-' . $post->ID . '" class="more-link">' . __( 'Continue lendo &raquo;', 'lespaul_domain' ) . '</a></p>';
-				} else {
-					$out .= wm_excerpt( 'wm_excerpt_length_blog', 'wm_excerpt_more' );
-					$out .= '<p><a href="' . get_permalink() . '" class="more-link">' . __( 'Continue lendo &raquo;', 'lespaul_domain' ) . '</a></p>';
-=======
 					$out .= '<p><a href="' . get_permalink() . '#more-' . $post->ID . '" class="more-link">' . __( 'Continue reading &raquo;', 'atlantes_domain' ) . '</a></p>';
 				} else {
 					$out .= wm_excerpt( 'wm_excerpt_length_blog', 'wm_excerpt_more' );
 					$out .= '<p><a href="' . get_permalink() . '" class="more-link">' . __( 'Continue reading &raquo;', 'atlantes_domain' ) . '</a></p>';
->>>>>>> 133ed05392c9f45922b979198e3d4d4d9c47416b:wp-content/themes/atlantes/library/core.php
 				}
 			}
 
@@ -2652,11 +2645,7 @@
 	*/
 	if ( ! function_exists( 'wm_more' ) ) {
 		function wm_more( $class = 'more-link', $print = null ) {
-<<<<<<< HEAD:wp-content/themes/lespaul/library/core.php
-			$out = '<a href="' . get_permalink() . '" class="' . $class . '">' . __( 'Saiba Mais &raquo;', 'lespaul_domain' ) . '</a>';
-=======
 			$out = '<a href="' . get_permalink() . '" class="' . $class . '">' . __( 'Read more &raquo;', 'atlantes_domain' ) . '</a>';
->>>>>>> 133ed05392c9f45922b979198e3d4d4d9c47416b:wp-content/themes/atlantes/library/core.php
 
 			if ( $print )
 				echo $out;
@@ -2715,15 +2704,9 @@
 						// 	if ( ! wm_option( 'blog-disable-comments-count' ) && ( comments_open() || get_comments_number() ) ) {
 						// 	//comments displayed only when enabled by admin panel AND if the post has comments eventhough commenting disabled for the post now
 
-<<<<<<< HEAD:wp-content/themes/lespaul/library/core.php
-						// 		$elementId = ( get_comments_number() ) ? ( '#comments' ) : ( '#respond' );
-						// 		$out      .= '<span class="comments meta-item"><a href="' . get_permalink() . $elementId . '">' . sprintf( __( 'Comments: %s', 'lespaul_domain' ), '<span class="comments-count" title="' . get_comments_number() . '">' . get_comments_number() . '</span>' ) . '</a></span>';
-						// 	}
-=======
 								$elementId = ( get_comments_number() ) ? ( '#comments' ) : ( '#respond' );
 								$out      .= '<span class="comments meta-item"><a href="' . get_permalink() . $elementId . '">' . sprintf( __( 'Comments: %s', 'atlantes_domain' ), '<span class="comments-count" title="' . get_comments_number() . '">' . get_comments_number() . '</span>' ) . '</a></span>';
-							}
->>>>>>> 133ed05392c9f45922b979198e3d4d4d9c47416b:wp-content/themes/atlantes/library/core.php
+						//	}
 
 						// break;
 						case 'date':
