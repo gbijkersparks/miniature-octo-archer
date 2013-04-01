@@ -2150,7 +2150,7 @@
 		function wm_shortcode_staff( $atts, $content = null ) {
 			extract( shortcode_atts( array(
 				'align'      => 'left',
-				'columns'    => 4,
+				'columns'    => 5,
 				'count'      => 4,
 				'department' => null,
 				'desc_size'  => 4,
@@ -2168,7 +2168,7 @@
 
 			//validation
 			$align         = ( 'right' === trim( $align ) ) ? ( trim( $align ) ) : ( 'left' );
-			$cols          = ( 0 < absint( $columns ) && 7 > absint( $columns ) ) ? ( absint( $columns ) ) : ( 4 );
+			$cols          = ( 0 < absint( $columns ) && 7 > absint( $columns ) ) ? ( absint( $columns ) ) : ( 5 );
 			$colsDesc      = ( 1 < absint( $desc_size ) && 7 > absint( $desc_size ) ) ? ( absint( $desc_size ) ) : ( 4 );
 			$count         = ( $count ) ? ( absint( $count ) ) : ( 4 );
 			$orderMethod   = array(
@@ -2226,11 +2226,11 @@
 						$staff->the_post();
 
 						if ( wm_option( 'cp-staff-rich' ) )
-							$excerptText  = ( has_excerpt() ) ? ( apply_filters( 'wm_default_content_filters', get_the_excerpt() ) ) : (  );
+							$excerptText  = ( has_excerpt() ) ? ( apply_filters( 'wm_default_content_filters', get_the_excerpt() ) ) : ('');
  						else
 							$excerptText = apply_filters( 'wm_default_content_filters', get_the_content() );
 
-
+						if(!is_page()){
 						$contacts = '';
 						if ( wm_meta_option( 'staff-phone' ) )
 							$contacts .= '<li class="staff-phone">' . wm_meta_option( 'staff-phone' ) . '</li>';
@@ -2241,7 +2241,7 @@
 						if ( wm_meta_option( 'staff-skype' ) )
 							$contacts .= '<li class="staff-skype"><a href="skype:' . sanitize_title( wm_meta_option( 'staff-skype' ) ) . '?call">' . wm_meta_option( 'staff-skype' ) . '</a></li>';
 						$excerptText .= ( $contacts ) ? ( '<ul>' . $contacts . '</ul>' ) : ( '' );
-
+						}
 						$staffOutput  = array(
 								'thumb' => wm_thumb( array(
 										'class'       => 'staff-thumb',

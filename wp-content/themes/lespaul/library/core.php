@@ -1578,12 +1578,13 @@
 			}
 
 			//SEO logo HTML tag
-			if ( is_front_page() )
+			if ( is_front_page())
 				$logoTag = 'h1';
 			else
 				$logoTag = 'div';
 
 			//output
+			
 			$out  = '<' . $logoTag . ' class="logo ' . $logoType . '-only">';
 			$out .= '<a href="' . home_url() . '" title="' . get_bloginfo( 'name' ) . $separator . get_bloginfo( 'description' ) . '">';
 			if ( 'text' === $logoType )
