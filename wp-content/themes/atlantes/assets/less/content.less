@@ -50,7 +50,7 @@
 			margin-bottom: 20px;
 		}
 		p{
-			overflow: hidden;
+
 			span.marcador{
 				background: url(../img/marcador.png) no-repeat left center;
 				width: 7px;
@@ -629,9 +629,11 @@ footer.meta-article{
 		.col-15{
 			width: 100%;
 			.image-container{
-				width: 50%;
+				// width: 50%;
 				float: left;
 				margin: 10px 20px 50px 0;
+				position: relative;
+				z-index: 10;
 			}
 		}
 	}
@@ -642,6 +644,29 @@ footer.meta-article{
 	}
 }
 
+.page-id-606{
+	#content{
+		background-color: #f4f4f5; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f4f4f5 0%, #fefefe 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f5), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f4f4f5 0%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f4f4f5 0%,#fefefe 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f4f4f5 0%,#fefefe 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f4f4f5 0%,#fefefe 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f5', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+		background: url(../img/linhas.png) no-repeat center top #f4f4f5;
+	}
+		
+}
+.principio{
+	background: url(../img/principios.png) top center no-repeat;
+	padding: 0;
+	width: 100%;
+	margin: 0;
+	border: 0;
+	height: 550px;
+	display: inline-block;
+}
 
 /*********************************************/
 /* sitemap                                   */
