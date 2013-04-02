@@ -130,13 +130,12 @@ jQuery( function() {
 	//widget title 
 
 	(function($, window, undefined){
-		resizeUpdate();
-		$(window).resize( function() { resizeUpdate();});
 
 		$('.cf_upload').wrap('<div class="cf_uploadWrapper" />');
 		var uploadWrapper = $('.cf_uploadWrapper');
 		uploadWrapper.append('<div class="cf_upload-fake" />');
-		uploadWrapper.parent().append('<span class="fileMsg">Nenhum arquivo selecionado</span>')
+		uploadWrapper.parent().append('<span class="fileMsg">Nenhum arquivo selecionado</span>');
+
 		$('.cf_upload-fake').click(function(){
 			$('.cf_upload').click();
 		});
@@ -148,6 +147,8 @@ jQuery( function() {
     		$('.fileMsg').text(textList[textList.length-1]);
 		});
 
+		resizeUpdate();
+		$(window).resize( function() { resizeUpdate();});
 
 		$(".cform .cf-box-b").jqTransCheckBox();
 
@@ -155,7 +156,10 @@ jQuery( function() {
 		function resizeUpdate() {
 			$.each($('.separator-heading'), function(index, heading){
 
-				$(heading).wrap('<div class="headerWrapper clearfix" />');
+				if($(heading).parents('.headerWrapper').length <=0) {
+					$(heading).wrap('<div class="headerWrapper clearfix" />');
+				}
+				
 				var containerWidth = $(heading).parent().width();
 				var span = $(heading).find('span');
 				var spanWidth = $(heading).find('span').width();
@@ -167,6 +171,16 @@ jQuery( function() {
 				$(span).css({'margin-left': -(spanWidth+offset), 'background-color': 'transparent'});
 			});
 		}
+		//contact form 7 placeholder script
+	    jQuery(".wpcf7 span input").each(function() {
+	        jQuery(this).attr("placeholder", jQuery(this).val());
+	        jQuery(this).val('');
+	    });  
+	    
+	    jQuery(".wpcf7 span textarea").each(function() {
+	        jQuery(this).attr("placeholder", jQuery(this).text());
+	        jQuery(this).text("")   
+	    });
 
 	})(jQuery, window);
 /*
