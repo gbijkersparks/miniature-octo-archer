@@ -223,11 +223,11 @@ class wm_twitter extends WP_Widget {
 
 		if ( $out ) {
 			if ( ! isset( $no_userinfo ) && ! empty( $userDetails ) ) {
-				$outInfo .= '<div class="user-info">';
-				$outInfo .= '<a href="http://twitter.com/' . $username . '"><img src="' . $userDetails['image'] . '" alt="' . $userDetails['screen_name'] . '" title="' . $userDetails['screen_name'] . '" /></a>';
-				$outInfo .= '<h3><a href="http://twitter.com/' . $username . '">' . $username . '</a></h3>';
-				$outInfo .= ( $userDetails['description'] ) ? ( $userDetails['description'] ) : ( '' );
-				$outInfo .= '</div>';
+				//$outInfo .= '<div class="user-info">';
+				//$outInfo .= '<a href="http://twitter.com/' . $username . '"><img src="' . $userDetails['image'] . '" alt="' . $userDetails['screen_name'] . '" title="' . $userDetails['screen_name'] . '" /></a>';
+				//$outInfo .= '<h3><a href="http://twitter.com/' . $username . '">' . $username . '</a></h3>';
+				//$outInfo .= ( $userDetails['description'] ) ? ( $userDetails['description'] ) : ( '' );
+				//$outInfo .= '</div>';
 			}
 			$out = $outInfo . '<ul>' . $out . '</ul>';
 		} else {

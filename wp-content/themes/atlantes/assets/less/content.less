@@ -1,16 +1,33 @@
 /*********************************************/
 /* content                                   */
 /*********************************************/
-.home {
-	.content {
-		background: url('../img/bg-wrap.png') no-repeat center top #f9f8f9;
+	.home{
+		#content{
+			background-color: #f4f4f5; /* Old browsers */
+			background: -moz-linear-gradient(top,  #f4f4f5 0%, #fefefe 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f5), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #f4f4f5 0%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #f4f4f5 0%,#fefefe 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #f4f4f5 0%,#fefefe 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #f4f4f5 0%,#fefefe 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f5', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+			background: url(../img/linhas.png) no-repeat center top #f4f4f5;
+		}
 	}
-}
+	#content {
+		background-color: #f4f4f5; /* Old browsers */
+		background: -moz-linear-gradient(top,  #f4f4f5 0%, #fefefe 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f5), color-stop(100%,#fefefe)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #f4f4f5 0%,#fefefe 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #f4f4f5 0%,#fefefe 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #f4f4f5 0%,#fefefe 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #f4f4f5 0%,#fefefe 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f5', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
+	}
 	.content {
 		clear: both;
 		position: relative;
 		z-index: 1;
-		background: #fefefe;
 		width: 100%;
 		height: 100%;
 		z-index: 2;
@@ -164,12 +181,27 @@ article.main{
 			.list-articles .meta-article {
 				padding: 20px;
 				background-color: #f6f6f6;
+				-webkit-box-shadow: inset 0 10px 12px -12px #C4C4C4;
+	    		box-shadow: inset 0 10px 12px -12px #C4C4C4;
 			}
 
 			.post-media {
 				position: relative;
 				z-index: 1;
 			}
+	.widgets{
+		.headerWrapper{
+			span.text-holder{
+				color:#a1a1a1;
+		
+			}
+		}
+		
+	}
+	#comments{
+		display: none;
+	}
+
 
 		/* post formats */
 			/* link */
@@ -315,8 +347,46 @@ article.main{
 				.search-item .excerpt {margin-left: 100px}
 				.search-item .excerpt {padding: 0}
 
-
-
+a.more-link{
+	color: #0067ac;
+}
+a.more-link:hover{
+		text-decoration: underline;
+		color:#1b4f72;
+	}
+span.author{
+	a{
+		color: #0067ac;
+	}
+	a:hover{
+		text-decoration: underline;
+		color:#1b4f72;
+	}
+}
+span.categories{
+	a{
+		color: #0067ac;
+	}
+	a:hover{
+		text-decoration: underline;
+		color:#1b4f72;
+	}
+}
+.widget{
+	a.twitter-link{
+		color: #0067ac;
+	}
+	a:hover{
+		text-decoration: underline;
+		color:#1b4f72;
+	}
+	
+}
+footer.meta-article{
+	span.permalink{
+		display: none;
+	}
+}
 	/* meta article */
 		.meta-bottom,
 		.meta-bottom + .meta-bottom {border-top: 0}
@@ -432,8 +502,18 @@ article.main{
 					}
 					.bio .posts-by-author a {color: inherit}
 			.bio .desc {margin-top: 20px}
-
-
+.sidebar{
+	margin-top: 20px;
+}
+.wm-twitter-2{
+	ul{
+		list-style: none;
+		li{
+			list-style: none;
+			padding-bottom: 20px;
+		}
+	}
+}
 
 /*********************************************/
 /* error 404 page                            */
@@ -524,30 +604,23 @@ article.main{
 			margin-top: 0;
 			padding-top: 0;
 		}
-	#staff-presidente{
-		.wrap-staff-shortcode{
-			.wrap-staff{
-				display: inline-block;
-				article.col-14{
-					display: inline-block;
-					float: left;
-					width: 50%;
-					.staff-thumb{
 
-					}
-					.text{
-						h3.staff-title{
-
-						}
-						.staff-excerpt{
-
-						}
-					}
-				}
+	article#staff-presidente{
+		.col-15{
+			width: 100%;
+			.image-container{
+				width: 50%;
+				float: left;
+				margin: 10px 20px 50px 0;
 			}
 		}
 	}
 
+.single-wm_staff{
+	.article-content ul li{
+		text-align: left;
+	}
+}
 
 
 /*********************************************/

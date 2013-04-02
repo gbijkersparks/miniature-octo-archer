@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Blog
+Template Name: Notícias
 */
 
 get_header();

@@ -260,11 +260,11 @@ class wm_post_list extends WP_Widget {
 				$out .= '<div class="image-container"><a href="' . get_permalink() . '">' . $image . '</a></div>';
 
 				//title
-				$out .= '<h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>';
+				//$out .= '<h3><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>';
 
 				//date
-				if ( ! isset( $date ) )
-					$out .= '<time datetime="' . esc_attr( get_the_date( 'c' ) ) . '" class="date">' . esc_html( get_the_date() ) . '</time>';
+				//if ( ! isset( $date ) )
+					//$out .= '<time datetime="' . esc_attr( get_the_date( 'c' ) ) . '" class="date">' . esc_html( get_the_date() ) . '</time>';
 
 				//excerpt
 				if ( isset( $excerptLength ) && $excerptLength ) {
