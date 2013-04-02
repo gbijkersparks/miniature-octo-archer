@@ -1,4 +1,9 @@
 /wp-content/uploads/2013
 /wp-config.php
+<<<<<<< HEAD
+/wp-content/themes/lespaul
+/wp-content/themes/lespaul
+=======
 /wp-content/themes/lespaul/wp-content/themes/atlantes/atlantes.sublime-project
 /wp-content/themes/atlantes/atlantes.sublime-workspace
+>>>>>>> 8304a5808f2b6fbc5eb13f07e496e8733321428b
