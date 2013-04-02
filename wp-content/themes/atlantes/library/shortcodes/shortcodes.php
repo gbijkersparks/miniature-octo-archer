@@ -569,8 +569,18 @@
 					'4/5 last',
 				'1/6',
 					'1/6 last',
-				'5/6',
-					'5/6 last',
+				'1/9',
+					'1/9 last',
+				'2/9',
+					'2/9 last',
+				'4/9',
+					'4/9 last',
+				'5/9',
+					'5/9 last',
+				'7/9',
+					'7/9 last',
+				'8/9',
+					'8/9 last',
 				);
 
 			//validation
@@ -702,7 +712,125 @@
 				}
 			} // /wm_shortcode_one_fifth_last
 			add_shortcode( 'one_fifth_last', 'wm_shortcode_one_fifth_last' );
+		//ninths
+			if ( ! function_exists( 'wm_shortcode_one_ninth' ) ) {
+				function wm_shortcode_one_ninth( $atts, $content = null ) {
+					extract( shortcode_atts( array(
+								'last' => '',
+							), $atts )
+						);
+					$last = ( trim( $last ) ) ? ( ' last' ) : ( '' );
+					return do_shortcode( '[column size="1/9' . $last . '"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_one_ninth
+			add_shortcode( 'one_ninth', 'wm_shortcode_one_ninth' );
 
+			if ( ! function_exists( 'wm_shortcode_one_ninth_last' ) ) {
+				function wm_shortcode_one_ninth_last( $atts, $content = null ) {
+					return do_shortcode( '[column size="1/9 last"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_one_ninth_last			
+			add_shortcode( 'one_ninth_last', 'wm_shortcode_one_ninth_last' );
+
+
+			if ( ! function_exists( 'wm_shortcode_two_ninth' ) ) {
+				function wm_shortcode_two_ninth( $atts, $content = null ) {
+					extract( shortcode_atts( array(
+								'last' => '',
+							), $atts )
+						);
+					$last = ( trim( $last ) ) ? ( ' last' ) : ( '' );
+					return do_shortcode( '[column size="2/9' . $last . '"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_two_ninth
+			add_shortcode( 'two_ninth', 'wm_shortcode_two_ninth' );
+
+			if ( ! function_exists( 'wm_shortcode_two_ninth_last' ) ) {
+				function wm_shortcode_two_ninth_last( $atts, $content = null ) {
+					return do_shortcode( '[column size="2/9 last"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_two_ninth_last
+			add_shortcode( 'two_ninth_last', 'wm_shortcode_two_ninth_last' );
+
+
+			if ( ! function_exists( 'wm_shortcode_four_ninth' ) ) {
+				function wm_shortcode_four_ninth( $atts, $content = null ) {
+					extract( shortcode_atts( array(
+								'last' => '',
+							), $atts )
+						);
+					$last = ( trim( $last ) ) ? ( ' last' ) : ( '' );
+					return do_shortcode( '[column size="4/9' . $last . '"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_four_ninth
+			add_shortcode( 'four_ninth', 'wm_shortcode_four_ninth' );
+
+			if ( ! function_exists( 'wm_shortcode_four_ninth_last' ) ) {
+				function wm_shortcode_four_ninth_last( $atts, $content = null ) {
+					return do_shortcode( '[column size="4/9 last"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_four_ninth_last
+			add_shortcode( 'four_ninth_last', 'wm_shortcode_four_ninth_last' );
+
+
+			if ( ! function_exists( 'wm_shortcode_five_ninth' ) ) {
+				function wm_shortcode_five_ninth( $atts, $content = null ) {
+					extract( shortcode_atts( array(
+								'last' => '',
+							), $atts )
+						);
+					$last = ( trim( $last ) ) ? ( ' last' ) : ( '' );
+					return do_shortcode( '[column size="5/9' . $last . '"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_five_ninth
+			add_shortcode( 'five_ninth', 'wm_shortcode_five_ninth' );
+
+			if ( ! function_exists( 'wm_shortcode_five_ninth_last' ) ) {
+				function wm_shortcode_five_ninth_last( $atts, $content = null ) {
+					return do_shortcode( '[column size="5/9 last"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_five_ninth_last
+			add_shortcode( 'five_ninth_last', 'wm_shortcode_five_ninth_last' );
+
+
+			if ( ! function_exists( 'wm_shortcode_seven_ninth' ) ) {
+				function wm_shortcode_seven_ninth( $atts, $content = null ) {
+					extract( shortcode_atts( array(
+								'last' => '',
+							), $atts )
+						);
+					$last = ( trim( $last ) ) ? ( ' last' ) : ( '' );
+					return do_shortcode( '[column size="7/9' . $last . '"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_seven_ninth
+			add_shortcode( 'seven_ninth', 'wm_shortcode_seven_ninth' );
+
+			if ( ! function_exists( 'wm_shortcode_seven_ninth_last' ) ) {
+				function wm_shortcode_seven_ninth_last( $atts, $content = null ) {
+					return do_shortcode( '[column size="7/9 last"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_seven_ninth_last
+			add_shortcode( 'seven_ninth_last', 'wm_shortcode_seven_ninth_last' );
+
+
+			if ( ! function_exists( 'wm_shortcode_eight_ninth' ) ) {
+				function wm_shortcode_eight_ninth( $atts, $content = null ) {
+					extract( shortcode_atts( array(
+								'last' => '',
+							), $atts )
+						);
+					$last = ( trim( $last ) ) ? ( ' last' ) : ( '' );
+					return do_shortcode( '[column size="8/9' . $last . '"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_eight_ninth
+			add_shortcode( 'eight_ninth', 'wm_shortcode_eight_ninth' );
+
+			if ( ! function_exists( 'wm_shortcode_eight_ninth_last' ) ) {
+				function wm_shortcode_eight_ninth_last( $atts, $content = null ) {
+					return do_shortcode( '[column size="8/9 last"]' . $content . '[/column]' );
+				}
+			} // /wm_shortcode_eight_ninth_last
+			add_shortcode( 'eight_ninth_last', 'wm_shortcode_eight_ninth_last' );
 
 
 
