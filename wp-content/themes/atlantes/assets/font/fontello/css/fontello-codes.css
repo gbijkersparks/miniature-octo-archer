@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 
+
+.icon-private:before{content: '';}
+.icon-imobiliaria:before{content: '';}
+.icon-agronegocio:before{content: '';}
+
 .icon-plus:before { content: '\2b'; } /* '+' */
 .icon-minus:before { content: '\2d'; } /* '-' */
 .icon-info:before { content: '\2139'; } /* 'ℹ' */

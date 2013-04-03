@@ -29,6 +29,9 @@
 /* Uncomment for 3D effect */
 /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+.icon-private:before{content: '';}
+.icon-imobiliaria:before{content: '';}
+.icon-agronegocio:before{content: '';}
 
 .icon-plus:before { content: '\2b'; } /* '+' */
 .icon-minus:before { content: '\2d'; } /* '-' */
@@ -194,7 +197,7 @@
 .icon-doc-text:before { content: '📄'; } /* '\1f4c4' */
 .icon-calendar:before { content: '📅'; } /* '\1f4c5' */
 .icon-chart-line:before { content: '📈'; } /* '\1f4c8' */
-.icon-chart-bar:before { content: '📊'; } /* '\1f4ca' */
+.icon-chart-bar:before { content: '📊';  } /* '\1f4ca' */
 .icon-clipboard:before { content: '📋'; } /* '\1f4cb' */
 .icon-attach:before { content: '📎'; } /* '\1f4ce' */
 .icon-bookmarks:before { content: '📑'; } /* '\1f4d1' */
