@@ -1,0 +1,666 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.5.5\n"
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid " (page %s)"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid " (part %s)"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1213
+msgid " | Reply"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1197
+msgid "%1$s at %2$s"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "%s archive"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1251
+msgid "%s logo"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "%s on Facebook"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "%s on Google+"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "%s on Twitter"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "%s tag archive"
+msgstr ""
+
+#. Text in function
+#: lespaul/comments.php:44
+msgid "&larr; Older comments"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "<em>%s</em> tag archive"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "<strong>Tags:</strong> %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "All"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "All <span>%s</span>"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Archive"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Archive for %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Archives"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Audio"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Back to homepage"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Back to top"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Back to top of page"
+msgstr ""
+
+#. Text in echo
+#: lespaul/inc/loop/loop-sitemap.php:75
+msgid "Blog categories"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "By"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "By %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Cancel comment"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Comment"
+msgstr ""
+
+#. Text in echo
+#: lespaul/comments.php:43
+msgid "Comment navigation"
+msgstr ""
+
+#. Text in function
+#: lespaul/comments.php:16
+msgid "Comments (%s)"
+msgstr ""
+
+#. Text in function
+#: lespaul/comments.php:22
+msgid "Comments are closed. You can not add new comments."
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Comments: %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Continue reading &raquo;"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Currently viewing \"%s\""
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1251
+msgid "Custom"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Day %1$d, %2$s archive"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Days"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1177 lespaul/library/core.php:1213
+msgid "Edit"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Email"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Enter password to view the content:"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/loop/loop-attachment.php:28
+msgid "Full size of %s pixels"
+msgstr ""
+
+#. Text in function
+#: lespaul/header.php:156 lespaul/header.php:114
+msgid "Go to main navigation"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Home"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Hours"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "I have lost my password"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Image"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Image slider"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "In %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/loop/loop-sitemap.php:43
+msgid "Latest blog posts"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/loop/loop-sitemap.php:43
+msgid "Latest projects"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Leave a reply for %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/loop/loop-attachment.php:28
+msgid "Link to full-size image"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Log In"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Log in"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Log in."
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Log out"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Log out &raquo;"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Log out from your account"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Logged in as %s"
+msgstr ""
+
+#. Text in echo
+#: lespaul/nav.php:13
+msgid "Menu"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Minutes"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#. Text in echo
+#: lespaul/inc/loop/loop-sitemap.php:87
+msgid "Monthly archives"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "More from author:"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Name"
+msgstr ""
+
+#. Text in function
+#: lespaul/comments.php:45
+msgid "Newer comments &rarr;"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Next"
+msgstr ""
+
+#. Text in function
+#: lespaul/single-wm_projects.php:30
+msgid "Next project (%s)"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "No item found"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/widgets/w-twitter.php:93
+msgid "No tweets."
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Number of items found: %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1 lespaul/library/options/a-404.php:1
+msgid "Page not found"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Part %"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Password"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Password protected"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Password will be resent to your e-mail address."
+msgstr ""
+
+#. Text in echo
+#: lespaul/woocommerce/checkout/form-pay.php:56
+msgid "Payment option"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Permalink to %s"
+msgstr ""
+
+#. Text in echo
+#: lespaul/library/core.php:1175
+msgid "Pingback:"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1251
+msgid "Pingbacks list"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Please check the video URL"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/loop/loop-project.php:1
+msgid "Please set \"Audio URL\" option"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/loop/loop-project.php:1
+msgid "Please set \"Project main image\" option"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/loop/loop-project.php:1
+msgid "Please set \"Video URL\" option"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/formats/format-audio.php:48
+msgid "Please set the SoundCloud audio URL address"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/formats/format-video.php:40
+msgid "Please set the video URL address"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/loop/loop-project.php:1
+msgid "Please upload project images to create a gallery"
+msgstr ""
+
+#. Text in function
+#: lespaul/page-template/redirect.php:27
+msgid "Please, set the URL first."
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1251
+msgid "Please, set the map location"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Post comment"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Posts Tagged \"<span>%s</span>\""
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Posts by <em>%s</em>"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Posts by <span>%s</span>"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Posts in <span>%s</span> Category"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Prev"
+msgstr ""
+
+#. Text in function
+#: lespaul/single-wm_projects.php:30
+msgid "Previous project (%s)"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Project URL"
+msgstr ""
+
+#. Text in function
+#: lespaul/inc/loop/loop-attachment.php:20
+msgid "Published on %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Read more"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Read more &raquo;"
+msgstr ""
+
+#. Text in function
+#: lespaul/single-wm_projects.php:30
+msgid "Related projects"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Remember Me"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Return to %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-404.php:1
+msgid "Return to homepage"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Search for \"%s\""
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Search for:"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Search results for <em>\"%s\"</em>"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Search results for <span>\"%s\"</span>"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-general.php:1
+msgid "Search term"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Seconds"
+msgstr ""
+
+#. Text in echo
+#: lespaul/nav.php:11
+msgid "Skip to content"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1 lespaul/library/core.php:1655
+msgid "Submit"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Tag archive for \"%s\""
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-404.php:1
+msgid "The page you are looking for was moved, deleted or does not exist."
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "This is featured post"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Username"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Video"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "View"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Visit author's website"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655 lespaul/library/options/a-404.php:1
+msgid "Web page was not found"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "Website"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Weeks"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "Year %d archive"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1655
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#. Text in function
+#: lespaul/functions.php:1
+msgid "You do not have sufficient rights to display this page."
+msgstr ""
+
+#. Text in function
+#: lespaul/library/options/a-comments-form.php:1
+msgid "You have to be logged in to leave a comment."
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1213
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. Text in function
+#: lespaul/library/shortcodes/shortcodes.php:1
+msgid "Zoom"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "day %1$d, %2$s archive"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "posts by %s"
+msgstr ""
+
+#. Text in function
+#: lespaul/library/core.php:1
+msgid "year %d archive"
+msgstr ""
