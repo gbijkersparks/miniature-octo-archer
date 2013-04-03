@@ -45,80 +45,78 @@
 				.main-heading i[class^="icon-"],
 				.lie9 .main-heading.animated i[class^="icon-"],
 				.browser-opera .main-heading.animated i[class^="icon-"] {
-					right: .25em;
+					left: 0;
+					opacity: 10;
 					top: 50%;
 					margin-top: -.8em;
 					font-size: 4.4em;
-					text-shadow: none;
-					opacity: .50;
-					filter: alpha(opacity=50); /* For IE8 and earlier */
 				}
 					.main-heading.animated i[class^="icon-"] {
-						right: -.25em;
+						/*right: -.25em;*/
 						margin-top: -.5em;
-						font-size: 40em;
-						text-shadow: 0 0 .25em;
-						opacity: .07;
-						filter: alpha(opacity=7); /* For IE8 and earlier */
+						font-size: 95px;
+						/*text-shadow: 0 0 .25em;*/
+						/*opacity: .07;*/
+						/*filter: alpha(opacity=7); /* For IE8 and earlier */
 
-						-webkit-transition: all .25s ease-in-out;
+						/*-webkit-transition: all .25s ease-in-out;
 						   -moz-transition: all .25s ease-in-out;
 						     -o-transition: all .25s ease-in-out;
 						    -ms-transition: all .25s ease-in-out;
-						        transition: all .25s ease-in-out;
+						        transition: all .25s ease-in-out;*/
 
-						-webkit-transform: rotate( 20deg ); /* Safari and Chrome, translate3d hack to render properly */
-						   -moz-transform: rotate( 20deg ); /* Firefox */
-						    -ms-transform: rotate( 20deg ); /* IE 9 */
-						     -o-transform: rotate( 20deg ); /* Opera */
-						        transform: rotate( 20deg );
+						/*-webkit-transform: rotate( 20deg ); /* Safari and Chrome, translate3d hack to render properly */
+						  /* -moz-transform: rotate( 20deg ); /* Firefox */
+						    /*-ms-transform: rotate( 20deg ); /* IE 9 */
+						     /*-o-transform: rotate( 20deg ); /* Opera */
+						       /* transform: rotate( 20deg );*/
 					}
 					.lie9 .main-heading.animated i[class^="icon-"],
 					.browser-opera .main-heading.animated i[class^="icon-"] {
-						-webkit-transform: rotate( 0 ); /* Safari and Chrome, translate3d hack to render properly */
-						   -moz-transform: rotate( 0 ); /* Firefox */
-						    -ms-transform: rotate( 0 ); /* IE 9 */
-						     -o-transform: rotate( 0 ); /* Opera */
-						        transform: rotate( 0 );
+						/*-webkit-transform: rotate( 0 ); /* Safari and Chrome, translate3d hack to render properly */
+						  /* -moz-transform: rotate( 0 ); /* Firefox */
+						    /*-ms-transform: rotate( 0 ); /* IE 9 */
+						     /*-o-transform: rotate( 0 ); /* Opera */
+						       /* transform: rotate( 0 );*/
 					}
 					.main-heading.text-right i[class^="icon-"] {
 						left: -.25em;
-						right: auto;
+						/*right: auto;*/
 					}
 					.lie9 .main-heading.text-right.animated i[class^="icon-"],
 					.browser-opera .main-heading.text-right.animated i[class^="icon-"] {
 						left: .25em;
-						right: auto;
+						/*right: auto;*/
 					}
 
 				.main-heading:hover i[class^="icon-"] {
-					text-shadow: none;
-					opacity: 1;
-					filter: alpha(opacity=100); /* For IE8 and earlier */
+					/*text-shadow: none;*/
+					/*opacity: 1;*/
+					/*filter: alpha(opacity=100); /* For IE8 and earlier */
 				}
 				.main-heading.animated:hover i[class^="icon-"] {
-					-webkit-transform: scale( .11 ) translate( 2.25em, 0 ); /* Safari and Chrome, translate3d hack to render properly */
-					   -moz-transform: scale( .11 ) translate( 2.25em, 0 ); /* Firefox */
-					    -ms-transform: scale( .11 ) translate( 2.25em, 0 ); /* IE 9 */
-					     -o-transform: scale( .11 ) translate( 2.25em, 0 ); /* Opera */
-					        transform: scale( .11 ) translate( 2.25em, 0 );
+					/*-webkit-transform: scale( .11 ) translate( 2.25em, 0 ); /* Safari and Chrome, translate3d hack to render properly */
+					  /* -moz-transform: scale( .11 ) translate( 2.25em, 0 ); /* Firefox */
+					    /*-ms-transform: scale( .11 ) translate( 2.25em, 0 ); /* IE 9 */
+					     /*-o-transform: scale( .11 ) translate( 2.25em, 0 ); /* Opera */
+					        /*transform: scale( .11 ) translate( 2.25em, 0 );*/
 				}
 					.main-heading.text-right.animated:hover i[class^="icon-"] {
-						-webkit-transform: scale( .11 ) translate( -2.25em, 0 ); /* Safari and Chrome, translate3d hack to render properly */
-						   -moz-transform: scale( .11 ) translate( -2.25em, 0 ); /* Firefox */
-						    -ms-transform: scale( .11 ) translate( -2.25em, 0 ); /* IE 9 */
-						     -o-transform: scale( .11 ) translate( -2.25em, 0 ); /* Opera */
-						        transform: scale( .11 ) translate( -2.25em, 0 );
+						/*-webkit-transform: scale( .11 ) translate( -2.25em, 0 ); /* Safari and Chrome, translate3d hack to render properly */
+						  /* -moz-transform: scale( .11 ) translate( -2.25em, 0 ); /* Firefox */
+						    /*-ms-transform: scale( .11 ) translate( -2.25em, 0 ); /* IE 9 */
+						     /*-o-transform: scale( .11 ) translate( -2.25em, 0 ); /* Opera */
+						       /* transform: scale( .11 ) translate( -2.25em, 0 );*/
 					}
 					.browser-opera .main-heading.animated:hover i[class^="icon-"],
 					.browser-opera .main-heading.text-right.animated:hover i[class^="icon-"] {
-						opacity: 1;
-						filter: alpha(opacity=100); /* For IE8 and earlier */
-						-webkit-transform: none; /* Safari and Chrome, translate3d hack to render properly */
-						   -moz-transform: none; /* Firefox */
-						    -ms-transform: none; /* IE 9 */
-						     -o-transform: none; /* Opera */
-						        transform: none;
+						/*opacity: 1;*/
+						/*filter: alpha(opacity=100); /* For IE8 and earlier */
+						/*-webkit-transform: none; /* Safari and Chrome, translate3d hack to render properly */
+						  /* -moz-transform: none; /* Firefox */
+						    /*-ms-transform: none; /* IE 9 */
+						     /*-o-transform: none; /* Opera */
+						        /*transform: none;*/
 					}
 
 	/* breadcrumbs and page excerpt */

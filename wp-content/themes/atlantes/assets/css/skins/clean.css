@@ -48,23 +48,23 @@ NOTES:
 				.main-heading i[class^="icon-"],
 				.lie9 .main-heading.animated i[class^="icon-"],
 				.browser-opera .main-heading.animated i[class^="icon-"] {
-					right: .25em;
+					/*right: .25em;*/
 					top: 50%;
 					margin-top: -.8em;
 					font-size: 4.4em;
-					text-shadow: none;
-					opacity: .50;
-					filter: alpha(opacity=50); /* For IE8 and earlier */
+					/*text-shadow: none;*/
+					/*opacity: .50;*/
+					/*filter: alpha(opacity=50); /* For IE8 and earlier */*/
 				}
 					.main-heading.text-right i[class^="icon-"] {
-						right: auto;
-						left: -.25em;
+						/*right: auto;*/
+						/*left: -.25em;*/
 					}
 
 				.main-heading:hover i[class^="icon-"] {
-					text-shadow: none;
-					opacity: 1;
-					filter: alpha(opacity=100); /* For IE8 and earlier */
+					/*text-shadow: none;*/
+					/*opacity: 1;*/
+					/*filter: alpha(opacity=100); /* For IE8 and earlier */*/
 				}
 
 	/* breadcrumbs and page excerpt */
