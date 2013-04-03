@@ -721,64 +721,128 @@ footer.meta-article{
 	// font-weight: lighter;
 	clear: both;
 	float: left;
+	.values {
+		text-align: center;
+	}
+	br {
+		clear: both;
+	}
+	span  {
+		margin-left: .3em;
+		line-height: 1.1em;
+		display: inline-block;
+	}
 	span.continuidade{
 		color:#176eab;
 		font-weight: lighter;
 		font-size: 32.72px;
-		margin-left: 95px;
+		float: left;
 	}
 	span.comprometimento{
 		color:#4ea6cd;
 		font-weight: lighter;
 		font-size: 39.95px;
-		margin-left: 130px;
 	}
 	span.coperacao{
 		color:#176aa6;
 		font-weight: lighter;
 		font-size: 51.9px;
-		margin-left:10px;
 	}
 	span.inovacao{
 		color:#459cdb;
 		font-weight: lighter;
 		font-size: 80.35px;
-		/*margin-left:10px;*/
 	}
 	span.transparencia{
 		color:#7accf0;
 		font-weight: lighter;
 		font-size: 64.2px;
-		margin-left: 180px;
-		/*line-height: 60px;*/
 	}
 	span.meritocracia{
 		color:#0880d7;
 		font-weight: lighter;
 		font-size: 37.62px;
-		margin-left:10px;
 	}
 	span.pioneirismo{
 		color:#93ccf6;
 		font-weight: lighter;
 		font-size: 38.37px;
-		margin-left:10px;
 	}
 	span.conciliacao{
 		color:#257cbb;
 		font-weight: lighter;
 		font-size: 39.94px;
-		margin-left: 275px;
-		/*line-height: 45px;*/
 	}
 	span.criatividade{
 		color:#69a8d6;
 		font-weight: lighter;
 		font-size: 43.19px;
-		margin-left:10px;
 	}
 }
-
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	@base: .7;
+	.rowbottom{
+		span.continuidade{
+			font-size: (@base * 32.72px);
+		}
+		span.comprometimento{
+			font-size: (@base * 39.95px);
+		}
+		span.coperacao{
+			font-size: (@base * 51.9px);
+		}
+		span.inovacao{
+			font-size: (@base * 80.35px);
+		}
+		span.transparencia{
+			font-size: (@base * 64.2px);
+		}
+		span.meritocracia{
+			font-size: (@base * 37.62px);
+		}
+		span.pioneirismo{
+			font-size: (@base * 38.37px);
+		}
+		span.conciliacao{
+			font-size: (@base * 39.94px);
+		}
+		span.criatividade{
+			font-size: (@base * 43.19px);
+		}
+	}
+}
+@media only screen and (max-width: 479px) {
+	@base: .5;
+	.rowbottom{
+		span.continuidade{
+			font-size: (@base * 32.72px);
+		}
+		span.comprometimento{
+			font-size: (@base * 39.95px);
+		}
+		span.coperacao{
+			font-size: (@base * 51.9px);
+		}
+		span.inovacao{
+			font-size: (@base * 80.35px);
+		}
+		span.transparencia{
+			font-size: (@base * 64.2px);
+		}
+		span.meritocracia{
+			font-size: (@base * 37.62px);
+		}
+		span.pioneirismo{
+			font-size: (@base * 38.37px);
+		}
+		span.conciliacao{
+			font-size: (@base * 39.94px);
+		}
+		span.criatividade{
+			font-size: (@base * 43.19px);
+		}
+	}
+}
 /*********************************************/
 /* sitemap                                   */
 /*********************************************/
