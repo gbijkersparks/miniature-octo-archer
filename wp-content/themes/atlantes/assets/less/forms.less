@@ -1,7 +1,11 @@
 /*********************************************/
 /* form styles                               */
 /*********************************************/
-
+#wpcf7-f4-p84-o1{
+	input.wpcf7-submit{
+		color:#FFFFFF;
+	}
+}
 	.clearfix {
 	  zoom: 1;
 		&:before, &:after { content: ""; display: table; }
@@ -13,7 +17,7 @@
 			width: 25%;
 		}
 	}
-
+	
 	/* general forms */
 		form {margin: 1.5em 0 0}
 			.box form {margin-top: 0}
@@ -53,7 +57,7 @@
 				button.fullwidth,
 				input.fullwidth,
 				select.fullwidth,
-				textarea.fullwidth {width: 100% !important}
+				textarea.fullwidth {width: 100% !important;}
 
 		/* text input */
 			input[type="date"],
@@ -263,6 +267,8 @@
 		form.contact-form {margin-top: 0}
 		form.contact-form label {display: inline-block}
 
+
+
 /*********************************************/
 /* cForm styles                              */
 /*********************************************/
@@ -307,7 +313,7 @@
 	.cf_uploadWrapper {
 		display: inline-block;
 		float: right;
-		padding-right: 6px;
+		padding-right: 0;
 	}
 	#label--14 {
 		display: block;
@@ -323,6 +329,7 @@
 	.fileMsg {
 		clear: both;
 		display: block;
+		font-size: 10px;
 	}
 	.sendbutton {
 		width: 100%;
@@ -718,7 +725,7 @@ span.jqTransformCheckboxWrapper {
 	display: block;
 	float: right;
 	margin: 0; 
-	margin-right: 3px;
+	margin-right: -3px;
 }
 
 table.jqTransformTextarea-hover {
