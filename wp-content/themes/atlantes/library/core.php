@@ -3403,11 +3403,17 @@
 	*/
 	if ( ! function_exists( 'wm_search_form' ) ) {
 		function wm_search_form( $form ) {
+			if(strpos(get_option( 'home'), '/en') !== false) {
+				//$flag = '<a href="http://grupoatlantes.com.br/site/"><li><div class="ico-por"> <span>POR</span></li></a>';
+				$flag = '<a href="#"><li><div class="ico-por"> <span>POR</span></li></a>';
+			} else {
+				//$flag = '<a href="http://grupoatlantes.com.br/site/en/"><li><div class="ico-eng"> <span>ENG</span></li></a>';
+				$flag = '<a href="#"><li><div class="ico-eng"> <span>ENG</span></li></a>';
+			}
 			$form = '
 				<div class="idioma">
 					<ul>
-						<a href="' . get_option('home') . '"><li><div class="ico-por"> <span>POR</span></li></a>
-						<a href="' .  get_option( 'home') . '/en/"><li><div class="ico-eng"> <span>ENG</span></li></a>
+						'.$flag.'
 					</ul>
 				</div>
 				<form method="get" class="form-search" action="' . home_url( '/' ) . '">
