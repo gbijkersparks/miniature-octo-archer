@@ -145,7 +145,7 @@
 
 		/* logo */
 			.logo,
-			h1.logo {padding-top: 40px}
+			h1.logo {padding-top: 20px}
 			.logo .description {
 				position: absolute;
 				width: 1px;
@@ -158,7 +158,7 @@
 
 	/* navigation */
 		.navigation-wrap {line-height: 1.2em}
-		.nav-right .navigation-wrap {padding-top: 34px}
+		.nav-right .navigation-wrap {padding-top: 20px}
 		.nav-bottom .navigation-wrap {padding-top: 20px}
 
 		.nav-main > ul > li > .inner {
