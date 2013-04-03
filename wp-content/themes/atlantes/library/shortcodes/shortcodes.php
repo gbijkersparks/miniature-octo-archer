@@ -2166,7 +2166,7 @@
 										'overlay'      => $overlayText,
 									) ),
 								'title'    => '<h3 class="project-title text-element"><a href="' . $link . '"' . $target . ' class="' . wm_meta_option( 'project-link-list' ) . '">' . get_the_title() . '</a></h3>',
-								'type'     => '<a class="project-icon ' . wm_meta_option( 'project-link-list' ) . '"' . $target . ' href="' . $link . '"><i class="' . $icon . '" title="' . $iconTitle . '"></i></a>',
+								//'type'     => '<a class="project-icon ' . wm_meta_option( 'project-link-list' ) . '"' . $target . ' href="' . $link . '"><i class="' . $icon . '" title="' . $iconTitle . '"></i></a>',
 								'excerpt'  => ( $excerptText ) ? ( '<div class="project-excerpt text-element">' . strip_tags( strip_shortcodes( $excerptText ) ) . '</div>' ) : ( '' ),
 							);
 
@@ -2178,7 +2178,7 @@
 						$out   .= '<article class="column col-1' . $cols . ' no-margin item item-' . get_the_ID() . $termsClass . $alt . '">';
 							$out .= ( $thumb ) ? ( $projectOutput['thumb'] ) : ( '' );
 							$out .= '<div class="text">';
-								$out .= $projectOutput['type'];
+								//$out .= $projectOutput['type'];
 								$out .= $projectOutput['title'];
 								$out .= $projectOutput['category'];
 								$out .= $projectOutput['excerpt'];
