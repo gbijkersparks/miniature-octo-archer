@@ -218,11 +218,11 @@ jQuery( function() {
 
 				(function() {
 					if ( 768 > browserWidth ) {
-						jQuery( '.nav-main .menu' ).hide();
-						jQuery( '.nav-main .mobile-menu' ).show();
+						jQuery( '.nav-main .menu' ).hide().css({'overflow':'visible'});
+						jQuery( '.nav-main .mobile-menu' ).show().css({'overflow':'visible'});
 					} else {
-						jQuery( '.nav-main .menu' ).show();
-						jQuery( '.nav-main .mobile-menu' ).hide();
+						jQuery( '.nav-main .menu' ).show().css({'overflow':'visible'});
+						jQuery( '.nav-main .mobile-menu' ).hide().css({'overflow':'visible'});
 					}
 				})();
 			} );
@@ -731,9 +731,9 @@ jQuery( function() {
 *****************************************************
 */
 	jQuery( '.gallery-columns .column' ).hover( function() {
-			jQuery( this ).find( '.gallery-caption' ).stop().animate( { bottom : '-120%' } );
-		}, function() {
 			jQuery( this ).find( '.gallery-caption' ).stop().animate( { bottom : 0 } );
+		}, function() {
+			jQuery( this ).find( '.gallery-caption' ).stop().animate( { bottom : '-120%' } );
 		} );
 
 	if ( jQuery().masonry ) {
