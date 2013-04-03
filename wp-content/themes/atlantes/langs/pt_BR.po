@@ -665,3 +665,51 @@ msgstr "posts por %s"
 #: lespaul/library/core.php:1
 msgid "year %d archive"
 msgstr "arquivo anual %d"
+
+#: atlantes/library/core.php:1832
+msgid "structuring private equity"
+msgstr "estruturação em private equity"
+
+#: atlantes/library/core.php:1834
+msgid "Real Estate Projects"
+msgstr "Projetos Imobiliários"
+
+#: atlantes/library/core.php:1835
+msgid "Agribusiness"
+msgstr "Agronegócios"
+
+#: atlantes/library/core.php:1836
+msgid "Investment Funds"
+msgstr "Fundos de Investimento"
+
+#: atlantes/library/core.php:1843
+msgid "Real Estate Platform"
+msgstr "PLATAFORMA IMOBILIÁRIA"
+
+#: atlantes/library/core.php:1845
+msgid "Atlantes Real Estate Acquisitions"
+msgstr "Atlantes Incorporações Imobiliária"
+
+#: atlantes/library/core.php:1846
+msgid "Real Estate Management"
+msgstr "Gestão Imobiliária"
+
+#: atlantes/library/core.php:1847
+msgid "Real Estate Consulting"
+msgstr "Consultoria Imobiliária"
+
+#: atlantes/library/core.php:1848
+msgid "Active Park"
+msgstr "Ativo park"
+
+#: atlantes/library/core.php:1854
+msgid "Agribusiness Platform"
+msgstr "PLATAFORMA DE AGRONEGÓCIO"
+
+#: atlantes/library/core.php:1856
+msgid "Atlantes Agribusiness"
+msgstr "Atlantes Agronegócio"
+
+#: atlantes/library/core.php:1857
+msgid "Agribusiness Management"
+msgstr "Gestão em Agronegócio"

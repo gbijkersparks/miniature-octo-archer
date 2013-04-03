@@ -1777,7 +1777,7 @@
 		function wm_heading_home( $list = null, $wrap = null ) {
 			if ( is_page_template( 'page-template/construction.php' ) || is_404() )
 				return;
-			$before = '
+			/*$before = '
 				<header id="heading-home" class="main-heading wrap">
 					<div class="wrap-inner">
 						<div id="heading">';
@@ -1793,7 +1793,7 @@
 						</ul>
 				</div>
 				<div class="linha-vertical"></div>';
-				$center ='
+			$center ='
 				<div id="h-center">
 					<div class="icon-imobiliaria"></div>
 					<div class="title-section">PLATAFORMA IMOBILIÁRIA</div>
@@ -1804,13 +1804,57 @@
 						    <li>Ativo park</li>
 						</ul>
 				</div>';
-				$right ='
+			$right ='
 				<div id="h-right">
 					<div class="icon-agronegocio"></div>
 					<div class="title-section">PLATAFORMA DE AGRONEGÓCIO</div>
 						<ul>
 							<li>Atlantes Agronegócio</li>
 							<li>Gestão em Agronegócio</li>
+						</ul>
+				</div>';
+							
+			$after  = '
+						</div>	
+					</div>
+					
+				</header>';*/
+			/* english version */
+
+			$before = '
+				<header id="heading-home" class="main-heading wrap">
+					<div class="wrap-inner">
+						<div id="heading">';
+
+			$left ='
+				<div id="h-left">
+					<div class="icon-estrutura"></div>
+					<div class="title-section">'.__('structuring private equity', 'atlantes_domain' ).'</div>
+						<ul>
+							<li>'.__('Real Estate Projects', 'atlantes_domain' ).'</li>
+							<li>'.__('Agribusiness', 'atlantes_domain' ).'</li>
+							<li>'.__('Investment Funds', 'atlantes_domain' ).'</li>
+						</ul>
+				</div>
+				<div class="linha-vertical"></div>';
+			$center ='
+				<div id="h-center">
+					<div class="icon-imobiliaria"></div>
+					<div class="title-section">'.__('Real Estate Platform', 'atlantes_domain' ).'</div>
+						<ul>
+							<li>'.__('Atlantes Real Estate Acquisitions', 'atlantes_domain' ).'</li>
+							<li>'.__('Real Estate Management', 'atlantes_domain' ).'</li>
+							<li>'.__('Real Estate Consulting', 'atlantes_domain' ).'</li>
+						    <li>'.__('Active Park', 'atlantes_domain' ).'</li>
+						</ul>
+				</div>';
+			$right ='
+				<div id="h-right">
+					<div class="icon-agronegocio"></div>
+					<div class="title-section">'.__('Agribusiness Platform', 'atlantes_domain' ).'</div>
+						<ul>
+							<li>'.__('Atlantes Agribusiness', 'atlantes_domain' ).'</li>
+							<li>'.__('Agribusiness Management', 'atlantes_domain' ).'</li>
 						</ul>
 				</div>';
 							
