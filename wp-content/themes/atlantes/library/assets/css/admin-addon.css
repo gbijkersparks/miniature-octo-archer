@@ -24,14 +24,14 @@
 /*********************************************/
 
 	#adminmenu li#wm-admin-logo {
-		background-color: #777;
-		background-image: -ms-linear-gradient(bottom,#6D6D6D,gray);
-		background-image: -moz-linear-gradient(bottom,#6D6D6D,gray);
-		background-image: -o-linear-gradient(bottom,#6D6D6D,gray);
-		background-image: -webkit-gradient(linear,left bottom,left top,from(#6D6D6D),to(gray));
-		background-image: -webkit-linear-gradient(bottom,#6D6D6D,gray);
-		background-image: linear-gradient(bottom,#6D6D6D,gray);
-		border-bottom: 1px solid #666 !important;
+		background-color: #ddd;
+		background-image: -ms-linear-gradient(bottom,rgb(190, 190, 190),#ddd);
+		background-image: -moz-linear-gradient(bottom,rgb(190, 190, 190),#ddd);
+		background-image: -o-linear-gradient(bottom,rgb(190, 190, 190),#ddd);
+		background-image: -webkit-gradient(linear,left bottom,left top,from(#ddd),to(rgb(190, 190, 190)));
+		background-image: -webkit-linear-gradient(bottom,rgb(190, 190, 190),#ddd);
+		background-image: linear-gradient(bottom,rgb(190, 190, 190),#ddd);
+		border-bottom: 1px solid #ddd !important;
 	}
 		#wm-admin-logo.wp-menu-open {border-bottom: 1px solid #ddd !important}
 		#wm-admin-logo .wp-menu-image,
