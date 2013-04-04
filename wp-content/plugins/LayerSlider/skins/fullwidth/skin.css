@@ -109,7 +109,7 @@
 .ls-fullwidth .ls-nav-start,
 .ls-fullwidth .ls-nav-stop,
 .ls-fullwidth .ls-nav-sides {
-	height: 22px;
+	height: 40px;
 }
 
 .ls-fullwidth .ls-bottom-slidebuttons,
@@ -133,7 +133,7 @@
 }
 
 .ls-fullwidth .ls-bottom-slidebuttons a {
-	width: 30px;
+	width: 35px;
 }
 
 .ls-fullwidth .ls-nav-sides {
