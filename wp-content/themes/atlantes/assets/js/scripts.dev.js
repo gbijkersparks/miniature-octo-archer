@@ -251,9 +251,11 @@ jQuery( function() {
 
 	$('.menu-icon').hover(function(){
 		$(this).not('.current_page_ancestor, .current_page_item, .current-menu-item').find('.nav-icon-rollover').stop(true, true).fadeIn(600);
-		window.console.log($(this).find('.nav-icon-rollover')[0]);
+		//$(this).find('.nav-icon-rollover').stop(true, true).fadeIn(600);
+		window.console.log($(this).find('.nav-icon-rollover').not('.current_page_ancestor, .current_page_item, .current-menu-item')[0]);
 	}, function(){
 		$(this).not('.current_page_ancestor, .current_page_item, .current-menu-item').find('.nav-icon-rollover').stop(true, true).fadeOut(300);
+		//$(this).find('.nav-icon-rollover').stop(true, true).fadeOut(300);
 	});
 })(jQuery, window)
 	
