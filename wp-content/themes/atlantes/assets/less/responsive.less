@@ -240,6 +240,14 @@
 			.nav-icon, .nav-icon-rollover {
 				display: none !important;
 			}
+			
+			.menu>.menu-item {
+				&:hover, &.current_page_ancestor, &.current_page_item, &.current-menu-item {
+					.nav-icon-rollover {
+						display: none !important;
+					}
+				}
+			}
 		}
 
 		/* CONTENT */
