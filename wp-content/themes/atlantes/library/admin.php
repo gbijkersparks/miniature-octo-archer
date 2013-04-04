@@ -34,7 +34,7 @@
 	require_once( WM_LIBRARY . 'sidebars.php' );
 
 	//Custom posts
-	require_once( WM_CUSTOMS . 'cp-modules.php' );
+	//require_once( WM_CUSTOMS . 'cp-modules.php' );
 	if ( 'disable' != wm_option( 'cp-role-logos' ) )
 		require_once( WM_CUSTOMS . 'cp-logos.php' );
 	if ( 'disable' != wm_option( 'cp-role-faq' ) )
