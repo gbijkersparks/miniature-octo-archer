@@ -2400,7 +2400,7 @@
 							$out .= '<div class="text">';
 								$out .= ( wm_option( 'cp-staff-rich' ) ) ? ( $staffOutput['title-link'] ) : ( $staffOutput['title'] );
 								$out .= $staffOutput['position'];
-								$out .= '<div class="staff-excerpt text-element">' . $staffOutput['excerpt'] . '</div>';
+								$out .= '<div class="staff-excerpt text-element">' . $staffOutput['excerpt'] . __( '<a href="'. get_permalink() .'"><div class="icon-more"></div></a>', 'atlantes_domain' ) . '</div>';
 							$out .= '</div>';
 						$out   .= '</article>';
 					endwhile;
