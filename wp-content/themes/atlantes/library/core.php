@@ -1908,7 +1908,7 @@
 
 					$authorSocial = array();
 					if ( get_the_author_meta( 'facebook', $userID ) )
-						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'facebook', $userID ) ) . '" icon="Facebook" title="' . sprintf( __( '%s on Facebook', 'atlantes_domain' ), $authorName ) . '" size="m"]';
+						$authorSocial[] = 'name="s" url="' . esc_url( get_the_author_meta( 'facebook', $userID ) ) . '" icon="Facebook" title="' . sprintf( __( '%s on Facebook', 'atlantes_domain' ), $authorName ) . '" size="m"]';
 					if ( get_the_author_meta( 'googleplus', $userID ) )
 						$authorSocial[] = '[social url="' . esc_url( get_the_author_meta( 'googleplus', $userID ) ) . '" icon="Google+" title="' . sprintf( __( '%s on Google+', 'atlantes_domain' ), $authorName ) . '" size="m" rel="me"]';
 					if ( get_the_author_meta( 'twitter', $userID ) )
@@ -3418,9 +3418,9 @@
 				</div>
 				<form method="get" class="form-search" action="' . home_url( '/' ) . '">
 				<fieldset>
-					<label class="assistive-text invisible">' . __( 'Search for:', 'atlantes_domain' ) . '</label>
+					<label class="assistive-text invisible">' . __( 'Procurar', 'atlantes_domain' ) . '</label>
 					<input type="text" class="text" name="s" placeholder="' . wm_option( 'general-search-placeholder' ) . '" />
-					<input type="submit" class="submit" value="' . __( 'Submit', 'atlantes_domain' ) . '" />
+					<input type="submit" class="submit" value="' . __( 'Enviar', 'atlantes_domain' ) . '" />
 					<i class="wmicon-search"></i>
 				</fieldset>
 				</form>
