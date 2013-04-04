@@ -297,11 +297,9 @@
 					}
 				}
 				.menu>.menu-item {
-					// opacity: .5;
-					filter: alpha(opacity=50) !important;
 					&:hover, &.current_page_ancestor, &.current_page_item, &.current-menu-item {
 						opacity: 1;
-						filter: alpha(opacity=100) !important;
+						//filter: alpha(opacity=100) !important;
 						.nav-icon-rollover {
 							display: block !important;
 						}
@@ -317,7 +315,8 @@
 					position: absolute;
 					z-index: 100;
 					top: 0;
-					opacity: 0;
+					display: none;
+					//opacity: 0;
 				}
 				.icon-contato {
 					width:58px;
