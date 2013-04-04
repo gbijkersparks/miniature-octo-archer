@@ -96,7 +96,7 @@ array(
 				"id" => $prefix."search-placeholder",
 				"label" => __( 'Search form placeholder text', 'atlantes_domain_panel' ),
 				"desc" => __( 'Placeholder text displayed in search field', 'atlantes_domain_panel' ),
-				"default" => __( 'Search term', 'atlantes_domain' )
+				"default" => __( 'Procurar', 'atlantes_domain' )
 			),
 			array(
 				"type" => "text",
