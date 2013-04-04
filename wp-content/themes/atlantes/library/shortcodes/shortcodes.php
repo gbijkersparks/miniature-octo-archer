@@ -1777,7 +1777,7 @@
 										'size'        => $imgSize,
 										'list'        => true,
 										'placeholder' => true,
-										'overlay'     => __( 'Read more', 'atlantes_domain' ),
+										'overlay'     => __( '<div class="p-more"></div>Saiba Mais', 'atlantes_domain' ),
 									) ),
 								'title'   => '<h3 class="post-title text-element"><a href="' . get_permalink() . '">' . get_the_title() . '</a></h3>',
 								'excerpt' => $excerptText,
