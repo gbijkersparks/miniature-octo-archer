@@ -1820,7 +1820,6 @@
 					
 				</header>';*/
 			/* english version */
-
 			$before = '
 				<header id="heading-home" class="main-heading wrap">
 					<div class="wrap-inner">
@@ -1828,6 +1827,7 @@
 
 			$left ='
 				<div id="h-left">
+					<a href="'.get_permalink($page_id=590).'">
 					<div class="icon-estrutura"></div>
 					<div class="title-section">'.__('structuring private equity', 'atlantes_domain' ).'</div>
 						<ul>
@@ -1836,9 +1836,11 @@
 							<li>'.__('Investment Funds', 'atlantes_domain' ).'</li>
 						</ul>
 				</div>
+				</a>
 				<div class="linha-vertical"></div>';
 			$center ='
 				<div id="h-center">
+					<a href="'.get_permalink($page_id=588).'">
 					<div class="icon-imobiliaria"></div>
 					<div class="title-section">'.__('Real Estate Platform', 'atlantes_domain' ).'</div>
 						<ul>
@@ -1847,16 +1849,19 @@
 							<li>'.__('Real Estate Consulting', 'atlantes_domain' ).'</li>
 						    <li>'.__('Active Park', 'atlantes_domain' ).'</li>
 						</ul>
-				</div>';
+				</div>
+				</a>';
 			$right ='
 				<div id="h-right">
+					<a href="'.get_permalink($page_id=584).'">
 					<div class="icon-agronegocio"></div>
 					<div class="title-section">'.__('Agribusiness Platform', 'atlantes_domain' ).'</div>
 						<ul>
 							<li>'.__('Atlantes Agribusiness', 'atlantes_domain' ).'</li>
 							<li>'.__('Agribusiness Management', 'atlantes_domain' ).'</li>
 						</ul>
-				</div>';
+				</div>
+				</a>';
 							
 			$after  = '
 						</div>	
