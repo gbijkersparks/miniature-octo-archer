@@ -157,14 +157,12 @@ require_once( WM_LIBRARY . 'admin.php' );
 //require_once( WM_LIBRARY . 'm_super_dump.php');
 
 add_action( 'login_redirect', 'custom_login_redirect' );
-function custom_login_redirect()
+function custom_login_redirect( $force = false )
 {
-    if ( 'wp-login.php' == $GLOBALS['pagenow'] )
+    if ( 'wp-login.php' == $GLOBALS['pagenow'] || $force)
     {
         // Set your $login_page_id
         wp_redirect( get_permalink(289) );
         die;
     }
 }
-
-?>
