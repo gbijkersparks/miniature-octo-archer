@@ -189,11 +189,11 @@ jQuery( function() {
 *****************************************************
 */
 	if ( 767 < browserWidth ) {
-		jQuery( '.nav-main li, .top-bar li' ).hover( function() {
+		/*jQuery( '.nav-main li, .top-bar li' ).hover( function() {
 				jQuery( this ).find( '> ul' ).stop( true, true ).fadeIn( 300 );
 			}, function() {
 				jQuery( this ).find( '> ul' ).stop( true, true ).fadeOut( 100 );
-			});
+			});*/
 
 		//Submenu widget
 			jQuery( '.wm-sub-pages a, .widget_archive a, .widget_categories a, .widget_links a, .widget_meta a, .widget_pages a, .widget_nav_menu a, .widget_nav_menu .inner, .widget_recent_entries a, .sitemap .no-menu a, ul.sub-pages a, .widget_login a, .widget_product_categories a' ).hover( function() {
