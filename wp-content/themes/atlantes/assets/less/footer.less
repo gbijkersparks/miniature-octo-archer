@@ -12,7 +12,7 @@
 /*---------------------[Forms]--------------------*/
 /*------------------------------------------------*/
 article{
-.cform {
+.newsletter {
 	padding: 30px 0 0;
 	.cf-ol, .cl-ul {
 			list-style: none;
@@ -23,17 +23,18 @@ article{
 				display: none;
 			}
 			textarea, input[type=text] {
-				width: 96%;
+				width:100%;
 				padding: 1em 2%;
 				border: none;
-				font: 16px/18px arial
+				font-size: 16px/18px;
+				font-family: Ubuntu, Helvetica, Arial, Verdana, sans-serif;
 			}
 		}
 	}
 	.um_field_container {	
 		margin-bottom: .5em;
 		textarea, input[type=text], input[type=password], input[type=text] {
-			width: 96%;
+			width: 100%;
 			padding: 1em 2%;
 			border: 1px solid #ddd;
 			font: 16px/18px;
@@ -62,6 +63,8 @@ input[type=submit], .qq-upload-button {
 
 .cf-sb {
 	text-align: right;
+	margin: 0 !important;
+	padding: 0 !important;
 	clear: none;
 	}
 }
@@ -90,8 +93,10 @@ input[type=submit], .qq-upload-button {
 		}
 	}
 	.failure{
-		color:#0076b7;
-		font-weight: lighter;
+		font-weight: 600;
+		border: 0;
+		color: #ff5200;
+		background: none;
 		font-family: Ubuntu, Helvetica, Arial, Verdana, sans-serif;
 		font-size: 13px;
 	}
@@ -100,7 +105,7 @@ input[type=submit], .qq-upload-button {
 		margin: 20px 0 -30px;
 		padding: 0;
 	}
-	.cform {
+	.newsletter {
 		width:100%;
 		border: none;
 		background: none;
@@ -108,15 +113,17 @@ input[type=submit], .qq-upload-button {
 		.cf-fs1 {
 			display: inline-block;
 			float: left;
-			width: 90% !important;
+			width: 100% !important;
 		}
 		.cf-ol {
 			display: block;
-			clear: both;
+			padding: 0 !important;
+			margin: 0 !important;
 
 			&>li {
 				float:left;
-				width: 30%;
+				width: 27.85%;
+				padding-right: 10px;
 			}
 		}
 		input{
@@ -147,7 +154,7 @@ input[type=submit], .qq-upload-button {
 			font-size: 20px;
 			padding: 0px 15px 1px;
 			cursor: pointer;
-			width: 120px;
+			width: 16%;
 			font-weight: lighter;
 			font-family: Ubuntu, Helvetica, Arial, Verdana, sans-serif;
 			font-size: 13px;
@@ -158,8 +165,7 @@ input[type=submit], .qq-upload-button {
 		label[for=cf_field_3], label[for=cf_field_4],label[for=cf_field_5] {display: none;}
 
 		.cf-sb {
-			margin: 0;
-			float: left;
+			margin: 0 !important;
 			clear: none;
 		}
 	}
@@ -211,7 +217,7 @@ article .cf-fs1 legend{
 	background: #FFF;
 	border: none;
 	font-weight: lighter;
-	font-family: 'Ubunto', sans-serif !important;
+	font-family: Ubuntu, Helvetica, Arial, Verdana, sans-serif;
 }
 #li--2 {
 	width: 320px;
@@ -235,6 +241,25 @@ article #li--2 {
 		z-index: 1;
 	}
 } 
+
+@media only screen and (max-width: 768px) {
+	#newsletter{
+		.newsletter{
+			display: inline-block;
+			.cf-ol>li{
+				float: left;
+				width: 100% !important;
+				padding-bottom: 10px;
+				margin: 0 !important;
+				padding-right: 0;
+			}
+			input[type=submit]{
+				width: 100%;
+			}
+		}
+	}
+
+}
 
 /*********************************************/
 /* footer                                    */
@@ -319,4 +344,5 @@ article #li--2 {
 					right: 2%;
 					bottom: 60px;
 				}
+
 			}
