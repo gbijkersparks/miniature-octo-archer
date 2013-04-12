@@ -1,10 +1,10 @@
 
-<article class="content ">
+<!-- <article class="content ">
 	<div id="newsletter" class="wrap-inner clearfix">
 		<?php echo do_shortcode( '[separator_heading]Cadastre-se em nossa Newsletter[/separator_heading]' ) ?>
 		<?php insert_cform('Newsletter'); ?>
 	</div>
-</article>
+</article> -->
 
 <?php wm_after_main_content(); ?>
 
