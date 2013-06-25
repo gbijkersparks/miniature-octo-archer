@@ -414,7 +414,7 @@
 }
 
 #wpadminbar .quicklinks li div.blavatar {
-	background: url('../images/wpmini-blue.png') no-repeat;
+	/*background: url('../images/wpmini-blue.png') no-repeat;*/
 	height: 16px;
 	width: 16px;
 	display: inline-block;
@@ -627,7 +627,7 @@
 	}
 
 	#wpadminbar .quicklinks li div.blavatar {
-		background: url('../images/wpmini-blue-2x.png') no-repeat;
+		/*background: url('../images/wpmini-blue-2x.png') no-repeat;*/
 		background-size: 16px 16px;
 	}
 }

@@ -7,7 +7,10 @@
 
 	<article class="text-center">
 
-		<?php echo do_shortcode( wm_option( 'p404-text' ) ); ?>
+		<h1>Página ou conteúdo não encontrada!</h1>
+		<br />
+		<a href="<?php echo get_option('home'); ?>">Voltar a página inicial</a>
+		<?php //echo do_shortcode( wm_option( 'p404-text' ) ); ?>
 
 	</article>
 

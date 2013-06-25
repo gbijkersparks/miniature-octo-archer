@@ -2278,10 +2278,10 @@
 		function wm_shortcode_staff( $atts, $content = null ) {
 			extract( shortcode_atts( array(
 				'align'      => 'left',
-				'columns'    => 5,
-				'count'      => 5,
+				'columns'    => 7,
+				'count'      => 7,
 				'department' => null,
-				'desc_size'  => 5,
+				'desc_size'  => 7,
 				'order'      => 'new',
 				'thumb'      => true,
 				), $atts )
@@ -2384,7 +2384,7 @@
 										'size'        => $imgSize,
 										'list'        => true,
 										'placeholder' => true,
-										'overlay'     => __( '<div class="p-more"></div>Saiba Mais', 'atlantes_domain' ),
+										'overlay'     => __( '<div class="p-more"></div>Read More', 'atlantes_domain' ),
 									) ),
 								'title'      => '<h3 class="staff-title text-element"><strong>' . get_the_title() . '</strong></h3>',
 								'title-link' => '<h3 class="staff-title text-element"><a href="' . get_permalink() . '"><strong>' . get_the_title() . '</strong></a></h3>',

@@ -1,6 +1,7 @@
 /*********************************************/
 /* content                                   */
 /*********************************************/
+
 	.home{
 		#content{
 			background-color: #f4f4f5; /* Old browsers */
@@ -643,6 +644,7 @@ footer.meta-article{
 		width: 40%;
 		padding: 20px;
 		background-color: #eee;
+		display: none;
 	}
 
 		.staff-card strong {display: none}
@@ -673,14 +675,21 @@ footer.meta-article{
 				margin: 10px 20px 50px 0;
 				position: relative;
 				z-index: 10;
+				display: none;
 			}
 		}
 	}
+.wrap-staff-shortcode{
+	.image-container{
+		display: none;
+	}
+}
 
 .single-wm_staff{
 	.article-content ul li{
 		text-align: left;
 	}
+
 }
 .icon-more{
 	background: url(../img/icon-more.png) no-repeat top;
@@ -843,6 +852,11 @@ footer.meta-article{
 			font-size: (@base * 43.19px);
 		}
 	}
+	.webkit{
+		span.contact-info{
+			display: inline-block;
+		}
+	}
 }
 @media only screen and (max-width: 479px) {
 	@base: .5;
@@ -1000,18 +1014,18 @@ footer.meta-article{
 
 // Conteudo do slider do homepage
 
-.sliderHeaderTitle{
+/*.sliderHeaderTitle{
 	padding: 0px 10px;
 	font-family: 'Ubuntu', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	height: 46px;
 	line-height:46px;
-	color: #FFF; 
+	color: #0086c3; 
 	font-size: 36px;
-	background: rgba(22,72,102, 0.8);
+	/*background: rgba(22,72,102, 0.8);*/
 	// opacity: 0.8;
-	width: 350px;
+	/*width: 100%;
 	text-align: center;
 }
 .sliderHeaderTitle2{
@@ -1021,13 +1035,13 @@ footer.meta-article{
 	font-weight: normal;
 	height: 46px;
 	line-height:46px;
-	color: #FFF; 
-	font-size: 36px;
-	background: rgba(22,72,102, 0.8);
+	color: #0086c3; 
+	font-size: 36px;*/
+	/*background: rgba(22,72,102, 0.8);*/
 	// opacity: 0.8;
-	width: 380px;
+	/*width: 100%;
 	text-align: center;
-}
+}*/
 
 .main #login {
 	width: 320px;

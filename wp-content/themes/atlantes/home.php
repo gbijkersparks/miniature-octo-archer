@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Notícias
+Template Name: Blog
 */
 
 get_header();
@@ -60,6 +60,7 @@ if ( 'none' != $sidebarLayout ) {
 	wm_sidebar( $overrideSidebar, $class );
 }
 ?>
+<!-- [posts columns="4" count="4" order="random"][/posts] -->
 
 </div> <!-- /wrap-inner -->
 <?php get_footer(); ?>

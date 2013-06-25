@@ -221,6 +221,7 @@
 				wp_enqueue_script( 'fancybox' );
 				wp_enqueue_script( 'wm-options-panel' );
 				wp_enqueue_script( 'color-picker' );
+				wp_enqueue_script( 'browserDetect' );
 			}
 		}
 	} // /wm_admin_include

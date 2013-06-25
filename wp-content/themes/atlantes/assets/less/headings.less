@@ -5,6 +5,74 @@
 /* in shortcodes.css file.                   */
 /*********************************************/
 
+html[lang='pt-BR']{
+
+}
+html[lang='en-US']{
+	#nav-main{
+		.icon-empresa{
+			width:62px;
+			background-image: url('../img/menu/icon-empresa-en.png'); //ok
+		}
+		.icon-linha-de-negocio {
+			width:85px;
+			background-image: url('../img/menu/icon-linha-de-negocio-en.png');//ok
+		}
+		.icon-parceiras-estrategicas {
+			width:90px;
+			background-image: url('../img/menu/icon-parceiras-estrategicas-en.png');//ok
+		}
+		.icon-relacionamento-com-investidor {
+			width:80px;
+			background-image: url('../img/menu/icon-relacionamento-com-investidor-en.png');
+		}
+		.icon-responsabilidade-social {
+			width:120px;
+			background-image: url('../img/menu/icon-responsabilidade-social-en.png');
+		}
+		.icon-noticas {
+			width:57px;
+			background-image: url('../img/menu/icon-noticas-en.png');
+		}
+		.icon-contato {
+			width:58px;
+			background-image: url('../img/menu/icon-contato-en.png');
+		}
+		
+		// BOTÕES HOVER DO MENU DO HEADER
+
+		.icon-empresa-h {
+			width:62px;
+			background-image: url('../img/menu/icon-empresa-h-en.png');//ok
+		}
+		.icon-linha-de-negocio-h {
+			width:85px;
+			background-image: url('../img/menu/icon-linha-de-negocio-h-en.png');//ok
+		}
+		.icon-parceiras-estrategicas-h {
+			width:90px;
+			background-image: url('../img/menu/icon-parceiras-estrategicas-h-en.png');//ok
+		}
+		.icon-relacionamento-com-investidor-h {
+			width:80px;
+			background-image: url('../img/menu/icon-relacionamento-com-investidor-h-en.png');
+		}
+		.icon-responsabilidade-social-h {
+			width:120px;
+			background-image: url('../img/menu/icon-responsabilidade-social-h-en.png');
+		}
+		.icon-noticas-h {
+			width:57px;
+			background-image: url('../img/menu/icon-noticas-h-en.png');
+		}
+		.icon-contato-h {
+			width:58px;
+			background-image: url('../img/menu/icon-contato-h-en.png');
+		}
+	}
+}
+
+
 	h1, h2, h3, h4, h5, h6 {
 		padding: 0;
 		margin: 0;
@@ -153,8 +221,8 @@ hr.shadow-bottom {
 		#h-left{
 			float:left;
 			display: inline-block;
-			width: 33%;
-			margin-right: 15px;
+			width: 29%;
+			margin-top: 13px;
 			.icon-estrutura{
 				background: url('../img/icon-estrutura.png') no-repeat center top;
 				width: 74px;
@@ -184,10 +252,10 @@ hr.shadow-bottom {
 		#h-center{
 			float: left;
 			border-image: url('../img/linha-vertical.png') 15/1;
-			margin: 0 0 30px;
+			margin: 5px 0 30px;
 			padding: 0 30px;
 			display: inline-block;
-			width: 32%;
+			width: 24%;
 			.icon-imobiliaria{
 				background: url('../img/icon-imobiliaria.png') no-repeat center top;
 				width: 56px;
@@ -217,9 +285,43 @@ hr.shadow-bottom {
 		#h-right{
 			float:left;
 			display: inline-block;
-			width: 33%;
+			width: 26%;
 			.icon-agronegocio{
 				background: url('../img/icon-agronegocio.png') no-repeat center top;
+				width: 83px;
+				height: 64px;
+				margin: 0 auto;
+			}
+			.title-section{
+				font: 17px 'Ubuntu', sans-serif;
+				text-transform: uppercase;
+				font-weight: 500;
+				color: #0079ba;
+				text-align: center;
+
+			}
+			ul{
+				list-style: none;
+				margin: 0;
+				li{
+					list-style: none;
+					color:#959595;
+					font: 14px 'Ubuntu', sans-serif;
+					margin: 0;
+					padding: 0;
+					text-align: center;
+				}
+			}
+		}
+		#h-right2{
+			float: left;
+			border-image: url('../img/linha-vertical.png') 1/1;
+			margin: -3px 0 30px;
+			padding: 0 0 30px;
+			display: inline-block;
+			width: 21%;
+			.icon-financeiro{
+				background: url('../img/icon-financeiro.png') no-repeat center top;
 				width: 83px;
 				height: 64px;
 				margin: 0 auto;
@@ -273,6 +375,15 @@ hr.shadow-bottom {
 	}
 }
 
+.page-id-1719, .page-id-1701{
+	.main-heading {
+		.twelve{background: url(../img/icon-financeiro-branco.png) left center no-repeat;left: 20px;}
+		h1{
+			left: 40px;
+		}
+	}
+}
+
 
 
 @media only screen and (max-width: 767px) {
@@ -297,6 +408,13 @@ hr.shadow-bottom {
 				display: block;
 				width: 100%;
 				margin-bottom: 30px;
+			}
+			#h-right2{
+				float:left;
+				display: block;
+				width: 100%;
+				margin-bottom: 30px;
+				border-image: none;
 			}
 		}
 	}

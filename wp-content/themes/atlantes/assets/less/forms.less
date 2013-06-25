@@ -111,18 +111,7 @@
 					filter: alpha(opacity=80); /* For IE8 and earlier */
 				}
 
-.page-id-84{
-	input[type="submit"] {
-		width: 200px !important;
-		float: right;
-	}
-}
-.page-id-1280{
-	input[type="submit"] {
-		width: 200px !important;
-		float: right;
-	}
-}
+
 
 	/* search form */
 		.form-search {
@@ -302,8 +291,8 @@
 		margin-top: 0;
 	}
 	.cf-sb {
-		// clear: both;
-		padding: 5.2em 0;
+		clear: both;
+		padding: 1.5em 0;
 		padding-left: 1.5em;
 	}
 	/* formatting the submit button*/
@@ -855,11 +844,46 @@ form.jqtransformdone {
 	}
 }
 
+#cforms3form, #cforms2form{
+	ol.cf-ol{
+		li{
+			display: inline;
+			width: 100%;
+			label{
+				display: none;
+			}
+			input{
+				width: 32.3%;
+				margin-bottom: 10px;
+				/*margin: 0 55px 0 0;*/
+			}
+			textarea{
+				width: 100%;
+			}
+		}
+	}
+	input[type="date"], input[type="email"], input[type="password"], input[type="text"] {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+
+
+
+
 	/* 767 px max */
 	@media only screen and (max-width: 767px) {
 		.cform {
 			fieldset {
 				width: 50%;
+			}
+		}
+		#cforms3form{
+			input{
+				width: 100%;
+				margin-bottom: 10px;
+				/*margin: 0 55px 0 0;*/
 			}
 		}
 	}
@@ -873,4 +897,11 @@ form.jqtransformdone {
 				width: 100%;
 			}
 		}
+		#cforms3form{
+			input{
+				width: 100%;
+				margin-bottom: 10px;
+				/*margin: 0 55px 0 0;*/
+		}
+	}
 	}

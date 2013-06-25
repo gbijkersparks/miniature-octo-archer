@@ -1,0 +1,51 @@
+body{
+	background: #fdfcfc;
+}
+.logo{
+	background: url('../img/logo.png') no-repeat center;
+	min-width: 730px;
+	height: 252px;
+	position: relative;
+	top: 225px;
+}
+
+.footer{
+	background: #0378bc;
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	bottom: 0;
+}
+
+.left {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	background: url('../img/left.png') no-repeat left bottom;
+	height: 150px;
+	width: 100%;
+}
+
+.right{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	margin: 0;
+	padding: 0;
+	background: url('../img/right.png') no-repeat right bottom;
+	height: 150px;
+	width: 100%;
+}
+.txt p{
+	position: relative;
+	text-align: center;
+	color: #FFF;
+	font-family: "Tw Cen MT", Verdana;
+	font-size: 20px;
+	line-height: 100%;
+	top: 70px;
+	z-index: 1000;
+}

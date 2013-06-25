@@ -162,6 +162,7 @@
 				//frontend
 				//wp_register_script( 'wm-theme-scripts', WM_ASSETS_THEME . 'js/scripts.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
 				wp_register_script( 'wm-theme-scripts', WM_ASSETS_THEME . 'js/scripts.dev.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
+				wp_register_script( 'browserDetect', WM_ASSETS_THEME . 'js/browserDetect.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
 				wp_register_script( 'jqtransform', WM_ASSETS_THEME . 'js/jquery.jqtransform.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
 				wp_register_script( 'prettyphoto', WM_ASSETS_THEME . 'js/prettyphoto/jquery.prettyPhoto.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
 				wp_register_script( 'imagesloaded', WM_ASSETS_THEME . 'js/imagesloaded/jquery.imagesloaded.min.js', array( 'jquery' ), WM_SCRIPTS_VERSION, true );
@@ -1832,8 +1833,7 @@
 					<div class="title-section">'.__('structuring private equity', 'atlantes_domain' ).'</div>
 						<ul>
 							<li>'.__('Real Estate Projects', 'atlantes_domain' ).'</li>
-							<li>'.__('Agribusiness', 'atlantes_domain' ).'</li>
-							<li>'.__('Investment Funds', 'atlantes_domain' ).'</li>
+							<li>'.__('Agribusiness projects', 'atlantes_domain' ).'</li>
 						</ul>
 				</div>
 				</a>
@@ -1844,10 +1844,9 @@
 					<div class="icon-imobiliaria"></div>
 					<div class="title-section">'.__('Real Estate Platform', 'atlantes_domain' ).'</div>
 						<ul>
-							<li>'.__('Atlantes Real Estate Acquisitions', 'atlantes_domain' ).'</li>
+							<li>'.__('Real Estate Development', 'atlantes_domain' ).'</li>
 							<li>'.__('Real Estate Management', 'atlantes_domain' ).'</li>
 							<li>'.__('Real Estate Consulting', 'atlantes_domain' ).'</li>
-						    <li>'.__('Active Park', 'atlantes_domain' ).'</li>
 						</ul>
 				</div>
 				</a>';
@@ -1862,6 +1861,16 @@
 						</ul>
 				</div>
 				</a>';
+			$right2 ='
+				<div id="h-right2">
+					<a href="'.get_permalink($page_id=1701).'">
+					<div class="icon-financeiro"></div>
+					<div class="title-section">'.__('Financial Products', 'atlantes_domain' ).'</div>
+						<ul>
+							<li>'.__('Investment Funds', 'atlantes_domain' ).'</li>
+						</ul>
+				</div>
+				</a>';
 							
 			$after  = '
 						</div>	
@@ -1872,7 +1881,7 @@
 			//output
 
 			if(is_front_page())
-				echo $before . $left . $center . $right . $after;
+				echo $before . $left . $center . $right . $right2 . $after;
 		}
 	} // /wm_heading-home
 

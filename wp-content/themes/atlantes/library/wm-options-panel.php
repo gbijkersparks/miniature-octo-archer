@@ -429,7 +429,7 @@
 
 				<!-- FOOTER -->
 				<div id="wrap-footer">
-					<p>&copy; WebMan | Version 2.0<br /><a href="http://support.webmandesign.eu" target="_blank">WebMan Support</a></p>
+					<!-- <p>&copy; Cabana Criação | Version 2.0<br /><a href="http://www.cabanacriacao.com/" target="_blank">Cabana Criação Support</a></p> -->
 					<input name="save" type="submit" value="<?php _e( 'Save changes', 'atlantes_domain_panel' ) ?>" class="btn submit" />
 					<?php wp_nonce_field( 'wm-theme-options-form' ); ?>
 					<input type="hidden" name="action" value="save" />

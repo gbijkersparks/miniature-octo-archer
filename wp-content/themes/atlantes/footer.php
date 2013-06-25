@@ -50,6 +50,91 @@ wm_before_footer();
 
 <!-- wp_footer() -->
 <?php wp_footer(); //WordPress footer hook ?>
+
+<script>
+	function testAttribute(element, attribute){
+    	var test = document.createElement(element);
+    	if (attribute in test) 
+     		return true;
+   		else 
+      		return false;
+    }
+
+  	if (!testAttribute("input", "placeholder") && !testAttribute("textarea", "placeholder")) {
+    	window.onload = function() {
+      		var demo = document.getElementById("name");
+      		var name_content = "Nome";
+
+      		demo.style.color = "gray";
+      		demo.value = name_content;
+
+      		demo.onfocus = function() {
+      			if (this.style.color == "gray"){
+      				this.value = ""; this.style.color = "gray" 
+      			}
+      		}
+
+      		demo.onblur = function() {
+      			if (this.value == ""){
+      				this.style.color = "gray"; this.value = name_content; 
+      			}
+      		}
+      		var demo = document.getElementById("email");
+      		var email_content = "Email";
+
+      		demo.style.color = "gray";
+      		demo.value = email_content;
+
+      		demo.onfocus = function() {
+      			if (this.style.color == "gray"){
+      				this.value = ""; this.style.color = "gray" 
+      			}
+      		}
+
+      		demo.onblur = function() {
+      			if (this.value == ""){
+      				this.style.color = "gray"; this.value = email_content; 
+      			}
+      		}
+      		var demo = document.getElementById("subject");
+      		var subject_content = "Assunto";
+
+      		demo.style.color = "gray";
+      		demo.value = subject_content;
+
+      		demo.onfocus = function() {
+      			if (this.style.color == "gray"){
+      				this.value = ""; this.style.color = "gray" 
+      			}
+      		}
+
+      		demo.onblur = function() {
+      			if (this.value == ""){
+      				this.style.color = "gray"; this.value = subject_content; 
+      			}
+      		}
+      		var demo = document.getElementById("message");
+      		var message_content = "Mensagem";
+
+      		demo.style.color = "gray";
+      		demo.value = message_content;
+
+      		demo.onfocus = function() {
+      			if (this.style.color == "gray"){
+      				this.value = ""; this.style.color = "gray" 
+      			}
+      		}
+
+      		demo.onblur = function() {
+      			if (this.value == ""){
+      				this.style.color = "gray"; this.value = message_content; 
+      			}
+      		}
+      		
+   		}
+
+  	}
+  	</script>
 </body>
 
 <!-- <?php echo wm_static_option( 'static-webdesigner' ); ?> -->
